@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sy
+# key: sy
+# --
+\$ $1 \$$0

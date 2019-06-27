@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: matrix
+# key: matrix
+# --
+\matrix (m)
+[
+  matrix of math nodes,
+  row sep=2em,
+  column sep=2em
+]
+{
+ $1 & \\
+};    

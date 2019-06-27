@@ -1,0 +1,134 @@
+# -*- mode: snippet -*-
+# name: syllabus
+# key: syllabus
+# --
+
+\\documentclass{letter}
+\\usepackage{multicol}
+\\begin{document}
+
+%
+% class & school info
+%
+
+\\begin{minipage}{\\textwidth} 
+\\centering
+\\textbf{} \\\\ % class 
+{} \\\\ % college
+{} \\\\ % term
+{} \\\\ % room
+\\end{minipage}
+
+%
+% instructor info
+%
+
+\\textbf{instructor:} daniel cicala\\\\
+\\textbf{email:} \\\\
+\\textbf{web:} math.ucr.edu/\$ \\sim \$cicala
+
+%
+% what do the students need?
+%
+
+\\textbf{textbook:} 
+
+%
+%  prerequesites.  
+%
+
+\\textbf{prerequisites:}  
+
+\\emph{It is natural to forget things and discussion on what is assumed knowledge may take place at the instructors discretion.  However, time for such recollection may not be sufficient, thus it is the student's absolutely full responsibility to prepare for themselves the prerequisite material.} 
+
+%
+% course description.
+%
+
+\\textbf{course description:} 
+
+%
+% course schedule
+%
+
+\\textbf{course schedule:} This is subject to change at the instructors whim
+
+\\fbox{
+\\begin{minipage}{\\textwidth}
+\\begin{multicols}{2}
+\\begin{description}
+\\item[week 1] 
+\\item[week 2] 
+\\item[week 3] 
+\\item[week 4] 
+\\item[week 5] 
+\\item[week 6] 
+\\item[week 7] 
+\\item[week 8] 
+\\item[week 9] 
+\\item[week 10]
+\\item[week 11]
+\\item[week 12]
+\\item[week 13]
+\\item[week 14]
+\\item[week 15]
+\\item[week 16]
+\\end{description} 
+\\end{multicols}
+\\end{minipage}
+}
+
+%
+% hw
+%
+
+\\textbf{homework:} 
+
+%
+% quiz
+%
+
+\\textbf{quizzes:} 
+
+%
+% exam
+%
+
+\\textbf{exams:}
+
+%
+% attendance 
+%
+
+\\textbf{attendance // missed exams \\& quizzes:} 
+Regular attendance is \\textbf{strongly} recommended in order to be successful in any math class.  However, attendance is not taken.  If you miss a class, you are still responsible for the material covered. 
+
+\\textbf{There are no makeup quizzes or exams under any circumstances.}  
+
+%
+% grade scheme
+%
+
+\\textbf{grade scheme:} 
+
+%
+% student learning outcomes
+%
+
+\\textbf{student learning outcomes:} % pull directly from somewhere
+
+% 
+% classroom policy
+%
+
+\\textbf{classroom policy:}
+Be respectful of others.  That is all.
+
+%
+% academic honesty
+%
+
+\\textbf{academic honesty:}
+Plagiarism is presenting someone else's work as your own.  Plagiarism/cheating will result in your forfeiting credit for the assignment that includes plagiarism and may result in your receiving an F for the course.  I expect every student to do their own work.  Any student turning in copied work (exams, homework, etc.), taking credit for another’s work or ideas, or copying from the Internet will receive no points for that assignment.  All tests will be completed without the aid of the textbook or notes. Not following these rules will result in a zero on the exam.
+
+\\end{document}

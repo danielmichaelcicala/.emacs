@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: adjunction
+# key: adjunction
+# --
+%
+\[
+  \adjunction{$1}{$2}{$3}{$4}
+\]
+%
+$0

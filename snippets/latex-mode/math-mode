@@ -1,0 +1,9 @@
+# key: math
+# name: math-mode
+# --
+%
+\\(
+    $1
+\\)
+%
+$0

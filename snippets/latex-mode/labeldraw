@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: labeldraw
+# key: labeldraw
+# --
+\draw [->] ($1) to node [$3] {\scriptsize{\$ $4 \$}} ($2);
+$0

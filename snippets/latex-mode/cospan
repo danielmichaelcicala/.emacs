@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cospan
+# key: cospan
+# --
+\csp{$1}{$2}{$3}$0

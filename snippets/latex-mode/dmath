@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: dmath
+# key: dmath
+# --
+\\[
+    $1
+\\]
+$0

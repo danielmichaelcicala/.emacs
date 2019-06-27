@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name:diagram 
+# key: diagram
+# --
+
+\begin{center}
+\begin{tikzpicture}
+  $1
+\end{tikzpicture}
+\end{center}

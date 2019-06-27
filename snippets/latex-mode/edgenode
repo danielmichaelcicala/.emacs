@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: edgenode
+# key: edgenode
+# --
+($1) edge[$3] node[$4]{$5} ($2) $0

@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: adjoint
+# key: adjoint
+# --
+%
+\[
+\begin{tikzpicture}
+  \node (1) at (0,0) {\\( $1 \\)};
+  \node (2) at (2,0) {\\( $2 \\)};
+  \node (3) at (1,0) {\scriptsize{ \\( \perp \\) }};
+  \draw [->] (2.160) to node [above] {\scriptsize{ \\( $3 \\) }} (1.20);
+  \draw [->] (1.-20) to node [below] {\scriptsize{ \\( $4 \\) } } (2.-160);
+\end{tikzpicture}
+\]
+%
+$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: edge
+# key: edge
+# --
+($1) edge[$3] ($2) $0

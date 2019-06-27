@@ -1,0 +1,6 @@
+# key: org
+# name: org-mode-header
+# --
+
+#+TITLE:
+#+STARTUP: indent align inlineimages nologdone
