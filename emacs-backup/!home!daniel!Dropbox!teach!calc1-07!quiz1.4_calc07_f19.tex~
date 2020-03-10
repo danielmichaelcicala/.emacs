@@ -1,0 +1,53 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+
+\begin{document}
+
+% right header material -----------
+
+\begin{flushright}
+  \textbf{quiz 4} \linebreak % quiz, or exercises
+  {math1117-07} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{Mon, 16 Sept} % date 
+\end{flushright}
+
+% left header material -------------
+
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[10 points]
+  Simplify, that is find an algebraic expression, for $ \sin
+  ( \arccos ( \frac{x}{2} ) )$.
+\end{q}
+
+
+% end document------------------
+
+\end{document}

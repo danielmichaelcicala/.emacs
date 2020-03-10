@@ -1,0 +1,67 @@
+#+TITLE: NATHANIEL
+#+STARTUP: indent align inlineimages nologdone
+
+
+* BACKGROUND
+
+** calc 1,2,3
+** diff eq & partial
+** prob stat
+** linear algebra
+** some number theory
+** (taking concurrently) modern algebra & numerical analysis
+
+* TEXTS
+
+** math finance
+*** Financial Calculus: An Introduction to Derivative Pricing, Martin Baxter and Andrew Rennie
+**** best for general math finance intro
+**** good writing
+*** an introduction to mathematics of finance by stephen garrett (deterministic approach)
+**** best for SOA Exam 2/FM
+**** syllabus
+***** theory of interest (chatpers 1-4)
+***** loan repayment schedules (chapter 5)
+***** investment apprasial (chater 6)
+***** valuation of securities (ch 7)
+***** capital gains tax (ch 8)
+***** term structures (ch 9)
+***** derivatives (ch 10, 11)
+***** intro to stocastic interest rate models (ch 12)
+*** concepts and practice of mathematical finance by mark joshi* (oft cited)
+**** best for quant job
+*** Mathematics for Finance: An Introduction to Financial Engineering by Capinski and Zastawniak
+*** BAXTER/RENNIE BETTER IN CLASS intro to mathematical finance and applications by arlie petters (undergrad book)
+**** best for general intro to math finance
+**** undergrad audience
+**** prereq's: multivariable calc, linear alg, probability, (no financial background needed)
+**** Suggested syllabus
+***** securities markets
+***** time value of money
+***** markowitz portfolio theory, capital market theory, portfolio risk measures
+***** binomial security pricing
+***** ito's formula & geometric brownian motion
+***** forwards, futures, and options
+***** call option pricing
+*** TOO HARD methods of mathematical finance by loannas and karatzas
+**** needs measure theory style probability
+**** first chapter has brownian motion
+*** NOT ENOUGH FINANCE elementary probability theory w stochastic processes and intro to math finance by Koi Chung
+**** math topics: 
+prob, counting, random variables (conditioning, mean,
+variance, poisson & normal distros), random walks, markov
+chains, martingales
+**** finance topics: 
+mean-variance pricing models, option pricings, 
+** general finance
+*** options, futures, and other derivatives by john hull (standard text)
+** option pricing and stochastic calculus
+*** Arbitrage Theory in Continuous Time, Tomas Björk
+*** Stochastic Calculus for Finance I: The Binomial Asset Pricing Model, Steven Shreve
+*** Stochastic Calculus for Finance II: Continuous-Time Models, Steven Shreve
+*** Martingale Methods in Financial Modelling, Marek Musiela and Marek Rutkowski
+*** Mathematical Methods for Financial Markets, Monique Jeanblanc, Marc Yor, and Marc Chesney
+*** Financial Modelling With Jump Processes, Rama Cont and Peter Tankov
+*** Introduction to Stochastic Calculus Applied to Finance by Lamberton and Lapeyre
+** quantitative risk management
+*** quantitative risk management: concepts, techniques, and tools by alexander mcneil

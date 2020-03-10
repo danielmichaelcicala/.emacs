@@ -1,0 +1,65 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 1} \linebreak % quiz, or exercises
+  {math2228-04} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{4 september 2019} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% question 1 -------------------------
+\begin{q}[10 points]
+
+  The U.S.\ Census Bureau collects a large amount of
+  information concerning higher education. For example, the
+  bureau provides a table that includes the following
+  variables: state, number of students from the state who
+  attend (any) college, number of students who attend college in
+  their home state.
+  \begin{enumerate}
+  \item What are the cases for this set of data?
+  \item Is there a label variable? If so, which is it?
+  \item Identify each variable as categorical or
+    quantitative.
+  \item Consider a new variable computed for each state as
+    follows: the number of students who attend college in
+    their home state divided by the total number of students
+    from the state who attend (any) college.  Explain how
+    you would use this variable to explain something about
+    the states.
+  \end{enumerate}
+  
+\end{q}
+
+
+% end document------------------
+\end{document}

@@ -1,0 +1,71 @@
+\documentclass{amsart}
+\usepackage[a4paper,top=3cm,bottom=3cm,inner=3cm,outer=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\title{Biographical Sketch---Daniel Cicala}
+\begin{document}
+\maketitle
+\section*{Professional Preperation:}
+
+\begin{center}
+  \begin{tabular}{llll}
+    New Jersey Institute of Technology
+      & Newark, NJ
+      & Mathematics
+      & B.Sc.~2002 \\
+    University of Ottawa
+      & Ottawa, Ontario
+      & Mathematics
+      & M.Sc.~2014 \\
+    University of California, Riverside
+      & Riverside, CA
+      & Mathematics
+      & Ph.D.~2019 \\
+  \end{tabular}
+\end{center}
+
+\section*{Appointments:}
+
+\begin{center}
+  \begin{tabular}{lll}
+    2019--current
+    & Lecturer
+    & University of New Haven \\
+    2016--2019
+    & Instructor
+    & University of California, Riverside \\
+    2017--2019
+    & Instructor
+    & Riverside City College \\    
+  \end{tabular}
+\end{center}
+
+\section*{Publications:}
+
+\begin{enumerate}
+\item Categorifying the ZX-calculus.  \emph{Proceedings 14th
+    International Conference on Quantum Physics and Logic},
+  294--314, Electron. Proc. Theor. Comput. Sci. (EPTCS),
+  266, EPTCS, 2018.
+\item (with Kenny Courser) Spans of cospans in a
+  topos. \emph{Theory Appl. Categ.}, Vol. 33, No. 1, pp
+  1-22. 2018
+\item Spans of cospans.  \emph{Theory Appl. Categ.},
+  Vol. 33, 2018, No. 6, pp 131-147.
+\end{enumerate}
+
+\section*{Synergistic Activities:}
+
+\begin{enumerate}
+\item Currently on a committee comprising mathematicians and
+  biologists to design two bio-statistics classes; one for
+  biology undergraduates and another for graduates.
+\item Currently designing a Mathematical Finance class for
+  math majors.
+\item Organized the ACT2019 School. The structure of the
+  School was similar to the version proposed here.
+\end{enumerate}
+
+\end{document}

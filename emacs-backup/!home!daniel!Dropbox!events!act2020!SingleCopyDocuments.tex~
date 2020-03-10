@@ -1,0 +1,15 @@
+\documentclass{amsart}
+\usepackage[a4paper,top=3cm,bottom=3cm,inner=3cm,outer=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\title{Single Copy Documents}
+\begin{document}
+\maketitle
+
+N/A
+
+\end{document}
+
+
+

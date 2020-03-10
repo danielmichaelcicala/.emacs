@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=0.66]
+  \node () at (0,6) {{\Huge TYPES}};
+  \node () at (0,0) {{\Huge TYPES}};
+  \node (up-lleft) at (-2.5,5) {}; % connected comps
+  \node (down-lleft) at (-2.5,1) {}; % connected comps
+  \node (up-left) at (-1,5) {}; %discrete
+  \node (down-left) at (-1,1) {}; %discrete
+  \node (up-mid) at (1,5) {}; % forget
+  \node (down-mid) at (1,1) {}; % forget
+  \node (up-right) at (2.5,5) {};  % codiscrete
+  \node (down-right) at (2.5,1) {}; % codiscrete
+  \node () at (-1.8,3) {$ \dashv $};
+  \node () at (0,3) {$ \dashv $};
+  \node () at (1.8,3) {$ \dashv $};
+  \path[->]
+  (down-lleft) edge
+    node[sloped, anchor=center, above]{$ \infty $-groupoid}
+    (up-lleft)
+  (down-left) edge
+    node[sloped, anchor=center, above]{discrete}
+    (up-left)
+  (up-mid) edge
+    node[sloped, anchor=center, above]{forget}
+    (down-mid)
+  (down-right) edge
+    node[sloped, anchor=center,above]{codiscrete}
+    (up-right);
+\end{tikzpicture}

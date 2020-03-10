@@ -1,0 +1,20 @@
+\[\begin{tikzpicture}
+  \node[rectangle,draw] (1) at (0,3) {home page};
+  \node[rectangle,draw] (2) at (-2,2) {page a};
+  \node[rectangle,draw] (3) at (2,2) {page b};
+  \node[rectangle,draw] (4) at (0,1) {page c};
+  \node[rectangle,draw] (5) at (0,0) {page d};
+  \node (a) at (-3,0) {$  $};
+  \node (b) at (-3,3) {$  $};
+  %
+  \draw [cd]
+  (1) edge[] (2)
+  (1) edge[] (3)
+  (2) edge[] (4)
+  (3) edge[] (4)
+  (4) edge[] (5)
+  (2) edge[] (3)
+  (4) edge[] (1)
+  (b) edge[] (1);
+  \draw (5) -- (-3,0) -- (-3,3) -- (-2,3);
+\end{tikzpicture}\]

@@ -1,0 +1,70 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 5} \linebreak % quiz, or exercises
+  {math2228} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{Fri, 20 Sep} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[10 points]
+
+  Barium-137mn is a radioactive form of the element barium
+  that decays very rapidly. It is easy and safe to use for
+  lab experiments in schools and colleges. In a typical
+  experiment, the radioactivity of a sample of barium-137m
+  is measured for one minutes. It is then measured for three
+  additional minutes. So data are recorded at one, three,
+  five, and seven minutes after the start of the first
+  counting period. The measurement units are counts. Here
+  are the data for one of these experiments:
+  \begin{tabular}{l|cccc}
+    \hline
+    Time & 1 & 3 & 5 & 7 \\
+    Count & 578 & 317 & 203 & 118 \\
+    \hline
+  \end{tabular}
+  \begin{enumerate}
+  \item Make a scatterplot of the data. Give reasons for the
+    choice of which variables to use on the $ x $ and $ y $
+    axes.
+  \item Describe the overall pattern in the scatterplot and
+    any striking deviations from the pattern.
+  \item Describe the form, direction, and strength of the relationship.
+  \end{enumerate}  
+  
+\end{q}
+
+
+% end document------------------
+\end{document}

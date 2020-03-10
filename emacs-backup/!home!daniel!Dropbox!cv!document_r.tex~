@@ -1,0 +1,57 @@
+\documentclass{amsart}          
+
+% PACKAGES ~~~~~~~~~~~~~~~~~~~~
+
+\usepackage{amsfonts}
+\usepackage{amssymb}  
+\usepackage{amsthm} 
+\usepackage{amsmath} 
+\usepackage{caption}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{etoolbox}
+\usepackage{stmaryrd} 
+
+
+\begin{document}
+
+\noindent {\LARGE \textsc{References}}
+
+\noindent \rule{12.5cm}{0.4pt} 
+
+\noindent Daniel Cicala, UC Riverside
+
+\vspace{4ex}
+
+\noindent
+\textbf{John Baez} \\
+Univsersity of California, Riverside \\
+Professor of Mathematics \\
+(e) baez@math.ucr.edu \\
+
+\vspace{4ex}
+
+\noindent
+\textbf{Michael Shulman} \\
+Univsersity of San Diego \\
+Assistant Professor of Mathematics \\
+(e) shulman@sandiego.edu \\
+
+\vspace{4ex}
+
+\noindent
+\textbf{David Weisbart} \\
+Univsersity of California, Riverside \\
+Assistant Professor of Mathematics \\
+(e) dweisbart@gmail.com \\
+
+\vspace{4ex}
+
+\noindent
+\textbf{Rick Blute} \\
+University of Ottawa \\
+Professor of Mathematics \\
+(e) rblute@uottawa.ca \\
+
+\end{document}

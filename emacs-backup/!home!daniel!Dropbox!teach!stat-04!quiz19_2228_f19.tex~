@@ -1,0 +1,59 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 19} \linebreak % quiz, or exercises
+  {math2228.04} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{w 04 dec} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[10 points]
+  The one-sample $t$ statistics for testing $$H_o\colon
+  \mu=8 \\ H_a \colon \mu > 8$$ from a sample of $n=22$
+  observations has the value $t=2.24$.
+  \begin{enumerate}
+  \item What are the degress of freedom from the statistic?
+  \item Give the two critical values $t^\ast$ from the
+    $t$-distribution table that fall on either side of $t$.
+  \item Between what two values does the $P$-value of the
+    test fall?
+  \item Is the value $t=2.24$ significant at the 5\% level?
+    At the 1\% level?
+  \end{enumerate}
+
+  
+\end{q}
+
+
+% end document------------------
+\end{document}

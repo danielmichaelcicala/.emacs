@@ -1,0 +1,126 @@
+\input{assets/preamble_lecture.tex}
+
+\begin{document}
+
+\noindent
+\textbf{Lecture 08---Intro to Derivatives}
+
+\section{Introduction}
+\label{sec:introduction}
+
+In the real world, functions often describe a quantity that changes in time.  For example
+\begin{itemize}
+\item position of a planet
+\item population of a species
+\item economic indicators
+\item revenues for a business
+\item efficiency of an engine
+\end{itemize}
+
+When dealing with functions that describe such real world scenarios, an important question to ask is how the function changes in time. For example
+\begin{itemize}
+\item How fast is the planet moving and in which direction
+\item Is the population of a species increasing or descreasing and how fast
+\item Is the GDP growing or shrinking
+\item Are revenues inceasing or decreasing?
+\item Is the engine becoming more efficient or less?
+\end{itemize}
+
+The mathematical tool used to answer these questions is the derivative.  In this section, we introduce the idea of the derivative and how to define it for any given function.
+
+\section{Derivatives in Pictures}
+\label{sec:derivatives-pictures}
+
+\begin{notes}
+  
+\item[Recall limits] 
+  In the beginning of the limits section, we said that the main reason to define limits is so that we can define the tangent line to a function.  The slope of the tangent line is way that we measure how a function is changing at its point of contact, hence the derivative.  Recall how it works.
+
+  \textbf{see Desmos 08-01}
+  
+\item[Problem solved]
+  To define the tangent line to $f$ at $p$...
+  \begin{itemize}
+  \item Start w a secant line through points $p=(x_p,f(x_p))$ and
+    $q=(x,f(x))$
+  \item Let $q$ approach $p$ along the function: two points define a line
+  \item When $q = p$, we only have one point, so can't define a line: BAD
+  \item Instead, observe the changing slope defines a function that
+    inputs the $x$-value of $q$ and outputs the slope of the tangent
+    line $$\mathop{slope}(x)= f(x)-f(x_p)/x-x_p$$ 
+  \item The problem is that $\mathop{slope}(x)$ is undefined at
+    $x=x_p$ so we invented limits because we \textbf{can} find
+    $\lim\limits_{x \to x_p} \mathop{slope}(x)$
+  \end{itemize}
+  
+\item[First def.\ of derivative]
+  Let $f$ be a function. The derivative of $f$ at the point $x=a$ is $$f'(a)=\lim\limits_{x \to a} \dfrac{f(x)-f(a)}{x-a}$$
+  
+\item[Interpretation] This gives the slope of the tangent line to $f$ at $x=a$. \textbf{Draw graph w tangent line}. If we think of this function as describing the distance of a planet from the sun changing in time, the slope of the tangent line shows how that distance is changing at one moment in time.  
+  
+  \begin{ws}
+    Find the derivative for $f(x)=3/x$ at $x=2$. \\
+    Use the derivative to find the equation of the tangent line.
+  \end{ws}
+
+  \begin{ws}
+    Given the graph of $f(x)=3/x$ draw the tangent line you just found.
+  \end{ws}
+
+\item[Another persepctive]
+  \textbf{Desmos 08-01 triangle}
+  The distance $x-a$ gives the length of the bottom of the triangle. It can be easier to give that distance a new name $h = x-a$. Then, instead of taking the limit $x \to a$, we take the limit $h \to 0$
+  
+\item[Second def./ of derivative]
+  Let $f$ be a function. The derivative of $f$ and $x=a$ is $$f'(a)=\lim\limits_{h \to 0} \dfrac{f(a+h)-f(a)}{h}$$.
+  
+\item[Why second def?]
+  The denominator is simpler: $h$ instead of $x-a$. Also, this is more easily generalizable to a more abstract situation (that we'll see next class). However, taking these limits requires some prep work.
+  
+\item[Example] Simplify
+  \begin{itemize}
+  \item $\dfrac{f(2+h)-f(2)}{h}$ for $f(x)=\dfrac{1/3x^2}$
+  \item $\dfrac{f(1+h)-f(1)}{h}$ for $f(x)=\sqrt{2-x}$
+  \end{itemize}
+
+  \begin{ws}
+    Using the second definition, find the derivative for $f(x)=3/x$ at
+    $x=2$.
+  \end{ws}
+
+  \begin{ws}
+    Use either definition to find the derivative for $f(x)=x^2$ at $x=1$
+  \end{ws}
+
+\item[Not differentiable] \hfill
+  
+  \begin{ws}
+    Do all functions always have a derivative at any point? If not,
+    what can go wrong.
+  \end{ws}
+
+  Find the derivative to $f(x)=|x|$ at $x=0$.
+  
+\item[Differentiable] For a function $f$ and a point $x=a$, if $f'(a)$ exists, we say the function is \emph{differentiable at $a$}.  In a way, if $f$ is differentiable at $a$, then that means there are no sharp corners to the function at $a$, and if $f$ is not, then there is a sharp corner at $a$.  
+
+  \begin{ws}
+    Find the derivative to $f(x)=2/\sqrt{x}$ at $x=4$. 
+  \end{ws}
+
+  \begin{ws}
+    What is the tangent line to $f(x)=x^2$ at $x=-2$?
+  \end{ws}
+
+  
+
+
+
+  
+  
+\end{notes}
+
+
+
+
+
+\end{document}

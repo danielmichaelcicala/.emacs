@@ -1,0 +1,241 @@
+% -------- begin description ---------
+%
+% This document contains the instructor's addenda to the
+% standard department syllabus. Provide any additional
+% information such as - Additional resources or supplemental
+% texts; - Grading policies; - Academic integrity policies;
+% - Late assignments and absences;
+%
+% i.e., there is no need to provide all of the standard
+% components that are in the standard department syllabus
+% for the same course.
+%
+% -------- end description -----------
+
+\documentclass{assets/CAS_syllabus}
+\begin{document}
+
+% Uncomment to include part 1 of the syllabus. Fill in
+% XXXX for the proper course.
+% -----------------------------------------
+% \includepdf[pages=-]{assets/mathXXXX.pdf}
+
+% Output the header for the course syllabus document:
+\Heading
+
+% ===========================================
+% INFORMATION TO FILL IN FOR SYLLABUS
+% PART 2 HEADER
+% ===========================================
+
+% Do not introduce any blank lines betweeen these brackets.
+\Coursehead[
+% The following defines the data fields used in the document:
+%
+% INSTRUCTOR INFORMATION:
+instructor      = {Daniel Cicala},
+phone           = {},
+email           = {dcicala@newhaven.edu},
+webpages        = {https://danielmichaelcicala.github.io},
+%
+% COURSE TEXT AND SYLLABUS:
+course          = {MATH \tofill{XXXX}},
+coursesection   = {-\,\tofill{XX}}, % We use the - style to denote course sections.
+coursetext      = {\tofill{TEXT}, by \tofill{AUTHORS}.},
+coursecrosslist = {},
+coursename      = {\tofill{CLASS NAME}},
+credits         = {4},
+%
+% COURSE TIME AND LOCATION:
+revision        = {},
+semester        = {\tofill{E.G. FALL 2019}},
+office          = {Maxcy \tofill{XXXX}},
+meetingtimes    = {\tofill{DAYS+TIME}},
+classroom       = {\tofill{ROOM}},
+officehours     = {\tofill{HOUR1} // \tofill{HOUR2} // \tofill{HOUR3}},
+addanddrop           = {\tofill{DAY, DATE}},
+%semesterclasses      = {Spring Semester 2016},
+startsemesterclasses = {\tofill{DAY, DATE}},
+endsemesterclasses   = {\tofill{DAY, DATE}},
+lastdropdate         = {\tofill{DAY, DATE}},
+%semesterholidays     = {Memorial Day Monday, May 29},
+semesterfinalexam    = {\tofill{DAY, DATE, TIME}}
+]
+
+\syllabusfontn
+\Title{$\S$\,II: Instructors Addendum}
+\SubTitle{For \Course\Coursesection \Coursename}
+\vspace*{0.8em}
+
+% ===========================================
+% DISCLAIMER THAT I CAN AMEND SYLLABUS
+% ===========================================
+
+\noindent \textbf{Disclaimer:}
+I reserve the right to make changes to this syllabus. All
+changes will be announced in a timely manner through email
+or classroom announcements.
+\\
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Required Textbook}
+\Coursetext.
+  
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Topic{Specific Assessments Requirements for \Course\Coursesection}
+Each student is assessed based on a computed point score from 0 to 100. 
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{In-class structure}
+% Describe
+% * class workflow e.g. lecture vs classwork?
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Homework}
+% Describe
+% * homework and where to find it
+% * how do they hand it in?
+% * grading procedures
+% * contribution of each to total grade
+% * I like: grade for completion only
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Quizzes and group-work}
+% Describe
+% * group work, quizzes or projects
+% * hand in single paper per group or individually
+% * grading procedures
+% * contribution of each to total grade
+% * I like: base quizzes on homework, graded in lieu
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Exams}
+% Describe
+% * how many exams
+% * contribution of exams to total grade
+% * generic rules: closed book, no calculator, cheating, etc
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Scoring and Course Grades}
+The letter grade is based on the student's total point score
+for the semester.  The class letter grade is assigned based
+on
+
+% table assigning point grade to letter grade
+\begin{center}
+	
+\syllabusfonts
+\renewcommand{\arraystretch}{1.20}
+\renewcommand{\colorfirst}{paleblue1}
+\rowcolors{2}{\colorfirst}{white}
+\begin{center}
+  \begin{tabular}{rcr|l}
+    \multicolumn{3}{c}{\textbf{Points}} & \textbf{Grade} \\
+    \hline
+                                     & & &  \\[-0.8em]
+    $97.5$ &-- &  $> 100.0$ & \hspace*{0.8em} \ec A\,+ \\
+    $92.5$ &-- &  $97.5$ & \hspace*{0.8em} \ec A \\
+    $90.0$ &-- &  $92.5$ & \hspace*{0.8em} \ec A\;-- \\
+    $87.5$ &-- &  $90.0$ & \hspace*{0.8em} \ec B\,+ \\
+    $82.5$ &-- &  $87.5$ & \hspace*{0.8em} \ec B \\
+    $80.0$ &-- &  $82.5$ & \hspace*{0.8em} \ec B\;-- 
+  \end{tabular} \hspace*{1.8em}
+  \rowcolors{2}{\colorfirst}{white}
+  \begin{tabular}{rcr|l}
+    \multicolumn{3}{c}{\textbf{Points}} & \textbf{Grade} \\
+    \hline
+                                     & & &  \\[-0.8em]
+    $77.5$ &-- &  $80.0$ & \hspace*{0.8em} \ec C\,+ \\
+    $72.5$ &-- &  $77.5$ & \hspace*{0.8em} \ec C \\
+    $70.0$ &-- &  $72.5$ & \hspace*{0.8em} \ec C\;-- \\
+    $67.5$ &-- &  $70.0$ & \hspace*{0.8em} \ec D\,+ \\
+    $62.5$ &-- &  $67.5$ & \hspace*{0.8em} \ec D \\
+    $60.0$ &-- &  $62.5$ & \hspace*{0.8em} \ec D- \\
+    $0$ &-- & $60$ & \hspace*{0.8em} \ec F
+  \end{tabular}
+  
+\end{center}
+\syllabusfontn
+	
+\end{center}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Grade Calculation}
+
+The total grade will be calculated using the formula
+%  Give the formula to compute the total grade. Ensure that
+%  the final is worth .3
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Further Considerations and Rules}
+\begin{compactitem}
+\item
+  \textit{Email correspondence}: When sending me an email,
+  be sure to include your full name and the course-section
+  you attend.
+\item
+  \textit{Late Papers}: Any material handed in late without
+  having obtained prior approval or without having a valid
+  university excused absence (e.g., a signed medical excuse)
+  will not be accepted.
+\item
+  \textit{Scheduling conflicts}: It is the student's
+  responsibility to contact the instructor concerning any
+  scheduling conflicts which may result in late papers, or
+  other scheduling conflicts, e.g., an absence for an exam.
+\end{compactitem}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Course Outline Schedule}
+
+\Semester\ classes are from \Startsemesterclasses\ to
+\Endsemesterclasses.  The last day to drop classes without
+any financial penalty is \Addanddrop, and the last day to
+withdraw from the class, i.e., to request a {\ec W} grade is
+prior to \Lastdropdate.  All requests for a W must be sent
+to the registrar. \\
+
+The final exam is scheduled for \Semesterfinalexam.\\
+
+The following is a tentative schedule. The exam dates are
+also noted on the schedule. These dates are subject to
+change; this includes the exams.
+
+\rowcolors{2}{cyan!15}{white}
+\begin{longtable}[l]{|c|l|l|l|}
+	\hline
+	\endfoot
+	\hline
+	\rowcolor{cyan!30}{Dates} & Reading/HW & Topics & Exams\\ 
+	\endhead
+		
+  {\bf Week 1}  & & & \\
+  {\bf Week 2}  & & & \\
+  {\bf Week 3}  & & & \\
+  {\bf Week 4}  & & & \\
+  {\bf Week 5}  & & & \\
+  {\bf Week 6}  & & & \\
+  {\bf Week 7}  & & & \\
+  {\bf Week 8}  & & & \\
+  {\bf Week 9}  & & & \\
+  {\bf Week 10} & & & \\
+  {\bf Week 11} & & & \\
+  {\bf Week 12} & & & \\
+  {\bf Week 13} & & & \\
+  {\bf Week 14} & & & \\
+  \hline
+  {\bf Final Exam} & & & \\
+
+\end{longtable}
+
+%COPIES OF THE SCHEDULE FOR MW AND TR ARE KEPT IN ./lib.........................
+{
+\renewcommand{\syllabusfontstable}{\syllabusfontf}
+\renewcommand{\tableheader}{\tableheaders}
+%\input{schedule.tex}
+}
+
+\LastPage
+
+\end{document}
+

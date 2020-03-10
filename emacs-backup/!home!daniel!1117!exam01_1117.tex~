@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%% PREAMBLE
+
+\documentclass[12pt]{report}
+
+% load packages ----------------
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usepackage[all,2cell]{xy}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% macros ---------------------------
+
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+
+% environments ---------------------
+
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+%%%%%%%%%%%%%%%%%	BEGIN
+%%%%%%%%%%%%%%%%% DOCUMENT
+
+\begin{document}
+\pagestyle{empty}
+
+%%%%%%%%%%%	COVER
+%%%%%%%%%%% PAGE
+
+name: 
+\rule{12cm}{0.4pt} 
+\hfill
+
+\vspace{12ex}
+
+% header -----------------------	
+
+\begin{minipage}{\textwidth} 
+  \centering
+  {\Huge \textbf{exam 01}} \linebreak % exam number
+  {\Large math 1117} \linebreak	% class
+  {\Large 28 feb 2020} % date
+\end{minipage}
+
+\vspace{4ex}
+
+% instructions ------------------
+
+\begin{itemize} 
+\item \textit{each question is worth 4 points}
+\item \textit{justify all answers}
+\item \textit{no notes, phones, calculators, or friends}
+\item \textbf{good luck!}
+\end{itemize}
+
+\vfill
+
+% formulas --------------------
+
+\fbox{
+  \begin{minipage}{\textwidth}
+    \vspace{2ex}
+    \begin{itemize} \setlength\itemsep{4ex}
+    \item 
+    \item 
+    \item 
+    \item 
+    \end{itemize}	
+    \vspace{2ex}
+  \end{minipage}
+}
+\vfill
+
+\pagebreak
+
+%%%%%%%%%%%%%%%% START
+%%%%%%%%%%%%%%%% EXAM
+%%%%%%%%%%%%%%%% HERE		
+
+\pagebreak
+
+%%%%%%%%%%%%%%	SCRATCH
+%%%%%%%%%%%%%% WORK
+%%%%%%%%%%%%%% PAGE
+
+\centering
+-- you may use this page for scratch work --
+\vfill
+
+\pagebreak
+
+\centering
+-- you may use this page for scratch work --
+
+%%%%%%%%%%%%%%	END
+%%%%%%%%%%%%%% DOCUMENT
+
+\end{document}

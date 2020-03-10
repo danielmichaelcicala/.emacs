@@ -1,0 +1,95 @@
+\documentclass[12pt]{amsart}
+\usepackage[a4paper,top=1in,bottom=1in,inner=1in,outer=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\newcommand{\brendan}[1]{\textcolor{red}{#1}}
+\newcommand{\eliana}[1]{\textcolor{green}{#1}}
+\newcommand{\carmen}[1]{\textcolor{cyan}{#1}}
+\newcommand{\paolo}[1]{\textcolor{magenta}{#1}}
+\newcommand{\joe}[1]{\textcolor{yellow}{#1}}
+
+\title{Project Summary}
+\begin{document}
+\maketitle
+% A one page summary comprising statements on the (i)
+% project (ii) intellectual merit (iii) broader impact
+
+\section*{Summary}
+
+This is a proposal to fund the Applied Category Theory
+Adjoint School 2020. Participating in this School are four
+groups, each comprising a leading expert, a TA of the
+expert's choice, and four students who are selected by an
+open application process. Each ground pursues a research
+project in applied category theory designed by the leading
+expert.
+
+The School has two components. The first, for which no
+funding is required, is a sixteen week long online seminar
+on readings, chosen by the experts, that provide background
+needed for the research projects. TA's guide students
+through assigned papers and facilitate discussions. To each
+paper is devoted one lecture and one expository article
+delivered by a chosen pair of students. The reading seminar
+culminates in a week long visit, for which funding is being
+requested, to MIT where all participants conduct their
+research under the direction of the leading expert and TA.
+
+The School is followed by the Applied Category Theory
+Conference which is independent of this proposal.  This
+conference is split into two components: research talks and
+structured conversation around recent developments in the
+field. Leading experts from industry and academia attend the
+conference thus providing an opportunity for them and School
+participants to work and socialize together. Time is
+reserved for students to discuss their work from the School.
+
+\section*{Intellectual Merit}
+
+Four research projects are pursued at this
+School. Prof.~Michael Shulman of the University of San Diego
+leads a project on developing a type theory that corresponds
+to the kinds of categories frequently used in applied
+category theory. The success of this research would provide
+a dictionary for programmers to implement categorical
+structure into software. Such software can scientists and
+engineers the benefits of applied category theory without
+the burden of having to learn it.
+
+Valeria de Paiva of Samsung Research America leads the
+second project in studying the abstract structure of a
+`lens'. A lens, initially from database theory, is a pair of
+functions that model the updating of one system using
+information from another. This structure has recently been
+discovered in functional programming, backpropagation in
+machine learning, economic game theory and other locations.
+Dr.~de Paiva's research project will try to better
+understand lenses. 
+
+\daniel{place something fro the next two mentors here.}
+
+\section*{Broader Impacts}
+
+This School aims to increase diversity and inclusion in the
+applied category theory community and to build a stronger
+relationship between academia and industry.
+
+Regarding diversity and inclusion, the School will be
+advertised to potential students through established
+networks in the applied category theory community and also
+though the National Association of Mathematicians, the
+Association for Women in Mathematics, Spectra, the Society
+for the Advancement of Chicanos and Native Americans in the
+Sciences.  
+
+A strong relationship between industry and academia exists
+because of a consensus on the importance of this
+relationship to the success of applied category theory.
+Category theory informs work at various US companies and
+government agencies. By selecting representatives from
+industry and academia as our project leads and students, the
+relationship will be further strengthened. 
+
+\end{document}

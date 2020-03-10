@@ -1,0 +1,58 @@
+\documentclass{amsart}
+\usepackage[a4paper,top=3cm,bottom=3cm,inner=3cm,outer=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\title{Biographical Sketch---MIT}
+\begin{document}
+\maketitle
+
+\section*{Professional Preperation:}
+
+\begin{center}
+  \begin{tabular}{llll}
+    {grad school}
+      & {city}
+      & {field}
+      & {degree and year}\\
+    {undergrad school}
+      & {city}
+      & {field}
+      & {degree and year}\\
+  \end{tabular}
+\end{center}
+
+\section*{Appointments:}
+
+\begin{center}
+  \begin{tabular}{lll}
+    {year}
+    & {position}
+    & {location} \\
+    {year}
+    & {position}
+    & {location} \\
+    {year}
+    & {position}
+    & {location} \\
+    {year}
+    & {position}
+    & {location} \\
+  \end{tabular}
+\end{center}
+
+\section*{Publications:}
+
+\begin{enumerate}
+\item {up to 10 publications most relevant to proposal}
+\end{enumerate}
+
+\section*{Synergistic Activities:}
+
+\begin{enumerate}
+\item {brief description of at most 5 other professioal activities
+    related to education and scholarship.}
+\end{enumerate}
+
+\end{document}

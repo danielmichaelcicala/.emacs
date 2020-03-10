@@ -1,0 +1,89 @@
+\input{assets/preamble_exercises.tex}
+
+\begin{document}
+
+\noindent
+\textbf{Exercises 04: Solutions}
+
+\begin{q}[Ex.~2.30, p45]
+  Find the price of a bond with face value \$100 and \$5 annual coupons that matures in four years, given that the continuous compounding rate is 8\%. (Note: the textbook gives a part b, but you can ignore it).
+\end{q}
+
+The price of this bond is found by discounting each payment. In particular, there are \$5 payments to discount by 1, 2, 3, and 4 years plus a \$100 payment to discount 4 years. This gives the value
+\[
+  V(0)= 5e^{-1(.08)} + 5e^{-2(.08)} + 5e^{-3(.08)} + 5e^{-4(.08)} + 100e^{-4(.08)}
+  = 89.06.
+\]
+
+
+\begin{q}[Ex.~2.31, p46]
+  Graph the price of the bond in the previous exercise as a function of the interest rate $r$.  What is the value of this function at $r=0$? The limit as $r \to \infty$? \textit{(You can use a computer graphing tool such as desmos.com)}
+\end{q}
+
+The value of the bond as a function $V(0)(r)$ of $r$ is given by
+\[
+  V(0)(r) = 5e^{-1r} + 5e^{-2r} + 5e^{-3r} + 105e^{-4r} 
+\]
+which has graph
+
+\begin{center}
+\includegraphics[scale=0.2]{graph01.png}
+\end{center}
+
+
+In particular, we have the value at $r=0$ is $V(0)(0)=120$ and as $\lim\limits_{r \to \infty} V(0)(r) = 0$.
+
+
+\begin{q}[Ex.~2.32, p46]
+  Recall the coupon bond from Examples 2.24 and 2.25 in the text.  This coupon bond has face value $F=100$ dollars maturing in $T=5$ years with coupons of $C=10$ dollars paid annually and the last coupon paid at maturity. Assuming continuous compounding at $r=0.12$.  Sketch a graph of the price of the coupon bond as a function of time.  \textit{(You can use a computer graphing tool such as desmos.com)}
+\end{q}
+
+The price (which is distinct from value) of the coupon bond is a piecewise function
+\[
+  \operatorname{Price}(t) =
+  \begin{cases}
+    10e^{-(1-t)(0.12)}+10e^{-(2-t)(0.12)}+10e^{-(3-t)(0.12)}+10e^{-(4-t)(0.12)}+110e^{-(5-t)(0.12)}, & t \in [0,1] \\
+    10e^{-(2-t)(0.12)}+10e^{-(3-t)(0.12)}+10e^{-(4-t)(0.12)}+110e^{-(5-t)(0.12)}, & t \in [1,2] \\
+    10e^{-(3-t)(0.12)}+10e^{-(4-t)(0.12)}+110e^{-(5-t)(0.12)}, & t \in [2,3] \\
+    10e^{-(4-t)(0.12)}+110e^{-(5-t)(0.12)}, & t \in [3,4] \\
+    110e^{-(5-t)(0.12)}, & t \in [4,5] \\
+  \end{cases}
+\]
+with graph
+
+\begin{center}
+\includegraphics[scale=0.2]{graph02.png}
+\end{center}
+
+
+
+\begin{q}[Ex.~2.33, p46]
+  Recall the coupon bond from Examples 2.24 and 2.25 in the text.  This coupon bond has face value $F=100$ dollars maturing in $T=5$ years with coupons of $C=10$ dollars paid annually and the last coupon paid at maturity. Assuming continuous compounding at $r=0.12$.  At what time does the price first reach 95 dollars?
+\end{q}
+
+The price first reaches 95 dollars in the first year, so we'll solve $\operatorname{Price}(t)=95$ by assuming $t \in [0,1]$:
+\begin{align*}
+  95 &= 10e^{-(1-t)(0.12)}+10e^{-(2-t)(0.12)}+10e^{-(3-t)(0.12)}+10e^{-(4-t)(0.12)}+110e^{-(5-t)(0.12)} \\
+  95 &= e^{0.12t}(10e^{-0.12}+10e^{-2(0.12)}+10e^{-3(0.12)}+10e^{-4(0.12)}+110e^{-5(0.12)}) \\
+  t &= \dfrac{1}{0.12}\log \left( \dfrac{95}{10e^{-0.12}+10e^{-2(0.12)}+10e^{-3(0.12)}+10e^{-4(0.12)}+110e^{-5(0.12)}} \right) \\
+\end{align*}
+which gives $t=0.4257$ years.
+
+\begin{q}[Ex.~2.35, p46]
+  Find the return on a 75 day investment in zero-coupon bonds if $B(0,1)=0.89$
+\end{q}
+
+The continuous compounding rate is $r=0.1165$ as found by solving $e^{-r}=0.89$.  Under this rate, the value of the bond at 75 days is $B(75.365,1) = e^{-0.1165(1-\frac{75}{365})}=0.9116$. The return is then $(0.9116-0.89)/0.89=0.242$.
+ 
+\begin{q}[Ex.~2.36, p46]
+  The return on a bond over six months is 7\%. Find the associated continuous compounding rate. 
+\end{q}
+
+We can find the the rate by solving
+\[
+  \dfrac{e^{-0.5r}-e^{-r}}{e^{-r}} = 0.07
+\]
+for $r=0.1353$.
+
+
+\end{document}

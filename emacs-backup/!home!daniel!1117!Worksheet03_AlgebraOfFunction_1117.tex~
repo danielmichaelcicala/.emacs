@@ -1,0 +1,86 @@
+\input{assets/preamble_worksheet.tex}
+
+\begin{document}
+
+\noindent
+\textbf{Worksheet 03---The Algebra of Functions}
+
+\begin{ws}
+  Given functions $f(x)=3x+3$ and $g(x)=x^2$, what is the function $(f+g)(x)$? \vfill
+\end{ws}
+
+\begin{ws}
+  Given functions $f(x)=\frac{1}{x}+2$ and $g(x)=\frac{1}{x}$, what is
+  the function $(f-g)(x)$? \vfill
+\end{ws}
+
+\begin{ws}
+  Given functions $f(x)=3x+3$ and $g(x)=x^2$, what is the function $(fg)(x)$? \vfill
+\end{ws}
+
+\begin{ws}
+  Given $f(x)= x+1$ and $g(x)= \dfrac{x}{x+1}$, what is the function $fg$? \vfill
+\end{ws}
+
+\begin{ws}
+  Given functions $f(x)=\sin (x+1)$ and $g(x)=x$, what is the
+  function $(f/g)(x)$? \vfill
+\end{ws}
+
+\pagebreak
+
+\begin{ws}
+  Given functions $f(x)=(x-2)(x+2)$ and $g(x)=x-2$, what is the function $f/g$? \vfill
+\end{ws}
+
+\begin{ws}
+  Let $f(x)=3x+4$ and $g(x)=x-2$. Take the nubmer $2$, apply $g$ to it
+  to get $g(2)$, then apply $f$ to that to get $f(g(2))$ \vfill
+\end{ws}
+
+\begin{ws}
+  Let $f(x)=\frac{1}{x^2+1}$. Find $f(2)$ by substituting $2$ for $x$
+  and DO NOT SIMPLIFY.  Now, find $f(x+1)$ by substituting $x+1$ for
+  $x$. \vfill
+\end{ws}
+
+\begin{ws}
+  Let $f(x)=x^2 + x$ and $g(x)=3x-1$. What is the function $f(g(x))$?
+  Find it by substituting $g(x)$ for $x$. \vfill
+\end{ws}
+
+\begin{ws}
+  Is $-2$ in the domain of $f+g$ where $f(x)=x^2$ and $g(x)=\sqrt{x}$? \vfill
+\end{ws}
+
+\begin{ws}
+  What is the domain of $f-g$ where $f(x)=x+1$ and $g(x)=\dfrac{2}{x-1}$? \vfill
+\end{ws}
+
+\pagebreak
+
+\begin{ws}
+  What is the domain of $f-g$ where $f(x)=\sqrt{x-1}$ and $g(x)=\dfrac{x}{4-x^2}$ \vfill
+\end{ws}
+
+\begin{ws}
+  Is $-1$ in the domain of $fg$ where $f(x)=x^2$ and $g(x)=\sqrt{x}$? \vfill
+\end{ws}
+
+\begin{ws}
+  What is the domain of $fg$ where $f(x)=x-1$ and $g(x)=\dfrac{2}{x-1}$? \vfill
+\end{ws}
+
+\begin{ws}
+  What is the function $f/g$ where $f(x)=x-2$ and
+  $g(x)=\sqrt{x}(x-2)$. Is $2$ in the domain of $f/g$? Is $-2$? Is $0$?  \vfill
+\end{ws}
+
+\begin{ws}
+  What is the domain of the function $f/g$ where $f(x)=x+1$ and $g(x)=x-1$? \vfill
+\end{ws}
+
+  
+
+
+\end{document}

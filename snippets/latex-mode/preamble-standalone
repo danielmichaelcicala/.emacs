@@ -1,0 +1,36 @@
+# --
+# key: preamble-standalone
+# name: preamble-standalone
+# --
+% =============================================
+%
+%   This file is for making quick standalone
+%   visual aids to include in notes and
+%   presentations
+%   
+% =============================================
+\documentclass{standalone}          
+
+% PACKAGES ~~~~~~~~~~~~~~~~~~~~
+\usepackage{amsfonts,amssymb,amsthm,amsmath}
+\usepackage[inline]{enumitem}
+  \setlist{itemsep=0em, topsep=0em, parsep=0em}
+  \setlist[enumerate]{label=(\alph*)}
+\usepackage[table]{xcolor}
+\usepackage[]{hyperref}
+\usepackage{graphicx}
+  \graphicspath{ {assets/} }
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes,decorations.markings,decorations.pathreplacing}
+
+% TITLE ~~~~~~~~~~~~~~~~~~~~~~~~
+\author{} % Author name or course name, e.g. MATH2228
+\title{} % Name of visual aid, e.g. Example 1.1 
+
+% DOCUMENT ~~~~~~~~~~~~~~~~~~~~~
+\begin{document}
+% \maketitle % Uncomment to include a title
+
+$1
+
+\end{document}

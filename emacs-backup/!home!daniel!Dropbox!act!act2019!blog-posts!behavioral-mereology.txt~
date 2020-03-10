@@ -1,0 +1,744 @@
+# Behavioral Mereology
+
+*guest post by [Toby Smithe](http://tsmithe.net) and [Bruno Gavranović](https://www.brunogavranovic.com/)*
+
+What do human beings, large corporations, biological cells,
+and gliders from [Conway's Game of
+Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+have in common?
+
+This week in the [Applied Category Theory
+School](http://www.appliedcategorytheory.org/adjoint-school-act-2019/),
+we attempt some first steps towards answering this
+question. We turn our attention to
+[autopoiesis](https://en.wikipedia.org/wiki/Autopoiesis),
+the ill-understood phenomenon of self-perpetuation that
+characterizes life. Our starting point is [Behavioral
+Mereology](https://arxiv.org/abs/1811.00420), a new take on
+the ancient question of parthood: how should we understand
+the relationship between a part and a whole? The authors
+Fong, Myers, and Spivak suggest that we cleave a whole into
+parts by observing -- and grouping together -- regularities
+in its behavior. Parthood entails behavioral constraints,
+which are mediated by the whole. We describe the
+corresponding logic of constraint passing, and the
+associated modalities of *compatibility* and *ensurance*. We
+propose that autopoiesis entails a special kind of parthood
+-- one that ensures its compatibility with its environment
+-- and end with a list of open questions and potential
+research directions.
+
+
+## Introduction
+
+When we look at the world, we notice that it is full of
+objects. Some of these objects are immediate to our senses
+-- such as a coffee cup, a bicycle, or your pet
+rabbit. Other objects we only come to know after reflection,
+or through the use of tools -- such as the atoms of the cup,
+the ecosystem that led to the evolution of the rabbit, or
+the cells of the rabbit's body. These objects are related by
+a kind of compositionality that we call parthood: the parts
+of the bicycle include its gears and pedals; the parts of
+the ecosystem include its population of rabbits; in turn,
+the rabbits are composed of organs and thence cells. Indeed,
+all of these objects are tautologically parts of the whole
+that we call 'the universe'.
+
+*Behavioral Mereology* seeks to formalize the intuitions
+behind these ascriptions of parthood. Its starting point is
+the observation that parthood captures a kind of behavioral
+coherence: "when you pull on a part, the rest comes
+with". That is to say, being a part entails a restriction on
+possible behaviors. For instance, consider a cup together
+with its contents: as long as the two parts can be
+considered together as a whole, the possible movements of
+the contents are constrained by the those of the cup. In
+general, the behavior of a part is not only constrained by
+its corresponding whole, but also by the parts around
+it. For instance, the behavior of the rabbit's brain
+constrains the behavior of its muscles; and because the
+muscles change the relation of the rabbit to its
+environment, and the environment constrains the rabbit's
+senses, we can say transitively that the rabbit's
+muscle-behavior constrains its sense-behavior. Consequently,
+we can think of the whole 'rabbit' system as providing a
+context for the passage of constraints between parts of the
+rabbit, and we will see how this gives rise to a lattice
+structure on the corresponding category of parts.
+
+These ideas sit at the confluence of two traditions of
+applied category theory.  On one side, following
+[Lawvere](http://www.emis.de/journals/TAC/reprints/articles/16/tr16abs.html),
+we can conceptualize the aforementioned constraint passing
+as a formal change of context, via the pullback functor;
+precisely put, constraint passing is modelled by pulling a
+predicate back along the epi representing the parthood
+relation, from which we obtain two new adjoint
+*inter-modalities*, called *compatibility* and
+*ensurance*. On the other side of the confluence lies a
+[behavioral
+approach](https://golem.ph.utexas.edu/category/2018/06/the_behavioral_approach_to_sys.html)
+to the categorical modelling of open and interacting
+systems. Let's see how these two parts of applied category
+theory interact. We'll start with the behavioral approach,
+which supplies the objects for the logic of constraint
+passing.
+
+
+## A behavioral perspective on parts and their interactions
+
+In our everyday lives, we do not need to know the internal
+workings or detailed structure of objects in order to
+distinguish them. Instead, we perform a kind of informal
+'[black-boxing](https://arxiv.org/abs/1812.03601)', and
+declare that "if it looks like a duck and quacks like a
+duck, then it probably is a duck."  This is to say, we
+distinguish objects by *observational equivalence*, calling
+two systems the same when they produce the same observations
+under our measurements; in the field of coalgebra, this idea
+gives rise to the concept of *bisimulation*.
+
+For our purposes, it is this idea that associates parts with
+epimorphisms. To see how this works, let us make some
+definitions. First, we identify a system $S$ with its
+**behavior type** $B_S$; you can think of this as like the
+set of all its possible behaviors. Because we take an
+abstract observational approach to systems, the internal
+structure of a behavior type is of secondary importance --
+but it might help to give a couple of toy examples.
+
+* Consider a bicycle. The bicycle pedals and wheels might be
+  moving with real-valued speeds $p$ and $w$ related by some
+  multiplier $r$ via the gears.  Then we could give a
+  behavior type as $B_{Bicyle} \coloneqq \{(p, w) :
+  \mathbb{R} \times \mathbb{R} | w \geq rp\}$.
+
+* Suppose our rabbit came from an ecosystem of foxes and
+  rabbits. Their population sizes at time $t \in \mathbb{N}$
+  are given by $f_t$ and $r_t$ accordingly. The populations
+  at time $t$ determine those at time $t+1$ according to a
+  recurrence relation, $R_t(f, r)$, that models how the two
+  populations interact (rabbits and foxes are born, foxes
+  kill rabbits, and so on). This gives us a behavior type
+  $B_{Eco} \coloneqq \{(f, r) : \mathbb{N} \to \mathbb{R}
+  \times \mathbb{R} | \forall_t . R_t(f, r)\}$.
+
+We also identify the parts of a system with their behavior
+types: for us, there is nothing more to a system or part
+than its behavior. (We will occasionally refer both to $P$
+and its behavior $B_P$: this distinction is purely for
+intuition and has no formal meaning.)
+
+In this context, we can formalize our earlier assertion that
+"being a part entails a restriction on possible behaviors",
+noting that every behavior of a part $P$ arises from _some_
+behavior of a system $S$. For instance, every behavior of
+the heart of your pet rabbit must come from some behavior of
+the entire rabbit, although two different rabbit-behaviors
+may involve the same heart-behavior (more on this
+'quotienting' later!).
+
+We emphasize that the part $P$ is only a _part_ in the
+context of the larger system $S$: when severed from the
+system $S$, $P$ might behave in ways unrelated to $S$. For
+instance, every behavior of a baby rabbit before birth
+arises from a behavior of its mother; but after it is born,
+it gains independence.
+
+Let's make these ideas precise:
+
+**Definition 1:** The behavior type of a **part** $P$ of a
+system $S$ is a regular epimorphism $\big|_P : B_S
+\twoheadrightarrow B_P$. $B_P$ therefore corresponds to a
+quotient of $B_S$.
+
+The parts of $S$ form a category, its **category of
+parts**. Let $Quot(\mathcal{C})$ be the subcategory of
+quotients in our ambient category $\mathcal{C}$. Then the
+category of parts is its coslice by $B_S$, $B_S /
+Quot(\mathcal{C})$. Explicitly, it has parts as objects and
+as morphisms the commuting triangles in $\mathcal{C}$.
+
+\begin{tikzcd}[ampersand replacement=\&]
+ \& B_S \arrow[ld, "|_P"', two heads] \arrow[rd, "|_Q", two heads] \&  \\
+B_P \arrow[rr, "|_Q"',two heads] \&  \& B_Q
+\end{tikzcd}
+
+(Note that $\mathcal{C}$ really is very 'ambient' for us! We
+have deliberately avoided requiring much structure. You
+could think of it as a topos, or at least as being locally
+Cartesian closed.)
+
+Amongst many others, our toy examples have parts such as
+
+* the set of possible pedal speeds: $B_{Pedal} \coloneqq {p
+  : \mathbb{R} | \exists w . (p, w) \in B_{Bicycle}}$;
+
+* the set of possible rabbit population sizes at time $t$:
+  $B_{Rabbit_t} \coloneqq {x : \mathbb{R} | \exists (f_t,
+  r_t) \in B_{Eco} . f_t = x}$.
+
+Thinking behaviorally, we can consider parts as measurement
+devices by which we make observations.  Every behavior of a
+part $P$ arises from at least one behavior of the whole
+system $S$, but two $S$-behaviors may be indistinguishable
+when we look only at $P$: those $S$-behaviors thus form an
+equivalence class. For example, consider $S$ to be one of
+our rabbits, and $P$ its heart. By observing $P$, we may
+notice that it has a heightened pulse, but this doesn't
+disambiguate between the rabbit being in a state of exertion
+or of anxiety, for instance: those behaviors fall into an
+equivalence class.
+
+
+## The lattice of parts: behavioral compatibility and determination
+
+We may also ask what a $P$-behavior means for other parts of
+$S$: for instance, what having a heightened heartbeat means
+for the legs of the rabbit. For this purpose, Fong, Myers
+and Spivak introduce the formal concept of *compatibility*:
+we say that the rabbit's exertion or fear behaviors, amongst
+others, are compatible with its having a heightened
+heartbeat. Formally, we make the following definition.
+
+**Definition 2:** Suppose $P$ and $Q$ are parts of $S$, and
+that $a : B_P$ and $b : B_Q$ are behaviors of those
+parts. We say that $a$ and $b$ are **compatible** if there
+is a behavior $s : B_S$ that restricts to both $a$ and
+$b$. We write this as
+
+$$\mathfrak{c}(a, b) :\equiv \exists s : S . a = s \big|_P
+\wedge s \big|_Q = b$$
+
+The definition extends in the obvious way to compatibility
+of an $i$-indexed family of behaviors $a_i : B_{P_i}$.
+
+We can easily obtain examples of compatible behaviors by
+restricting behaviors of $S$ to its parts. From our toy
+systems, we find:
+
+* a speed $p$ of the bicycle's pedal is compatible with a speed $w$ of its wheel
+  iff $w \geq rp$: $\mathfrak{c}(p, w) = w \geq rp$;
+
+* two fox and rabbit populations at time $t$ are compatible
+  iff there is a history of the ecosystem achieving those
+  population sizes at $t$.
+
+
+Using compatibility, we can observe that the category of
+parts of $S$ has a lattice structure. Firstly, we write $P
+\geq Q$ if $Q$ is a part of $P$. For any two parts $P$ and
+$Q$, the behavior type of their meet $P \cap Q$ is given by
+
+$$B_{P \cap Q} \cong \frac{B_P + B_Q}{\mathfrak{c}}$$
+
+making the following diagram a pushout:
+
+\begin{tikzcd}[ampersand replacement=\&]
+ \& B_S \arrow[ld, two heads] \arrow[rd, two heads] \&  \\
+B_P \arrow[rd, two heads] \&  \& B_Q \arrow[ld, two heads] \\
+ \& B_{P \cap Q} \ar[uu, phantom, very near start, "\rotatebox{45}{$\urcorner$}"]\&
+\end{tikzcd}
+
+Assuming that the ambient category $\mathcal{C}$ admits it
+(as would be the case in any topos or, more generally, any
+regular category), the behavior type of the join of $P$ and
+$Q$ is given by the image factorization of the map $B_S \to
+B_P \times B_Q$:
+
+\begin{tikzcd}[ampersand replacement=\&] \& B_S \arrow[ld,
+ two heads] \arrow[rd, two heads]\ar[d, two heads] \& \\ B_P
+ \& B_{P\cup Q}\ar[l, two heads]\ar[r, two heads]\ar[d,
+ tail] \& B_Q \\ \& B_P\times B_Q\ar[ul, two heads]\ar[ur,
+ two heads] \end{tikzcd}
+
+
+Concretely, we have $$B_{P \cup Q} \cong \{(a, b) : B_P \times B_Q | \mathfrak{c}(a, b)\}.$$
+
+
+If every behavior of $P$ is compatible with every behavior
+of $Q$, then they are disjoint as parts, with empty meet:
+
+$$\forall a : B_P.\, \forall b : B_Q.\, \mathfrak{c}(a, b) \quad\Rightarrow\quad B_{P \cap Q} = \bot$$
+
+Our toy systems supply some simple illustrations:
+
+* the bicycle is just the join of the pedal and wheel:
+  $B_{Bicycle} = B_{Pedal  \cup  Wheel}$;
+
+* the initial population sizes of foxes and rabbits are disjoint as parts:
+  $B_{Fox_0 \cap Rabbit_0} = \bot$.
+
+
+We will see that compatibility has a right adjoint, called
+*ensurance*, corresponding to a relation called
+*determination*. Informally, we can say that whilst the
+rabbit's being still is compatible with its having a rapid
+heartbeat, strenous exertion would ensure it. So the
+$Q$-behavior "strenuous exertion" is said to determine the
+$P$-behavior "rapid heartbeat". Formally, we have:
+
+**Definition 3:** Suppose $P$ and $Q$ are parts of $S$, and
+that $a : B_P$ and $b : B_Q$ are behaviors of those
+parts. We say that $a$ *determines* $b$ if every behavior $s
+: B_S$ of the whole system which restricts to $a$ also
+restricts to $b$. That is,
+
+$\mathfrak{d}(a, b) :\equiv \forall s : S . s \big|_P = a \Rightarrow s \big|_Q = b$.
+
+
+If every behavior of a part $P$ determines a behavior of
+$Q$, then we say that $P$ determines $Q$. Indeed, we can say
+more than this: if $P$ determines $Q$, then $Q$ is a part of
+$P$, $P \geq Q$. Hence, determination recovers the order of
+the parts of a system.
+
+
+## The logic of constraint passing
+
+Usually, we do not have enough information to describe a
+behavior completely.  Instead, we pick out sets of behaviors
+by giving predicates, such as "has a raised pulse". We can
+think of these predicates as expressing constraints on the
+behaviors of parts, and we are interested in how constraints
+are passed between the parts of a system. For instance, how
+does running fast constrain the behaviors of the other parts
+of the rabbit?
+
+There are two principal directions to consider. Suppose we
+want to obtain a constraint on the whole from a constraint
+on a part; for instance, we want to move from a
+heart-constraint "raised pulse" to a body-constraint
+"behaves such that the heart has a raised pulse". There is a
+canonical way to do this: we pull the heart-constraint back
+along the restriction epi witnessing its parthood.
+
+Let's formalize this, noting that all the structure we need
+will exist in any topos. First, constraints are given by
+predicates: characteristic maps into some 'classifying
+object' $\Omega$ of truth values such that those behaviors
+for which the predicate holds are mapped to
+$\mathtt{true}$. In a Boolean topos -- such as Set, the
+category of our examples -- $\Omega \cong 1 + 1$ is just the
+two-element set $\{ \mathtt{true}, \mathtt{false} \}$.
+
+Two predicates $\phi$ (eg., "runs fast") $\psi$ (eg.,
+"runs") may be related by entailment, which we write as
+$\phi \vdash \psi$. This makes the predicates on an object
+$B_P$ into a poset $\text{Pred}(B_P)$, whose objects are
+predicates and whose morphisms represent these
+entailments. If our ambient category is Cartesian closed,
+like Set or any topos, then $\text{Pred}(B_P)$ is
+internalized as the object $\Omega^{B_P}$.
+
+Then, in moving from a part $Q$ to its parent $P \geq Q$,
+given a constraint $\psi : B_Q \to \Omega$, we obtain a
+constraint on $P$-behaviors by restricting $P$-behaviors to
+those that satisfy $\psi$ on $Q$; that is, by pulling $\psi$
+back along the restriction epi $\big|_Q : B_P
+\twoheadrightarrow B_Q$. This pullback effects a change of
+context, and in categorical logic it is also known as *base
+change*, *inverse image*, or *substitution*. It is given by
+precomposing $\psi$ with the restriction map $\big|_Q$, so
+that P-behaviors are substituted for Q-behaviors:
+
+$$\Delta^Q_P\psi \coloneqq \psi \circ \big|_Q $$
+
+We can see how this precomposition corresponds to a pullback
+by noting that maps into $\Omega$ correspond to subobjects:
+if $\mathcal{P}$ is the powerset functor, then we have a
+natural isomorphism $\Omega^{(-)} \cong \mathcal{P}(-)$.
+The pullback square on the right of the following
+commutative diagram witnesses this correspondence; the
+pullback square on the left commutes by definition. By the
+two-pullbacks lemma, the whole diagram is thus a pullback,
+and we observe that the composition $\Delta^Q_P \psi = \psi
+\circ \big|_Q$ does therefore correspond to pulling (the
+monomorphism corresponding to) $\psi$ back along $\big|_Q$:
+
+\begin{tikzcd} P_{\Delta^Q_P \psi} \arrow[r] \arrow[d,
+"(\Delta^Q_P\psi)^{-1}\top"', hook] & Q_\psi \arrow[d,
+"\psi^{-1}\top"', hook] \arrow[r, "!"] & 1 \arrow[d, "\top",
+hook] \\ P \arrow[r, "|_Q", two heads] & Q \arrow[r, "\psi"]
+& \Omega \end{tikzcd}
+
+If $\psi$ is our rabbit's heart-constraint "has a raised
+pulse", then $\Delta^Q_P \psi$ is the rabbit-constraint
+"behaves such that the heart has a raised pulse". What about
+the other direction, from a part $P$ to a subpart $Q \leq
+P$? That is, from a constraint on the rabbit's behavior
+(such as "forages for food"), what constraints can we obtain
+on the behaviors of its heart or legs?
+
+Given a constraint $\phi : B_P \to \Omega$ with $P \geq Q$,
+we have two canonical choices, the left and right adjoints
+of the pullback functor $\Delta^Q_P$:
+
+<img width = "200" src = "https://i.imgur.com/tRMYnIf.png" alt = ""/>
+
+We will see that these adjoints supply weak (on the left)
+and strong (on the right) forms of constraint
+passing. Logically, they correspond to existential and
+universal quantification. This is easiest to see if we make
+a brief detour into basic predicate logic, following [Awodey
+(§9.5)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.211.4754&rep=rep1&type=pdf).
+
+Rather than pulling back along a restriction epi, let us
+consider pulling back along a projection $\pi$ of a product,
+writing $\Delta_\pi$ for the corresponding
+functor. $\Delta_\pi$ takes a predicate $\phi(x)$ in one
+variable to a predicate in that variable alongside a dummy
+variable $\phi(x, y) \simeq \phi(x)\times\top(y)$, such that
+$\phi(x, y)$ is true whenever $\phi(x)$ is true on $x$, for
+any $y$ in the domain. We then observe that we have the
+adjoint triple $\exists_\pi \dashv \Delta_\pi \dashv
+\forall_\pi$ given by the following correspondences, as
+expressed in predicate logic:
+
+$$\frac{\exists y . \psi(x, y) \vdash \phi(x)}{\psi(x, y)
+\vdash \Delta_\pi \phi(x)}$$
+
+and
+
+$$\frac{\Delta_\pi \phi(x) \vdash \psi(x, y)}{\phi(x) \vdash \forall y . \psi(x, y)}$$
+
+The (co)units of this adjoint triple encode the familiar
+introduction and elimination rules for these
+quantifiers. For instance, the unit of $\exists_\pi \dashv
+\Delta_\pi$ encodes $\exists$-introduction: $\psi(x, y)
+\vdash \exists y . \psi(x, y)$. And the counit of
+$\Delta_\pi \dashv \forall_\pi$ encodes
+$\forall$-elimination: $\forall y . \psi(x, y) \vdash
+\psi(x, y)$.
+
+We can now return to our restriction pullback
+$\Delta^Q_P$. In light of the preceding discussion, its
+adjoints $\exists^P_Q \dashv \Delta^Q_P \dashv \forall^P_Q$
+have the unsurprising forms
+
+$$\exists^P_Q \phi(q) \coloneqq \exists p : B_P . \big( (p \big|_Q = q) \wedge \phi(p) \big)$$
+
+and
+
+$$\forall^P_Q \phi(q) \coloneqq \forall p : B_P . \big( (p
+\big|_Q = q) \Rightarrow \phi(p) \big) $$.
+
+Where the parent part is obvious, such as in the case of the
+whole system $S$, then we omit it, writing just $\exists_Q$,
+$\Delta^Q$, and $\forall_Q$.
+
+
+### Compatibility and ensurance
+
+We've seen how the familiar logical operators $\exists$,
+$\Delta$ and $\forall$ model the passage of constraints
+between a part and its parent or child. For example, the
+heightened heartbeat of our rabbit is witnessed by a
+predicate $\psi$ on heart-behaviors. But any heart-behavior
+satisfying $\psi$ may arise from a number of
+rabbit-behaviors $\Delta^Q_P \psi$, such as fear, or
+exertion.  To learn more, we look at other parts of the
+rabbit, such as its legs. How does having a heightened
+heartbeat constrain leg behavior? In general, how does the
+behavior of one part constrain the behavior of another?
+
+It turns out we have already defined all the necessary
+machinery to answer these questions. We show the hierarchy
+of the rabbit and its two parts graphically as follows.
+
+\begin{tikzcd}[ampersand replacement=\&] \& B_S \arrow[ld,
+  "|_P"', two heads] \arrow[rd, "|_Q", two heads]\& \\ B_P
+  \& \& B_Q \end{tikzcd}
+
+These *two* parts of the rabbit induce *two* adjoint triples
+- allowing us to visualize passage of constraints between
+parts.
+
+\begin{tikzcd}[ampersand replacement=\&]
+  \& \Omega^{B_S}
+    \arrow[ld, "\exists^S_P"{name=exists}, bend left, gray]
+    \arrow[ld, "\forall^S_P"'{name=forall}, bend right, gray]
+    \arrow[rd, "\exists^S_Q"{name=exists}, bend left, gray]
+    \arrow[rd, "\forall^S_Q"'{name=forall}, bend right, gray]
+  \& \\
+  \Omega^{B_P}
+    \arrow[ru, "\Delta^P_S" description, ""{name=delta},gray]
+  \& \& \Omega^{B_Q}
+    \arrow[lu, "\Delta^Q_S" description, ""{name=delta}, gray]
+\end{tikzcd}
+
+This allows us to define two canonical *inter-modalities* to
+answer this question, generalizing both the usual modal
+operators of possibility and necessity as well as the
+compatibility and determination relations introduced
+earlier. Accordingly, we call these new operators
+**compatibility** and **ensurance** and denote them by the
+symbols $\Diamond^P_Q$ and $\Box^P_Q$, correspondingly:
+
+<img width = "600" src = "https://imgur.com/gwLjPxA.png" alt = ""/>
+
+These inter-modalities are thus obtained by composing the
+'context-change' functor $\Delta^Q_P$ with its left
+($\exists$) and right ($\forall$) adjoints, giving 'weak'
+and 'strong' constraint-passing. Let's unpack this, starting
+with compatibility.
+
+Given a behavior $q$ of $Q$, we have
+
+$$ \Diamond^P_Q \phi(q) \; = \exists s : B_S . (s \big|_Q =
+q) \wedge \phi(s \big|_P) \; = \exists p : B_P
+. \mathfrak{c}(p, q) \wedge \phi(p).  $$
+
+That is, if $Q$ can be doing $q$ while $P$ is satisfying
+$\phi$, then the Q-behavior $q$ is compatible with $\phi$ on
+$P$: $\Diamond^P_Q \phi(q)$.  $\Diamond^P_Q \phi$ is thus a
+predicate on $Q$ that picks out all the $Q$-behaviors
+compatible with $\phi$ on $P$. Thinking back to our rabbit,
+this is a constraint on leg-behaviors satisfied by just
+those which are compatible with having a heightened
+heartbeat.
+
+Alternatively, ensurance expands as
+
+$$ \Box^P_Q \phi(q) \; = \forall s : B_S . (s \big|_Q = q)
+\Rightarrow \phi(s \big|_P) \; = \forall p : B_P
+. \mathfrak{c}(p, q) \Rightarrow \phi(p).  $$
+
+That is, if $Q$ doing $q$ entails that $P$ *must* satisfy
+$\phi$, then we say that $q$ ensures the constraint $\phi$
+on $P$: $\Box^P_Q \phi(q)$. The predicate $\Box^P_Q \phi$ on
+$Q$ thus picks out all those $Q$-behaviors that ensure
+$\phi$ on $P$. For our rabbit, this means a constraint on
+leg-behaviors satisfied by just those which ensure the
+rabbit's heightened heartbeat. Ensurance is thus a much
+stronger form of constraint-passing than compatibility.
+
+More formally, considering again our rabbit-fox ecosystem
+example, let's suppose that we want to choose an initial fox
+population $f_0$ to ensure the rabbit population $r_t$ stays
+within some bounds $(k_1, k_2)$ after some deadline $d$.  We
+can write this using the constraint $\text{inCheck}(r_t)
+\coloneqq k_1 \:\text{&lt;}\: r_t \:\text{&lt;}\: k_2$:
+
+$$
+\Box^{\cup_{t \geq d} \text{Rabbit}_t}_{\text{Fox_0}} (\forall t \geq d . \text{inCheck}) (f_0)
+$$
+
+
+It is easy to see that these compatibility and ensurance
+*operators* have the compatibility and determination
+*relations* as special cases. Let $\delta_p : B_P \to
+\Omega$ be the 'Dirac' predicate satisfied by $p'$ iff $p =
+p'$. Then for any $p : B_P$ and $q : B_Q$ we have
+
+$$\mathfrak{c}(p, q) = \Diamond^P_Q \delta_p (q) = \Diamond^Q_P \delta_q (p)$$
+
+and
+
+$$\mathfrak{d}(p, q) = \Box^Q_P \delta_q (p)$$.
+
+
+Because they are defined using the left and right adjoints
+of the functor $\Delta^P_Q$, compatibility and ensurance
+inherit a number of useful properties.  For example, if the
+internal logic of our ambient category $\mathcal{C}$
+satisfies the law of excluded middle, then just as the
+adjoints $\exists$ and $\forall$ are De Morgan duals, so are
+compatibility and ensurance: $\neg \Diamond^P_Q \neg =
+\Box^P_Q$. More generally, $\Diamond^P_Q$ and $\Box^P_Q$
+inherit the monotonicity and adjointness of $\exists$ and
+$\forall$.  Monotonicity means that if a constraint $\phi$
+entails a constraint $\psi$, then compatibility with $\phi$
+entails compatibility with $\psi$ and ensuring $\phi$
+entails ensuring $\psi$. And from the adjunctions
+$\exists^P_Q \dashv \Delta^Q_P$ and $\Delta^Q_P \dashv
+\forall^P_Q$, we inherit that $\Diamond^P_Q \dashv
+\Box^Q_P$.
+
+What does this adjunction mean? An adjunction is a natural
+family of isomorphisms between hom-sets, which for us
+represent logical entailment. So $\Diamond^P_Q \dashv
+\Box^Q_P$ means we have $\phi \vdash \Box^Q_P \psi
+\Leftrightarrow \Diamond^P_Q \phi \vdash \psi$. Interpreted
+in our rabbit example, this means that the implication
+"rapid leg movement ensures heightened heartbeat" is the
+same as the implication "if the heart's behavior is
+compatible with the legs running fast, then the heart has a
+raised pulse".
+
+Alternatively, we can look at the unit and counit of the
+adjunction. The unit is a map $\text{id} \to \Box^P_Q
+\Diamond^Q_P$: it witnesses the fact that, whatever the
+rabbit's heartbeat, its having that heart behavior ensures
+that the legs are behaving compatibly. Dually, the counit is
+a map $\Diamond^P_Q \Box^Q_P \to \text{id}$ and we leave its
+rabbit-interpretation to the reader.
+
+Finally, because right adjoints preserve limits, $\Box^P_Q$
+commutes with $\wedge$ and $\forall$, and $\Diamond^P_Q$
+commutes with $\vee$ and $\exists$.
+
+We can use these adjunction properties to simplify the
+'inCheck ensurance' ecosystem constraint introduced
+above. Firstly, we can rewrite it as
+
+$$ \forall t \geq d . \Box^{\cup_{t \geq d}
+\text{Rabbit}_t}_{\text{Fox}_0} \text{inCheck} (r_t).  $$
+
+(This is just the constraint as given above, but with the
+$\forall$ moved outside of the scope of the $\Box$, using
+the commutativity of $\Box$ with limits.)
+
+We then note that $\text{inCheck}(r_t)$ can be spelled out
+as $\Delta^{\text{Rabbit}_t}_{\cup_{t \geq d}
+\text{Rabbit}_t} \text{inCheck}$, and that $\Box^P_Q
+\Delta^Q_{Q'} = \Box^P_{Q'}$, which together mean we can
+simplify the example further as
+
+$$
+\forall t \geq d . \Box^{\text{Rabbit}_t}_{\text{Fox}_0} \text{inCheck} (r_t).
+$$
+
+
+### Possibility and necessity
+
+For the final trick with our rabbit, consider the constraint
+of heightened pulse $\phi$ on its part $P$: the heart. Given
+any such $\phi$, we might be interested in describing the
+two [alethic
+modalities](https://en.wikipedia.org/wiki/Alethic_modality)
+of *possibility* and *necessity* given by the predicates:
+does *any* heart behavior satisfy $\phi$ and do *all* heart
+behaviors satisfy $\phi$?
+
+Those modalities are given by the operators
+$\Diamond_P^{\bot}\Diamond_{\bot}^P$ and
+$\Box_P^{\bot}\Box_{\bot}^P$, respectively, where $\bot$ is
+the system whose behavior type $B_{\bot}$ consists of just a
+single element.
+
+Both cases of *possibility* and *necessity* on a constraint
+$\phi$ of $P$ can be thought of as a map $B_P \rightarrow
+B_P$ that goes through a one-element
+bottleneck. $\Diamond_{\bot}^P$ and $\Box_{\bot}^P$ both
+compress all $P$-behaviors by mapping $P$ to $\mathtt{true}$
+if there is *any* behavior of $B_P$ satisfies $\phi$ or if
+*all* behaviors of $B_P$ satisfy $\phi$, respectively. Thus,
+the modality $\Diamond_P^{\bot}\Diamond_{\bot}^P$ detects
+whether $\phi$ is *possible*, and
+$\Box_P^{\bot}\Box_{\bot}^P$ whether $\phi$ is *necessary*.
+
+
+## Behavior, mereology, and autopoiesis
+
+Behavioral Mereology supplies a first step towards
+formalizing a notion of *autopoiesis*. Informally, a system
+is autopoietic if its behavior enables it to persist within
+its environment. In other words: it behaves to ensure
+compatibility with its environment. Our aim is to unpack
+this conjecture, and to investigate how it relates to extant
+accounts of autopoiesis using category theory.
+
+Consider again our rabbit. It is autopoietic within its
+ecological niche, foraging for food, sheltering from the
+elements, and fleeing from prey: in particular, it responds
+to environmental changes (such as the seasons, or the
+appearance of a fox), and it changes the environment (by
+building a burrow), to improve its chances of
+survival. Similar things can be said of the societies of
+rabbits and foxes. For instance, in our simple example, the
+foxes collectively must symbiotically ensure that there are
+at least some rabbits, in order that they do not starve. We
+can write this behavioral-mereologically as the implication
+
+$$
+r_0 \geq 0 \wedge r \:\text{&lt;}\: k \vdash \Box^F_R \big( f \:\text{&gt;}\: 0 \wedge \Box^R_F (r \:\text{&gt;}\: 0) \big).
+$$
+
+That is, if there is an initial rabbit population, and the
+ecosystem bounds the rabbit population independently of
+time, then the rabbits ensure that there are foxes, and that
+the foxes ensure there are rabbits.
+
+These ideas extend to numerous familiar examples of adaptive
+or living systems, from single cells to corporations and
+political parties. In each case, the distinguishing feature
+seems to be the same: the autopoietic system can anticipate
+and respond to external fluctuations ('perception'), and can
+act in order to bring about sustainable states of affairs
+('action'). This is evocative of the [Good Regulator
+theorem](https://en.wikipedia.org/wiki/Good_regulator) of
+Conant and Ashby: if we consider input-output machines, with
+'good regulation' meaning to minimize surprising outputs,
+then any good regulator of a machine must be in isomorphism
+with said machine.
+
+Considering again our ecosystem---the parts of which include
+rabbits and foxes---we conjecture that an autopoietic part
+$A$ is one which contains an internal model: a subpart that
+sits in isomorphism with the environment $E$. In order to
+ensure compatibility between $A$ and $E$, $A$ must behave to
+maintain this isomorphism, and this entails the
+aforementioned perception and action.  Because $A$ is not
+omniscient, it can only do so approximately, which suggests
+we must leave the Boolean world behind, and frame this
+behavior in terms of approximate Bayesian inference. Likely
+to be important here is the work of Karl Friston on the
+[free energy
+principle](https://en.wikipedia.org/wiki/Free_energy_principle),
+which says that perception, action, and the Good Regulator
+theorem are all consequences of an information-theoretic
+principle of least action. Categorically, it seems we may
+need a probabilistic logic, such as that supplied by
+effectus theory.
+
+There are of course many questions for discussion. To give a few:
+
+* How should we draw the boundary between an autopoietic
+  system and its environment? A Bayesian analysis suggests
+  that the concept of *Markov blanket* will be
+  important. Just as there are innumerable parts in the
+  Boolean logic explored above, we should expect there to be
+  innumerable Markov blankets. Is there a distinguished
+  class?
+
+* Can we quantify the degree of autopoiesis exhibited by a
+  system? In a probabilistic setting, we expect to obtain a
+  notion of stochastic constraint passing, and hence graded
+  compatibility and ensurance.
+
+* Is our informal notion of persistence connected to
+  ergodicity?
+
+* Do coalgebras of a [probability
+  monad](https://golem.ph.utexas.edu/category/2019/03/the_kantorovich_monad.html)
+  supply appropriate behavior types for our stochastic
+  interacting processes?  Can we use the tools of
+  coalgebraic modal logic to formalize the notions of
+  measurement and interaction introduced above? Can we use
+  (approximate) bisimulation to characterize the 'good
+  regulator' isomorphism?
+
+* How should we model societies of agents, which pass
+  behavioral constraints between levels? Is said stochastic
+  constraint passing relevant here?
+
+* Under what conditions does an autopoietic system reproduce
+  itself? Does this require some kind of resource
+  limitation, or competition?
+
+* Autopoietic systems don't appear in the environment
+  already configured as such, but rather undergo a process
+  in which their internal model becomes more compatible with
+  the environment. Can we characterize _the process_ of
+  becoming a good autopoietic system in categorical terms?
+  Can we substantiate the claim that "a good autopoietic
+  system must be a good learner"?
+
+Autopoiesis seems to be a characteristic of those systems
+that we might call living or intelligent. By taking a
+behavioral-mereological approach, by considering the
+interactions between systems and their parts, and the
+constraints that these impose, we hope to pin down
+categorically precisely what this means.

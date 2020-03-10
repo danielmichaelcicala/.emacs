@@ -1,0 +1,13 @@
+The following are helpful commands to use in R.
+
+	* See Lab 1.2 on how to reference a column in a dataset.
+	
+	* mean() : feed this a variable (i.e. column in dataset)
+	to find the mean.
+	* sum() : feed this a list of numbers (for instance, a column in
+	a dataset) to find the sum of those numbers
+	* max(), min() : feed this a list of numbers to find the
+	maximum or minimum in the list
+	* sd() : feed this a variable (i.e. a column in a
+	dataset) to find the standard deviation of those numbers 
+	

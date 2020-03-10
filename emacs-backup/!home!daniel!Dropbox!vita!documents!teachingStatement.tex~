@@ -1,0 +1,177 @@
+\input{assets/preamble_cv.tex}
+\begin{document}
+
+
+\noindent {\LARGE \textsc{On Teaching}}
+
+\noindent \rule{12.5cm}{0.4pt} 
+
+\noindent Daniel Cicala, UC Riverside
+
+\vspace{2em}
+
+My teaching philosophy addresses five axes: personal
+motivation, style, method, learning, and assessment.  My
+approach to teaching, which I outline below, has developed
+over seven years of teaching, three of which I served as the
+instructor of record.
+
+\vspace{2em}
+
+\textbf{Personal motivation.}  There are selfish reasons for
+my choosing to teach: I enjoy it. What drives me to teach,
+however, is my social conscience. Because education is a
+gatekeeper to improving ones social and economic standing,
+it is important to work with vulnerable populations and
+first generation university students. I currently teach at
+the University of California, Riverside which is one of the
+largest American educators of diverse populations with
+regard to race and socio-economics.  I am also an instructor
+on record at Mt.~San Jacinto College and Riverside City
+College.  All three are Hispanic serving institutions.
+Here, I have met many students who are not only the first in
+their family to attend university, but are the first to grow
+up in the United States.  Many such students lack the
+privilege to focus only on their studies.  I have had
+students carrying employer demands, language barriers, or
+family responsibilities.  Therefore, I make my lecture notes
+and exercises available if asked and also excuse absences
+for reasons beyond physical health. For instance, I have
+worked to help a student suffering from depression to catch
+up with their classmates after a prolonged absence. I have
+also worked together with a student who was often tardy
+because she would bring her younger brother to school so
+that her mother could take a morning shift at work. I have
+had yet another student whose son required frequent doctor
+visits.  I do not punish students when life gets in the way,
+and so I make allowances such as emailing a photograph of
+their homework or providing a day of lecture notes.  In the
+end, teaching is how I am best equipped to give back to my
+community, and am serious about it.
+
+\vspace{2ex}
+
+\textbf{Style.}  Stylistically, I strive to be lively. I
+maintain a high energy in hopes that it permeates the room.
+My first goal of a lecture is to see active participation
+from students. Better outcomes tend to follow from
+engagement.  To this end, I pose many questions to the
+class; some easy, others hard.  For each answer I receive, I
+respond with praise. Given a wrong response, I describe how
+reasonable their idea was or why I am glad for their answer.
+Incorrect answers stimulate learning by opening new avenues
+of discussion.  Hence, I encourage mistakes.  Reacting with
+positivity and encouragement after a student speaks injects
+more energy into the classroom and begets student
+engagement.  Conversely, I avoid certain traits that damage
+the student-teacher relationship.  In particular,
+condescension and arrogance isolate even the most motivated
+students.  No one should be made to feel ``less than'',
+especially in a learning environment.
+
+\vspace{2ex}
+
+\textbf{Method.}  Even with compelling lectures, it is easy
+for students to grow bored after sitting still for an hour
+and a half.  So, I use several communication methods
+during a typical class. There is great value in watching a
+teacher work through an example, provide their insights,
+highlight potential pitfalls, and form connections to a
+larger picture. But mathematics is not a spectator sport.
+Providing students with exercises and feedback is important.
+Math is also a social activity and I find that group work is
+an effective practice space as well as a way for students to
+form social bonds, which often increases motivation.  At
+Mt.~San Jacinto College, I used roughly one third of my time
+for group work designed to complement the day's lecture.
+Some exercises are typical calculations, while others are
+more open ended.  Here is an example of the latter I give
+while introducing limits.  I sketch the graph of some
+continuous function $f \from \RR \setminus \{x\} \to \RR$
+with a removable discontinuity, jump continuity, or vertical
+asymptote at $ x $.  I ask what values $ f( x ) $ might
+``want'' to take.  This type of activity encourages
+conversation, investigative thinking, and highlights the
+creativity of mathematics. 
+
+Group work also provides students an opportunity to teach
+their peers, further reinforcing their own knowledge.  This
+way, math becomes more than exercises from a text.  It
+is a creative activity in which computation is
+not always of central importance.  Students ask more
+questions while in small groups than open lecture. This
+gives me helpful feedback on student understanding, allowing
+me to adjust needs in real time.
+
+The closest formal pedagogical method to my own is the
+Moore method. This involves given students a minimal amount
+of information they need to get started then forcing them to
+figure out the rest. I personally also give guidance and
+suggestions, which is not part of the Moore methodology.
+There are also other, quite extreme, conditions of the Moore
+method relating to restricting additional course materials
+and help. I do not subscribe to this, but I do believe that
+guiding student self and group learning leads to a greater
+depth of understand. One trades the breadth of topics
+covered, but the trade-off is well worth it.
+
+\vspace{2ex}
+
+\textbf{Learning.}  What would I say is `learning'?  My
+ideal outcome is to have students engage in mathematical
+materials with confidence. This does not mean they should
+know all the answers, but how to organize and apply
+knowledge to which they have access.  One might say this
+coincides with the concept of \emph{mathematical maturity}
+or \emph{mathematical literacy}.  For instance, I am not
+looking for students to remember every trigonometric
+identity.  I prefer they understand the geometric meaning of
+identities or the relationships between them.  Instead of
+having someone memorize the unit circle, I'll teach how to
+use symmetry and the values of certain basic angles to
+compute values of new angles. Undergraduate students should
+learn \emph{how} to approach problems.
+
+\vspace{2ex}
+
+\textbf{Assessment.} Fair or not, assessing a student
+has become the most consequential part of teaching. Grades
+are what allow a student to earn their degree, win a
+scholarship, attend graduate school, and sometimes get an entry level position. This increases the
+importance of assessment yet one must strike a balance
+between probing student knowledge and maintaining a
+reasonable workload.  With regard to exercises, repeating an algorithm is unenlightening.  Such experience is
+necessary, but should not be over emphasized. I hand these
+out as ungraded group work and ask them to
+perform a couple of these questions on a low stakes
+quiz. This motivates groups to help each other understand
+the material.
+
+An ideal homework assignment tells a story and builds to
+highlight the central topic at hand.  An example of such an
+assignment I have used in an elementary algebra course at
+both Riverside City College and Mt.~San Jacinto is to
+introduce the algebra of polynomials parallel to the algebra
+of the integers.  On such assignments, I want solutions to
+contain some exposition explaining their computations.
+Teaching exposition is time intensive but some providing
+model solutions is helpful and I have seen progress.
+Another activity I have used to teach mathematical
+exposition is, within the group worksheets, to let students
+grade and provide comments on `solutions' designed by me.
+
+The other usual way to assess learning is through exams.
+Timed exams separate students by knowledge, speed, and math
+anxiety.  To reduce the effect of slowness and math anxiety,
+I design a test to take an average student roughly half the
+allotted time to complete the exam and I advertise this
+fact.  To separate students according to knowledge, I do not
+grade questions by assigning point values to certain goal
+posts in the solution.  Instead, I give an `A' for a full
+and correct solution, with some leeway for errors that are
+trivial relative to the question asked. Substantial progress
+towards a correct solution gets a `B' while some progress
+earns a `C'.  This is more subjective than having a
+checkpoint-based rubric, but it considers the full answer.
+
+\end{document}

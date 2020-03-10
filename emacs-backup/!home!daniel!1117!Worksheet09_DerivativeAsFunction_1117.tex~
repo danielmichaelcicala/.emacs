@@ -1,0 +1,49 @@
+\input{assets/preamble_worksheet.tex}
+
+\begin{document}
+
+\textbf{Lecture 09---Derivative as a Function}
+
+\begin{ws}
+  For the following functions find the difference quotient.
+  \begin{itemize}
+  \item $f(x)= \sqrt{x}$
+  \item $f(x)= x^2-2x$
+  \item $f(x) = \dfrac{1}{x^2}$
+  \item $f(x)= \dfrac{x}{x-2}$
+  \end{itemize}
+\end{ws}
+
+\vfill
+
+\begin{ws}
+  Compute the derivative of $f(x)=2x^2+3x$ using the definition of derivative.
+\end{ws}
+
+\vfill
+
+\begin{ws}
+  Compute $\dfrac{df}{dx}$ for $f(x)=\sqrt{x}$. \emph{(Hint: remove $h$ in the denominator by multiplying by the conjugate)}
+\end{ws}
+
+\vfill
+
+\begin{ws}
+  Use your answer in the previous question to find the equation of the tangent line to $f(x) = \sqrt{x}$ at $x=9$.
+\end{ws}
+
+\vfill
+
+\begin{ws}
+  Compute $\dfrac{dy}{dt}$ for the function $y=\dfrac{1}{t^2}$. \emph{(Note the $dt$ is used instead of $dx$ because we use the variable $t$. Hint: to simplify, find a common denominator.)}
+\end{ws}
+
+\vfill
+
+\begin{ws}
+  Compute $f'(x)$ given $f(x)=\dfrac{x}{x+2}$. What is the tangent line to $f$ at $x=1$?  At $x=2$? 
+\end{ws}
+
+\vfill
+
+\end{document}

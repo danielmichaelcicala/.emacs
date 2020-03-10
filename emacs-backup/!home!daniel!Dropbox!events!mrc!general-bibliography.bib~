@@ -1,0 +1,175 @@
+@article {CB18,
+  title={Dense power-law networks and simplicial complexes},
+  author={Courtney, Owen T and Bianconi, Ginestra},
+  journal={Physical Review E},
+  volume={97},
+  number={5},
+  pages={052303},
+  year={2018},
+  publisher={APS}
+}
+
+@article {OP19,
+    AUTHOR = {Otter, N. and M.A.~Porter},
+     TITLE = {A united framework for equivalences in social networks},
+   JOURNAL = {In Preparation},
+}
+
+@article {PV01,
+  title={Epidemic spreading in scale-free networks},
+  author={Pastor-Satorras, Romualdo and Vespignani, Alessandro},
+  journal={Physical review letters},
+  volume={86},
+  number={14},
+  pages={3200},
+  year={2001},
+  publisher={APS}
+}
+
+
+@article {xiao,
+    AUTHOR = {Xiao, Yufei},
+     TITLE = {A tutorial on analysis and simulation of {B}oolean gene regulatory network models},
+   JOURNAL = {Curr. Genomics},
+  FJOURNAL = {Current Genomics},
+    VOLUME = {10},
+      YEAR = {2009},
+    NUMBER = {7},
+     PAGES = {511--525},
+       DOI = {10.2174/138920209789208237},
+       URL = {http://dx.doi.org/10.2174/138920209789208237},
+}
+
+@article {fongthesis,
+    AUTHOR = {Fong, Brendan},
+     TITLE = {Decorated cospans},
+   JOURNAL = {Theory Appl. Categ.},
+  FJOURNAL = {Theory and Applications of Categories},
+    VOLUME = {30},
+      YEAR = {2015},
+    NUMBER = {33},
+     PAGES = {1096--1120},
+       URL = {arxiv:1502.00872}
+}
+
+@phdthesis{courserthesis,
+           title = {Open systems: a double categorical perspective},
+          author = {Courser, Kenny},
+          school = {University of California Riverside},
+            year = {2019},
+             url = {http://math.ucr.edu/home/baez/thesis_courser.pdf},
+}
+
+@phdthesis{cicalathesis,
+           title = {Rewriting structured cospans: a syntax for open systems},
+          author = {Cicala, Daniel},
+          school = {University of California Riverside},
+            year = {2019},
+             url = {http://math.ucr.edu/home/baez/thesis_cicala.pdf},
+}
+
+@unpublished{baezmaster,
+ author = {Baez, John and Master, Jade},
+ title = {Open {P}etri nets},
+ note = {preprint},
+ year = {2019},
+ eprint = {1808.05415}
+}
+
+
+@unpublished{wu,
+ author = {Wu, Yanying},
+ title = {An open {P}etri net implementation of gene regulatory networks},
+ note = {preprint},
+ year = {2019},
+ eprint = {1907:11316}
+}
+
+@inproceedings{blass,
+ author = {Blass, Andreas},
+ title = {Questions and Answers: A Category Arising in Linear Logic Complexity Theory, and Set Theory},
+ booktitle = {Proceedings of the Workshop on Advances in Linear Logic},
+ year = {1995},
+ isbn = {0-521-55961-8},
+ pages = {61--81},
+ numpages = {21},
+ url = {http://dl.acm.org/citation.cfm?id=212876.212884},
+ acmid = {212884},
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA},
+} 
+
+@inproceedings{partial,
+ author = {Budiu, Mihai and Galenson, Joel and Plotkin, Gordon D.},
+ title = {The Compiler Forest},
+ booktitle = {Proceedings of the 22Nd European Conference on Programming Languages and Systems},
+ series = {ESOP'13},
+ year = {2013},
+ isbn = {978-3-642-37035-9},
+ location = {Rome, Italy},
+ pages = {21--40},
+ numpages = {20},
+ url = {http://dx.doi.org/10.1007/978-3-642-37036-6_2},
+ doi = {10.1007/978-3-642-37036-6_2},
+ acmid = {2450272},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+}
+
+@incollection {dialectica,
+    AUTHOR = {de Paiva, V. C. V.},
+     TITLE = {The {D}ialectica categories},
+ BOOKTITLE = {Categories in computer science and logic ({B}oulder, {CO},
+              1987)},
+    SERIES = {Contemp. Math.},
+    VOLUME = {92},
+     PAGES = {47--62},
+ PUBLISHER = {Amer. Math. Soc., Providence, RI},
+      YEAR = {1989},
+   MRCLASS = {03G30 (03F10 18D15)},
+  MRNUMBER = {1003194},
+MRREVIEWER = {Andreas Blass},
+       DOI = {10.1090/conm/092/1003194},
+       URL = {https://doi.org/10.1090/conm/092/1003194},
+}
+
+@unpublished{backprop,
+ author = {Fong, Brendan and Spivak, David and Tuy\'{e}ras, R\'{e}my},
+ title = {Backprop as functor: a compositional perspective on supervised learning},
+ note = {preprint},
+ year = {2019},
+ eprint = {1711.10455}
+}
+
+@unpublished{hedges,
+ author = {Hedges, Jules},
+ title = {From open learners to open games},
+ note = {preprint},
+ year = {2019},
+ eprint = {1902.08666}
+}
+
+@inproceedings{compgames,
+  title={Compositional game theory},
+  author={Ghani, Neil and Hedges, Jules and Winschel, Viktor and Zahn, Philipp},
+  booktitle={Proceedings of the 33rd Annual ACM/IEEE Symposium on Logic in Computer Science},
+  pages={472--481},
+  year={2018},
+  organization={ACM}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

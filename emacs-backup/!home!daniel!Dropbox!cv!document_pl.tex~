@@ -1,0 +1,101 @@
+\documentclass[11pt]{amsart}
+
+% load packages
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usepackage[all,2cell]{xy}
+\usepackage{pgfplots}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% new commands
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\MM}{\mathbb{M}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\op}[1]{\operatorname{#1}}
+\renewcommand{\t}[1]{\text{#1}}
+\newcommand{\from}{\colon}
+\newcommand{\xto}[1]{\xrightarrow{#1}}
+\newcommand{\sm}{\smallsetminus}
+
+% environments & counters
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\theoremstyle{remark}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{notation}[thm]{Notation}
+
+\theoremstyle{definition}
+\newtheorem{ex}[thm]{Example} 
+\newtheorem{df}[thm]{Definition}
+
+
+\usepackage[numbers]{natbib}
+
+\begin{document}
+
+\noindent
+{\LARGE \textsc{Publication list}}
+
+\noindent
+\rule{12.5cm}{0.4pt} 
+
+\noindent
+Daniel Cicala, UC Riverside
+
+\vspace{4ex}
+
+\noindent
+\textbf{Published}
+
+\vspace{2ex}
+
+\noindent
+Categorifying the ZX-calculus.  \emph{Proceedings 14th International
+  Conference on Quantum Physics and Logic}, 294--314,
+Electron. Proc. Theor. Comput. Sci. (EPTCS), 266, EPTCS, 2018.
+
+\vspace{2ex}
+
+\noindent
+(with Kenny Courser) Spans of cospans in a topos \emph{Theory
+  Appl. Categ.}, Vol. 33, 2018, No. 1, pp 1-22.
+
+\vspace{2ex}
+
+\noindent
+Spans of cospans.  \emph{Theory Appl. Categ.}, Vol. 33, 2018, No. 6,
+pp 131-147.
+
+\vspace{4ex}
+
+\noindent
+\textbf{Preprints}
+
+\vspace{2ex}
+
+\noindent
+Inductive rewriting for compositional models of abstract networks. In
+preparation.  \vspace{2ex}
+
+\end{document}

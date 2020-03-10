@@ -1,0 +1,418 @@
+\documentclass{amsart}          
+
+% PACKAGES ~~~~~~~~~~~~~~~~~~~~
+
+\usepackage{amsfonts}
+\usepackage{amssymb}  
+\usepackage{amsthm} 
+\usepackage{amsmath} 
+\usepackage{caption}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+% \setlist[enumerate]{label=(\alph*)}
+\usepackage{etoolbox}
+\usepackage{stmaryrd} 
+\usepackage[dvipsnames]{xcolor}
+\definecolor{editcolour}{rgb}{0.7,0.1,0}
+\definecolor{hrefcolour}{rgb}{0,0,0.7}
+
+\begin{document}
+
+\begin{center}
+  \textsc{Residential Lease Agreement} \\
+  \vspace{3em}
+  \begin{tabular}{ll}
+    \textbf{Landlords:} & \rule{8cm}{0.1ex} \\
+                        & \\
+                        & \rule{8cm}{0.1ex} \\
+                        & \\
+    \textbf{Tenants:}   & \rule{8cm}{0.1ex} \\
+                        & \\
+                        & \rule{8cm}{0.1ex} \\
+                        & \\
+    \textbf{Address:}   & \rule{8cm}{0.1ex} \\
+                        & \\
+                        & \rule{8cm}{0.1ex} \\
+  \end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item
+
+  \textbf{RENTAL AMOUNT:} Beginning \emph{FILL IN DATE OF
+    CONTRACT START}, TENANT agrees to pay LANDLORD the sum
+  of \emph{FILL IN RENT PRICE} per month in advance on the
+  \emph{first} day of each calendar month. A fee of \$20 per
+  per is added to the monthly rent price.  Said rental
+  payment shall be delivered by TENANT to LANDLORD or
+  his/her designated agent by electronic transfer, Venmo,
+  PayPal, Zelle, or, alternatively, by mailing a personal or
+  cashier's check so that LANDLORD receives it on or before
+  the first day of the calendar month for which the rent
+  applies. Rent must be received by LANDLORD or designated
+  agent in order to be considered in compliance with the
+  terms of this agreement.
+
+  \begin{enumerate}
+  \item
+
+    The above rent price is for the 3 bedroom unit and
+    garage located at 4425 1/2 S Van Ness Ave, Los Angeles,
+    CA 90062.  The correct price for the 3 bedroom unit but
+    not including the garage is \emph{FILL IN RENT PRICE}.
+  \end{enumerate}
+  
+\item
+
+  \textbf{TERM:} The premises are leased until \emph{FILL IN
+    DATE CONTRACT TERMINTES}.
+  
+\item
+
+  \textbf{SECURITY DEPOSITS:} TENANT shall deposit to the
+  LANDLORD the sum of \emph{FILL IN DEPOSITE PRICE} as a security
+  deposit to secure TENANT'S faithful performance of the
+  terms of this lease. The security deposit shall not exeed
+  two times the monthly rent. After all the TENANTS have
+  left, leaving the premises vacant, the LANDLORD may use
+  the security deposit for the cleaning of the premises, any
+  unusual wear and tear to the premises or common areas, and
+  any rent or other amounts owed pursuant to the lease
+  agreement or pursuant to Civil Code Section 1950.5. TENANT
+  may not use said deposit for rent owed during the term of
+  the lease.  Within 21 days of the TENANT vacating the
+  premises, LANDLORD shall furnish TENANT a written
+  statement indicating any amounts deducted from the
+  security deposit and returning the balance to the
+  TENANT. If TENANT fails to furnish a forwarding address to
+  LANDLORD, then LANDLORD shall send said statement and any
+  security deposit refund to the leased premises.
+
+  Note, as of \emph{FILL IN DATE}, the security deposit has been
+  submitted to LANDLORD by TENANT in full
+  
+\item
+
+  \textbf{OCCUPANTS:} The premises shall not be occupied by
+  any person other than those designated above as TENANT
+  with the exception of the following named persons.  If
+  LANDLORD, with written consent, allows for additional
+  persons to occupy the premises, the rent shall be
+  increased by \emph{FILL IN INCREASE IN DOLLARS} for each
+  such person. Any person staying 14 days cumulative or
+  longer, without the LANDLORD'S written consent, shall be
+  considered as occupying the premises in violation of this
+  agreement.
+
+\item
+
+  \textbf{SUBLETTING OR ASSIGNING:} TENANT agrees not to
+  assign or sublet the premises or any part thereof, without
+  first obtaining written permission from LANDLORD.
+  
+\item
+
+  \textbf{UTILITIES:} TENANT shall pay for all utilities
+  and/or services supplied to the premises.
+  
+\item
+
+  \textbf{PARKING:} TENANT is assigned \emph{FILL IN
+    NO. PARKING SPACES} parking space. TENANT may only park
+  a vehicle that is registered in the TENANT'S name.
+
+  TENANT may not assign, sublet, or allow any other person
+  to use this space. The TENANT uses this space exclusively
+  for parking of passenger automobiles. No other type of
+  vehicle or item may be stored in this space without prior
+  written consent of LANDLORD. TENANT may not wash, repair,
+  or paint in this space or at any other common area on the
+  premises. Only vehicles that are operational and currently
+  registered in the State of California may park in this
+  space. Any vehicle that is leaking any substance must not
+  be parked anywhere on the premises.
+
+\item 
+
+  \textbf{CONDITION OF PREMISES:} TENANT acknowledges that
+  the premises have been inspected. Tenant acknowledges that
+  said premises have been cleaned and all items, fixtures,
+  appliances, and appurtenances are in complete working
+  order. TENANT promises to keep the premises in a neat and
+  sanitary condition and to immediately reimburse LANDLORD
+  for any sums necessary to repair any item, fixture or
+  appurtenance that needed service due to TENANT'S, or
+  TENANT'S invitee, misuse or negligence.  TENANT shall be
+  responsible for the cleaning or repair to any plumbing
+  fixture where a stoppage has occurred.  TENANT shall also
+  be responsible for repair or replacement of the garbage
+  disposal where the cause has been a result of bones,
+  grease, pits, or any other item that normally causes
+  blockage of the mechanism.
+
+\item 
+
+  \textbf{ALTERATIONS:} TENANT shall not make any
+  alterations to the premises, including but not limited to
+  installing aerials, lighting fixtures, dishwashers,
+  washing machines, dryers or other items without first
+  obtaining written permission from LANDLORD. TENANT shall
+  not change or install locks, paint, or wallpaper said
+  premises without LANDLORD'S prior written consent, TENANT
+  shall not place placards, signs, or other exhibits in a
+  window or any other place where they can be viewed by
+  other residents or by the general public.
+  
+\item
+
+  \textbf{LATE CHARGE/BAD CHECKS:} A late charge of
+  6\% of the current rental amount shall be incurred if rent
+  is not paid when due. If rent is not paid when due and
+  landlord issues a 'Notice To Pay Rent Or Quit', TENANT
+  must tender cash or cashier's check only. If TENANT
+  tenders a check, which is dishonored by a banking
+  institution, than TENANT shall only tender cash or
+  cashier's check for all future payments. This shall
+  continue until such time as written consent is obtained
+  from LANDLORD. In addition, TENANT shall be liable in the
+  sum of \$20 for each check that is returned to LANDLORD
+  because the check has been dishonored.
+  
+\item 
+
+  \textbf{NOISE AND DISRUPTIVE ACTIVITIES:} TENANT or
+  his/her guests and invitees shall not disturb, annoy,
+  endanger or inconvenience other tenants of the building,
+  neighbors, the LANDLORD or his agents, or workmen nor
+  violate any law, nor commit or permit waste or nuisance in
+  or about the premises. Further, TENANT shall not do or
+  keep anything in or about the premises that will obstruct
+  the public spaces available to other residents. Lounging
+  or unnecessary loitering on the front steps, public
+  balconies or the common hallways that interferes with the
+  convenience of other residents is prohibited.
+  
+\item
+
+  \textbf{LANDLORD'S RIGHT OF ENTRY:} LANDLORD may enter and
+  inspect the premises during normal business hours and upon
+  reasonable advance notice of at least 24 hours to
+  TENANT. LANDLORD is permitted to make all alterations,
+  repairs and maintenance that in LANDLORD'S judgment is
+  necessary to perform. In addition LANDLORD has all right
+  to enter pursuant to Civil Code Section 1954.
+
+  If the work performed requires that TENANT temporarily
+  vacate the unit, then TENANT shall vacate for this
+  temporary period upon being served a 7 days notice by
+  LANDLORD. TENANT agrees that in such event that TENANT
+  will be solely compensated by a corresponding reduction in
+  rent for those many days that TENANT was temporarily
+  displaced.  If the work to be performed requires the
+  cooperation of TENANT to perform certain tasks, then those
+  tasks shall be performed upon serving 24 hours written
+  notice by LANDLORD. (EXAMPLE -removing food items from
+  cabinets so that the unit may be sprayed for pests)
+
+\item 
+
+  \textbf{REPAIRS BY LANDLORD:} Where a repair is the
+  responsibility of the LANDLORD, TENANT must notify
+  LANDLORD with a written notice stating what item needs
+  servicing or repair. TENANT must give LANDLORD a reasonable
+  opportunity to service or repair said item. TENANT
+  acknowledges that rent will not be withheld unless a
+  written notice has been served on LANDLORD giving LANDLORD
+  a reasonable time to fix said item within the meaning of
+  Civil Code Section 1942. Under no circumstances may TENANT
+  withhold rent unless said item constitutes a substantial
+  breach of the warrantee of habitability as stated in Code
+  of Civil Procedure Section 1174.2.
+  
+\item 
+
+  \textbf{PETS:} No dog, cat, bird, fish or other domestic
+  pet or animal of any kind may be kept on or about the
+  premises without LANDLORD"S written consent.
+
+\item
+
+  \textbf{FURNISHINGS:} No liquid filled furniture of any
+  kind may be kept on the premises. If the structure was
+  built in 1973 or later TENANT may possess a waterbed if he
+  maintains waterbed insurance valued at \$100,000 or
+  more. TENANT must furnish LANDLORD with proof of said
+  insurance. TENANT must use bedding that complies with the
+  load capacity of the manufacturer. In addition, TENANT
+  must also be in full compliance with Civil Code Section
+  1940.5. TENANT shall not install or use any washer,
+  dryer, or dishwasher that was not already furnished with
+  the unit.
+  
+\item
+
+  \textbf{INSURANCE:} TENANT may maintain a personal
+  property insurance policy to cover any losses sustained to
+  TENANT'S personal property or vehicle. It is acknowledged
+  that LANDLORD does not maintain this insurance to cover
+  personal property damage or loss caused by fire, theft,
+  rain, water overflow/leakage, acts of GOD, and/or any
+  other causes.
+
+  It is acknowledged that LANDLORD is not liable for these
+  occurrences. It is acknowledged that TENANT'S insurance
+  policy shall solely indemnify TENANT for any losses
+  sustained. TENANT'S failure to maintain said policy shall
+  be a complete waiver of TENANT'S right to seek damages
+  against LANDLORD for the above stated losses. The parties
+  acknowledge that the premises are not to be considered a
+  security building which would hold LANDLORD to a higher
+  degree of care.
+  
+\item
+
+  \textbf{TERMINATION OF LEASE AGREEMENT:} If this lease is
+  based on a fixed term, pursuant to paragraph 2, then at
+  the expiration of said fixed term this lease shall become
+  a month to month tenancy upon the approval of
+  LANDLORD. Where said term is a month to month tenancy,
+  either party may terminate this tenancy by the serving of
+  a 30 day written notice.
+  
+\item
+
+  \textbf{POSSESSION:} If premises cannot be delivered to
+  TENANT on the agreed date due to loss, total or partial
+  destruction of the premises, or failure of previous TENANT
+  to vacate, either party may terminate this agreement upon
+  written notice to the other party at their last known
+  address. It is acknowledged that either party shall have
+  no liability to each other except that all sums paid to
+  LANDLORD will be immediately refunded to TENANT.
+
+\item
+
+  \textbf{ABANDONMENT:} It shall be deemed a reasonable
+  belief by the LANDLORD that an abandonment of the premises
+  has occurred where the, within the meaning of Civil Code
+  Section 1951.2, where rent has been unpaid for 14
+  consecutive days and the TENANT has been absent from unit
+  for 14 consecutive days. In that event, LANDLORD may serve
+  written notice pursuant to Civil Code Section 1951.2. If
+  TENANT does not comply with the requirements of said
+  notice in 18 days, the premises shall be deemed abandoned.
+
+\item
+
+  \textbf{WAIVER:} LANDLORD'S failure to require compliance
+  with the conditions of this agreement, or to exercise any
+  right provided herein, shall not be deemed a waiver by
+  LANDLORD of such condition or right.  LANDLORD'S
+  acceptance of rent with knowledge of any default under
+  agreement by TENANT shall not be deemed a waiver of such
+  default, nor shall it limit LANDLORD'S rights with respect
+  to that or any subsequent right. If is further agreed
+  between the parties that the payment of rent at any time
+  shall not be a waiver to any UNLAWFUL DETAINER action
+  unless LANDLORD in writing specifically acknowledges that
+  this constitutes a waiver to the UNLAWFUL DETAINER action.
+
+\item
+
+  \textbf{VALIDITY/SEVERABILITY:} If any provision of this
+  agreement is held to be invalid, such invalidity shall not
+  affect the validity or enforceability of any other
+  provision of this agreement.
+  
+\item 
+
+  \textbf{ATTORNEY FEES:} In the event action is brought by
+  any party to enforce any terms of this agreement orrecover
+  possession of the premises, the prevailing party shall
+  recover from the other party reasonable attorney fees.
+
+  It is acknowledged, between the parties, that jury trials
+  significantly increase the costs of any litigation between
+  the parties. It is also acknowledged that jury trials
+  require a longer length of time to adjudicate the
+  controversy.  On this basis, all parties waive their
+  rights to have any matter settled by jury trial.
+  
+\item
+
+  \textbf{NOTICES:} All notices to the tenant shall be
+  deemed served upon mailing by first class mail, addressed
+  to the tenant, at the subject premises or upon personal
+  delivery to the premises whether or not TENANT is actually
+  present at the time of said delivery.
+  
+\item
+
+  \textbf{PERSONAL PROPERTY OF TENANT:} Once TENANT vacates
+  the premises, the LANDLORD shall store all personal
+  property left in the unit for 18 days. If within that time
+  period, TENANT does not claim said property, LANDLORD may
+  dispose of said items in any manner LANDLORD chooses.
+
+\item 
+
+  \textbf{ADDITIONAL RENT:} All items owed under this lease
+  shall be deemed additional rent.
+
+\item 
+
+  \textbf{APPLICATION:} All statements in TENANTS'S
+  application must be true or this will constitute a
+  material reach of the lease.
+ 
+\item
+
+  \textbf{NOTICE:} The California Department of Justice,
+  sheriff’s departments, police departments serving
+  jurisdictions of 200,000 or more and many other local law
+  enforcement authorities maintain for public access a data
+  base of the locations of persons required to register
+  pursuant to paragraph (1) of subdivision (a) of Section
+  290.4 of the Penal Code. The database is updated on a
+  quarterly basis and a source of information about the
+  presence of these individuals in any neighborhood. The
+  Department of Justice also maintains a Sex Offender
+  Identification Line through which inquiries about
+  individuals may be made. This is a "900" telephone
+  service. Callers must have specific information about
+  individuals they are checking.  Information regarding
+  neighborhoods is not available through the "900" telephone
+  service.
+    
+\item 
+
+  \textbf{ENTIRE AGREEMENT:} The foregoing agreement,
+  including any attachments incorporated by reference,
+  constitute the entire agreement between the parties and
+  supersedes any oral or written representations or
+  agreements that may have been made by either
+  party. Further, TENANT represents that TENANT has relied
+  solely on TENANT'S judgment in entering into this
+  agreement. TENANT acknowledges having been advised to
+  consult with independent legal counsel before entering
+  into this Agreement and has decided to waive such
+  representation and advice. TENANT acknowledges that TENANT
+  has read and understood this agreement and has been
+  furnished a duplicate original.
+  \vspace{2em}
+  
+  \begin{tabular}{ll}
+    \textbf{Landlord:} & $\rule{8cm}{0.1ex}$ \\
+                       & \\
+    \textbf{Landlord:} & $\rule{8cm}{0.1ex}$ \\
+                       & \\
+    \textbf{Tenant:}   & $\rule{8cm}{0.1ex}$ \\
+                       & \\
+    \textbf{Tenant:}   & $\rule{8cm}{0.1ex}$ \\
+  \end{tabular}
+  
+\end{enumerate}
+
+
+
+\end{document}

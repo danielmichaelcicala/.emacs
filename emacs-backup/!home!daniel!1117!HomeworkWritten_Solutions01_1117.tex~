@@ -1,0 +1,50 @@
+\input{assets/preamble_lecture.tex}
+\begin{document}
+
+% right header material -----------
+
+\begin{flushright}
+  \textbf{Homework Assignments} \linebreak % quiz, or exercises
+  {Math 1117} \linebreak % course number and section
+  {U.~New Haven} \linebreak %college
+  \textit{Spring 2020} % date 
+\end{flushright}
+
+This file contains all written homework questions assigned
+through the semester. See the \emph{Instructors Syllabus}
+and \emph{Homework Example} in Blackboard for further
+explanation. \vspace{2em}
+
+% questions ------------------------
+
+\textbf{Due on 28 Feb} 
+
+\begin{enumerate}
+  % Lecture 01: Functions
+\item Explain why any polynomial is also a rational function. 
+\item Write the function $f(x)=|3x-4|$ as a piecewise function.
+  % Lecture 02: Inverse Functions  
+\item Find the inverse of the function $f(x)=x^2-6x+11$
+  for $x \geq 3$. \emph{(Hint: Rewrite $f(x)$ in the form
+    $(x-a)^2+b$ for appropriate numbers $a,b$ by
+    completing the square)}
+  % Lecture 03: Algebra of Functions
+\item What is the domain of $ (f \circ g)(x) $ where $ f(x)=\dfrac{1}{x^2-9} $ and $ g(x)= 2x+5 $?
+  % Lecture 04: Limits, Graphically  
+\item To compute $ \lim\limits_{x \to a} f(x) $ for an arbitrary function $ f $ and number $ a $, do we need to know the value of $ f(a) $?  Explain.
+  % Lecture 05: Limits, Analytically
+\item Compute $\lim\limits_{x \to 2} f(x)$ for $$f(x)=
+  \begin{cases}
+    x^2+2, & x < 2 \\
+    3-2x, & x \geq 2 \\
+  \end{cases}$$
+% Lecture 06: Limits and Infinity
+\item Compute $ \lim_{x \to - \infty} f(x) $ where $$ f(x)=
+  \dfrac{-2x^3+4x^2-1}{4x^2-5}. $$
+% Lecture 07: Continuity
+\item Evaluate the limit $$\lim\limits_{x \to 0} (x^8-3x^6-1)^{21}.$$ Be sure to justify your work with an appropriate theorem.
+% Lecture 08: Intro to Derivaties
+\item What is equation for the line tangent to $f(x)=x^2$ at $x=2$?
+% Lecture 09: Derivaties as Function
+\item Find the derivative of the function $f(x) = 2x^2-1$ using the definition of derivative.    
+\end{enumerate}

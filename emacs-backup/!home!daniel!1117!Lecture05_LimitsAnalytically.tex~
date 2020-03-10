@@ -1,0 +1,142 @@
+\input{assets/preamble_lecture}
+
+\begin{document}
+
+\noindent
+\textbf{Lecture 05---Limits, Analytically}
+
+\section{Introduction}
+\label{sec:introduction}
+
+Last time, we used graphs to compute limits of functions. But this is very limited.
+
+\begin{ws}
+  What is $\lim_{x \to 0} f(x)$ given the graph of $f(x)$
+
+  \includegraphics[scale=0.3]{assets/l05_01.png}
+\end{ws}
+
+We cannot tell because graphs are not precise.  We need to use mathematical expressions that we can manipulate and work with, not just a picture.
+
+In this lecture, we start by defining a limit with more rigour than provided in the last lecture. Then we find the limit of a line $f(x)=mx+b$ and build up a theory that provides methods to compute limits of more complicated functions.
+
+\section{What is a limit?}
+\label{sec:what-limit}
+
+Suppose a function $f$ is defined for all $x$ near $a$, but not neccesarily at $a$. Remember that, in limits, only the approach matters; the rest may as well be behind a curtain. If $f(x)$ is arbitrarily close to $L$ for all $x$ sufficiently close (but not equal) to $a$, we write $\lim_{x \to a} f(x) = L$.
+
+Theorem: Let $a,b,m$ be any real numbers.  For linear functions $f(x)=mx+b$, it is always true that $\lim_{x \to a} f(x) = ma+b$. That is, we plug in $a$. ``Plugging it in'' is a special feature of linear functions, and we must be careful to remember that $\lim_{x \to a} f(x)$ is a different concept than $f(a)$. We later learn when these concepts intersect.
+
+\begin{ws}
+  Compute $\lim_{x \to 3} 3x+5$, $\lim_{x \to -1} -3x - 2$.
+\end{ws}
+
+This theorem is a good start, but most functions are not lines.  But lines are a building block from which we can build many other functions, so we can use what we know about the limits of lines and build them up using this list of rules.
+
+Assume that $\lim_{x \to a} f(x)$ and $\lim_{x \to a} g(x)$ exists (recall limits need not exist). Then the following properties hold
+\begin{enumerate}
+\item \textbf{Sum/Diff} $\lim_{x \to a} (f(x) \pm g(x)) = \lim_{x \to a} f(x) \pm \lim_{x \to a} g(x) $
+\item \textbf{Multiply by constant} $\lim_{x \to a} c f(x) = c (\lim_{x \to a} f(x))$ for any number $c$.
+\item \textbf{Product} $\lim_{x \to a} f(x)g(x) = (\lim_{x \to a} f(x))(\lim_{x \to a} g(x))$
+\item \textbf{Quotient} $\lim_{x \to a} \dfrac{f(x)}{g(x)} = \dfrac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)}$ provided $\lim_{x \to a} g(x) \neq 0$
+\item \textbf{Integral Power} $\lim_{x \to a} (f(x))^n = (\lim_{x \to a} f(x))^n$ for $n$ any positive integer
+\item \textbf{Rational Power} $\lim_{x \to a} (f(x))^{n/m} = (\lim_{x \to a} f(x))^{n/m}$ for $n,m \in \mathbb{Z}$ and, for $m$ even, $f(x)$ must be positive near $a$ (Even roots don't accept negative numbers).  
+\end{enumerate}
+
+These work for any functions $f(x)$ and $g(x)$. So far, the only functions we know about thir limits are lines. So we can use these rules and our knowledge of compute limits of lines to compute limits of more complicated functions.
+
+\section{Limits of Polynomials, Rationals, and Algebraics}
+\label{sec:limits-polyn-rati}
+
+Theorem: for $p(x)$ and polynomial, and $a$ any real number, $\lim_{x \to a} p(x)=p(a)$. That is, for polynomials, plug in the limit point.  Why does this work?
+
+Let's try on the polynomial $p(x)=5x^4 + 3x^2 - x + 1$
+\begin{align}
+  \lim_{x \to 2} p(x) & \lim_{x \to 2} 5x^4 + 3x^2 - x + 1 \\
+                      & \lim_{x \to 2} (5x^4) + \lim_{x \to 2} (3x^2) - \lim_{x \to 2} (x) + \lim_{x \to 2} 1 \\
+                      & 5 \lim_{x \to 2} (x^4) + 3 \lim_{x \to 2} (x^2) - \lim_{x \to 2} (x) + \lim_{x \to 2} 1 \\
+                      & 5 (\lim_{x \to 2} x)^4 + 3(\lim_{x \to 2} x)^2 - \lim_{x \to 2} (x) + \lim_{x \to 2} 1 \\
+                      & 5 (2)^4 + 3(2)^2 - 2 + 1 \\
+                      & 80 + 12 - 2 + 1 \\
+                      & 91
+\end{align}
+
+\begin{ws}
+  Compute $\lim_{x \to -1} 3x^2+5x-3$
+\end{ws}
+
+New Rule: Find limits of polynomials by plugging in the limit point.
+
+Now that we know how to find limits of polynomials, we can use the quotient rule for limits of a way to compute the limits of rational functions.
+
+Theorem: For polynomials $p(x),q(x)$ we have $\lim_{x \to a} p(x)/q(x) = p(a)/q(a)$ provided $q(a) \neq 0$.
+
+Why does this work?  Combine two facts: (1) the quotient rule is $\lim_{x \to a} f(x) / g(x) = \lim_{x \to a} f(x) / \lim_{x \to a} g(x)$ and (2) to find the limit of a polynomial, plug the limit point it.  Hence $$ \lim_{x \to a} p(x) / q(x) = \lim_{x \to a} p(x) / \lim_{x \to a} q(x) = p(a)/q(a)$$.
+
+\begin{ws}
+  Compute $\lim_{x \to 2} \dfrac{3x^3 + 4}{x^2 + 2}$
+\end{ws}
+
+\begin{ws}
+  Compute $\lim_{x \to 1} \dfrac{3x^3 + 4}{x^2 -1}$
+\end{ws}
+
+\begin{ws}
+  Compute $\lim_{x \to -2} \dfrac{x^2-4}{x + 3}$
+\end{ws}
+
+To find limits of algebraic functions, use the rules.
+
+\begin{ws}
+  Compute $\lim_{x \to -1} \dfrac{\sqrt{x+2} - 1}{x^3+x^2+1}$.
+\end{ws}
+
+After some practice, you don't need to break this down step by step, but it's a good habit to start with until you grow comfortable.  
+
+Occasionally, you'll notice that you can simplify a function before taking it's limit.
+
+Example: For $f(x) = \dfrac{x^2-4}{x-2}$, compute $$\lim_{x \to 2} f(x)$$.
+
+Observe that $f(2)$ is not define, but the limit still exists.  This is becuase the limit does not care about what happens at 2.  It only cares about what happens as we approach 2.
+
+\begin{ws}
+  Compute $\lim_{x \to 2} \dfrac{x^2-6x+8}{x^2-4}$
+\end{ws}
+
+\begin{ws}
+  Compute $\lim_{x \to 2} \dfrac{x^3-6x^2+8x}{\sqrt{x-2}}$. (Hint: write the square root as an exponent)
+\end{ws}
+
+\section{Piecewise Functions}
+\label{sec:piecewise-functions}
+
+Remember one-sided limits?  They appear here too.  \textbf{All of the same rules as above hold for one sided limits.} For example $\lim_{x \to a^-} f(x)+g(x) = \lim_{x \to a^-} f(x) + \lim_{x \to a^-} g(x) $.  Except, the \textbf{root rule} has an added subtlty to it that I'd rather not bog you down with.
+
+Recall from last time that $\lim_{x \to a} f(x)$ exists only if $\lim_{x \to a^+} f(x) = \lim_{x \to a^-} f(x)$.  This is still true here and we use this fact to compute limits of piecewise functions at their ``junctions''.
+
+\begin{ws}
+  Compute $\lim_{x \to 2} f(x)$ for
+  $
+    f(x) = \begin{cases}
+    -x+5, & x < 2 \\
+    \sqrt{x+2}+1, & x \geq 2 \\
+  \end{cases}
+$
+  To do this, first compute $\lim_{x \to 2^-} f(x)$, then $\lim_{x \to 2^+} f(x)$. if they match, take that number to be $\lim_{x \to 2} f(x)$. If they don't match, say $\lim_{x \to 2} f(x)$ DNE.  
+\end{ws}
+
+\section{Squeeze Theorem}
+\label{sec:squeeze-theorem}
+
+This is a more high powered tool for finding limits when the other methods don't necessarily work.  It is most useful for functions involving $\sin (x)$ and $\cos (x)$.
+
+Theorem: \textbf{Ingredients:}Assume that we have three function $f,g,h$ so that for $x$ values around a number $a$, \textbf{Conditions:}  $f(x) \geq g(x) \geq h(x)$ and $\lim_{x \to a} f(x) = L = \lim_{x \to a} h(x)$. \textbf{Fact:} We know that $\lim{x \to a} g(x) = L.$
+
+\includegraphics[scale=0.2]{assets/l05_02.png}
+
+Example: Compute $\lim_{x \to 0} x^2 \sin(1/x)$. Script: Gather the ingredients: that is, build a string of inequalities.  Show that the condition is met. If so, then the fact is true, so we conclude.
+
+To build the string of inequalities   $f(x) \geq g(x) \geq h(x)$, start with the $\sin(1/x)$ term and build up to $x^2 \sin(1/x)$: $$-1 \geq \sin(1/x) \geq 1$$.  How do you get from $\sin (1/x)$ to the function we want? Multiply by $x^2$, so we take our initial string of inequalities and multiply through by $x^2$: $$-x^2 \geq x^2 \sin(1/x) \geq x^2$$.  Check to see if the conditions hold:  $\lim_{x \to 0} -x^2 = 0$ and $\lim_{x \to 0} x^2 = 0$. yes they do.  So the fact holds and we conclude that $\lim_{x \to 0} x^2 \sin(1/x) = 0$
+
+
+\end{document}

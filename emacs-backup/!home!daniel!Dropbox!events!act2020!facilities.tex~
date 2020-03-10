@@ -1,0 +1,30 @@
+\documentclass{amsart}
+\usepackage[a4paper,top=3cm,bottom=3cm,inner=3cm,outer=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\begin{document}
+
+\section*{Facilities, Equipment and Other Resources}
+\label{sec:facil-equipm-other}
+
+The resources required for the School fall into three
+categories: (i) technology, (ii) rooms, (iii) personnel.
+
+The only technology required is a video conferencing
+software for the online reading seminar.  The PI, through
+the University of New Haven, has an account with Zoom. All
+other participants can access Zoom without an account.
+
+During the in-person research week, MIT will offer each
+working group a room in which to work.  This includes white
+boards and markers.
+
+The personnel required for the School include three
+organizers, four mentors, four TAs, and the students.  The
+organizers and mentors have already agreed to
+participate. The TA's and the students will be selected before
+January 2020.
+
+\end{document}

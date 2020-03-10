@@ -1,0 +1,50 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 14} \linebreak % quiz, or exercises
+  {math1117.07} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{\today} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[4 points each]
+  Calculate the derivatives of the following functions: \vspace{2em}
+  \emph{(a)} $ y= \sqrt[3]{x^2+9} $ \hfill
+  \emph{(b)} $ y= \sin ( 4 \cos (z) ) $ \hfill
+  \emph{(c)} $ y= x(x+1)^{1/3} $ \hfill
+
+\end{q}
+
+
+% end document------------------
+\end{document}

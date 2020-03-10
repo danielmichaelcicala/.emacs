@@ -1,0 +1,67 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 7} \linebreak % quiz, or exercises
+  {math2228.04} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{wed, 25 sep} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[10 points]
+
+  Here is data from experment counting the radioactive decay
+  of barium-137m:
+  \begin{center}
+    \begin{tabular}{l|cccc}
+      \hline
+      Time&1&3&5&7\\
+      Count&578&317&203&118\\
+      \hline
+    \end{tabular}
+  \end{center}
+  \begin{enumerate}
+  \item Using the least-squares regression equation $$
+    \text{Count}= 602.8 - (74.7 \times \text{Time}) $$ find
+    the predicted values for the counts.
+  \item Compute the differences, observed count minus
+    predicted count. How many of these are positive; how
+    many are negative?
+  \item Square and sum these differences that you found.
+  \end{enumerate}
+  
+  
+\end{q}
+
+
+% end document------------------
+\end{document}

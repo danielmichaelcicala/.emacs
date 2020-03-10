@@ -1,0 +1,10 @@
+\begin{center}
+  \begin{tikzpicture}
+    \node (Lc') at (0,0) {$ Lc' $};
+    \node (y') at (1,0) {$ y' $};
+    \node (Ld') at (2,0) {$ Ld' $};
+    \node (La') at (0,1) {$ La' $};
+    \node (x') at (1,1) {$ x' $};
+    \node (Lb') at (2,1) {$ Lb' $};
+  \end{tikzpicture}
+\end{center}

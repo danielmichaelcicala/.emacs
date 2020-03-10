@@ -1,0 +1,100 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 9} \linebreak % quiz, or exercises
+  {math1117.02} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{Wed, 2 Oct} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+\textbf{Instructions:} Circle your answer. You do not need to
+justify your answer.
+
+% question 1
+\begin{q}[10 points]
+  $$ \lim\limits_{\theta \to \infty} \dfrac{\cos
+    (\theta}{\theta^2} $$
+  \begin{enumerate}
+  \item $ \infty $
+  \item $ - \infty $
+  \item $ 0 $
+  \item $ 1 $
+  \end{enumerate}  
+\end{q}
+
+\begin{q}
+  $$ \lim\limits_{x \to -\infty} 5 + \dfrac{100}{x} +
+  \dfrac{( \sin (x^3) )^4}{x^2} $$
+  \begin{enumerate}
+  \item $ \infty $
+  \item $ - \infty $
+  \item $ 0 $
+  \item $ 5 $
+  \item $ 105 $
+  \end{enumerate}
+\end{q}
+
+\begin{q}
+  $$ \lim\limits_{x \to -\infty} 3x^7+x^2 $$
+  \begin{enumerate}
+  \item $ \infty $
+  \item $ - \infty $
+  \item $ 0 $
+  \item $ 3 $
+  \item $ 4 $
+  \end{enumerate}
+\end{q}
+
+\begin{q}
+  $$ \lim\limits_{x \to \infty} \dfrac{9x^3+x^2-5}{3x^4+4x^2} $$
+  \begin{enumerate}
+  \item $ \infty $
+  \item $ - \infty $
+  \item $ 0 $
+  \item $ 3 $
+  \item $ -5 $
+  \end{enumerate}
+\end{q}
+
+\begin{q}
+  $$ \lim\limits_{x \to \infty} \dfrac{\sin (x)}{e^x} $$
+  \begin{enumerate}
+  \item $ \infty $
+  \item $ - \infty $
+  \item $ 0 $
+  \item $ 1 $
+  \item $ e $
+  \end{enumerate}
+\end{q}
+
+% end document------------------
+\end{document}

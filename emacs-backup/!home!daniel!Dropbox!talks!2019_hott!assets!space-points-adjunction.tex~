@@ -1,0 +1,22 @@
+\begin{tikzpicture}[scale=0.75]
+  \node () at (0,6) {{\Huge SPACES}};
+  \node () at (0,0) {{\Huge POINTS}};
+  \node (up-left) at (-1.5,5) {};
+  \node (up-mid) at (0,5) {};
+  \node (up-right) at (1.5,5) {};
+  \node (down-left) at (-1.5,1) {};
+  \node (down-mid) at (0,1) {};
+  \node (down-right) at (1.5,1) {};
+  \node () at (-0.75,3) {$ \dashv $};
+  \node () at (0.75,3) {$ \dashv $};
+  \path[->]
+  (down-left) edge
+    node[sloped, anchor=center, above]{discrete}
+    (up-left)
+  (up-mid) edge
+    node[sloped, anchor=center, above]{forget}
+    (down-mid)
+  (down-right) edge
+    node[sloped, anchor=center,below]{codiscrete}
+    (up-right);
+\end{tikzpicture}

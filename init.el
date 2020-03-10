@@ -18,7 +18,10 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-9; ============================
+;; run pandoc, markup language converter
+(add-hook 'markdown-mode-hook 'pandoc-mode)
+
+; ============================
 ;        CUSTOM FACES
 ; ============================
 
@@ -53,8 +56,7 @@
 (global-set-key (kbd "\C-c t") 'toggle-truncate-lines)
 
 ;; jump to files
-(set-register ?e (cons 'file "~/.emacs.d/init.el"))
-(set-register ?d (cons 'file "~/Dropbox/org/daniel.org"))
+; (set-register ?e (cons 'file "~/.emacs.d/init.el"))
 
 ; =============================
 ;       CUSTOM SETTINGS
@@ -64,7 +66,7 @@
 (setq frame-title-format "%b")
 
 ;; line length
-(setq-default fill-column 60)
+;(setq-default fill-column 60)
                                                                 
 ;; type over selected text
 (delete-selection-mode 1) 
@@ -136,7 +138,7 @@
 (global-visual-line-mode t) 
 
 ;; Matches parentheses and such in every mode
-; (show-paren-mode 1)
+ (show-paren-mode 1)
 
 ;; Disable fringe because I use visual-line-mode
 (set-fringe-mode '(0 . 0)) 
@@ -148,7 +150,7 @@
 (setq-default major-mode 'LaTeX-mode)
 
 ;; autocomplete mode
-(add-hook 'text-mode-hook 'auto-fill-mode)
+;(add-hook 'text-mode-hook 'auto-fill-mode)
 
 ;; hide the startup message
 (setq inhibit-startup-message t) 
@@ -161,8 +163,8 @@
 (setq font-latex-fontify-script nil) ; no sup/subscripts in tex file
 
 ;; path
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/texlive/2018/bin/x86_64-linux/"))  
-(setq exec-path (append exec-path '("/usr/local/texlive/2018/bin/x86_64-linux/")))
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/texlive/2019/bin/x86_64-linux/"))  
+(setq exec-path (append exec-path '("/usr/local/texlive/2019/bin/x86_64-linux/")))
 
 ;; parsing
 (setq TeX-parse-self t) ; Enable parse on load.
@@ -263,4 +265,4 @@
     ("~/Dropbox/org/calendar.org" "~/Dropbox/org/daniel.org" "~/Dropbox/org/personal.org" "~/Dropbox/org/research.org" "~/Dropbox/org/teach.org")))
  '(package-selected-packages
    (quote
-    (haskell-mode zenburn-theme yasnippet multiple-cursors auctex))))
+    (markdown-mode haskell-mode zenburn-theme yasnippet multiple-cursors auctex))))

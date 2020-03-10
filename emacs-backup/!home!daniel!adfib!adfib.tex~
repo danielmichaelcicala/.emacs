@@ -1,0 +1,18 @@
+\input{adfib_preamble.tex}
+
+\begin{document}
+
+% Preliminaries. Basic def's and set notation. Include lemmas
+
+% Groth fibs and ralis. Examine relationship between.
+
+% Street fibs and corefls. Examine relationship between.
+
+% Cats of fibs and adjs. Examine structure of relationship (todo later)
+
+% Appendix. Choice of colimits.
+
+
+
+
+\end{document}

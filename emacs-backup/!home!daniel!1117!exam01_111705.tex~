@@ -1,0 +1,191 @@
+%%%%%%%%%%%%%% PREAMBLE
+
+\documentclass[12pt]{report}
+
+% load packages ----------------
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usepackage[all,2cell]{xy}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% macros ---------------------------
+
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+
+% environments ---------------------
+
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+%%%%%%%%%%%%%%%%%	BEGIN
+%%%%%%%%%%%%%%%%% DOCUMENT
+
+\begin{document}
+\pagestyle{empty}
+
+%%%%%%%%%%%	COVER
+%%%%%%%%%%% PAGE
+
+\noindent\textbf{Exam 01} \\
+\noindent\text{28 Feb 2020} \\
+\noindent\text{Math 1117-05} 
+\vspace{10pt}
+
+\noindent \text{Name}: \rule{12cm}{0.4pt} 
+\vspace{2ex}
+
+% instructions ------------------
+
+\fbox{
+  \textsc{Instructions} 
+  \begin{minipage}{0.75\linewidth}
+    \begin{multicols}{2}
+      \begin{itemize} 
+      \item \textit{each question is worth 8 points}
+      \item \textit{justify every answer}
+      \item \textit{no notes or electronics}
+      \item \textit{good luck!}
+      \end{itemize}
+    \end{multicols}
+\end{minipage}
+}
+
+%%%%%%%%%%%%%%%% START
+%%%%%%%%%%%%%%%% EXAM
+%%%%%%%%%%%%%%%% HERE		
+
+\begin{q}
+  What is the domain of the function $(f/g)(x)$ where $f(x)= x+1$ and $g(x)=x+1$?
+
+  \vfill
+\end{q}
+
+
+\begin{q}
+  Find $\lim\limits_{x \to \infty} \dfrac{4x^5+5x^4-6x^3}{3x^6-2x^5+x^4}$.
+
+  \vfill
+\end{q}
+
+\begin{q}
+  Explain why the the following function does or does not have an inverse \\
+  \includegraphics[scale=0.2]{assets/exam01_01.png}
+
+  \vfill
+\end{q}
+
+
+\pagebreak % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{q}
+  Find $\lim\limits_{x \to -\infty} \dfrac{16x^3 + 8x^2 + 4x + 2}{4x^3 + 2x^2 - x}$
+
+  \vfill
+\end{q}
+
+\begin{q}
+  Find $\lim\limits_{x \to 1} f(x)$ for the function
+  \(
+    g(x)=
+  \begin{cases}
+    \dfrac{x^2-1}{x+1}, & x < -1 \\
+    -x^2-1, & x \geq -1 \\
+  \end{cases}
+  \)
+
+  \vfill
+\end{q}
+
+\begin{q}
+  Find $\lim\limits_{x \to 3} \dfrac{ x-3 }{ x^2-9 }$.
+
+  \vfill
+\end{q}
+
+\pagebreak % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{q}
+  Is the function
+  \[
+    f(x)=
+    \begin{cases}
+      \dfrac{x^2+x-2}{x+2}, & x \neq -2 \\
+      -3, & x = -2
+    \end{cases}
+  \]
+  continuous at $x=-2$? How do you know?
+
+  \vfill
+\end{q}
+
+\begin{q}
+  Determine $\lim\limits_{x \to 0} \dfrac{3}{3x^2+6x}$.
+
+  \vfill
+\end{q}
+
+\begin{q}
+  Find two functions $f$ and $g$ so that $(f \circ g)(x) = \sin (3x+6)$.
+
+  \vfill
+\end{q}
+
+\pagebreak % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{q}
+  Find $\lim\limits_{x \to 0} x^4\sin (2\pi x + 2)$.
+
+  \vfill
+\end{q}
+
+\begin{q}
+  Use the definition of derivative to find $f'$ for $f(x)= \dfrac{1}{\sqrt{x-1}}$.
+
+  \vfill
+\end{q}
+
+\begin{q}
+  Use the definition of derivative to find $f'$ for $f(x)=2x^2-4x-2$
+
+  \vfill
+\end{q}
+
+\pagebreak
+
+%%%%%%%%%%%%%% SCRATCH
+%%%%%%%%%%%%%% WORK
+%%%%%%%%%%%%%% PAGE
+
+\centering
+-- you may use this page for scratch work --
+\vfill
+
+\pagebreak
+
+\centering
+-- you may use this page for scratch work --
+
+
+
+%%%%%%%%%%%%%%	END
+%%%%%%%%%%%%%% DOCUMENT
+
+
+
+
+\end{document}

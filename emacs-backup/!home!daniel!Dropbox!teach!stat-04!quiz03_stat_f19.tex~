@@ -1,0 +1,79 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 3} \linebreak % quiz, or exercises
+  {math2228} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{Mon, 16 Sept} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[10 points]
+
+  William Sealy Gosset worked at the Guinness Brewery in
+  Dublin and made substantial contributions to the practices
+  of statistics. In his work at the brewery, he collected
+  and analyzed a great deal of data. Archives with Gosset's
+  handwritten tables, graphs, and notes have been preserved
+  at the Guinness Storehouse in Dublin. In one study, Gosset
+  examined the change in the double stout market before and
+  after World War I. For various regions in England and
+  Scotland, he calculated the ratio of sales in 1925, after
+  the war, as a percent of sales in 1913, before the
+  war. Here are the data:
+  \begin{center}
+    \begin{tabular}{lr|lr}
+      \hline
+      Bristol & 94 & Glasgow & 66 \\
+      Cardiff & 112 & Liverpool & 140 \\
+      English Agents & 78 & London & 140 \\
+      English O & 68 & Manchester & 109 \\
+      English P & 46 & Newcastle-on-Tyne & 118 \\
+      English R & 111 & Scottish & 24 \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \begin{enumerate}
+  \item Compute the mean for these data.
+  \item Compute the median for these data.
+  \item Which measure do you prefer for describing the
+    center of this distribution? Explain your answer. (You
+    may include a graphical summary as part of your explanation.)
+  \end{enumerate}
+
+  
+\end{q}
+
+
+% end document------------------
+\end{document}

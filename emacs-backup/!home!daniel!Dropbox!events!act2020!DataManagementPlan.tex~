@@ -1,0 +1,20 @@
+\documentclass[12pt]{amsart}
+\usepackage[a4paper,top=1in,bottom=1in,inner=1in,outer=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\title{Data Management Plan}
+\begin{document}
+\maketitle
+
+No data is associated with the activities of this
+School. Any results arising from the projects are to be
+disseminated on the popular (among researchers in category
+theory) blog ``the n-category cafe''. Pre-prints will be
+posted on the arXiv and Mentors will decide how to approach
+publications.  
+
+\end{document}
+
+
+

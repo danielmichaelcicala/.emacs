@@ -1,0 +1,82 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 9} \linebreak % quiz, or exercises
+  {math2228.04} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[10 points]
+
+  The U.S. Army released the following statement in 1898
+  about serving in the Spanish American War:
+  \begin{quote}
+    Unless an applicant has at least four sound double
+    teech, one above and one below on each side of the
+    mounth, and so opposed as to serve the purpose of
+    mastication, he should be rejected.
+  \end{quote}
+  The following two-way table contains the rejection data
+  for enlistment candidates classified by age.
+
+  \begin{center}
+    \begin{tabular}{ccccccc}
+      &&&Age&&&\\
+      \hline
+      Rejected&under 20&20--25&25--30&30--35&35--40&over 40\\
+      \hline
+      yes&68&647&1114&1783&2887&3801\\
+      no&58,884&77,992&55,597&43,994&47,569&39,985\\
+    \end{tabular}
+  \end{center}
+
+  \begin{enumerate}
+  \item Which variable is the explanatory? Response?
+  \item Find the joint distribution.  You can use fractions
+    or decimals.
+  \item Find the two marginal distributions.
+  \item Which conditional distribution would you choose to
+    explain the relationship between the two variables?
+    Justify your answer.
+  \item Find the conditional distribution you answered in
+    the previous item.
+  \end{enumerate}
+
+  
+  
+\end{q}
+
+
+% end document------------------
+\end{document}

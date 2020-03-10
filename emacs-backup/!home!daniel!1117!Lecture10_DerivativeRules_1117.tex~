@@ -1,0 +1,18 @@
+\input{assets/preamble_lecture.tex}
+
+\begin{document}
+
+\noindent
+\textbf{Lecture 10---Derivative Rules}
+
+\section{Introduction}
+\label{sec:introduction}
+
+Prior to derivatives, we focused on limits.  We did this by giving a fundamental definition of a limit then providing theorems that offered a higher level way to interact with limits.  This is analogous to computer software, which is a higher level way to interact with a computer where everything is grouded in 1's and 0's.  In math, everything is grounded in definitions.
+
+The previous two lessons involved using the definition of a derivative to compute derivatives.  Here, we start to build the higher level ``software'', i.e.~theorems, that allow us to interact with derivatives in a way that's easier than the definition.
+
+
+
+
+\end{document}

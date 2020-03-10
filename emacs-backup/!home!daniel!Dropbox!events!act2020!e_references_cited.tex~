@@ -1,0 +1,162 @@
+\section{References Cited}
+\label{sec:references-cited}
+
+\daniel{REFERENCES NEED TO BE ORDERED AS THEY APPEAR IN
+  TEXT, SO CAN'T RELY ON BIBTEX HERE, JUST MANUAL ENTRY AND CITATIONS.}
+
+
+\begingroup
+\renewcommand{\section}[2]{}
+\begin{thebibliography}{99}
+
+\bibitem{partial_comp} M.\ Budiu, J.\ Galenson, and G.\
+  Plotkin. The compiler forest. In \emph{European Symposium
+    on Programming}. Pp.\ 21--40, 2013.
+  
+\bibitem{backprop} B.\ Fong, D.\ Spivak, and R.\
+  Tuyeras. Backprop as functor: A compositional perspective
+  on supervised learning. In \emph{2019 34th Annual ACM/IEEE
+    Symposium on Logic in Computer Science (LICS)}. Pp.\
+  1--13, 2019.
+  
+\bibitem{paiva_dialect} V.\ de Paiva. The Dialectica
+  Categories. In\emph{ Categories in Computer Science and
+    Logic: Proceedings of the AMS-IMS-SIAM Joint Summer
+    Research Conference Held June 14-20, 1987 with Support
+    from the National Science Foundation}. Vol.\ 92, Pp.\
+  47, 1989.
+
+\bibitem{lens} J.\ Foster, M.\ Greenwald, J.\ Moore, B.\
+  Pierce, A.\ Schmitt. Combinators for bidirectional tree
+  transformations: A linguistic approach to the view-update
+  problem. In \emph{ACM Transactions on Programming
+    Languages and Systems (TOPLAS)}. Vol.\ 29, No.\ 3, 2017.
+
+\bibitem{abramsky09} S.\ Abramsky and B.\ Coecke (2009). A
+  categorical semantics of quantum protocols. In
+  \emph{Handbook of Quantum Logic and Quantum Structures},
+  Elsevier, Amsterdam.
+
+\bibitem{dagstuhl14} S.\ Abramsky, J.\ C.\ Baez, F.\ Gadducci and V.\ Winschel, \emph{Categorical Methods at the Crossroads}, Report from Dagstuhl Perspectives Workshop \textbf{14182}, 2014. 
+
+\bibitem{baez15}  J.\ C.\ Baez and B.\ Fong. A compositional framework for passive linear networks.  arXiv:1504.05625.
+
+\bibitem{baezfongpollard}  J.\ C.\ Baez, B.\ Fong and B.\ Pollard
+  (2016). A compositional framework for Markov processes,
+  \emph{Jour.\ Math.\ Phys.} \textbf{57}, 033301. %Also available as \href{https://arxiv.org/abs/1508.06448}{arXiv:1508.06448}.
+
+\bibitem{baezpollard} J.\ C.\ Baez and B.\ Pollard. A compositional
+  framework for reaction networks. \emph{Rev.\ Math.\ Phys.} \textbf{29}, 1750028.  %Also available as \href{https://arxiv.org/abs/1704.02051}{arXiv:1704.02051}.
+
+\bibitem{baez11}  J.\ C.\ Baez and M.\ Stay, Physics, topology, logic
+  and computation: a Rosetta Stone (2011). In \emph{New Structures for Physics}, ed.\ Bob Coecke, Springer, Berlin.  %\href{https://arxiv.org/abs/0903.0340}{arXiv:0903.0340}.
+  
+\bibitem{barr} M.\ Barr and C.\ Wells (1990). \emph{Category Theory for Computing Science}. 
+New York, Prentice Hall.
+
+\bibitem{spivak17} S.\ Breiner, A.\ Jones, D.\ Spivak, E.\
+  Subrahmanian and R.\ Wisnesky (2017). Using category theory to facilitate multiple manufacturing service database integration, \emph{ASME Journal of Computing and Information Science in Engineering} \textbf{17}, 021011.  %Available at \href{http://computingengineering.asmedigitalcollection.asme.org/article.aspx?articleid=2539429}{http://computingengineering.asmedigitalcollection.asme.org/article.aspx?}\break \href{http://computingengineering.asmedigitalcollection.asme.org/article.aspx?articleid=2539429}{articleid=2539429}.
+
+\bibitem{coecke1} B.\ Coecke, T.\ Fritz and R.\ W.\ Spekkens (2016).
+A mathematical theory of resources.  \emph{Information and Comp.} \textbf{250}, 59--86 
+
+\bibitem{hofstra} R.\ Cockett and P.\ Hofstra
+  (2010). Categorical simulations. \emph{JPAA},
+  \textbf{214}, 1835--1853.
+
+\bibitem{hofstra2} R.\ Cockett and P.\ Hofstra
+  (2008). Introduction to Turing categories. \textsl{APAL},
+  156(2-3), 183--209.
+
+\bibitem{crole} R.\ Crole (1994). \emph{Categories for Types}, Cambridge U.\ Press, Cambridge.
+  
+\bibitem{7sketches} B.\ Fong and D.\ Spivak. \emph{Seven
+    Sketches in Compositionality: An Invitation to Applied
+    Category Theory}.  arXiv:1803.05316.
+
+\bibitem{freedman} M.\ Freedman, A.\ Kitaev, M.\ Larsen and
+  Z.\ Wang (2003). Topological quantum
+  computation. \emph{Bulletin of the AMS} \textbf{40},
+  31–38.  %Also available at \href{https://arxiv.org/abs/quant-ph/0101025}{arXiv:quant-ph/0101025}.
+  
+\bibitem{fritz1} T.\ Fritz (2017). Resource convertibility
+  and ordered commutative monoids.  \emph{Math.\ Struct.\
+    Comp.\ Sci.} \textbf{27}, 850--938.
+ 
+\bibitem{fritz2} T.\ Fritz, J.\ Oppenheim and C.\ Sparaciari
+  (2017).  A resource theory for work and heat.
+  \emph{Phys.\ Rev.\ A} \textbf{96}, 052112.
+ 
+\bibitem{gadd} F.\ Gadducci and R.\ Heckel (1997). An
+  inductive view of graph transformation. In
+  \emph{International Workshop on Algebraic Development
+    Techniques}. Springer, Berlin.
+
+\bibitem{jules13} N.\ Ghani, J.\ Hedges, V.\ Winschel, and
+  P.\ Zahn (2018).  Compositional game theory. In
+  \emph{Proceedings of the 33rd Annual ACM/IEEE Symposium
+    on Logic in Computer Science}. ACM, New York.
+
+\bibitem{jules16} J.\ Hedges, P.\ Oliva, E.\ Shprits, V.\
+  Winschel and P.\ Zahn (2016).  Compositionality and string
+  diagrams for game theory.  arXiv:1604.06061.
+   
+%\bibitem{ghica}  D.\ R.\ Ghica and A.\ Jung (2016). Categorical semantics of digital circuits. In \textsl{Proceedings of the 16th Conference on Formal Methods in Computer-Aided Design}, R.\ Piskac and M.\ Talupur (eds.), Springer, Berlin.  %Also available at \href{https://www.cs.bham.ac.uk/~drg/papers/fmcad16.pdf}{https://www.cs.bham.ac.uk/$\sim$drg/papers/fmcad16.pdf}.
+
+\bibitem{sadrzadeh} D.\ Kartsaklis, M.\ Sadrzadeh, S.\
+  Pulman and B.\ Coecke, Reasoning about meaning in natural
+  language with compact closed categories and Frobenius
+  algebras.  In \emph{Logic and Algebraic Structures in
+    Quantum Computing and Information}, Cambridge U.\ Press,
+  Cambridge,
+  2013.  %Also available as \href{https://arxiv.org/abs/1401.5980}{arXiv:1401.5980}.
+
+\bibitem{johnson} M.\ Johnson, R.\ Rosebrugh, and R.J.\ Wood
+  (2012). Lenses, fibrations and universal
+  translations. \emph{Mathematical Structures in Computer
+    Science}, \textbf{22}, 25--42.
+
+\bibitem{adhesive} S.\ Lack and P.\ Soboci\'nski
+  (2004). Adhesive categories. In \emph{International
+    Conference on Foundations of Software Science and
+    Computation Structures}. Springer, Berlin.
+
+\bibitem{lewis} M.\ Lewis and J.\ Lawry (2016). Hierarchical conceptual spaces for concept combination. \emph{Artificial Intelligence} \textbf{237}, 204--227.
+
+\bibitem{lewis2} M.\ Lewis and J.\ Lawry (2014). A label semantics approach to linguistic hedges. \emph{International Journal of Approximate Reasoning}, \textbf{55}, 1147--1163.
+ 
+ \bibitem{bart} B.\ Milewski (2017). \emph{Category Theory for Programmers}. 
+    
+\bibitem{pavlovic} D.\ Pavlovic (2013).   Monoidal computer I: Basic computability by string diagrams.
+\emph{Information and Comp.} \textbf{226}, 94--116.
+ 
+\bibitem{pierce} B.\ C.\ Pierce (1991). \emph{Basic Category Theory for Computer Scientists}, MIT Press, Cambridge, Massachusetts.
+        
+%\bibitem{gplot} G.\ Plotkin (1981). A Structural Approach to Operational Semantics. \textsl{Tech.ep. DAIMI FN-19}, Computer Science Department, Aarhus University, Aarhus, Denmark.
+
+\bibitem{riehlkan} E.\ Riehl (2014). The Kan Extension Seminar: an experimental online graduate reading course, \emph{AMS Notices} \textbf{61}, 1357--1358.  %Also available at \href{http://www.ams.org/notices/201411/rnoti-p1357.pdf}{http://www.ams.org/notices/201411/rnoti-p1357.pdf}.
+
+\bibitem{riehl} E.\ Riehl (2016). \emph{Categories in Context},  Dover, New York.  %Also available at \href{http://www.math.jhu.edu/~eriehl/context.pdf}{http://www.math.jhu.edu/~eriehl/context.pdf}.
+
+\bibitem{selinger} P.\ Selinger and B.\ Valiron (2009). Quantum lambda calculus.  In \emph{Semantic Techniques in Quantum Computation}, Cambridge U.\ Press, Cambridge.  %Also available at \href{https://arxiv.org/abs/quant-ph/0307150}{arXiv:quant-ph/0307150}.
+
+\bibitem{spivak16} D.\ I.\ Spivak, C.\ Vasilakopoulou and
+  P.\ Schultz, Dynamical systems and sheaves.
+  arXiv:1609.08086 %Available at \href{https://arxiv.org/abs/1609.08086}{arXiv:1609.08086}.
+
+\bibitem{spivak14} D.\ Spivak (2014). \emph{Category Theory
+    for the Sciences}. MIT Press, Cambridge, Massachusetts.
+  
+\bibitem{vagner} D.\ Vagner, D.\ I.\ Spivak and E.\ Lerman
+  (2015). Algebras of open dynamical systems on the operad
+  of wiring diagrams, \emph{Th.\ Appl.\ Cat.} \textbf{30},
+  1793--1822.  %Also available at
+               %\href{https://arxiv.org/abs/1408.1598}{arXiv:1408.1598}.
+
+\bibitem{wadler} P.\ Wadler (1992). The essence of
+  functional programming. In \emph{Proceedings of the 19th
+    ACM SIGPLAN-SIGACT Symposium on Principles of
+    Programming Languages}.  ACM, New York.
+
+\end{thebibliography}
+\endgroup

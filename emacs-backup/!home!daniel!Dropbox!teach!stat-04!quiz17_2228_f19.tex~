@@ -1,0 +1,62 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 16} \linebreak % quiz, or exercises
+  {math2228} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{f08nov} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[4 points each]
+  Indiana University posts the grade distributions for its
+  courses online. Students in one section of MATH118 in the
+  fall semester received 18\% A's, 31\% B's, 26\% C's, 13\%
+  D's, and 12\% F's.
+  \begin{enumerate}
+  \item Using the common scale A=4, B=3, C=2, D=1, F=0, take
+    $X$ to be the grade of a randomly chosen MATH118
+    student. Noting that $X$ is a discrete random variable,
+    what is the mean and stadard deviation of $X$?
+  \item Taking an SRS of 25 students in MATH118, denote by
+    $\bar{x}$ the average of the grades.  What is the mean
+    and standard deviation of $\bar{x}$?
+  \item What is the probability that a randomly choosen
+    MATH118 student gets a B or better, i.e.\ $P(X\geq 3)$
+  \end{enumerate}
+
+  
+\end{q}
+
+
+% end document------------------
+\end{document}

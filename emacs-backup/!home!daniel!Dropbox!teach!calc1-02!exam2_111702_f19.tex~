@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%% PREAMBLE
+%%%%%%%%%%%%%%
+
+\documentclass[12pt]{report}
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd,
+  etoolbox, mathtools}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+%%%%%%%%%%%%%%%%%	BEGIN
+%%%%%%%%%%%%%%%%% DOCUMENT
+
+\begin{document}
+\pagestyle{empty}
+
+%%%%%%%%%%% COVER
+%%%%%%%%%%% PAGE
+
+\begin{minipage}{0.3\textwidth}
+  \begin{tabular}{|l|}
+    \hline \\
+    {\textbf{EXAM 2}} \\ % exam number
+    {MATH1117.02} 	\\ % class
+    {2019-11-25} \\ % date
+    \\
+    \hline
+  \end{tabular}  
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+  name: 
+  \rule{10cm}{0.4pt}    
+\end{minipage}
+
+%\vspace{4ex}
+
+%%%%%%%%%%%%%%%% START
+%%%%%%%%%%%%%%%% EXAM
+%%%%%%%%%%%%%%%% HERE		
+
+\begin{q} % 4.4
+  Consider the function $ f(x)=\dfrac{x^4+3x^2}{x^2-4}
+  $. \emph{(4 points each)}
+  \begin{enumerate}
+  \item Describe the intervals where $ f $ in increasing,
+    where $ f $ is decreasing, and list the local
+    extrema. \vfill
+  \item Describe the intervals where $ f $ is concave up and
+    those where $ f $ is concave down. \vfill
+  \item Graph the function of $ f $. Label all asymptote and
+    extrema.\vfill
+  \end{enumerate}
+\end{q}
+\pagebreak
+
+\begin{q} % quiz 13, 3.4, 3.7, 3.9, 3.10
+  Compute the derivatives for the following functions:
+  \emph{(4 points each)} \\
+    \begin{enumerate}
+    \item $ f(x)= \dfrac{2e^x-1}{2\cos(x)+1} $ \vfill
+    \item $ f(x)= \arcsin (\ln (3x)) $ \vfill
+    \end{enumerate}
+\end{q}
+\pagebreak
+
+\begin{q} % quiz 16, 3.10
+  Without finding the inverse, evaluate the derivative of
+  the inverse of the function $f(x)= 3e^{7x}$ at the point $(3,0)$. \emph{(4 points)} 
+\end{q}
+\vspace{15em}
+
+\begin{q} % 4.2
+  Which of the following are required to be true of a
+  function $ f $ for the Mean Value Theorem to hold on an
+  interval $ [a,b] $: (fill in all that apply) \emph{(2
+    points)} \\
+  \begin{multicols}{2}
+    \begin{itemize}[label={$ \bigcirc $}]
+    \item $ f $ in continuous on $ (a,b) $
+    \item $f$ has an inverse on $ (a,b) $ \columnbreak
+    \item $f$ is differentiable on $ [a,b] $
+    \item $ f(a)=f(b) $ \\
+    \end{itemize}
+  \end{multicols}
+  \noindent
+  For the function and interval
+  $$f(x)=\frac{1}{(x-1)^2}; \; [0,2]$$ find the points
+  guaranteed to exist by the Mean Value Theorem \emph{(4
+    points)}
+\end{q}
+\pagebreak
+
+\begin{q} % quiz 14, 3.8
+  Solve $ x^2+7\tan (y)=\sqrt{2y} $ for $ \frac{dy}{dx} $. \emph{(4 points)}
+\end{q}
+\vfill
+
+\begin{q} % quiz 17, 3.11
+  The sides of a cube decreases in length at a rate of 3
+  meters per second. At what rate is the volume of the cube
+  changing when the sides are 2 metes long? \emph{(4 points)}
+\end{q}
+\vfill\pagebreak
+
+%%%%%%%%%%%%%%	SCRATCH
+%%%%%%%%%%%%%% WORK
+%%%%%%%%%%%%%% PAGE
+
+\centering
+-- you may use this page for scratch work --
+\vfill
+
+\pagebreak
+
+\centering
+-- you may use this page for scratch work --
+
+%%%%%%%%%%%%%%	END
+%%%%%%%%%%%%%% DOCUMENT
+
+\end{document}

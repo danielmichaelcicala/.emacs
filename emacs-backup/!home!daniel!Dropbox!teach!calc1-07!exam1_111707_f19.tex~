@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%% PREAMBLE
+
+\documentclass[12pt]{report}
+
+% load packages ----------------
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usepackage[all,2cell]{xy}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% macros ---------------------------
+
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+
+% environments ---------------------
+
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+%%%%%%%%%%%%%%%%%	BEGIN
+%%%%%%%%%%%%%%%%% DOCUMENT
+
+\begin{document}
+\pagestyle{empty}
+
+%%%%%%%%%%%	COVER
+%%%%%%%%%%% PAGE
+
+name: 
+\rule{12cm}{0.4pt} 
+\hfill
+
+\vspace{12ex}
+
+% header -----------------------	
+
+\begin{minipage}{\textwidth} 
+  \centering
+  {\Huge \textbf{exam}} \linebreak % exam number
+  {\Large } \linebreak	% class
+  {\Large } % date
+\end{minipage}
+
+\vspace{4ex}
+
+% instructions ------------------
+
+\begin{itemize} 
+\item \textit{each question is worth 4 points}
+\item \textit{justify your answers}
+\item \textit{no notes, phones, calculators, or friends}
+\item \textit{don't cheat... seriously}
+\item \textit{if you do cheat, you receive a 0/100 grade}
+\item \textit{there are no makeup exams}
+\item \textbf{good luck!}
+\end{itemize}
+
+\vfill
+
+% formulas --------------------
+
+\fbox{
+  \begin{minipage}{\textwidth}
+    \vspace{2ex}
+    \begin{itemize} \setlength\itemsep{4ex}
+    \item 
+    \item 
+    \item 
+    \item 
+    \end{itemize}	
+    \vspace{2ex}
+  \end{minipage}
+}
+\vfill
+
+\pagebreak
+
+%%%%%%%%%%%%%%%% START
+%%%%%%%%%%%%%%%% EXAM
+%%%%%%%%%%%%%%%% HERE		
+
+
+\begin{q}[5pts.\ extra credit]
+  In class, we saw the following two part theorem:
+  \begin{itemize}
+  \item If $ g $ is continuous at $ a $ and $ f $ is
+    continuous at $ g(a) $, then $$ \lim_{x \to a} f(g(x)) =
+    f( \lim_{x \to a} g(x) ) $$.
+  \item \item If $ \lim_{x \to a} g(x)= L $ and $ f $ is
+    continuous at $ L $, then $$ \lim_{x \to a} f(g(x)) =
+    f( \lim_{x \to a} g(x) ) $$.
+  \end{itemize}
+  Which of these two statements is more general than the
+  other and why?
+\end{q}
+
+\pagebreak
+
+%%%%%%%%%%%%%%	SCRATCH
+%%%%%%%%%%%%%% WORK
+%%%%%%%%%%%%%% PAGE
+
+\centering
+-- you may use this page for scratch work --
+\vfill
+
+\pagebreak
+
+\centering
+-- you may use this page for scratch work --
+
+%%%%%%%%%%%%%%	END
+%%%%%%%%%%%%%% DOCUMENT
+
+\end{document}

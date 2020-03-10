@@ -1,0 +1,27 @@
+\documentclass{amsart}
+\usepackage[a4paper,top=3cm,bottom=3cm,inner=3cm,outer=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\title{Special Information and Supplementary
+  Documentation}
+\begin{document}
+
+\section*{Rationale for Performance Off-Campus}
+\label{sec:rati-perf-camp}
+
+The PI and coPI are instituted at the University of New
+Haven, but the in-person research week will take place at
+MIT. This is because the School is associated, though
+independent of, the Applied Category Theory Conference which
+is being organized by Brendan Fong and David Spivak of MIT.
+
+\daniel{Rephrase if Brendan is a coPI}
+
+\section*{Letters of Collaboration}
+\label{sec:lett-coll}
+
+Attached to the Facilities, Equipment, and Other Resources Section.
+
+\end{document}

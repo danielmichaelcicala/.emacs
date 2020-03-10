@@ -1,0 +1,392 @@
+\documentclass[11pt]{amsart}
+
+% load packages
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usepackage[all,2cell]{xy}
+\usepackage{pgfplots}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% new commands
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\MM}{\mathbb{M}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\op}[1]{\operatorname{#1}}
+\renewcommand{\t}[1]{\text{#1}}
+\newcommand{\from}{\colon}
+\newcommand{\xto}[1]{\xrightarrow{#1}}
+\newcommand{\sm}{\smallsetminus}
+
+% environments & counters
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\theoremstyle{remark}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{notation}[thm]{Notation}
+
+\theoremstyle{definition}
+\newtheorem{ex}[thm]{Example} 
+\newtheorem{df}[thm]{Definition}
+
+
+\usepackage[numbers]{natbib}
+
+
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+% begin document
+\begin{document}
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+
+\noindent {\LARGE \textsc{On Research}}
+
+\noindent \rule{12.5cm}{0.4pt} 
+
+\noindent Daniel Cicala, UC Riverside
+
+\vspace{1ex}
+
+\section*{Research, broadly considered}
+
+My research belongs in the domain of network theory.  By
+nature, network theory is an interdisciplinary field, with
+practitioners coming from pure and applied mathematics,
+computer science, the natural sciences, and the social
+sciences.  Hence, there are both theoretical and
+applied arms to this field. My research strikes a balance
+between theoretical and applicable aspects.
+
+\section*{Theoretical network theory}
+
+Due to the interdisciplinary nature of this field, different
+``network theory languages'' have emerged.  For instance,
+computer scientists use Petri nets to understand processes (Figure
+\ref{fig:ResearchStatement_PetriNet}) and chemists use
+reaction networks (Figure
+\ref{fig:ResearchStatement_ChemicalRxNetwork}). My thesis
+research consists of a study of the various languages by
+decomposing them into their syntactical and semantic
+components.  The motivation is to foster a method
+of translation between the different languages.
+
+\begin{figure}[h]
+\fbox{%
+  \centering
+  \begin{subfigure}[b]{0.455\textwidth}
+  \centering
+  \begin{tikzpicture}
+    \node (v1) at (-1.5,0) {$2\mathrm{H}_2 + \mathrm{O}_2$};
+    \node (v2) at (1,0) {$2\mathrm{H}_2\mathrm{O}$};
+    \draw [->] (v1) to node [above] {\scriptsize{$ r $}} (v2);
+    \node (v3) at (-1.5,-1) {$\mathrm{C} + \mathrm{O}_2$};
+    \node (v4) at (1,-1) {$\mathrm{CO}_2$};
+    \draw [->] (v3) to node [above] {\scriptsize{$ s $}} (v4);
+  \end{tikzpicture}
+  \caption{A chemical reaction network}
+  \label{fig:ResearchStatement_ChemicalRxNetwork}
+  \end{subfigure}
+
+  \centering
+  \begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \begin{tikzpicture}[scale=0.7]
+    \draw  (-3,2) ellipse (0.5 and 0.5);
+    \draw  (2.8,2) ellipse (0.5 and 0.5);
+    \draw  (-0.2,1.4) ellipse (0.5 and 0.5);
+    \draw  (-0.2,2.6) ellipse (0.5 and 0.5);
+    \draw  (-1.8,2.4) rectangle (-1.4,1.6);
+    \draw  (1.2,2.4) rectangle (1.6,1.6);
+    \node at (-3.4,2.8) {P1};
+    \node at (-1.4,2.8) {T1};
+    \node at (0.2,3.4) {P2};
+    \node at (0.2,0.6) {P3};
+    \node at (1.6,2.8) {T2};
+    \node at (3.2,2.8) {P4};
+    \node (v1) at (-2.4,2) {};
+    \node (v2) at (-1.9,2) {};
+    \draw [->]  (v1.center) to (v2.center);
+    \node (v4) at (-0.8,2.4) {};
+    \node (v3) at (-1.4,2) {};
+    \node (v5) at (-0.8,1.6) {};
+    \draw  [->] (v3.center) to (v4.center);
+    \draw [->] (v3.center) to (v5.center);
+    \node (v6) at (0.4,2.6) {};
+    \node (v7) at (1,2) {};
+    \node (v8) at (0.4,1.4) {};
+    \draw [->] (v6.center) to (v7);
+    \draw [->] (v8.center) to (v7);
+    \node (v9) at (1.6,2) {};
+    \node (v10) at (2.2,2) {};
+    \draw [->]  (v9.center) to (v10.center);
+    \node at (-3,2) {$\bullet$};
+    \node at (-0.4,1.4) {$\bullet$};
+    \node at (0,1.4) {$\bullet$};
+    \node at (2.8,2) {$\bullet$};
+  \end{tikzpicture}
+  \caption{A Petri Net}
+  \label{fig:ResearchStatement_PetriNet}
+  \end{subfigure}
+}
+\caption{Examples of networks}
+\end{figure}
+
+With regard to the syntax, I used techniques from
+category theory and logic to develop a framework in which to
+reason about a wide class of these languages.  Two central
+features of this syntax are that
+\begin{itemize}
+\item a rewriting theory is built-in; and
+\item it is compositional.
+\end{itemize}
+
+Rewriting is a technique created by Noam Chomsky to study
+formal languages \cite{Chomsky}. It has since grown to be
+used in graph theory and computer science.
+
+The compositional viewpoint is that, to study a system, one should
+decompose it in a way careful enough so that reconnecting the
+components causes no emergent phenomenon.  Then one can study the
+sub-systems to understand the original system.
+
+I presented the technical foundations for the syntax in my
+paper \emph{Spans of Cospans} \cite{SpansCospans} and found
+desirable properties in a joint work with Kenny
+Courser \cite{CicalaCourser}, both published by the journal
+\emph{Theory and Applications of Categories}. The idea of
+the syntax is that a system consists of a diagram
+%
+\[
+  \begin{tikzpicture}
+    \node (0) at (0,0) {\scriptsize{inputs}};
+    \node (1) at (3,0) {\scriptsize{system}};
+    \node (2) at (6,0) {\scriptsize{outputs}};
+    \draw [<-] (1) to node [] {\scriptsize{$  $}} (0);
+    \draw [<-] (1) to node [] {\scriptsize{$  $}} (2);
+  \end{tikzpicture}
+\]
+%
+inside of an appropriate category. In network theory,
+\emph{closed systems} are the usual object of study. To
+import compositionality, we equip systems with inputs and
+outputs so that compatible systems can connect together to
+create larger systems.  
+
+Connecting systems together is a syntactical phenomenon
+which fails to capture the behavior of the system.  To
+reflect behavior of systems in our syntax, such as replacing
+resistors in parallel with the correct single resistor, we
+use rewriting.  This is a diagram
+%
+\[
+  \begin{tikzpicture}
+    \node (0) at (0,2) {\scriptsize{inputs}};
+    \node (1) at (3,2) {\scriptsize{system}};
+    \node (2) at (6,2) {\scriptsize{outputs}};
+    \node (0') at (0,1) {\scriptsize{inputs'}};
+    \node (1') at (3,1) {\scriptsize{system'}};
+    \node (2') at (6,1) {\scriptsize{outputs'}};
+    \node (0'') at (0,0) {\scriptsize{inputs''}};
+    \node (1'') at (3,0) {\scriptsize{system''}};
+    \node (2'') at (6,0) {\scriptsize{outputs''}};
+    \draw [->] (0) to node [] {\scriptsize{$  $}} (1);
+    \draw [->] (2) to node [] {\scriptsize{$  $}} (1);
+    \draw [->] (0') to node [] {\scriptsize{$  $}} (1');
+    \draw [->] (2') to node [] {\scriptsize{$  $}} (1');
+    \draw [->] (0'') to node [] {\scriptsize{$  $}} (1'');
+    \draw [->] (2'') to node [] {\scriptsize{$  $}} (1'');
+    \draw [->] (0') to node [] {\scriptsize{$  $}} (0);
+    \draw [->] (0') to node [] {\scriptsize{$  $}} (0'');
+    \draw [->] (1') to node [] {\scriptsize{$  $}} (1);
+    \draw [->] (1') to node [] {\scriptsize{$  $}} (1'');
+    \draw [->] (2') to node [] {\scriptsize{$  $}} (2);
+    \draw [->] (2') to node [] {\scriptsize{$  $}} (2'');
+  \end{tikzpicture}
+\]
+%
+in an appropriate category. The intuition is that we can
+replace the system encoded in the top row by the
+behaviorally equivalent system on the bottom row. Rewriting
+in this way can achieve similar results to
+coarse-graining. Indeed, exploring coarse-graining via
+rewriting is a topic of future inquiry.
+
+These diagrams combine with others in two
+directions: horizontally which captures connecting systems
+together and vertically which captures rewriting systems. My
+main result in \cite{SpansCospans} was that given any system
+fitting into this framework, any decomposition into
+sub-systems, those sub-systems can each be rewritten and
+recomposed into a new system. Also, this operation is
+independent of the order in which the sub-systems are
+rewritten.
+
+In my forthcoming preprint \cite{StrCsp}, I am further
+refining the syntax and creating an ambient framework into
+which this syntax sits. This allows for comparisons between
+different systems. One main result of this paper is that my
+framework forms a topos.  Toposes relate geometry to logic,
+thus opening the door for using geometrical and logical
+techniques to study complex systems.  Moreover, each topos
+has an underlying \emph{type system}, which I hope to
+leverage to create computer models of these systems.
+Another result of this latter paper is that, under suitable
+conditions, by aggregating local reasoning we get global
+information. This serves to justify the compositional
+approach to studying networks.
+
+We use category theory to abstract away idiosyncrasies borne
+of domain-specific practices. This serves as a pathway to
+understand different systems using a single framework. The
+difference of systems, from a modelling standpoint, comes in
+their behavior.  To capture system behavior, we use
+\emph{functorial semantics}, which assigns to a system it's
+behavior. This can take the form of the relation of allowed
+voltage/current pairs on circuits \cite{PassLinearNets}, or
+the steady-state behavior of a Markov process
+\cite{MarkProc}, or the dynamical system governing a
+reaction network \cite{ChemReac}.  The novelty in this
+approach, again, stems from the compositionality.
+
+\section*{Applied network theory}
+
+I presented on my framework at the Quantum
+Physics and Logic 2017 conference. I spoke
+about applying it to the ZX-calculus \cite{zxCalc}, a
+string-based language used for making computations that are
+typical within quantum computing. The syntax side of my work
+with the ZX-calculus places it for the first time on the
+same level as reaction networks, Petri nets, Markov
+processes, linear circuits, and other examples fit into my
+framework. This syntax has its semantics in Hilbert spaces,
+where the computations occur.
+
+A current project involving my framework is the introduction
+of a compositional approach to database theory. I belive
+that the development of such a theory could have practical
+ramifications for data integration which is central to
+working with data in commercial and research contexts.
+
+\subsection*{Future directions}
+
+There are many directions for this research.
+
+I intend to introduce extra measures to this framework. For
+instance, this framework builds on graphs and their
+variants. As graphs play a central role in network theory, I
+intend to import measures (such as centrality measures) and
+techniques from other areas (particular random graphs,
+statistics, and dynamical systems) of network theory into my
+framework.
+
+There are many possible areas of application. My primary
+interests lie in social sciences and economics.
+Specifically, I want to develop compositional approaches to
+social network analysis, agent base-models, and
+actor-networks.  In economics, I want to develop
+compositional approaches to optimization models and
+aggregate models.
+
+Yet another direction arises from my result in
+\cite{StrCsp} where I proved that my syntax forms a
+topos. As mentioned above, each topos has an underlying type
+theory.  This type theory allows one to develop computer
+programs to model networks fitting into my framework. I
+hope to create to such programs for social science and
+economic models I will be considering.
+
+\bibliographystyle{abbrvnat}
+%\bibliography{ResearchStatement_Bib.bib}
+
+\begin{thebibliography}{99}
+
+\bibitem{OpenPetri} J.~Baez and J.~Master. Open Petri Nets. In preparation.
+
+\bibitem{PassLinearNets} J.~Baez, B.~ Fong. A compositional
+  framework for passive linear networks. arXiv preprint
+  arXiv:1504.05625. 2015.
+  
+\bibitem{MarkProc} J.~Baez, B.~ Fong, B.~ Pollard. A compositional framework for Markov processes. \emph{J.~Math.~Phys}. 2016.
+
+\bibitem{ChemReac} J.~Baez, B.~Pollard. A compositional framework for reaction networks. \emph{Rev.~Math.~Phys}. 2017.
+
+\bibitem{Chomsky} N.~Chomsky. Three models for the
+  description of language. IRE Transactions on Information
+  Theory. 2 (3): 113–124. 1956
+  
+\bibitem{zxCalc} D.~Cicala. Categorifying the ZX-calculus. Proceedings
+  14th International Conference on Quantum Physics and
+  Logic. \emph{Electron.~Proc.~Theor.~Comput.~Sci}. (EPTCS). Vol.~266,
+  pp.~294--314. EPTCS. 2018.
+
+\bibitem{SpansCospans} D.~Cicala. Spans of cospans.  \emph{Theory
+    Appl.~Categ.} Vol.~33, no.~6, pp.~131-147. 2018.
+  
+\bibitem{CicalaCourser} D.~Cicala and K.~Courser. Spans and cospans in
+  a topos. \emph{Theory Appl.~Categ.} Vol.~33, no. 1, pp.~1-22. 2018
+
+\bibitem{StrCsp} D.~Cicala. Inductive rewriting for structured
+  cospans. In preparation.
+
+\bibitem{PicQuan} B.~Coecke and A.~Kissinger. Picturing quantum processes. \emph{Cambridge University Press}. 2017.
+  
+\bibitem{FunctSeman} F.W.~Lawvere. Functorial Semantics of Algebraic
+  Theories. \emph{Reprints in Theory Appl.~ Categ.}
+  No.~5, pp.~1–121. 2004.
+
+\bibitem{networks} M.~Newman. Networks. \emph{Oxford university press}. 2018.
+  
+% \bibitem{andries} M.~Andries, G.~Engels, A.~Habel, et.~al.Graph
+%   transformation for specification and programming. Science of
+%   Computer programming. Elsevier. Vol.~34, no.~1, pp.~1--54. 1999.
+
+% \bibitem{ehrig} H.~Ehrig, M.~Pfender, and
+%   H.~Schneider. Graph-grammars: An algebraic approach. IEEE Conference
+%   Record of 14th Annual Symposium on Switching and Automata Theory.
+%   Pp.~167--180. 1973.
+
+% \bibitem{lack} S.~Lack and P.~Sobocinki. Adhesive Categories. International Conference on Foundations of Software Science and Computation Structures. Springer, Berlin, Heidelberg. 2004.
+  
+% \bibitem{lobo} D.~Lobo, F.~Vico, and J.~Dassow. Graph grammars with
+%   string-regulated rewriting. Theoretical computer science.  Vo.~412,
+%   no.~43, pp.~6101--6111. Elsevier. 2011. 
+
+% \bibitem{lian} R.~Lian, B.~Goertzel, S.~Ke, et.~al. Syntax-Semantic
+%   Mapping for General Intelligence: Language Comprehension as
+%   Hypergraph Homomorphism, Language Generation as Constraint
+%   Satisfaction.  AGI. Pp.~158--167. Springer. 2012
+
+\end{thebibliography}
+
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+% end document
+\end{document}
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+
+
+
+

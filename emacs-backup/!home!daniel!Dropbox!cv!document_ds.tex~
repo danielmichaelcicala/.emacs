@@ -1,0 +1,139 @@
+\documentclass[11pt]{amsart}
+
+% load packages
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usepackage[all,2cell]{xy}
+\usepackage{pgfplots}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% new commands
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\MM}{\mathbb{M}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\op}[1]{\operatorname{#1}}
+\renewcommand{\t}[1]{\text{#1}}
+\newcommand{\from}{\colon}
+\newcommand{\xto}[1]{\xrightarrow{#1}}
+\newcommand{\sm}{\smallsetminus}
+
+% environments & counters
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\theoremstyle{remark}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{notation}[thm]{Notation}
+
+\theoremstyle{definition}
+\newtheorem{ex}[thm]{Example} 
+\newtheorem{df}[thm]{Definition}
+
+
+\usepackage[numbers]{natbib}
+
+\begin{document}
+
+
+\noindent {\LARGE \textsc{On diversity}}
+
+\noindent \rule{12.5cm}{0.4pt} 
+
+\noindent Daniel Cicala, UC Riverside
+
+\vspace{2em}
+
+Increasing diversity is an important issue for me.  I do not
+only view it as a way to help under-represented groups, but
+as a way to strengthen the field of mathematics and our
+culture as a whole.  Below are some ways in which I have
+approached issues of diversity.
+
+I have taught at three separate Hispanic serving
+institutions, where a significant number of my students are
+not full-time. They are parents, hold full-time jobs, and
+have other family responsibilities. To increase their
+ability to take part in my class, I promote flexibility. For
+instance, if a student tells me they will miss class, I will
+provide them with a hard copy of my lecture notes and allow
+them to submit homework through email. This policy has
+helped many students: one who watched their little brother
+so their mother could go to work, another who watched their
+child because their partner was unable to, and another who
+needed to take an extra shift at work.  These are hard
+working students whose life circumstance make it difficult
+to follow typical classroom policies that favor
+students without such responsibilities. Given this, I
+continue to examine how my policies and processes
+accommodate life circumstances of my students and allow them
+to reach their full potential.
+
+I am a middle class, straight white male. This informs how I
+communicate.  My experience is different than many of the
+students sitting before me. This will lead to
+miscommunications. A relevant story that speaks volumes was
+told by the only black doctor practicing at a certain
+clinic. He was on a panel of, other than him, all white
+doctors delivering a complicated prognosis to a black
+patient who nodded along.  The white doctors did not see
+they were not communicating well. The black doctor
+recognized this and debriefed with the patient after the
+others left, communicating the prognosis to the patient with
+ease. The challenge here was one of communication style,
+which is cultural. From this story, I take that there will
+be miscommunication between me and my students to which I
+will be blind. To minimize this, I use group work. I have
+found that students are more vulnerable and ask more
+questions to peers than to a professor, which is reasonable
+consider the power dynamics involved. Group work opens the
+opportunity for students to learn from a diverse set of
+voices, where each student translates my messaging into
+their own cognitive framework before dispersing it amongst
+each other.
+
+I also realize that fostering diversity must extend beyond
+the classroom into other areas of academia.  For instance, I
+am currently co-organizing a workshop for which we invited
+six senior researchers.  When doing so, we considered
+diversity in our invitations, and were successful in
+securing a roster diverse in race, gender, and sexuality.
+Given that mathematics is still dominated by white males, it
+is especially important to provide fair opportunities to
+benefit their career. This is true, not only for the good of
+the people involved, but for mathematics as a field of
+inquiry. For example, by having a diverse faculty, more
+students will see someone at the head of the class that they
+can relate to. This results in more students believing in
+the viability of pursuing a career in mathematics. This
+begets a stronger pool of mathematicians.  Also, it will
+dilute the Euro-centric cultural values permeating
+mathematics, broadening the scope of what is considered
+valuable to the field which then allows more people to
+contribute. In short, by increasing diversity in faculty
+across academia will result in better mathematics.
+
+As I continue to teach and perform research, I will embrace
+my role in improving outcomes related to diversity.
+
+
+\end{document}

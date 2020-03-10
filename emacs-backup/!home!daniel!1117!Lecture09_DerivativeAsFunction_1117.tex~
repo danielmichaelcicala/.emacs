@@ -1,0 +1,104 @@
+\input{assets/preamble_lecture.tex}
+
+\begin{document}
+
+\textbf{Lecture 09---Derivative as a Function}
+
+\section{Introduction}
+\label{sec:introduction}
+
+In the previous lesson, we learned how to find the derivative of a function \emph{at a single point} $x=a$.  That is, for a given $f$, we found $f'(a)$ which corresponds to the slope of the line tangent to $f$ at $x=a$.
+
+\textbf{Desmos: Lecture 09.01}
+
+However, as we pick different values of $a$, we get new tangent lines and new slopes. We can package this info up into a function that sends to each $x=a$ the slope of the tangent line at that place.  This function is called the derivative of $f$ and denoted $f'(x)$.  In this lesson, we define the derivative and do some examples.  In the next lesson, we develope the theory of derivatives so that we don't need to do so much dirty work to find derivatives.
+
+\section{Derivative as Function}
+\label{sec:deriv-as-funct}
+
+\begin{notes}
+
+\item[Initial Practice] Part of finding derivatives is, given a function $f(x)$, writing the ``difference quotient'' $\dfrac{f(x+h)-f(x)}{h}$. \textbf{Be careful with the x+h part.}
+
+  \begin{ws}
+    Find the difference quotient 
+  \end{ws}
+  
+\item[Derivative as a point] We learned $$f'(a)= \lim\limits_{h \to 0} \dfrac{f(a+h)-f(a)}{h}$$ where $a$ is some specific number.  But we can relax the specificity of ``$a$ being a specific number'' to ``$a$ being a general number'', that is a variable $x$.
+
+  
+\item[Definition (derivative)] The derivative of a function $f$ is the function $$f'(x)= \lim\limits_{h \to 0} \dfrac{f(x+h)-f(x)}{h}$$.
+  
+\item[Domain of derivative] Just like more familiar functions (think rational functions, for example) the derivative function also has a domain.  The domain is all the $x$ values for which the limit exists.  For any number in the domain of $f'(x)$, we say that $f$ is differentiable there.
+  
+\item[Hint] At first, the numerator and denominator of the limit always both go to zero.  Our job is to make algebraic manipulations that ``remove'' the $h$ in the denominator. 
+
+\item[Example] Compute the derivative of $f(x)=-x^2+6$ using the definition of derivative. Compare that to slope of tangent lines at various places on the graph of $f$.
+
+  \begin{ws}
+    Compute the derivative of $f(x)=2x^2+3x$ using the definition of derivative.
+  \end{ws}
+
+\end{notes}
+  
+\section{Notation}
+\label{sec:notation}
+
+\begin{notes}
+  
+\item Because math develops around the world and in different cultures, sometimes different names refer to the same thing. This is just like in spoken language, for example the same kind of sandwhich is called a hero, sub, grinder, etc.  This is the same for math notation.
+  
+\item[prime notation] placing a prime or apostrophe on the name of the function refers to it's derivative: $f'$ is the derivative of $f$ and $g'$ is the derivative of $g$.
+  
+\item[differentials]  $\frac{dy}{dx}$ is another notation.  Where does this come from?
+  
+\item[derivative measures change] Derivative measure how a function is changing.  Think of $dx$ as meaning ``an infinetesemly small change in $x$'' and $dy$ as meaning ``an infinetesemly small change in $y$''. The change is so small, so close to $0$ (but not quite zero) that $(dx)^2=0=(dy)^2$.
+  
+\item[Example] Given $y=x^2$, if we want to measure how fast the function changes, let's add this little change to $x$: $x+dx$. Incorporate this into the RHS to get $(x+dx)^2$. But if $x$ changes a tiny bit, so does $y$, so the equation becomes $y+dy=(x+dx)^2$.  The derivative is then the ratio of change in $y$ over change in $x$, so $dy/dx$.  Let's solve for that:
+  \begin{align*}
+    y+dy &= (x+dx)^2 & \\
+    y+dy &= x^2 + 2xdx + (dx)^2 & \\
+    dy &= 2xdx + (dx)^2 & (y=x^2) \\
+    dy &= 2xdx & ((dx)^2=0) \\
+    \dfrac{dy}{dx} = 2x
+  \end{align*}
+
+\item[Differential Notation] This example illustrates where $dy/dx$ comes from. Because we often write $y=f(x)$, we often see both $dy/dx$ and also $df/dx$.
+  
+\item[Differential operator] We can also read the notation  ``$\frac{d}{dx}(f(x))$'' as ``differeniate the function $f$''. So that
+  \begin{itemize}
+  \item $\dfrac{d}{dx}(x^2-4x+5)$ means ``differentiate the function $x^2-4x+5$, or
+  \item  $\dfrac{d}{dx}(\tan(\pi x^2))$ means ``differentiate the function $\tan{\pi x^2}$
+  \end{itemize}
+  Using the term $d/dx$ this way is \textbf{very helpful} in organizing our thinking and work when differentiating complecated functions.
+
+\end{notes}
+
+  
+\section{Computing Derivatives}
+\label{sec:comp-deriv}
+
+\begin{notes}
+  
+\item The remainder of this lesson is just practice cranking out calculating limits. See the worksheet.
+
+
+
+  
+\end{notes}
+
+
+
+  
+
+  
+
+
+
+  
+
+
+
+
+
+\end{document}

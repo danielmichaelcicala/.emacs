@@ -1,0 +1,9 @@
+MC	Is the function $$f(x)=\dfrac{2x^2+3x+1}{x^2+5x} $$ continuous at $$ a=-5 $$?	yes	incorrect	no	correct
+MC	Is the function $$f(x)=\sqrt{x-2} $$ continuous at $$ a=1 $$?	yes	incorrect	no	correct
+MC	Is the function $$#21 $$ continuous at $$ a=1 $$?	yes	incorrect	no	correct
+MC	Is the function $$#22 $$ continuous at $$ a=3 $$?	yes	correct	no	incorrect
+MC	Is the function $$#24 $$ continuous at $$ a=-1 $$	yes	incorrect	no	correct
+MC	Compute $$\lim\limits_{x \to 1} \left( \dfrac{x+5}{x+2} \right)^3 $$.	81	incorrect	DNE	incorrect	16	correct
+MC	Compute $$\lim\limits_{x \to 4} \sqrt{\dfrac{x^3-2x^2-8x}{x-4}}$$.	DNE	incorrect	$$2\sqrt{6}$$	correct	$$0$$	incorrect
+MC	Compute $$\lim\limits_{x \to -1} \left( x^2-4+(x^2-9)^{1/3} \right)$$.	-1	incorrect	DNE	incorrect	-5	correct
+MC	Compute $$\lim\limits_{x \to 0} \dfrac{e^{4x}-1}{e^x}$$.	DNE	incorrect	4	correct	0	incorrect	1	incorrect

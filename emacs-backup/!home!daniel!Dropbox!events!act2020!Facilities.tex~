@@ -1,0 +1,27 @@
+\documentclass[12pt]{amsart}
+\usepackage[a4paper,top=1in,bottom=1in,inner=1in,outer=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{pdfpages}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\title{Facilities, Equipment and Other Resources}
+\begin{document}
+\maketitle
+
+\section*{Facilities} N/A
+
+\section*{Equipment} N/A
+
+\section*{Other Resources}
+
+Unfunded Collaborator: Dr.~David Spivak of MIT.  He will
+provide access to rooms and whiteboards at the math
+department in MIT.  His letter of collaboration is attached.
+
+\includepdf[pages=-]{LetterOfCollaboration_DavidSpivak.pdf}
+
+
+
+
+\end{document}

@@ -1,0 +1,288 @@
+%TEX
+%-------------- begin description ---------------------------------------------
+%
+% This document contains the instructor's addenda to the standard department
+% syllabus. Provide any additional information such as 
+%  - Additional resources or supplemental texts;
+%  - Grading policies;
+%  - Academic integrity policies;
+%  - Late assignments and absences;
+%
+% i.e., there is no need to provide all of the standard components that are in
+% the standard department syllabus for the same course.
+%
+%-------------- end description -----------------------------------------------
+\documentclass{CAS_syllabus}
+
+
+%-------------- begin the document --------------------------------------------
+\begin{document}
+
+% Output the header for the course syllabus document:
+\Heading
+
+%...............................................................................
+% Do not introduce any blank lines betweeen these brackets.
+\Coursehead[
+% The following defines the data fields used in the document:
+%
+% INSTRUCTOR INFORMATION:
+instructor      = {Dr.~Daniel Cicala},
+%phone           = {203-932-1209},
+email           = {dcicala@newhaven.edu},
+webpages        = {https://danielmichaelcicala.github.io},
+%
+% COURSE TEXT AND SYLLABUS:
+course          = {MATH 1117},
+coursesection   = {-\,02}, % We use the - style to denote course sections.
+coursetext      = {\textit{Calculus: Early Transcendentals}, by Briggs, Cochran, Gillett,  Pearson, 3e, ISBN 978-0-13-476364-45},
+coursecrosslist = {},
+coursename      = {Calculus I},
+credits         = {4},
+syllabusparti   = {http://math.newhaven.edu/mathphysics/syllabus/math1117.pdf},
+%                  Note the syllabi are locate along the same path, and they
+%                  all have the same naming style and are all pdf files.
+%
+% COURSE TIME AND LOCATION:
+%revision        = {1.0, Aug 20, 2016},
+semester        = {Fall 2019},
+office          = {TBD},
+meetingtimes    = {MWF 8:00 am--9:15 am},
+classroom       = {KAPL 203},
+officehours     = {MW 2:30pm--4:00pm; F 11:00am--12:00pm},
+addanddrop           = {Tuesday, 3 September},
+%semesterclasses      = {Spring Semester 2016},
+startsemesterclasses = {Monday, 26 August},
+endsemesterclasses   = {Monday, 9 December},
+lastdropdate         = {Tuesday, 29 October},
+%semesterholidays     = {Memorial Day Monday, May 29},
+semesterfinalexam    = {Monday, 16 December, 8am--10 am}
+]
+
+\syllabusfontn
+\Title{$\S$\,II: Instructor's Addendum to the Syllabus}
+\SubTitle{For \Course\Coursesection \Coursename}
+\vspace*{0.8em}
+
+\textbf{Disclaimer: I reserve the right to make changes to this syllabus as I see it fits the progress of the learning process. These changes can include, for example, additions or removal of assessment components; dates of quizzes and exams; due dates of assignments; etc. I will inform the students about these changes in a timely manner through email and classroom announcements.}\\
+
+\noindent
+This is Part II, i.e., the instructors portion of the
+syllabus for this course.  Part I contains a complete
+overview of Department, College and University requirements
+along with the standard curriculum content for this course
+can be found at \Urls{\Syllabusparti}.\\
+
+\Subtopic{Required Textbook} 
+Note that we will \textbf{\textit{not}} be using MyMathLabs
+for online homework as part of a student's grade in this
+course. Students are, however, encouraged to use MyMathLabs
+as a valuable learning and study tool provided with
+\Coursetext.
+
+\Topic{Specific Assessments Requirements for \Course\Coursesection}
+Each student is assessed based on a computed point score from 0 to 100. 
+
+\Subtopic{Class Participation/Assignments}
+During each class period, we will be working (individually and/or in groups) on several examples that I will provide. Maintaining a well-organized journal for taking notes throughout the semester is an excellent way to study. Every day I will assign a set of problems that will be posted on BlackBoard. I will collect these and grade a very few selected problems and grade the rest by completion. These HW assignments are worth $10 \%$ of the final grade. There is $5\%$ of the final grade on quizzes.  There is a $5 \%$ of the final grade on participation/attendance/engagement/presenting. 
+
+\Subtopic{Exams}
+There will be three exams ($E_1, E_2, E_3$) each worth $15 \%$ of the final grade and a comprehensive final exam (FE) worth $30 \%$ of the final grade.  Each exam will have specific instructions, but the following generally apply to all exams:
+\begin{compactitem}
+  \item Tests are closed books and notes.  Calculators are not
+    allowed.
+  \item Cell phones must be turned off and stowed
+    throughout the exam.  Any use of a cell phone will
+    result in an exam grade of zero (0).
+  \item I reserve the right to seat you in a way that
+    I find suitable for the exams, hence you will be
+    occasionally moved from your usual seating.
+  \item Any attempt to cheat will be dealt with
+    according to the misconduct code. Students who
+    have been found to have violated the rules
+    governing academic integrity will, at the very
+    least receive a 0 grade on the paper or exam which
+    was the source of the violation, and may be
+    subject to further penalties as allowed by the
+    University.
+\end{compactitem}  
+
+% ===================================
+% The mastery exam is no longer in use
+% ====================================
+%
+% \Subtopic{Mastery Exams}
+% The Department requires that all students pass a
+% Mastery Test covering the material on differentiation. 
+% Passing this exam is a necessary condition for successfully
+% completing this class, i.e., students who do not successfully complete
+% the Mastery Test, regardless of their performance in the course,
+% cannot earn a passing grade.
+
+% Students have three opportunities to complete the  Mastery Test
+% which is also closed book and notes.
+% A minimum score of 70\% is required to pass the test (no partial credit
+% is given on this exam). Students who
+% do not pass on the first attempt have two subsequent opportunities
+% to attain a  passing score. Students who do not pass on either of the first
+% two attempts are required to review
+% the Mastery Test with the instructor so that they can understand how to
+% correct and avoid the mistakes they have made. Students are encouraged
+% to study intensively for the Mastery Test and sample Mastery Tests
+% are available to help the students prepare for this exam.
+
+% Students who fail to pass the Mastery Test, regardless of their performance
+% in class, will be assigned a grade based on their TPS or C\;- grade (non-passing),
+% whichever is lower, for the course.
+
+%In addition there is one project assigned as part of this class,
+%worth 50 points.
+
+%The course grade is based on the
+%average score obtained on all exams, for a
+%total of at most 300 points. The student's total score is obtained by
+%averaging these 300 points and then adding the bonus points
+%to the average score. The total point  score (TPS) is the basis for grade
+%assignment.
+
+%\Subtopic{Homework, Quizzes, and Projects}
+%Homework is required to be completed on time. You should have at least attempted the problems by the posted date, use that class period to discuss specific issues with the homework.  All homework will be collectible the day after the posted due date.  Some assignments will be collected on a random basis and there will be some assignments/projects that will be collected as announced.  Additionally, homework completion will be evaluated using frequent quizzes that will be based on the homework.  
+
+\Subtopic{Scoring and Course Grades}
+The letter grade is based on the student's total point score (TPS) for the
+semester.  The class letter grade is assigned based on
+
+\begin{center}
+	
+\syllabusfonts
+\renewcommand{\arraystretch}{1.20}
+\renewcommand{\colorfirst}{paleblue1}
+\rowcolors{2}{\colorfirst}{white}
+\begin{center}
+	\begin{tabular}{rcr|l}
+		\multicolumn{3}{c}{\textbf{TPS}} & \textbf{Grade} \\
+		\hline
+		& & &  \\[-0.8em]
+		$97.5$ &-- &  $> 100.0$ & \hspace*{0.8em} \ec A\,+ \\
+		$92.5$ &-- &  $97.5$ & \hspace*{0.8em} \ec A \\
+		$90.0$ &-- &  $92.5$ & \hspace*{0.8em} \ec A\;-- \\
+		$87.5$ &-- &  $90.0$ & \hspace*{0.8em} \ec B\,+ \\
+		$82.5$ &-- &  $87.5$ & \hspace*{0.8em} \ec B \\
+		$80.0$ &-- &  $82.5$ & \hspace*{0.8em} \ec B\;-- 
+	\end{tabular} \hspace*{1.8em}
+	\rowcolors{2}{\colorfirst}{white}
+	\begin{tabular}{rcr|l}
+		\multicolumn{3}{c}{\textbf{TPS}} & \textbf{Grade} \\
+		\hline
+		& & &  \\[-0.8em]
+		$77.5$ &-- &  $80.0$ & \hspace*{0.8em} \ec C\,+ \\
+		$72.5$ &-- &  $77.5$ & \hspace*{0.8em} \ec C \\
+		$70.0$ &-- &  $72.5$ & \hspace*{0.8em} \ec C\;-- \\
+		$67.5$ &-- &  $70.0$ & \hspace*{0.8em} \ec D\,+ \\
+		$62.5$ &-- &  $67.5$ & \hspace*{0.8em} \ec D \\
+		$60.0$ &-- &  $62.5$ & \hspace*{0.8em} \ec D- \\
+		$0$ &-- & $60$ & \hspace*{0.8em} \ec F
+	\end{tabular}
+	
+\end{center}
+\syllabusfontn
+	
+\end{center}
+
+
+
+
+
+\Subtopic{Grade Calculation}
+
+The TPS will be calculated using the formula
+
+\[ \ec  0.1\ (Assignments)+ 0.05\ (Presentation/Participation)+ 0.1\ (Quizzes) + 0.3\ FE +0.15\ (E_1+E_2+E_3).\]
+
+\Subtopic{Further Considerations and Rules}
+\begin{compactitem}
+\item \textit{Email correspondence}: When using emails to
+  correspond with me, be sure to include your full name and
+  the course-section you attend. I usually respond within 24
+  hours. Please do not expect a reply after 6pm or during
+  the weekend.
+
+\item \textit{Electronic devices}: The use of phones and
+  electronic devices, except in an emergency or unless
+  otherwise approved by the instructor, is disallowed in
+  class. The use of any electronic device, except those
+  explicitly approved for use during any exam, will result
+  in grade of $0$ on that exam. If in doubt, please inquire
+  prior to using any electronic device.
+
+\item \textit{Late Papers}: Any material handed in late
+  without having obtained prior approval or without having a
+  valid university excused absence (e.g., a signed medical
+  excuse) will not be accepted. All papers are due at the
+  start of class.  Material handed in over one week late
+  without prior approval is not accepted.
+  
+\item \textit{Scheduling conflicts}: It is the student's
+  responsibility to contact the instructor concerning any
+  scheduling conflicts which may result in late papers, or
+  other scheduling conflicts, e.g., an absence for an exam.
+\end{compactitem}
+
+
+% ======================================
+% --------------------------------------
+  \Subtopic{Course Outline Schedule}
+% --------------------------------------
+% ======================================
+
+\Semester\ classes are from \Startsemesterclasses\ to
+\Endsemesterclasses.  The last day to drop classes without
+any financial penalty is \Addanddrop, and the last day to
+withdraw from the class, i.e., to request a {\ec W} grade is
+prior to \Lastdropdate.  All requests for a W must be sent
+to the registrar. Please notify the instructor by way of UNH
+email of your withdrawal decision.
+%Semester holidays are on: \Semesterholidays.
+The final exam is scheduled for \Semesterfinalexam.\\
+
+The following is a tentative schedule. The exam dates are also noted on the schedule. These dates are subject to change. 
+
+\rowcolors{2}{cyan!15}{white}
+\begin{longtable}[l]{|cl|p{3in}|p{2in}|}
+	\hline
+	\endfoot
+	\hline
+	\rowcolor{cyan!30}{Dates} & Reading/HW & Topics & Exams\\ 
+	\endhead
+	% Begin Paste from excel file here.
+	
+{\bf Week 1}  & Chapter 1: review on functions                       \\
+{\bf Week 2}  & 2.1, 2.2, 2.3, 2.4: definitions of limits and techniques of computing them                                      \\
+{\bf Week 3}  & 2.4, 2.5, 2.6: limits at infinity and continuity                               \\
+{\bf Week 4}  & 3.1, 3.2: introducing and working with derivatives  \,\,\,{\bf Exam\#1 \,\,\,09/21 }   \\
+{\bf Week 5}  & 3.3, 3.4, 3.5: rules of differentiation and derivatives of trigonometric functions        \\
+{\bf Week 6}  & 3.6, 3.7: chain rule, derivatives as rate of change                             \\
+{\bf Week 7}  & 3.8, 3.9, 3.10: Implicit differentiation and derivatives of logarithmic, exponential, inverse trigonometric functions                              \\
+{\bf Week 8}   & 3.11: related rates  \,\,\,{\bf Exam\#2  \,\,\, 10/19 }           \\
+{\bf Week 9}  & 4.1, 4.2, 4.3: maxima and minima, graphing functions          \\
+{\bf Week 10} & 4.4, 4.5: optimization problems and linear approximation of functions                \\
+{\bf Week 11} & 4.6, 4.7, 4.8: Mean Value Theorem, L'Hopitals' Rule, Newton's Method  \\
+{\bf Week 12} & 4.9 Antiderivatives     \,\,\, {\bf Exam\#3\,\,\, 11/16}       \\
+{\bf Week 13} &  5.1, 5.2:  Areas under curves                                  \\
+{\bf Week 14} & 5.3, 5.4, 5.5: definite integrals and substitution rule \\
+{\bf Final Exam} & {\bf Saturday December 15, 8 am--10 am}\\
+
+	
+\end{longtable}
+
+%COPIES OF THE SCHEDULE FOR MW AND TR ARE KEPT IN ./lib.........................
+{
+\renewcommand{\syllabusfontstable}{\syllabusfontf}
+\renewcommand{\tableheader}{\tableheaders}
+%\input{schedule.tex}
+}
+
+\LastPage
+
+\end{document}
+

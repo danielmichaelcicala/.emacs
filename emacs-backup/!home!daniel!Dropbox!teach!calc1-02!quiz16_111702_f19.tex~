@@ -1,0 +1,51 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 16} \linebreak % quiz, or exercises
+  {math1117.02} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{W06Nov} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[4 points]
+  Evaluate the derivative of $f(x)=\arcsin(\ln (x))$
+\end{q}
+
+\begin{q}[4 points]
+  Without finding the inverse, evaluate the derivative of
+  the inverse of $f(x)=4e^{10x}$ at the point $(4,0)$.  
+\end{q}
+
+
+% end document------------------
+\end{document}

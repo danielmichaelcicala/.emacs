@@ -1,0 +1,58 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 7} \linebreak % quiz, or exercises
+  {math1117.02} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{wed, 25 sep} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[10 points]
+
+  Deteremine the truth of the following statements and
+  give an explanation if true or counterexample if
+  false. Assume that $ a $ and $ L $ are finite numbers.
+  \begin{enumerate}
+  \item If $ \lim\limits_{x \to a} f(x) = L $, then $ f(a)=L
+    $.
+  \item If $ \lim\limits_{x \to a^-} f(x)= L $, then $
+    \lim\limits_{x \to a^+} f(x)= L  $.
+  \item If $ \lim\limits_{x \to a^} f(x)= L $ and $
+    \lim\limits_{x \to a^} g(x)= L $, the $ f(a) = g(a) $.  
+  \end{enumerate}
+  
+\end{q}
+
+
+% end document------------------
+\end{document}

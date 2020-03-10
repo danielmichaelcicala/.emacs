@@ -1,0 +1,54 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+\newcommand{\answer}{%
+  \centering
+  \begin{tikzpicture}
+    \node[rectangle,draw] at (-4,4) {\emph{try}};
+    \node[rectangle,draw] () at (4,4) {\emph{correct}};
+    \draw (0,0) -- (0,4);
+  \end{tikzpicture}
+}
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{} \linebreak % quiz, or exercises
+  {} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[10 points]
+
+\end{q}
+
+
+% end document------------------
+\end{document}

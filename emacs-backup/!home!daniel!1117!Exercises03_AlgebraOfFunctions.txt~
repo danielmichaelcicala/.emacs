@@ -1,0 +1,19 @@
+MC	Given $$f(x)=3x^2+2$$, $$g(x)=\ln (x+2)$$, and $$3x^2+2+\ln (x+2)$$, $$h(x)=\frac{x+4}{x^2}$$, what is the function $$(f+g)(x)$$?	correct	$$(3x^2+2)\ln (x+2)	incorrect	$$3x^2+2+\ln (x) + \ln (2)$$
+MC	Given $$f(x)=3x^2+2$$, $$g(x)=\ln (x+2)$$, and $$h(x)=\frac{x+4}{x^2}$$, what is the function $$(g-h)(x)$$?	$$\frac{x^2 \ln (x+2) - x - 4}{x^2}$$	correct	$$\frac{\ln (x+2) + x - 4}{x^2}$$	incorrect	$$\ln (x+2)-\frac{x-4}{x^2}$$	incorrect
+MC	Given $$f(x)=3x^2+2$$, $$g(x)=\ln (x+2)$$, and $$h(x)=\frac{x+4}{x^2}$$, what is the function $$(f+g-h)(x)$$?	$$\frac{3x^4+2x^2-x-4+x^2\ln (x+2)}{x^2}$$	correct		$$3x^2 + 2 + \ln (x+2) - \frac{x - 4}{x^2}	incorrect	$$\frac{3x^4 + 2x^2 + x - 4}{x^2} + \ln (x + 2)$$	incorrect
+MC	Given $$f(x)=3x^2+2$$, $$g(x)=\ln (x+2)$$, and $$h(x)=\frac{x+4}{x^2}$$, what is the function $$(f\cdot g)(x)$$?	$$(3x^2 + 2) \ln (x + 2)$$	correct	$$3x^2\ln (x)+3x^2\ln (2) + 2\ln (x) + 2 \ln (2)$$	incorrect	$$\ln (3x^2+2)(x+2)$$	incorrect
+MC	Given $$f(x)=3x^2+2$$, $$g(x)=\ln (x+2)$$, and $$h(x)=\frac{x+4}{x^2}$$, what is the function $$(f/h)(x)$$?	$$\frac{3x^4+2x^2}{x+4}$$	correct	$$\frac{(3x^2+2)(x+4)}{x^2}$$	incorrect	$$\frac{3x^2+2}{x+4}$$	incorrect
+MC	Given $$f(x)=3x^2+2$$, $$g(x)=\ln (x+2)$$, and $$h(x)=\frac{x+4}{x^2}$$, what is the function $$(\frac{f\cdot g}{h})(x)$$?
+
+
+
+
+
+
+
+
+
+
+
+
+

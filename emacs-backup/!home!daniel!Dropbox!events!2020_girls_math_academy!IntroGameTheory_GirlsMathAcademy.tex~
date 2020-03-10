@@ -1,0 +1,566 @@
+\documentclass[table]{beamer}
+
+% PACKAGES ~~~~~~~~~~~~~~~~~~~~
+
+\usepackage{amsfonts}
+\usepackage{amssymb}  
+\usepackage{amsthm} 
+\usepackage{amsmath} 
+\usepackage{caption}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{etoolbox}
+\usepackage{stmaryrd} 
+\usepackage{graphicx}
+\graphicspath{ {assets/} }
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes,decorations.markings,decorations.pathreplacing}
+
+
+
+\begin{document}
+
+\begin{frame}
+  \centering
+  \textbf{All girls summer math academy reunion} \\
+
+  A sample of game theory   
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Some games involve two people competing against each other \vfill
+
+  \centering
+  \includegraphics[scale=0.2]{chess.jpeg}
+  \includegraphics[scale=0.3]{tennis.jpg}
+  \includegraphics[scale=0.3]{tictactoe.jpg}
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Other games involve one group of collaborators competing against another group of collaborators \vfill
+
+  \centering
+  \includegraphics[scale=0.5]{basketball.jpeg} \\
+  \includegraphics[scale=0.2]{coke-vs-pepsi.jpg}
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Games can also include shifting collaborations and competition \vfill
+
+  \centering
+
+  \includegraphics[scale=0.7]{dem-debate.jpg}
+  \includegraphics[scale=0.5]{economy.jpeg}
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Board games, sports, business competition, politics, world economies... \\ \vfill
+
+  \begin{center}
+  ...all involve strategy. \\ \vfill
+\end{center}
+\pause
+
+  Mathematicians study the strategy of these ``games'' and call it game theory. \vfill
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  \begin{multicols}{2}
+    The most famous mathematician involved in game theory is John Nash \vfill
+
+    played by Russell Crow in the 2001 movie ``A beautiful mind'' \vfill
+
+    \pagebreak
+
+    \includegraphics[scale=0.3]{john_nash.jpg} \vfill
+  \centering
+    \includegraphics[scale=0.075]{beautiful_mind.jpg}
+\end{multicols}
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  John Nash was awarded the Nobel Prize in Economics (1994) for \vfill
+
+  \begin{quote}
+    	"...pioneering analysis of equilibria in the theory of non-cooperative games." 
+      \end{quote}
+
+      \begin{flushright}
+      that is, figuring out what outcomes are most likely
+    \end{flushright}
+\vfill
+      
+  \pause
+
+  This ``equilibria'' was later called the Nash Equilibrium.
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  \textbf{The Prisoners Dilemma} \\
+  A thought experiment
+  \vfill
+
+  \centering
+  \includegraphics[scale=0.7]{interrogation.jpg}
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Two people are arrested for committing a crime. \\ \vfill
+
+  They are placed in different rooms to be interrogated. \\ \vfill
+
+  \centering
+  \includegraphics[scale=0.4]{prisoner_a.jpg}
+  \includegraphics[scale=0.4]{prisoner_b.jpg}
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Each prisoner has two options: \\
+  \vfill
+  
+  \begin{center}
+    confess or stay silent
+  \end{center}
+  \vfill
+
+  Neither knows what the other will do \vfill\pause
+
+  There are four possible outcomes
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+\textbf{Outcome 1}
+  
+  \begin{center}
+  \includegraphics[scale=0.5]{pd_1.jpg}
+\end{center}
+
+
+  Prisoner A serves 5 years for cooperating \\
+  Prisoner B serves 5 years for cooperating \\
+  \hrule 
+  \vfill
+  Lighter sentences given to each
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+  \textbf{Outcome 2}
+
+   \includegraphics[scale=0.5]{pd_2.jpg}
+
+   Prisoner A goes free for cooperating \\
+   Prisoner B serves 10 years for not cooperating \\
+   \hrule \vfill
+   Someone's gotta do the time, it's Prisoner B
+   
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+  \textbf{Outcome 3}
+
+  \includegraphics[scale=0.5]{pd_3.jpg}
+
+  Prisoner A serves 10 years for not cooperating \\
+  Prisoner B goes free for cooperating \\
+  \hrule\vfill
+  Someone's gotta do the time, it's Prisoner A
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+  \textbf{Outcome 4}
+
+  \includegraphics[scale=0.5]{pd_4.jpg}
+
+  Prisoner A serves 1 year \\
+  Prisoner B serves 1 year \\
+  \hrule\vfill
+  No confessions and weak evidence, so light sentences for each.
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Prisoners do not know if the other will confess or not\\ \vfill
+
+  What should each Prisoner do to get the lightest sentence? \vfill
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Organize information from the Prisoner's Dilemma into a table \\
+
+  \begin{center}
+  \begin{tabular}{lcc}
+    & \textbf{Prisoner B silent} & \textbf{Prisoner B confess} \\
+    \textbf{Prisoner A silent} & (-1,-1) & (-10,0) \\
+    \textbf{Prisoner A confess} & (0,-10) & (-5,-5) \\
+  \end{tabular}
+\end{center} \vfill
+
+(Prisoner A years served, Prisoner B years served)
+\vfill\pause
+
+What strategy should Prisoner A take to minimize their sentence? 
+
+What strategy should Prisoner B take to minimize their sentence? \\ \emph{Confess or not?}
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Think through Player A's strategy
+  \vfill
+
+  Best move in case B is silent? Confesses? \vfill
+
+    \begin{center}
+  \begin{tabular}{lcc}
+    & \textbf{Prisoner B silent} & \textbf{Prisoner B confess} \\
+    \textbf{Prisoner A silent} & (-1,-1) & (-10,0) \\
+    \textbf{Prisoner A confess} & (0,-10) & (-5,-5) \\
+  \end{tabular}
+\end{center}
+\vfill
+
+\pause
+Best strategy for Prisoner A: confess.
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Think through Player B's strategy
+  \vfill
+
+  Best move in case A is silent? Confesses? \vfill
+
+    \begin{center}
+  \begin{tabular}{lcc}
+    & \textbf{Prisoner B silent} & \textbf{Prisoner B confess} \\
+    \textbf{Prisoner A silent} & (-1,-1) & (-10,0) \\
+    \textbf{Prisoner A confess} & (0,-10) & (-5,-5) \\
+  \end{tabular}
+\end{center}
+\vfill
+
+\pause
+Best strategy for Prisoner B: confess.
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+    \begin{center}
+  \begin{tabular}{lcc}
+    & \textbf{Prisoner B silent} & \textbf{Prisoner B confess} \\
+    \textbf{Prisoner A silent} & (-1,-1) & (-10,0) \\
+    \textbf{Prisoner A confess} & (0,-10) & \fbox{(-5,-5)} \\
+  \end{tabular}
+\end{center}
+\vfill
+
+Best strategy for both is to confess.  \vfill\pause
+
+The outcome occuring when both use their best strategy is called the Nash Equilibrium.
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  \textbf{Nash Equilibrium in Business} \vfill
+
+  Coca-cola and Pepsi are each trying to decide whether to charge \$1 or \$2 for a can of soda. \vfill
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Market research and financial analysis by Coke determined \vfill
+
+  \begin{center}
+    \begin{tabular}{lll}
+      Coke charges & Pepsi charges & Coke's profits \\
+      \hline
+      \$1 & \$1 & -\$5mil \\
+      \$1 & \$2 & \$100mil \\
+      \$2 & \$1 & -\$50mil \\
+      \$2 & \$2 & \$50mil \\
+    \end{tabular}
+  \end{center}
+
+  \pause
+
+  Market research and financial analysis by Pepsi determined \vfill
+
+  \begin{center}
+    \begin{tabular}{lll}
+      Pepsi charges & Coke charges & Pepsi's profits \\
+      \hline
+      \$1 & \$1 & -\$7mil \\
+      \$1 & \$2 & \$90mil \\
+      \$2 & \$1 & -\$40mil \\
+      \$2 & \$2 & \$60mil \\
+    \end{tabular}
+  \end{center}
+
+  \vfill\pause
+
+  Can you put this into a table like in the Prisoner's Dilemma? \vfill
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+    \begin{center}
+      \begin{tabular}{ccc}
+        & \textbf{Pepsi charges \$1} & \textbf{Pepsi charges \$2} \\
+        \textbf{Coke charges \$1} & (-5,-7) & (100,-40) \\
+        \textbf{Coke charges \$2} & (-50,90) & (50,60) \\
+      \end{tabular}
+    \end{center}
+    \vfill
+
+  What strategy should Coke take? Charge \$1 or \$2? \vfill\pause
+  What strategy should Pepsi take? Charge \$1 or \$2? \vfill\pause
+  Best strategy for Coke and Pepsi: charge \$1 \\
+  Nash equilibrium is $ (-5,-7) $
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  This set up is used to analyze many situations \vfill
+  \begin{itemize}
+  \item Politicians deciding to campaign in a state \vfill
+  \item Countries deciding to make a trade \vfill
+  \item Businesses deciding whether to enter a market \vfill
+  \end{itemize}
+
+  \pause
+
+  This mathematics can be very useful for many people. \\
+
+  Mathematicians just like this idea and go crazy with it.
+  
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  If we can use 2x2 tables, why not...
+
+  \centering
+  3 x 3 \\ \pause
+  4 x 4 \\ \pause
+  100 x 100 \\ \pause
+  1,000,000 x 1,000,000 \\ \pause
+  $ \infty $ x $ \infty $ ?
+  \vfill
+
+  But bigger tables requires better methods of analysis. 
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  \textbf{Method of Iterated Elimination} \\
+  \hrule\vfill
+
+  Here is the table from the Prisoner's Dilemma
+  
+    \begin{center}
+  \begin{tabular}{ccc}
+    & \textbf{Prisoner B silent} & \textbf{Prisoner B confess} \\
+    \textbf{Prisoner A silent} & (-1,-1) & (-10,0) \\
+    \textbf{Prisoner A confess} & (0,-10) & (-5,-5) 
+  \end{tabular}
+\end{center} \vfill
+
+Each column represents a choice by Prisoner B \\
+Once B makes a choice, A has a best option \\
+Draw an arrow on top of the column pointing to that best option
+
+    
+\end{frame}
+
+\begin{frame}
+
+  \textbf{Method of Iterated Elimination} \\
+  \hrule\vfill
+
+  Here is the table from the Prisoner's Dilemma
+  
+    \begin{center}
+  \begin{tabular}{ccc}
+    & \textbf{Prisoner B silent} & \textbf{Prisoner B confess} \\
+    \textbf{Prisoner A silent} & (-1,-1) & (-10,0) \\
+    \textbf{Prisoner A confess} & (0,-10) & (-5,-5) \\
+  \end{tabular}
+\end{center} \vfill
+
+Each row represents a choice by Prisoner A \\
+Once A makes a choice, B has a best option \\
+Draw an arrow on top of the row pointing to that best option
+
+\end{frame}
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Start in any cell and follow the arrows across the table. \\ \vfill
+
+  Do the arrows eventually stop leading you? \\ \vfill
+
+  If so, that's the Nash Equilibrium. \vfill
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Try it on this table
+
+  \[
+  \begin{pmatrix}
+    (1,0) & (1,3) & (3,0) \\
+    (0,2) & (0,1) & (3,0) \\
+    (0,2) & (2,4) & (5,3) 
+  \end{pmatrix}
+  \]
+
+  \vfill
+  Go row by row then column by column.
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  \textbf{Wrapping up} \\ \vfill
+
+  Game theory is far more than playing with these tables \\ \vfill
+
+  Applications include business, politics, economics, and of course...games 
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Game theorists found a strategy that is impossible to beat in \vfill
+  
+  \begin{multicols}{2}
+    \includegraphics[scale=0.2]{tictactoe.jpg}
+    \includegraphics[scale=0.1]{connect4.jpg}
+    \vfill
+  \includegraphics[scale=0.2]{checkers.jpg}
+  \pagebreak
+  \includegraphics[scale=0.1]{nim.png}
+\end{multicols}
+
+
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  By combining game theory and artificial intelligence, there is a strategy that \emph{usually} beats the best chess players.  \\ \vfill
+
+  Finding a strategy that's impossible to beat is \textbf{very} hard. \\ \vfill
+
+  Chess has at least $ 10^{120} $ possible distinct games. \vfill
+
+  (there are roughly $ 10^{80} $ atoms in the observable universe) \vfill\pause
+
+  Maybe one day you'll find a chess strategy that's impossible to beat \vfill
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  The end
+  
+\end{frame}
+
+
+\end{document}
+

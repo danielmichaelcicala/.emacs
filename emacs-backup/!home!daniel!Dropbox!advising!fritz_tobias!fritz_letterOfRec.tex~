@@ -1,0 +1,121 @@
+\documentclass{CAS_syllabus}
+
+%\documentclass{amsart}          
+% \usepackage{amsfonts}
+% \usepackage{amssymb}  
+% \usepackage{amsthm} 
+% \usepackage{amsmath} 
+% \usepackage{caption}
+% \usepackage{multicol}
+% \usepackage[inline]{enumitem}
+%   \setlist{itemsep=0em, topsep=0em, parsep=0em}
+%   \setlist[enumerate]{label=(\alph*)}
+% \usepackage{etoolbox}
+% \usepackage{stmaryrd} 
+% \usepackage[dvipsnames]{xcolor}
+%   \definecolor{editcolour}{rgb}{0.7,0.1,0}
+%   \definecolor{hrefcolour}{rgb}{0,0,0.7}
+%   \definecolor{unhblue}{rgb}{0.08,0.32,0.55}
+%   \newcommand{\unhcolor}{\color{unhblue}}
+% \usepackage[]{hyperref}
+%   \hypersetup{%
+%     colorlinks,
+%     linkcolor={hrefcolour},
+%     citecolor={hrefcolour},
+%     urlcolor={hrefcolour}}
+% \usepackage{graphicx}
+
+\begin{document}
+
+%   \begin{picture}(0.0,0.0)(0.25,3.3)
+%\includegraphics[scale=0.5]{./CASseal}
+%\end{picture}
+
+\Heading
+
+\vspace{2em}
+\begin{flushright}
+  Department of Mathematics and Physics \\
+  The University of New Haven \\
+  300 Boston Post Road \\
+  New Haven, CT 06516 \\
+\end{flushright}
+
+\vspace{1em}
+\noindent
+Re: Recommendation for Tobias Fritz \hfill
+\today
+
+\vspace{2em}
+\noindent Dear Sir or Madame:
+\vspace{1em}
+
+The purpose of this letter is to recommend Dr.~Tobias Fritz, specifically
+as an educator.  I have known Tobias for three years and
+have always been impressed with his communication skills,
+work ethic, and creativity. He would be a wonderful addition
+to any department.
+
+My primary experience with Tobias as an educator is through
+his role in the Applied Category Theory Adjoint School 2019,
+a non-traditional educational experience that I
+co-organized.  Tobias was one of six ``mentors''. This means
+that he led five students, a mix of mature undergraduate and
+graduate students, to produce a piece of original research
+on a project he designed. His project examined the
+compositional structure of partial evaluation in terms of
+monads and the bar construction.
+
+The initial challenge that Tobias faced was to turn five
+students into experts on specialized topics of category theory
+and rewriting theory. Adding to this challenge is that his
+students lived across North America and Europe, had
+disparate mathematical backgrounds, and had only five months
+to gain mastery of the necessary material.  He interacted
+with his students via video chat, though email, and through
+a file hosting platform called github. His students produced
+two lectures on the material in their charge and two
+excellent articles for the website The n-Category Caf\'{e}
+that is popular amongst working category theorists. The
+lectures and articles were high quality as judged on their own
+merit and as compared with the output of other groups. Through
+my interactions with Tobias and also with his students, I
+determined that Tobias was central to his students' success.
+
+In July 2019, the participants of the Adjoint School
+convened for one week at the Department of Computer Science
+in Oxford University to commence research. For five full
+days, Tobias acted more as a facilitator and guru than
+research lead. He instilled a high degree of motivation in
+the students, as indicated by the long days they spent
+working and the excitement with which they spoke of their
+work.  In the end, the students produced original results
+and additional, clear questions to orient future lines of
+inquiry into their project.
+
+Tobias put in a tremendous effort into the Adjoint School.
+He was motivated, involved, and fully bought-in to our
+mission.  He clearly cared deeply about his students and
+their success.  I have no doubt that he will strengthen the
+quality of teaching in your department.  In particular, if
+you are looking to improve undergraduate or graduate
+research, then he is an excellent candidate to do so.
+
+In view of my experience, I recommend without reservation
+that you hire Tobias Fritz. Please feel free to contact me
+if you have any further questions.
+
+\vspace{2em}
+
+\noindent
+Regards,
+
+\includegraphics[scale=0.25]{signature}
+
+\noindent
+Daniel Cicala, Ph.~D. \\
+dcicala@newhaven.edu \\
+203-932-1094
+
+
+\end{document}

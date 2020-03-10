@@ -1,0 +1,48 @@
+% =============================================
+% 
+% This file is for making quick standalone
+% visual aids to include in notes and
+% presentations
+% 
+% =============================================
+\documentclass{standalone}          
+
+% PACKAGES ~~~~~~~~~~~~~~~~~~~~
+\usepackage{amsfonts,amssymb,amsthm,amsmath}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage[table]{xcolor}
+\usepackage[]{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {assets/} }
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes,decorations.markings,decorations.pathreplacing}
+
+% TITLE ~~~~~~~~~~~~~~~~~~~~~~~~
+\author{} % Author name or course name, e.g. MATH2228
+\title{} % Name of visual aid, e.g. Example 1.1 
+
+% DOCUMENT ~~~~~~~~~~~~~~~~~~~~~
+\begin{document}
+% \maketitle % Uncomment to include a title
+
+A study of 552 first-year college students asked about their
+preferences for online resources. One question asked to pick
+their favorite. Here's the result:
+
+  \rowcolors{2}{cyan!15}{white}
+  \begin{tabular}{|l|l|}
+    \hline
+    \rowcolor{cyan!30}
+      \textbf{Resource} & \textbf{Count}\\ 
+    \hline
+    Google scholar & 406 \\
+    Library database or website & 75 \\
+    Wikipedia & 52 \\
+    Other & 19 \\
+    \hline
+  \end{tabular}
+
+
+\end{document}

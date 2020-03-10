@@ -1,0 +1,68 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{quiz 11} \linebreak % quiz, or exercises
+  {math222804} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{Mon, 7 Oct} % date 
+\end{flushright}
+
+% left header material -------------
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[12 points]
+
+  A roulette wheel has 38 slots, numbered 0,00, and then 1
+  through 36. The slots 0 and 00 are colored green, 18 of
+  the other slots are red and 18 are black. The dealer spins
+  the wheel and, at the same time, rolls a small ball along
+  along the wheel in the opposite direction. The wheel is
+  carefully balanced so that the ball is equally likely to
+  land in any slot when the wheel slows. gambles can bet on
+  various combinations of numbers and colors.
+  \begin{enumerate}
+  \item What is the probability that the ball will land in
+    any one slot?
+  \item If you bet on ``red'' you win if the ball lands in a
+    red slot. What is the probability of winning with this
+    bet?
+  \item The slot numbers a laid out on a board on which
+    gamblers place their bets. One column of numbers on the
+    board contains all multiples of 3, that is
+    3,6,9,...,36. You place a ``column bet'' that wins if
+    any of these numbers comes up. What is your probability
+    of winning?
+  \end{enumerate}
+  
+\end{q}
+
+
+% end document------------------
+\end{document}

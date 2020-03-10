@@ -1,0 +1,373 @@
+@inproceedings{abramsky2014categorical,
+  title={Categorical Methods at the Crossroads (Dagstuhl Perspectives Workshop 14182)},
+  author={Abramsky, Samson and Baez, John C and Gadducci, Fabio and Winschel, Viktor},
+  booktitle={Dagstuhl Reports},
+  volume={4},
+  number={4},
+  year={2014},
+  organization={Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik}
+}
+
+@inproceedings{abramsky2004categorical,
+  title={A categorical semantics of quantum protocols},
+  author={Abramsky, Samson and Coecke, Bob},
+  booktitle={Proceedings of the 19th Annual IEEE Symposium on Logic in Computer Science, 2004.},
+  pages={415--425},
+  year={2004},
+  organization={IEEE}
+}
+
+@article{baez2015compositional,
+  title={A compositional framework for passive linear networks},
+  author={Baez, John C and Fong, Brendan},
+  journal={arXiv preprint arXiv:1504.05625},
+  year={2015}
+}
+
+@article{baez2016compositional,
+  title={A compositional framework for Markov processes},
+  author={Baez, John C and Fong, Brendan and Pollard, Blake S},
+  journal={Journal of Mathematical Physics},
+  volume={57},
+  number={3},
+  pages={033301},
+  year={2016},
+  publisher={AIP Publishing}
+}
+
+@article{baez2017compositional,
+  title={A compositional framework for reaction networks},
+  author={Baez, John C and Pollard, Blake S},
+  journal={Reviews in Mathematical Physics},
+  volume={29},
+  number={09},
+  pages={1750028},
+  year={2017},
+  publisher={World Scientific}
+}
+
+@incollection{baez2010physics,
+  title={Physics, topology, logic and computation: a Rosetta Stone},
+  author={Baez, John and Stay, Mike},
+  booktitle={New structures for physics},
+  pages={95--172},
+  year={2010},
+  publisher={Springer}
+}
+
+@book{barr1990category,
+  title={Category theory for computing science},
+  author={Barr, Michael and Wells, Charles},
+  volume={49},
+  year={1990},
+  publisher={Prentice Hall New York}
+}
+
+@article{cicala2019rewriting,
+  title={Rewriting Structured Cospans: A Syntax For Open Systems},
+  author={Cicala, Daniel},
+  journal={arXiv preprint arXiv:1906.05443},
+  year={2019}
+}
+
+@article{coecke2010mathematical,
+  title={Mathematical foundations for a compositional distributional model of meaning},
+  author={Coecke, Bob and Sadrzadeh, Mehrnoosh and Clark, Stephen},
+  journal={arXiv preprint arXiv:1003.4394},
+  year={2010}
+}
+
+@article{wisnesky2017using,
+  title={Using category theory to facilitate multiple manufacturing service database integration},
+  author={Wisnesky, Ryan and Breiner, Spencer and Jones, Albert and Spivak, David I and Subrahmanian, Eswaran},
+  journal={Journal of Computing and Information Science in Engineering},
+  volume={17},
+  number={2},
+  pages={021011},
+  year={2017},
+  publisher={American Society of Mechanical Engineers}
+}
+
+@inproceedings{budiu2013compiler,
+  title={The compiler forest},
+  author={Budiu, Mihai and Galenson, Joel and Plotkin, Gordon D},
+  booktitle={European Symposium on Programming},
+  pages={21--40},
+  year={2013},
+  organization={Springer}
+}
+
+@article{coecke2016mathematical,
+  title={A mathematical theory of resources},
+  author={Coecke, Bob and Fritz, Tobias and Spekkens, Robert W},
+  journal={Information and Computation},
+  volume={250},
+  pages={59--86},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@article{cockett2010categorical,
+  title={Categorical simulations},
+  author={Cockett, J Robin B and Hofstra, Pieter JW},
+  journal={Journal of Pure and Applied Algebra},
+  volume={214},
+  number={10},
+  pages={1835--1853},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{cockett2008introduction,
+  title={Introduction to Turing categories},
+  author={Cockett, J Robin B and Hofstra, Pieter JW},
+  journal={Annals of Pure and Applied Logic},
+  volume={156},
+  number={2-3},
+  pages={183--209},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@book{crole1993categories,
+  title={Categories for types},
+  author={Crole, Roy L},
+  year={1993},
+  publisher={Cambridge University Press}
+}
+
+@article{fong2018seven,
+  title={Seven Sketches in Compositionality: An Invitation to Applied Category Theory},
+  author={Fong, Brendan and Spivak, David I},
+  journal={arXiv preprint arXiv:1803.05316},
+  year={2018}
+}
+
+@inproceedings{fong2019backprop,
+  title={Backprop as functor: A compositional perspective on supervised learning},
+  author={Fong, Brendan and Spivak, David and Tuy{\'e}ras, R{\'e}my},
+  booktitle={2019 34th Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)},
+  pages={1--13},
+  year={2019},
+  organization={IEEE}
+}
+
+@article{foster2007combinators,
+  title={Combinators for bidirectional tree transformations: A linguistic approach to the view-update problem},
+  author={Foster, J Nathan and Greenwald, Michael B and Moore, Jonathan T and Pierce, Benjamin C and Schmitt, Alan},
+  journal={ACM Transactions on Programming Languages and Systems (TOPLAS)},
+  volume={29},
+  number={3},
+  pages={17},
+  year={2007},
+  publisher={ACM}
+}
+
+@article{freedman2003topological,
+  title={Topological quantum computation},
+  author={Freedman, Michael and Kitaev, Alexei and Larsen, Michael and Wang, Zhenghan},
+  journal={Bulletin of the American Mathematical Society},
+  volume={40},
+  number={1},
+  pages={31--38},
+  year={2003}
+}
+
+@article{fritz2017resource,
+  title={Resource convertibility and ordered commutative monoids},
+  author={Fritz, Tobias},
+  journal={Mathematical Structures in Computer Science},
+  volume={27},
+  number={6},
+  pages={850--938},
+  year={2017},
+  publisher={Cambridge University Press}
+}
+
+@article{sparaciari2017resource,
+  title={Resource theory for work and heat},
+  author={Sparaciari, Carlo and Oppenheim, Jonathan and Fritz, Tobias},
+  journal={Physical Review A},
+  volume={96},
+  number={5},
+  pages={052112},
+  year={2017},
+  publisher={APS}
+}
+
+@inproceedings{gadducci1997inductive,
+  title={An inductive view of graph transformation},
+  author={Gadducci, Fabio and Heckel, Reiko},
+  booktitle={International Workshop on Algebraic Development Techniques},
+  pages={223--237},
+  year={1997},
+  organization={Springer}
+}
+
+@inproceedings{ghani2018compositional,
+  title={Compositional game theory},
+  author={Ghani, Neil and Hedges, Jules and Winschel, Viktor and Zahn, Philipp},
+  booktitle={Proceedings of the 33rd Annual ACM/IEEE Symposium on Logic in Computer Science},
+  pages={472--481},
+  year={2018},
+  organization={ACM}
+}
+
+@article{hedges2016compositionality,
+  title={Compositionality and string diagrams for game theory},
+  author={Hedges, Jules and Shprits, Evguenia and Winschel, Viktor and Zahn, Philipp},
+  journal={arXiv preprint arXiv:1604.06061},
+  year={2016}
+}
+
+@article{johnson2012lenses,
+  title={Lenses, fibrations and universal translations},
+  author={Johnson, Michael and Rosebrugh, Robert and Wood, Richard J},
+  journal={Mathematical Structures in Computer Science},
+  volume={22},
+  number={1},
+  pages={25--42},
+  year={2012},
+  publisher={Cambridge University Press}
+}
+
+@article{kartsaklis2013reasoning,
+  title={Reasoning about meaning in natural language with compact closed categories and frobenius algebras},
+  author={Kartsaklis, Dimitri and Sadrzadeh, Mehrnoosh and Pulman, Stephen and Coecke, Bob},
+  journal={Logic and algebraic structures in quantum computing},
+  pages={199},
+  year={2013}
+}
+
+@inproceedings{lack2004adhesive,
+  title={Adhesive categories},
+  author={Lack, Stephen and Soboci{\'n}ski, Pawe{\l}},
+  booktitle={International Conference on Foundations of Software Science and Computation Structures},
+  pages={273--288},
+  year={2004},
+  organization={Springer}
+}
+
+@article{lewis2016hierarchical,
+  title={Hierarchical conceptual spaces for concept combination},
+  author={Lewis, Martha and Lawry, Jonathan},
+  journal={Artificial Intelligence},
+  volume={237},
+  pages={204--227},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@article{lewis2014label,
+  title={A label semantics approach to linguistic hedges},
+  author={Lewis, Martha and Lawry, Jonathan},
+  journal={International Journal of Approximate Reasoning},
+  volume={55},
+  number={5},
+  pages={1147--1163},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@book{milewski2018category,
+  title={Category theory for programmers},
+  author={Milewski, Bartosz},
+  year={2018},
+  publisher={Bartosz Milewski}
+}
+
+@article{de1989dialectica,
+  title={The dialectica categories},
+  author={de Paiva, Valeria},
+  journal={Categories in Computer Science and Logic},
+  volume={92},
+  pages={47--62},
+  year={1989},
+  publisher={Contemp. Math}
+}
+
+@article{pavlovic2013monoidal,
+  title={Monoidal computer I: Basic computability by string diagrams},
+  author={Pavlovic, Dusko},
+  journal={Information and Computation},
+  volume={226},
+  pages={94--116},
+  year={2013},
+  publisher={Elsevier}
+}
+
+@book{pierce1991basic,
+  title={Basic category theory for computer scientists},
+  author={Pierce, Benjamin C and Benjamin, C and Pierce, Benjamin C},
+  year={1991},
+  publisher={MIT press}
+}
+
+@article{riehl2014kan,
+  title={The Kan Extension Seminar: An Experimental Online Graduate Reading Course},
+  author={Riehl, Emily},
+  journal={Notices of the AMS},
+  volume={61},
+  number={11},
+  year={2014}
+}
+
+@book{riehl2017category,
+  title={Category theory in context},
+  author={Riehl, Emily},
+  year={2017},
+  publisher={Courier Dover Publications}
+}
+
+@article{selinger2009quantum,
+  title={Quantum lambda calculus},
+  author={Selinger, Peter and Valiron, Beno{\i}t and others},
+  journal={Semantic techniques in quantum computation},
+  pages={135--172},
+  year={2009}
+}
+
+@article{schultz2016dynamical,
+  title={Dynamical systems and sheaves},
+  author={Schultz, Patrick and Spivak, David I and Vasilakopoulou, Christina},
+  journal={Applied Categorical Structures},
+  pages={1--57},
+  year={2016},
+  publisher={Springer}
+}
+
+@book{spivak2014category,
+  title={Category theory for the sciences},
+  author={Spivak, David I},
+  year={2014},
+  publisher={MIT Press}
+}
+
+@book{univalent2013homotopy,
+  title={Homotopy type theory: Univalent foundations of mathematics},
+  author={Univalent Foundations Program},
+  year={2013},
+  publisher={Univalent Foundations}
+}
+
+@article{vagner2015algebras,
+  title={Algebras of open dynamical systems on the operad of wiring diagrams},
+  author={Vagner, Dmitry and Spivak, David I and Lerman, Eugene},
+  journal={Theory and Applications of Categories},
+  volume={30},
+  number={51},
+  pages={1793--1822},
+  year={2015},
+  publisher={Mount Allison University}
+}
+
+@inproceedings{wadler1992essence,
+  title={The essence of functional programming},
+  author={Wadler, Philip},
+  booktitle={POPL},
+  volume={92},
+  number={37},
+  pages={1--14},
+  year={1992},
+  organization={Citeseer}
+}

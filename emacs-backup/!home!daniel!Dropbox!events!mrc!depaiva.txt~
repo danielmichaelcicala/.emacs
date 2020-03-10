@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\title{Dialectica, Lenses and Partial Compilers}
+\author{Valeria de Paiva}
+\date{August 2019}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{diagrams1}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\begin{document}
+
+\maketitle
+Recently many people seem interested in dissecting the several ways in which the Computer Science concepts of ``lenses" and their properties can be understood using Category Theory. A personalized history can be found in J. Hedges blog post ``Lenses for philosophers" (\url{https://julesh.com/2018/08/16/lenses-for-philosophers/}) published almost exactly a year ago. There Hedges starts with G\"odel's work that became known as the  Dialectica Interpretation, as it was published in the philosophical journal Dialectica. This was also the starting point of my doctoral work in 1988, that developed  in the direction of the natural (categorical) \textbf{logic} of the interpretation.
+
+The concern here is with computing applications of the categorical work on lenses. The project I want to pursue is to investigate generalizations of the concepts of lenses in Functional Programming that actually relate to both  Budiu et al's  work \cite{budiu2013} on partial compilation and to Fong et al's work on backpropagation~\cite{fong2017}.
+
+The connection to Fong et al's work is easier to see, as it was already pointed out by Hedges, in the blog post above and in \cite{hedges2019}. The connection with Budiu et al's work is acknowledged in their paper, but remains mysterious. Their interest in the abstractions suitable for Partial Compilers is very much peripheric to the main points of their work.
+
+Finally, one of the variants of the lenses discussed by both Fong and Hedges seems to be a restriction of the original Dialectica construction \cite{depaiva1989} to the diagonal of a cartesian (closed) category. This is touched upon in the full thesis \cite{depaiva1991}, but  investigations were not deep, as the logical structure of the category (the adjunction that makes it symmetirc monoidal closed) is not preserved, at first sight, by this restriction. It remains to be seen if simply embedding the construction into generic universes is enough to keep the nice features of the construction. This seems to be the case in the new work by Samuel Gomes de Souza, who applies the second Dialectica construction to problems in Set Theory, starting from work of Blass in \cite{blass1995}.
+
+%\section{Introduction}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,42 @@
+\documentclass{amsart}
+\usepackage[a4paper,top=3cm,bottom=3cm,inner=3cm,outer=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\begin{document}
+
+\section*{Current and Pending Support}
+\label{sec:curr-pend-supp}
+
+% This section of the proposal calls for required
+% information on all current and pending support for ongoing
+% projects and proposals, including this project, and any
+% subsequent funding in the case of continuing grants.  All
+% current project support from whatever source (e.g.,
+% Federal, State, local, foreign, public or private
+% foundations, industrial or other commercial organizations,
+% or internal funds allocated toward specific projects) must
+% be listed.  The proposed project and all other projects or
+% activities requiring a portion of time of the PI and any
+% other senior personnel must be included, even if they
+% receive no salary support from the project(s).  The total
+% award amount for the entire award period covered
+% (including indirect costs) must beshown as well as the
+% number of person-months per year to be devoted to the
+% project, regardless of source of support.  Similar
+% information must be provided for all proposals already
+% submitted or submitted concurrently to other possible
+% sponsors, including NSF.  Concurrent submission of a
+% proposal to other organizations will not prejudice its
+% review by NSF.  The Biological Sciences Directorate
+% exception to this policy is delineated in Chapter II.D.2.
+% If the project now being submitted has been funded
+% previously by a source other than NSF, the information
+% requested in the paragraph above must be furnished for the
+% last period of funding.  A separate current and pending
+% support pdf file, or other approved NSF template, must be
+% uploaded in FastLane for each individual designated as
+% senior personnel.
+
+\end{document}

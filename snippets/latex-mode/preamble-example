@@ -1,0 +1,33 @@
+# key: preamble-example
+# name: preamble-example
+# --
+% =============================================
+%
+%   This file is for making quick standalone
+%   visual aids to include in notes and
+%   presentations
+%   
+% =============================================
+\documentclass[14pt,xcolor={table}]{beamer}          
+\usetheme{metropolis}
+
+% PACKAGES ~~~~~~~~~~~~~~~~~~~~
+\usepackage{amsfonts,amssymb,amsthm,amsmath}
+\usepackage[inline]{enumitem}
+  \setlist{itemsep=0em, topsep=0em, parsep=0em}
+  \setlist[enumerate]{label=(\alph*)}
+\usepackage[]{hyperref}
+\usepackage{graphicx}
+  \graphicspath{ {assets/} }
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes,decorations.markings,decorations.pathreplacing}
+
+% DOCUMENT ~~~~~~~~~~~~~~~~~~~~~
+\begin{document}
+
+\begin{frame}[plain,nopagenumbering]
+  $1
+\end{frame}
+
+
+\end{document}

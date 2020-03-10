@@ -1,0 +1,25 @@
+\documentclass{amsart}
+\usepackage[a4paper,top=3cm,bottom=3cm,inner=3cm,outer=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\begin{document}
+
+%\section{Cover Sheet}
+\input{b_project_summary.tex}
+% \section{Table of Contents}
+%\input{d_project_description.tex}
+%\input{e_reference_cited.tex}
+%\input{f_biographical_sketches.tex}
+%\input{g_budget.tex}
+%\input{h_current_pending_support.tex}
+%\input{i_facilities.tex}
+%\input{j_special_information.tex}
+%\input{k_single_copy_documents.tex}
+
+
+
+
+
+\end{document}

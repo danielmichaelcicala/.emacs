@@ -1,0 +1,119 @@
+\section{Project Summary}
+\label{sec:project-summary}
+
+% A one page summary comprising statements on the (i)
+% project (ii) intellectual merit (iii) broader impact
+
+\subsection{Summary}
+\label{sec:summary}
+
+This proposal is for the funding of the Applied Category
+Theory Adjoint School 2020. Participating in this School are
+four groups, each comprising a leading expert, a TA of the
+expert's choice, and four students selected by an open
+application process. Each ground pursues a research project in
+applied category theory designed by the leading expert.
+
+The School has two components. The first component, for
+which no funding is required, is a sixteen week long online
+reading seminar. The TA's lead students through a reading
+course designed to provide the background they will need to
+engage in the research.  The reading seminar culminates in a
+week long visit, for which funding is being requested, to
+MIT where all participants conduct their research under the
+direction of the leading expert.
+
+The School is then followed by the Applied Category Theory
+Conference, for which no funding is being requested.  This
+conference is split into two components: research talks and
+structured conversation around recent developments in the
+field. Leading experts from industry and academia attend the
+conference thus providing an opportunity for them and School
+participants to work and socialize together. Also, time is
+reserved for students to discuss their work from the School.
+
+\subsection{Intellectual Merit}
+
+Category theory has long been a powerful tool for
+transferring techniques between disciplines in pure
+mathematics. The rise of Applied Category Theory comes with
+the usefulness of categorical methods in disciplines ranging
+from biochemistry, electrical engineering and control theory
+to the study of stochastic processes, the design of
+databases, and the design of networks of mobile
+agents. Operads, sheaves and other sophisticated concepts
+are not only giving rise to new methodologies for system
+design and analysis, but also triggering new developments in
+the underlying mathematics. The School brings young minds
+from diverse backgrounds to this emerging field to work on
+research proposed by leading experts.
+
+The School will see the pursuit of four research
+projects. The first, led by Michael Shulman of the
+University of San Diego, involves the development of a type
+theory that corresponds to the kinds of categories
+frequently used in applied category theory. The success of
+this research would offer an improved ability for
+programmers to implement categorical structure into
+software. Such software can offer scientists and engineers
+the benefits of applied category theory without having to
+learn it.
+
+Another project is led by Valeria de Paiva of Samsung
+Research America. A strength of category theory is its
+ability to illuminate abstract structure and find it in
+disparate places. Recently, the concept of a lens has been
+found to exist in many unexpected places. A lens, which
+hails from database theory, is simply a pair of functions
+that interact nicely.  However, when abstracted to it
+essence, applied category theorists found this structure in
+functional programming, backpropagation in machine learning,
+and in game theory from economics.  Dr.~de Paiva's research
+project will try to better understand lenses. Because lenses
+are appearing is so many places, a better understanding of
+lenses will lead to a better understanding of, for example,
+machine learning and game theory.  
+
+\daniel{place something fro the next two mentors here.}
+
+\subsection{Broader Impacts}
+
+The strongest broader impacts of this School are in
+diversity and inclusion as well as a stronger relationship
+between academia and industry.
+
+Regarding diversity and inclusion, the School will be
+advertised to potential students through, not only the
+established networks in the applied category theory
+community, but with the National Association of
+Mathematicians, the Association for Women in Mathematics,
+Spectra, the Society for the Advancement of Chicanos and
+Native Americans in the Sciences.  Applicants will be asked
+to annonymously complete an optional survey to help organizers
+ascertain the socio-economic makeup of the applicant
+pool. After corollating the underserved applicants with
+where they found the call for participation, subsequent
+iterations of the School will put more resources into
+advertising in those places which increase the diversity of
+the applicant pool.
+
+Regarding strengthening ties between academia and industry,
+the applied category theory community is already well
+represented in both areas. This strong relationship has been
+cultivated because applied category theorists largely
+believe that academia and industry are essential to the
+success of applied category theory.  Currently, category
+theory informs work at US companies includin Metron
+Scientific Solutions, Pyrofex, and Categorical
+Informatics. The four experts that are participating in the
+School come from both academia and industry.  The School
+intends to increase the strength of this relationship by
+recruiting graduate students, post-docs, and industry
+professionals by focusing on stregthening the networks. This
+involves having people from both worlds work together. Also,
+the Conference/Workshop attracts both industry professionals
+and academics. The Conference/Workshop involves both
+presentations and structured discussions to foster
+interaction between industry and academics.  The
+strengthening of networks is to be evaluated through
+follow-up surveys.

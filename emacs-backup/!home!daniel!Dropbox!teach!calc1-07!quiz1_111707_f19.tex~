@@ -1,0 +1,61 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% environments ---------------------
+
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+% begin document -------------------
+
+\begin{document}
+
+% right header material -----------
+
+\begin{flushright}
+  \textbf{quiz 1} \linebreak % quiz, or exercises
+  {math1117-02} \linebreak % course number and section
+  {u new haven} \linebreak %college
+  \textit{4 september 2019} % date 
+\end{flushright}
+
+% left header material -------------
+
+\begin{flushleft}
+  name: \rule{10cm}{0.4pt} \linebreak
+\end{flushleft}
+
+% body -------------------------
+
+% question 1
+\begin{q}[10 points]
+  Let $ f(x)= x^2-4 $ and $ g(x)= x^3 $.  Evaluate the
+  expression $ g(f(u)) $.  
+\end{q}
+
+% question 2
+\begin{q}[10 points]
+  Determine whether the graph of the following function is
+  symmetric about the x-axis, y-axis or the origin:
+  $ f(x)= x^4+5x^2-12 $. (For two extra credit points,
+  describe why $ f(x) $ is not symmetric about the x-axis
+  in one or two sentences and no calculations.)  
+\end{q}
+
+% end document------------------
+
+\end{document}

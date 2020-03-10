@@ -1,0 +1,66 @@
+---
+layout: default
+title: Homework for Statistics
+
+---
+
+<!--- 
+Convert to html by running 
+pandoc hw_stat_f19.md -f markdown -t html -s -o hw_stat_f19.html
+--->
+
+This document will be updated throughout the semester, so
+always be checking it.  It contains the assigned homework
+for each section and due dates.
+As stated on the syllabus, homework is only graded for completion.  
+
+**Section 1.1** 1.9, 1.10, 1.11, 1.12, 1.14  
+*(due+quiz on Wed, 4 Sept)*
+
+**Section 1.2** 1.25, 1.26, 1.32, 1.33, 1.41, 1.42
+*(due+quiz on Wed, 11 Sept)*
+
+**Section 1.3** 1.57, 1.59, 1.61, 1.65, 1.69, 1.70, 1.75, 1.76
+*(due+quiz Mon, 16 Sept)* 
++ Note: see blackboard announcement to get data for 1.57,
+  1.59, and 1.61
+
+**Section 2.1** 2.5, 2.6, 2.8, 2.9   
+*(due+quiz Wed, 18 Sept)*
+
+**Section 2.2** 2.17a, 2.24, 2.32, 2.33, 2.37 
+*(due+quiz Fri, 20 Sept)*
+
+**Section 2.3** 2.41, 2.46, 2.49, 2.52 *(due+quiz Mon, 23 Sep)*
+
+**Section 2.4** 2.65ad (use R), 2.68, 2.70, 2.73a--e
+*(date+quiz Wed, 25 Sep)*
+
+    * Note: see 'common R commands' link on course website. 
+	
+	* To submit 2.65a, start by writing down the equation
+	for the least squares regression line. Find the value 
+	for each term in that line using a command or series of
+	commands in R and then fill the values computed by R
+	into the line equation.  Explain what commands you used,
+	for example you might write "To find the mean of Antho3, 
+	I used the command:	mean(FILL_IN_THE_CORRECT_THING_HERE)". 
+	As always, I encourage you to visit my office hours for further help. 
+
+**Section 2.5** 2.94, 2.95, 2.102, 2.104, 2.105  *(due+quiz
+Fri, 27 Sep)*
+
+**Section 2.6** 2.121, 2.122 (use R), 2.125 *(due+quiz
+Mon, 30 Sep)*
+
+	* Download the dataset for exercise 1.222 from the
+	course website.  You can build a two-way table in R
+	using the command table(X,Y) where X is the variable
+	that occupies the rows and Y is the variable that
+	occupies the columns.  
+
+**Section 4.1** 4.2, 4.3 *(due+quiz Wed, 2 Oct)*
+
+**Section 4.2** 4.17, 4.19bcd, 4.26, 4.29, 4.32, 4.33
+*(date+quiz Mon, 7 Oct)*
+

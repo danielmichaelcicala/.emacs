@@ -1,0 +1,90 @@
+\documentclass{beamer}
+% \documentclass[handout]{beamer}
+\setbeamercovered{transparent}
+\usetheme{metropolis}
+
+% PACKAGES ~~~~~~~~~~~~~~~~~~~~
+
+\usepackage{amsfonts}
+\usepackage{amssymb}  
+\usepackage{amsthm} 
+\usepackage{amsmath} 
+\usepackage{caption}
+\setbeamertemplate{itemize items}[ball]
+\usepackage{etoolbox}
+\usepackage{stmaryrd} 
+
+\usepackage{graphicx}
+\graphicspath{ {img/} }
+\usepackage{mathtools}
+\usepackage{subcaption}
+\usepackage{subfiles}
+\usepackage{tikz}
+\usetikzlibrary{
+  matrix,
+  arrows,
+  shapes,
+  decorations.markings,
+  decorations.pathreplacing}
+\usepackage{todonotes}
+\usepackage[normalem]{ulem} % for strikeout text, e.g. \sout{text}
+
+% NEW COMMANDS ~~~~~~~~~~~~~~~~~~
+
+% mathbb
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+
+% symbols
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\op}{^{ \text{op} }}
+
+% categories
+\newcommand{\Set}{\cat{Set}}
+\newcommand{\Graph}{\cat{Graph}}
+\newcommand{\RGraph}{\cat{RGraph}}
+\newcommand{\Top}{\cat{Top}}
+\newcommand{\Cat}{\cat{Cat}}
+\newcommand{\A}{\cat{A}}
+\newcommand{\B}{\cat{B}}
+\newcommand{\C}{\cat{C}}
+\newcommand{\NonLinArrCat}{\cat{P}}
+\newcommand{\LinArrCat}{\cat{C}}
+\newcommand{\X}{\cat{X}}
+\newcommand{\Y}{\cat{Y}}
+\newcommand{\Z}{\cat{Z}}
+\newcommand{\core}{\mathbf{core}}
+
+% text formatting
+\newcommand{\defn}[1]{\textbf{#1}}
+\newcommand{\cat}[1]{\mathbf{#1}}
+\newcommand{\dblcat}[1]{\mathbb{#1}}
+\newcommand{\type}[1]{\mathtt{#1}}
+\renewcommand{\t}[1]{\text{#1}}
+\newcommand{\edit}[1]{\textcolor{editcolour}{(#1)}}
+
+% arrows
+\newcommand{\from}{\colon}
+\newcommand{\xto}[1]{\xrightarrow{#1}}
+\newcommand{\xgets}[1]{\xleftarrow{#1}}
+
+% MATH OPERATORS ~~~~~~~~~~~~~~~~~~
+
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\ob}{Ob}
+\DeclareMathOperator{\arr}{arr}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Bij}{Bij}
+\DeclareMathOperator{\Sub}{Sub}
+\DeclareMathOperator{\colim}{colim}
+
+\begin{document}
+
+
+
+
+\end{document}

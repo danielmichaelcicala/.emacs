@@ -1,0 +1,268 @@
+\documentclass{assets/CAS_syllabus}
+\begin{document}
+
+\includepdf[pages=-]{assets/math1117.pdf}
+
+% Output the header for the course syllabus document:
+\Heading
+
+% Do not introduce any blank lines betweeen these brackets.
+\Coursehead[
+% The following defines the data fields used in the document:
+%
+% INSTRUCTOR INFORMATION:
+instructor      = {Daniel Cicala},
+phone           = {},
+email           = {dcicala@newhaven.edu},
+webpages        = {https://danielmichaelcicala.github.io/teach},
+%
+% COURSE TEXT AND SYLLABUS:
+course          = {MATH 1117},
+coursesection   = {-\,02}, % We use the - style to denote course sections.
+coursetext      = {\textit{Calculus: Early Transcendentals}, by Briggs, Cochran, Gillett,  Pearson, 3e, ISBN 978-0-13-476364-45},
+coursecrosslist = {},
+coursename      = {Calculus I},
+credits         = {4},
+%
+% COURSE TIME AND LOCATION:
+revision        = {},
+semester        = {Fall 2019},
+office          = {TBD},
+meetingtimes    = {MWF 800-915a},
+classroom       = {KAPL 203},
+officehours     = {M 3-4 // W 12-1 // 11-12},
+addanddrop           = {Tuesday, 3 September},
+%semesterclasses      = {Spring Semester 2016},
+startsemesterclasses = {Monday, 26 August},
+endsemesterclasses   = {Wednesday, 18 December},
+lastdropdate         = {Tuesday, 29 October},
+%semesterholidays     = {Memorial Day Monday, May 29},
+semesterfinalexam    = {Monday, 16 December, 8-10a}
+]
+
+\syllabusfontn
+\Title{$\S$\,II: Instructors Addendum}
+\SubTitle{For \Course\Coursesection \Coursename}
+\vspace*{0.8em}
+
+% ===========================================
+% DISCLAIMER THAT I CAN AMEND SYLLABUS
+% ===========================================
+
+\noindent \textbf{Disclaimer:}
+I reserve the right to make changes to this syllabus. All
+changes will be announced in a timely manner through email
+or classroom announcements.
+\\
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Required Textbook}
+\Coursetext.
+  
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Topic{Specific Assessments Requirements for \Course\Coursesection}
+Each student is assessed based on a computed point score from 0 to 100. 
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{In-class structure}
+
+
+
+
+% Describe
+% * class workflow e.g. lecture vs classwork?
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Homework}
+
+On my website listed above, you will find a number of
+homework problems and their due date. They are to be handed
+in together with the associated quiz (see the Quizzes
+section for more details) on the due date.  Late assignments
+will not be accepted without a university approved
+reason. Assignments that are not stapled or without names
+will not receive credit.
+
+Each homework will be given a score between 0 and 10 that
+corresponds with the percentage of the assignment you
+completed. For a question to count as ``completed'' you must
+either have provided a full, though not necessarily correct,
+answer. In lieu of a full answer, you can either
+\begin{enumerate}
+  \item discuss the question with me in my office hours prior to
+    the due date of the related assignment, or
+  \item write a short paragraph that examines exactly why
+    you had difficulty.
+\end{enumerate}
+
+Homework is worth 10\% of your total grade.
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Quizzes and group-work}
+
+At the beginning of every class in which a homework is due,
+there will be a ten minutes long quiz.  This quiz will
+consist of questions pulled *directly* from the assigned
+homework. You may not use your text or any electronics,
+during the quiz, but you may refer to your notes. The
+associated homework is to be turned in together with the
+quiz. Each question, graded for correctness and clarity,
+will be given a score between 0 and 10. 
+
+After the completion of each chapter, there will be 30
+minutes of in-class time devoted to group work where you
+will be completing a worksheet consisting of questions from
+that chapter. No texts, notes, or electronics may be used.
+Each student must turn in their own work. Each question,
+graded for correctness, will be given a score between 0 and
+10. Individual students can improve their score by coming to
+office hours and working through their mistakes.
+
+Quizzes and worksheets each contribute to 15\% of your total
+grade.
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Exams}
+
+There are two exams during the semester and one final
+exam. All exams are closed notes and closed
+books. Calculators and other electronics are also not
+allowed. Any attempt to cheat will be dealt with according
+to the misconduct code.  Students who have found to violate
+the rules governing academic integrity will receive a 0
+grade on the associated exam and may be subject to further
+penalties as allowed by the University.
+
+Each midterm exam contributes 15\% to your total grade.  The
+final exam contributes to 30\% of the total grade. 
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Scoring and Course Grades}
+The letter grade is based on the student's total point score
+for the semester.  The class letter grade is assigned based
+on
+
+% table assigning point grade to letter grade
+\begin{center}
+	
+\syllabusfonts
+\renewcommand{\arraystretch}{1.20}
+\renewcommand{\colorfirst}{paleblue1}
+\rowcolors{2}{\colorfirst}{white}
+\begin{center}
+  \begin{tabular}{rcr|l}
+    \multicolumn{3}{c}{\textbf{Points}} & \textbf{Grade} \\
+    \hline
+                                     & & &  \\[-0.8em]
+    $97.5$ &-- &  $> 100.0$ & \hspace*{0.8em} \ec A\,+ \\
+    $92.5$ &-- &  $97.5$ & \hspace*{0.8em} \ec A \\
+    $90.0$ &-- &  $92.5$ & \hspace*{0.8em} \ec A\;-- \\
+    $87.5$ &-- &  $90.0$ & \hspace*{0.8em} \ec B\,+ \\
+    $82.5$ &-- &  $87.5$ & \hspace*{0.8em} \ec B \\
+    $80.0$ &-- &  $82.5$ & \hspace*{0.8em} \ec B\;-- 
+  \end{tabular} \hspace*{1.8em}
+  \rowcolors{2}{\colorfirst}{white}
+  \begin{tabular}{rcr|l}
+    \multicolumn{3}{c}{\textbf{Points}} & \textbf{Grade} \\
+    \hline
+                                     & & &  \\[-0.8em]
+    $77.5$ &-- &  $80.0$ & \hspace*{0.8em} \ec C\,+ \\
+    $72.5$ &-- &  $77.5$ & \hspace*{0.8em} \ec C \\
+    $70.0$ &-- &  $72.5$ & \hspace*{0.8em} \ec C\;-- \\
+    $67.5$ &-- &  $70.0$ & \hspace*{0.8em} \ec D\,+ \\
+    $62.5$ &-- &  $67.5$ & \hspace*{0.8em} \ec D \\
+    $60.0$ &-- &  $62.5$ & \hspace*{0.8em} \ec D- \\
+    $0$ &-- & $60$ & \hspace*{0.8em} \ec F
+  \end{tabular}
+  
+\end{center}
+\syllabusfontn
+	
+\end{center}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Grade Calculation}
+
+The total grade will be calculated using the formula
+\[
+  0.10 (\textrm{homework}) +
+  0.15 (\textrm{quizzes}) +
+  0.15 (\textrm{worksheets}) +
+  0.30 (\textrm{midterm exams}) +
+  0.30 (\textrm{final exam})
+\]
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Further Considerations and Rules}
+\begin{compactitem}
+\item
+  \textit{Email correspondence}: When sending me an email,
+  be sure to include your full name and the course-section
+  you attend.
+\item
+  \textit{Late Papers}: Any material handed in late without
+  having obtained prior approval or without having a valid
+  university excused absence (e.g., a signed medical excuse)
+  will not be accepted.
+\item
+  \textit{Scheduling conflicts}: It is the student's
+  responsibility to contact the instructor concerning any
+  scheduling conflicts which may result in late papers, or
+  other scheduling conflicts, e.g., an absence for an exam.
+\end{compactitem}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\Subtopic{Course Outline Schedule}
+
+\Semester\ classes are from \Startsemesterclasses\ to
+\Endsemesterclasses.  The last day to drop classes without
+any financial penalty is \Addanddrop, and the last day to
+withdraw from the class, i.e., to request a {\ec W} grade is
+prior to \Lastdropdate.  All requests for a W must be sent
+to the registrar. \\
+
+The final exam is scheduled for \Semesterfinalexam.\\
+
+The following is a tentative schedule. The exam dates are
+also noted on the schedule. These dates are subject to
+change; this includes the exams.
+
+\rowcolors{2}{cyan!15}{white}
+\begin{longtable}[l]{|l l|}
+	\hline
+	\endfoot
+	\hline
+	\rowcolor{cyan!30}{Dates} & Section \\ 
+	\endhead
+		
+  {\bf Week 1}  & Ch.~1 \\
+  {\bf Week 2}  & 2.1,2.2,2.3,2.4 \\
+  {\bf Week 3}  & 2.4,2.5,2.6 \\
+  {\bf Week 4}  & 3.1,3.2 \\
+  {\bf Week 5}  & 3.3,3.4,3.5 \\
+  {\bf Week 6}  & 3.6,3.7, \textbf{exam 1} \\
+  {\bf Week 7}  & 3.8,3.9,3.10 \\
+  {\bf Week 8}  & 3.11 \\
+  {\bf Week 9}  & 4.1,4.2,4.3 \\
+  {\bf Week 10} & 4.4,4.5 \\
+  {\bf Week 11} & 4.6,4.7,4.8 \\
+  {\bf Week 12} & 4.9, \textbf{exam 2} \\
+  {\bf Week 13} & 5.1,5.2 \\
+  {\bf Week 14} & 5.3,5.4,5.5 \\
+  \hline
+  {\bf Final Exam} & \Semesterfinalexam \\
+
+\end{longtable}
+
+%COPIES OF THE SCHEDULE FOR MW AND TR ARE KEPT IN ./lib.........................
+{
+\renewcommand{\syllabusfontstable}{\syllabusfontf}
+\renewcommand{\tableheader}{\tableheaders}
+%\input{schedule.tex}
+}
+
+\LastPage
+
+\end{document}
+

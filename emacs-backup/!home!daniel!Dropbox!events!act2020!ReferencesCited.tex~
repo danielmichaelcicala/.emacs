@@ -1,0 +1,19 @@
+\documentclass{amsart}
+\usepackage[a4paper,top=3cm,bottom=3cm,inner=3cm,outer=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage[style=alphabetic]{biblatex}
+\addbibresource{biblio.bib}
+\newcommand{\daniel}[1]{\textcolor{blue}{#1}}
+\title{References Cited}
+\begin{document}
+\maketitle
+
+\begingroup
+\renewcommand{\section}[2]{}
+\nocite{*}
+\printbibliography
+\endgroup
+
+\end{document}

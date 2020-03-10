@@ -1,0 +1,82 @@
+#+TITLE:
+#+STARTUP: indent align inlineimages nologdone
+
+* TALK TITLE AND ABSTRACT
+
+** Title: towards rewriting open systems
+
+** Abstract: Rewriting offers a framework in which to study changes in a system. Its success is implied by its use in disparate areas such as linguistics, computer programming, chemical reaction networks, cellular networks, Petri nets, and more. Recently, open systems have captured the attention of the applied category theorists resulting in a syntax, structured cospans, designed for their study. In this talk, we show that structured cospans support a rich theory of rewriting and provide a functorial construction of the rewrite relation.
+
+* Worlds colliding---a simplistic analogy
+
+** applied world: focused on problems, gets messy, hands dirty, leaves mess, task oriented
+
+** ct world: organized, efficient, critical, abstracted, process oriented
+
+** applied x ct: ideally, keeps propogates the best of both worlds and tosses the rest
+
+** find some pictures illustrating this, maybe a busy kitchen then gordon ramsey comes in and straightens everyone out or pre-ford assembly line vs after-ford assembly line
+
+* ACT interest in open systems
+
+** you'll hear some version of this repeated that the 20th century science was reductionist: that is reduce everything to it's component parts to understand them and the 21st century is systems, that is study the interactions between agents (give examples)
+
+** as such, a recent interest of ACT researchers is finding frameworks that can accommodate connecting systems together. The chocolate vs vanilla in this world is emergence vs compositionalty.  The former involves side effects upon connecting systems and the latter does not, a system is fully described by its component parts. b/c compositional systems are easier, they are a natural starting point for ACT practitioners.  
+
+** Hence structured cospans.  
+
+* System dynamics and rewriting
+
+** systems found in nature change. Sometimes this change is a natural effect we'd like to understand, like gene mutation or chemical reactions. Other times this change is a social construct being codified as in the grammar of natural language. Other times this change is an engineering decision motivated by efficiency or economics. 
+
+** rewriting is a framework for analysing such changes.  Rewriting is a large topic with many different flavors, so I will briefly tell the story of one thread of rewriting.
+
+** graphs are a handy mathematical tool for encoding the structure of a system: give examples---social system, data structure, chemical reaction network, protien network, maps (like airline)
+
+** graph rewriting is a way to algorithmically change one graph to another accoring to a set of rules.  There are various methods of graph rewriting, but I'll mention DPO graph rewriting.  
+
+*** define DPO graph rewriting
+
+*** give example from paper: deleting a loop from the internet
+
+* Here comes CT trying to make things efficient again (eye roll)
+
+** the mathematical mechanism was purely categorical.  Anything used that is inherent to graphs can be shifted to be described in the category of graphs, so we can ignore the fact that graphs were used all together...that is graphs are not essential.  Why not?
+
+** One nice thing about graphs is that we can glue nodes together (which is a union operation) and categorically taking unions occurs when there are pushouts and pullbacks and they play nicely together. 
+
+** After some soul searching, an elegent answer came in the form of an adhesive category, which is defined with properties involving the interaction between pushouts, pullbacks, and monomorphisms. An even more general answer came latere in the form of an M-adhesive category, which essentially weakens the axioms of an adhesive category so that they only apply to some class M of monomporhisms...but whatevere.
+
+* Advertisement for adhesive catgory: a great place to do rewriting
+
+** what makes this so? 
+
+*** confluence results => local church-rosser which characterizes local confluence
+
+*** concurrency => characterizes when two single-step rules applied in a sequence can be combined into a single rule tht gives the same result
+
+* towards rewriting open systems
+
+** rewriting theorists research how to apply rewriting to the syntax of various systems---e.g. petri nets, graphs, typed graphs---but these are all closed systems and evidently the 21st century thinks closed systems are dumb and that open systems are the bees knees.  Since structured cospans provide a v nice syntax for open systems (better than decorated cospans, sorry brendan), let's start with those.
+
+** I was able to take a large class of categories of structured cospans and show that they are indeed adhesive thus support a rich rewriting theory
+
+** strategy: structured cospans (w constraints) => topos => adhesive
+
+*** roughly a topos is a category that encodes the first order logic that we equip sets with when doing foundational set theory, so it is not poor form to think of an element of a topos as a generalized set for the remainder of this talk.  
+
+* Structured cospans form a topos
+
+** For us, a structured cospan requires the following data: an adjunction L -| R : A --> X between topoi where L is left exact. A structured cospan is a cospan of form La --> x <-- Lb. This is a stronger condition req'd by Baez, but we still have important examples: Graph & Set, Graph/G & Set
+
+** To rewrite structured cospans, we need to treat them as objects with their own morphisms so that we can fit them into DPO diagrams.  This is how we do that (give diagram of arrow of structured cospans). Call the category _L StrCsp
+
+** Result 1: _L StrCsp is a topos. Corrolary, because topos are adhesive, _L StrCsp supports a rich rewriting theory.
+
+* Other stuff that organizes the theory: CT-mother yelling at the child to clean up their room
+
+** _L StrCsp is functorial in L
+
+** There is a category of grammars of structured cospans, with objects (_L StrCsp, P) with P a set of rewrite rules
+
+** the language/rewrite relation is functorial Lang: StrCspGram --> DblCat

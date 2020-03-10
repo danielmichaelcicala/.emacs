@@ -1,0 +1,412 @@
+\documentclass[11pt]{amsart}
+
+%% Input handling:
+\usepackage[utf8]{inputenc}  % to allow unicode in source
+\pagestyle{plain}
+
+%% General style packages:
+\usepackage{xcolor}
+\definecolor{darkgreen}{rgb}{0,0.45,0}
+\definecolor{darkred}{rgb}{0.75,0,0}
+\definecolor{darkblue}{rgb}{0,0,0.6}
+\usepackage[colorlinks,citecolor=darkgreen,linkcolor=darkred,urlcolor=darkblue]{hyperref}
+\usepackage{breakurl}
+\usepackage[mathscr]{eucal}
+\usepackage{enumitem} % for customising enumerated lists
+\setlist[itemize]{leftmargin=2em}
+\setlist[enumerate]{leftmargin=3em}
+
+\usepackage[text={6.5in,9in},centering]{geometry}
+
+\parskip = 0.1in
+\parindent = 0.0in
+\raggedbottom
+
+\makeatletter
+\def\section{\@startsection{section}{1}%
+  \z@{.7\linespacing\@plus\linespacing}{.5\linespacing}%
+  {\normalfont\bfseries}}
+% Was {\normalfont\scshape\centering}}
+\renewcommand{\@secnumfont}{\bfseries}
+\makeatother
+
+%% Color commentary
+\newcommand{\Brendan}[1]{{\color{red} BRENDAN: #1}}
+\newcommand{\John}[1]{{\color{blue} JOHN: #1}}
+\newcommand{\Nina}[1]{{\color{green} NINA: #1}}
+\newcommand{\Valeria}[1]{{\color{purple} VALERIA: #1}}
+\newcommand{\Daniel}[1]{{\color{darkgreen} DANIEL: #1}}
+\newcommand{\Simon}[1]{{\color{cyan} SIMON: #1}}
+
+
+%=================================
+% Document content
+%=================================
+
+\begin{document}
+\title{Mathematics Research Community \\ in Applied Category Theory \\ Proposal for Summer 2021}
+\maketitle
+
+\section*{Personnel}
+
+\begin{enumerate}[label=$\bullet$, ref=$\bullet$]
+
+\item John Baez, UC Riverside, baez@math.ucr.edu
+
+\item Simon Cho, University of Michigan, simoncho@umich.edu
+
+\item Daniel Cicala, University of New Haven, dcicala@newhaven.edu
+
+\item Nina Otter, UCLA, otter@math.ucla.edu
+
+\item Valeria de Paiva, Samsung Research America, v.paiva@samsung.com
+
+\end{enumerate}
+
+
+% ====================================
+\section*{Scientific content}
+% ====================================
+
+Applied category theory is a new field of study focused on
+the discovery and development of real-world applications of
+category theory. Until recently, category theory has been
+used as an abstract framework to relate structure underlying
+collections of mathematical objects. It has been used by
+algebraic geometers, homotopy theorists, and logicians. It
+is rapidly becoming clear that the features of category
+theory which make it suitable for this purpose also make it
+an ideal framework with which to analyze systems of interest
+across disparate applied contexts. During the
+workshop, we intend to focus on three specific contexts in
+which this realization occurs.
+
+John Baez will lead students in studying \textbf{open gene
+  regulatory networks}. A gene regulatory network is a
+collection of molecules and reactions that govern the
+expression of genes in a cell.  These are mathematically
+modeled in a variety of ways, the simplest being a Boolean
+network, where time proceeds in discrete steps and each node
+is either ``on'' or ``off'' depending on whether its neighboring
+nodes are on or off at the previous time step; Petri nets
+give another, more detailed model.
+
+Since gene regulatory networks are complex, they are
+typically discovered in experiments one piece at a time.
+These pieces are ``open'' gene regulatory networks, where
+the expression of certain genes depends on inputs that are
+not yet modeled as part of the network.  Researchers then
+assemble these open networks into larger networks which
+provide more detailed models.
+
+Mathematically, the process of building larger open networks
+from smaller ones is described by Fong's theory of decorated
+cospans \cite{fongthesis}, or the newer formalism of
+structured cospans developed by Courser \cite{courserthesis}
+and expanded on by Cicala \cite{cicalathesis}. Using
+research of Baez and Master \cite{baezmaster}, the biologist
+Wu has recently used these ideas to model gene regulatory
+networks (GRNs) as open Petri nets \cite{wu}. Baez's students will
+construct and study a category whose morphisms are open GRNs.
+
+Valeria de Paiva will lead students in investigating the
+connections between the various manifestations of
+\textbf{lenses}. The notion of a lens finds use in computer
+science as a way to encode bidirectional transformations,
+where one has a ``get'' function that connects an input to its
+corresponding output, and a ``put'' function which updates
+the input given an input-output pair. These two functions
+must interact in sensible ways.
+
+The abstract structure of lenses has been recently noticed
+across surprisingly many applications of category theory,
+such as in (but not limited to) the work of Fong, Spivak,
+and Tuy\'{e}ras on a compositional model of backpropagation
+in supervised learning \cite{backprop}, in the work of
+Ghani, Hedges, et.~al.~ on compositional
+economics \cite{compgames}, and in the work of Budiu,
+Galenson, and Plotkin on \textbf{partial compilers}
+\cite{partial}. An earlier context in which lenses come up
+is in de Paiva's category theoretic investigation of
+G\"{o}del's Dialectica interpretation, in which de Paiva
+establishes a large part of the current knowledge of lenses
+\cite{dialectica}.
+
+In fact, one of the variants of the lenses discussed by both
+\cite{backprop} and \cite{hedges} seems to be a certain
+restriction of de Paiva's \textbf{Dialectica construction}, although
+it is not immediately obvious to what degree such a
+restriction preserves the logical structure of the
+construction. It is also expected that there is a connection
+between the Dialectica construction and the work on partial
+compilers, but the details currently remain mysterious. De
+Paiva's students will construct a framework which clarifies
+in which precise sense the concept of lens as embodied by de
+Paiva's Dialectica construction generalizes or modifies to
+connect to the aforementioned work in applied categorical
+contexts.
+
+Nina Otter will lead students in studying the properties of
+\textbf{social simplicial complexes}.  Networks have been
+used to model social systems since the 1930s; in such models
+nodes correspond to individuals or social positions, and
+edges to pairwise connections between them. Such networks
+are called \textbf{social networks}. One of the main
+advantages of using networks to study social systems is that
+they provide a more realistic model when studying dynamical
+processes, such as the spread of a disease in a population
+\cite{PV01}.
+
+One of the main interests in social network science is the
+study of social positions and roles. By ``position" social
+scientists usually mean a collection of actors who have
+similar ties to other actors, while a ``role" is a specific
+pattern of ties among actors or positions. Since the 1970s a
+lot of research has been done to develop these concepts in a
+rigorous way. An open question was whether there is a way to
+perform role and social position analysis simultaneously. In
+\cite{OP19}, we answer this question in the affirmative, by
+developing a categorical formulation of positional and role
+analysis.
+
+Often one is interested in modeling not only pairwise but
+also higher order connections between individuals, and thus
+simplicial complexes are a more appropriate model for social
+systems \cite{CB18}.  Nina Otter's students will develop
+position and role analyses for social simplicial complexes,
+generalizing the work done in \cite{OP19}.
+
+A recurring theme across these projects is that of a ``syntax-semantics correspondence''. That is, complicated systems may be regarded as an instance (or a ``semantics'') of an underlying logical structure (i.e. ``syntax''); and studying one part of a syntax-semantics correspondence often yields insight into the other. The study of such correspondences is quite classical, and is known as \emph{categorical semantics}. This aspect of category theory featured prominently during the \textbf{2017 MRC on Homotopy Type Theory}, in which organizers Cho and Cicala both participated: one of the projects of that MRC was to pin down more precisely how the syntax of type theory underlies homotopical models, within the framework of categorical semantics.
+
+The projects described above for the 2020 MRC on Applied Category Theory seek to bring ideas of categorical semantics to bear in their respective contexts. That is, one may think of cospans as the syntax for open networks, specific instances of which are the semantics; lenses themselves are the syntax for surprisingly diverse kinds of semantics; and to categorically model social networks is exactly to identify the syntactic/logical structures underlying a social network.
+
+%=================================
+\section*{Objectives}
+%=================================
+
+Our objectives fall within three primary areas:
+community building, mentorship, and developing category
+theory as an interdisciplinary science.
+
+Over the past several years, there has been a great effort
+to build a community of applied category theory (ACT)
+researchers, both in the US and abroad. The European ACT
+community in particular is taking off quite rapidly,
+building on its strong history of application in programming
+languages and theoretical computer science, and more
+recently in quantum computing. The proposed MRC would
+contribute greatly to a similarly successful development of
+a US-based ACT community. Such a development involves
+increasing the interest in ACT by those currently outside
+the field: due to the inherently interdisciplinary nature of
+ACT, the dialogue between ACT researchers and those working
+outside of category theory proper is particularly important
+to the well-being and relevance of the ACT community. One
+important component of invigorating dialogue overall is to
+increase the participation of early career researchers,
+especially from underrepresented groups, in the ACT
+pipeline. We believe that this aligns perfectly with the
+principles of the MRC program.
+
+A crucial strategy to widen the pipeline into this field is by 
+running programs that offer mentorship to early career 
+researchers by senior career researchers. Mentorship 
+contributes to several desired objectives, the first of which is 
+to improve the general research skills of younger researchers. 
+Another is to bolster the ability and confidence of young 
+researchers to speak and write about research-level 
+mathematics in the kinds of public forums (such as blogs or 
+mailing lists) most commonly used by ACT researchers to 
+communicate ideas. Empowering budding researchers to 
+participate in these online forums will increase their visibility 
+to the field at large. Lastly, because ACT is a young field, 
+there are comparatively many exciting directions and open
+problems for the relatively small size of the field. Mentorship 
+can help energetic young researchers find the problems that 
+they are suited for and passionate about.
+
+Apart from the Applied Category Theory community,
+there is also the subject itself.  We believe that category theory
+can serve as an excellent medium in which to reason for a
+wide host of application areas. The proposed MRC explores three such areas as laid out in the Scientific Content section. The objectives for each project are as follows.
+
+Three objectives for Baez's project on applying category theory to regulatory gene networks are \textbf{(1)} build a category whose morphisms \emph{are} open GRNs and explore its structure (symmetric monoidal, hypergraph, etc.); \textbf{(2)} build large scale GRNs using smaller open regulatory gene networks; \textbf{(3)} formalize into category theory the variations of GRNs involving coupled differential equations, Boolean networks, and stochastic GRNs.  Two objectives for de Paiva's project on Dialectica categories are \textbf{(1)} continue the work of Brown and Gurr in \cite{browngurr} and de Paiva in \cite{depaivapetri} on using Dialectica categories of Petri nets to give a compositional theory of concurrent computation; \textbf{(2)} formalize the connection between Dialectica categories and partial compilers using a recently observed fact that both are a manifestation of abstract lenses \cite{partial, dialectica}.  Two objectives for Otter's project are \textbf{(1)} develop a model of social networks using simplicial complexes; \textbf{(2)} generalize position and role analysis from graphs to simplicial complexes.
+
+
+%=================================
+\section*{Nuts and bolts}
+%=================================
+
+\subsection*{Prior to the week}
+
+There are seven main working groups, each corresponding to
+an objective of a project. Upon selection into the workshop,
+each participant will be assigned to one working group by the
+organizers, who will consider the participant's interest and background.
+
+All participants will be expected to enter the workshop with
+an understanding of category theory on the level of the text
+\emph{Category Theory for Scientists} by David Spivak.  The
+author has made the book freely available online, and so it
+is accessible to all participants. The other reading
+assignments depend on participants' working groups and are
+from the relevant references listed in the Scientific
+Content section of this proposal. To facilitate the
+background reading for each participant, the organizers will setup a private online forum where participants can discuss the papers and organizers can ask leading questions to elicit responses.  This is modeled after the Kan Extension Seminar, an online reading course run by Emily Riehl \cite{riehlkan}.
+
+This prior study will allow participants to begin research
+immediately on Monday. Organizers will work closely with
+participants prior to and during the research week to ensure
+they have the requisite background.  In particular, the
+organizers Baez, de Paiva, and Otter will lead their groups
+towards achieving their objectives and the organizers Cho and Cicala will rotate between groups to answer participant questions, provide background knowledge, and otherwise support Baez, de Paiva, and Otter. 
+
+\textbf{Monday.}  In the morning, Baez, de Paiva, and Otter will introduce the themes of the conference. After lunch, each organizer will lead a discussion with their associated groups to disseminate the research goals of the week. In the evening, Cho, Cicala, and Otter will lead the first professional development panel. 
+
+\textbf{Tuesday.} 
+The groups will work all day.
+
+\textbf{Wednesday.}  The groups will work all morning.  In
+the afternoon, all participants will reconvene to give
+progress reports.  There will be several reports per working
+group, one per sub-group, delivered by students. The
+organizers will help the students prepare their reports and
+give feedback afterwards. After completing the progress
+reports, we will build in time for social activities such as
+hiking.
+
+\textbf{Thursday.} 
+The groups will work all day. 
+
+\textbf{Friday.}  The morning will be dedicated to
+research. In the afternoon, the groups will give final
+presentations, discuss future research directions, and make
+plans to continue work on the most promising avenues. Again,
+the presenters will be participants.
+
+Interspersed with the mathematical activities will be a
+variety of optional social activities—hikes, games, and the
+like—so that everyone can clear their heads and get to know
+each other a bit better.
+
+
+\section*{Professional development}
+
+We will enact three separate approaches to professional
+development. 
+
+First, on Monday evening we will hold a panel discussion led
+by organizers Cho, Cicala, and Otter on the expectations of a job search.  All three underwent a job search in 2017-2018 and successfully found positions.  In addition, we will invite any participant who has recently completed a job search to join the panel.  Panelists will field questions from graduate students and speak to their experiences, including topics on preparing the research talks and teaching demonstrations, what questions to expect (for example, on recent trends in higher education such as the upcoming ``demographic cliff'' or ability to teach data science).
+
+Second, we will hold a panel discussion on
+Thursday evening, with panelists consisting of the senior
+members of the community, e.g. Baez and de Paiva, and a moderator to guide the discussion. The questions will have been submitted
+anonymously by the participants and communicated to the
+panelists in advance by the moderator to allow adequate
+preparation of answers. The panelists and moderators
+themselves may also contribute questions to ensure that a
+sufficiently broad range of relevant topics are
+discussed. Baez can discuss the work of a tenured professor
+and also what hiring committees look for in applicants. De Paiva can discuss working in industry.
+
+In addition to the above panel discussion, we will organize
+an ongoing flexible schedule of one-on-one meetings with
+either senior or junior ``mentors'' drawn from both the
+organizing committee (Baez and de Paiva) and the more senior
+participants. Participants will have the opportunity to sign
+up for 20-minute blocks of time with these mentors during
+which they can ask mathematical or career questions in more
+specificity than they otherwise might feel comfortable doing
+in a panel setting. These blocks of time will be made
+available throughout the workshop, with each mentor being
+asked to offer a total of about two hours, distributed
+according to what they consider reasonable.
+
+The intent is not only that participants would feel more
+comfortable in asking more specific questions, but also that
+the mentors feel freer to give similarly specific---and thus
+more helpful---answers. This has the added benefit of
+helping the more senior members of the community stay aware
+of the kinds of issues faced by the upcoming generation: as
+applied category theory is rapidly evolving as both a
+subject and a community, so are the issues that people often
+face within it, and the experience of one generation may not
+be representative of that of the next.
+
+
+%=================================
+\section*{Scale and participant recruitment}
+%=================================
+
+Applied Category Theory is a fast growing field as indicated
+by the number of dedicated events all of which have only
+begun within the past three years. Here, we present some of
+these events.
+
+An MRC in Applied Category Theory would be one in a growing
+number of events dedicated to Applied Category Theory.  In
+December 2019, a conference series called Symposium on
+Compositional Structures (SYCO) will be hosting its sixth
+event, each consisting of around twenty talks over two
+days. The aim is to bring together researchers whose work
+involves the principle of compositionality, a concept at the
+core of what makes category theory an excellent domain to
+reason about many applied problems.  SYCO's have been held
+in the U.S., the U.K., and Europe.
+
+An Applied Category Theory Conference and Adjoint School
+just completed its second run.  This year, the conference
+occurred at Oxford University where more than 40 talks were
+given over the span of a week.  The speakers themselves 
+embodied diversity along multiple major axes: they were a mix 
+of senior and junior researchers hailing from both academia 
+and industry, working on problems both pure and applied. 
+Several of the talks detailed research that was spawned from 
+the ACT2018 Adjoint School, which had received 80 
+applications for 20 positions. (The 2019 Adjoint School 
+received 130 applications for 24 positions.) With these past 
+44 Adjoint School graduates and the many more excellent 
+students for whom we had no room, we have a strong pool 
+of potential participants in an MRC program. We should mention 
+that the limited number of spaces for the Adjoint Schools meant 
+that we were unable to admit postdocs, since the available 
+positions were already completely filled by graduate students 
+and industry professionals. While we expect that interest will 
+again exceed availability, the larger scope of the MRC would 
+allow for a broader inclusion of early career researchers.
+
+There is also a strong online community of researchers
+working on applied category theory.  This includes an
+extremely influential mailing list for pure category theory
+and a growing mailing list dedicated to applied category
+theory.  In particular, one organizer of this event---John
+Baez---has an large reach through his online presence.  He
+runs the mathematics, physics, and climate change blog,
+\emph{Azimuth} that attracts over 500 readers per day and
+3.4 million views to date.  Baez also taught an online
+course in the summer of 2018 on the textbook \emph{Seven
+  Sketches in Compositionality} by Spivak and Fong, both
+pioneers in applied category theory. This course had over
+400 participants. There are also video resources on e.g.\ 
+YouTube: the 2019 Seven Sketches in Compositionality 
+lectures playlist alone has 13,500 views, and this is not to 
+mention other well-frequented channels like the Catsters.
+
+Applied category theory is also relevant to functional
+programmers. Bartosz Milewski is instrumental in
+disseminating this perspective through his popular blog,
+\emph{Bartosz Milewski's Programming Cafe} which has over
+1500 subscribers.  Milewski was a project leader at the
+ACT2019 Adjoint School and central to our project of
+bringing the category theory and programming communities
+together.  He also maintains a popular YouTube channel on
+the subject, boasting over 15,000 subscribers.
+
+Finally and importantly, to bolster recruitment specifically from underrepresented groups, we plan to advertise this MRC through the Association of Women in Mathematics, Spectra (the Association for LGBTQ mathematicians), the National Association of Mathematicians (whose mission is to ``promote the mathematical development of all underrepresented minorities''), and the Society for Chicanos/Hispanics and Native Americans in Science.
+
+\bibliographystyle{plain}
+\bibliography{general-bibliography}
+
+
+\end{document} 
+

@@ -1,0 +1,251 @@
+\documentclass[11pt]{amsart}
+
+% load packages
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usepackage[all,2cell]{xy}
+\usepackage{pgfplots}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% new commands
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\MM}{\mathbb{M}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\op}[1]{\operatorname{#1}}
+\renewcommand{\t}[1]{\text{#1}}
+\newcommand{\from}{\colon}
+\newcommand{\xto}[1]{\xrightarrow{#1}}
+\newcommand{\sm}{\smallsetminus}
+
+% environments & counters
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\theoremstyle{remark}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{notation}[thm]{Notation}
+
+\theoremstyle{definition}
+\newtheorem{ex}[thm]{Example} 
+\newtheorem{df}[thm]{Definition}
+
+
+\usepackage[numbers]{natbib}
+
+\begin{document}
+
+
+\noindent {\LARGE \textsc{List of Courses Taught}}
+
+\noindent \rule{12.5cm}{0.4pt} 
+
+\noindent Daniel Cicala, UC Riverside
+
+\vspace{2em}
+
+\textsc{As primary instructor}
+
+\vspace{2em}
+
+\fbox{
+ \begin{minipage}{1.0\linewidth}
+ \begin{multicols}{2}
+    \textbf{Spring 2019 at Riverside City College}
+
+    \begin{itemize}
+    \item Introduction to statistics
+    \end{itemize}
+
+    \textbf{Fall 2018 at Riverside City College}
+
+    \begin{itemize}
+    \item Introduction to statistics (2 sections)
+    \end{itemize}
+
+    \textbf{Summer 2018 at UC Riverside}
+
+    \begin{itemize}
+    \item Calculus of several variables II
+    \end{itemize}
+
+    \textbf{Spring 2018 at Riverside City College}
+
+    \begin{itemize}
+    \item Intermediate Algebra
+    \item Precalculus
+    \end{itemize}
+
+    \columnbreak
+    
+    \textbf{Summer 2018 at UC Riverside}
+
+    \begin{itemize}
+    \item Undergrad research: machine
+      learning
+    \end{itemize}
+
+    \textbf{Fall 2018 at UC Riverside}
+
+    \begin{itemize}
+    \item Intermediate algebra
+    \item Precalculus
+    \end{itemize}
+
+    \textbf{Summer 2017 at UC Riverside}
+
+    \begin{itemize}
+    \item Topology qualifying exam seminar
+    \end{itemize}
+  \end{multicols}
+\end{minipage}
+}
+
+\vspace{2em}
+
+\textsc{As Teaching Assistant}
+
+\vspace{2em}
+
+\fbox{
+  \begin{minipage}{1.0\linewidth}
+    \begin{multicols}{2}
+      \textbf{Spring 2019 at UC Riverside}
+
+      \begin{itemize}
+      \item Ordinary Differential Equations \\
+        (4 sections)
+      \end{itemize}
+
+      \textbf{Winter 2019 at UC Riverside}
+
+      \begin{itemize}
+      \item Calculus of several variables
+      \item Ordinary differential
+        equations \\ (2 sections)
+      \item Mathematical modeling
+      \end{itemize}
+
+      \textbf{Fall 2018 at UC Riverside}
+
+      \begin{itemize}
+      \item none (Won Fellowship)
+      \end{itemize}
+
+      \textbf{Spring 2018 at UC Riverside}
+
+      \begin{itemize}
+      \item Math for business and social sciences \\
+        (2 sections)
+      \item Geometry
+      \end{itemize}
+
+      \textbf{Winter 2018 at UC Riverside}
+
+      \begin{itemize}
+      \item Calculus I (2 sections)
+      \item Linear algebra I
+      \item Intermediate analysis
+      \end{itemize}
+
+      \textbf{Fall 2017 at UC Riverside}
+
+      \begin{itemize}
+      \item Calculus II (2 sections)
+      \item Ordinary differential equations \\ (2
+        sections)
+      \end{itemize}
+
+      \textbf{Summer 2017 at UC Riverside}
+
+      \begin{itemize}
+      \item Math for business and social science
+      \item Ordinary differential equations
+      \end{itemize}
+
+      \columnbreak
+      
+      \textbf{Spring 2017 at UC Riverside}
+
+      \begin{itemize}
+      \item Calculus I
+      \item Linear algebra II (2 sections)
+      \end{itemize}
+
+      \textbf{Winter 2017 at UC Riverside}
+
+      \begin{itemize}
+      \item Math for business and social science
+      \item Introduction to topology (2 sections)
+      \end{itemize}
+
+      \textbf{Fall 2016 at UC Riverside}
+
+      \begin{itemize}
+      \item Precalculus (2 sections) \emph{Gave
+          lectures}
+      \end{itemize}
+
+      \textbf{Summer 2016 at UC Riverside}
+
+      \begin{itemize}
+      \item Applied linear algebra
+      \end{itemize}
+
+      \textbf{Spring 2016 at UC Riverside}
+
+      \begin{itemize}
+      \item Calculus II
+      \item Ordinary differential equations \\ (2
+        sections)
+      \end{itemize}
+
+      \textbf{Winter 2016 at UC Riverside}
+
+      \begin{itemize}
+      \item Calculus I (4 sections)
+      \end{itemize}
+
+      \textbf{Fall 2015 at UC Riverside}
+
+      \begin{itemize}
+      \item Ordinary differential equations \\ (4
+        sections)
+      \end{itemize}
+
+      \textbf{Winter 2015 at UC Riverside}
+
+      \begin{itemize}
+      \item Calculus I (3 sections)
+      \item Linear algebra I
+      \end{itemize}
+
+      \textbf{Fall 2014 at UC Riverside}
+
+      \begin{itemize}
+      \item Calculus II (3 sections)
+      \item Ordinary differential equations
+      \end{itemize}
+    \end{multicols}
+  \end{minipage}
+}
+\end{document}

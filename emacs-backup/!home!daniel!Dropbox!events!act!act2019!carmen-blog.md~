@@ -1,0 +1,278 @@
+_guest post by [Carmen Constantin](https://www.mansfield.ox.ac.uk/dr-carmen-constantin)_
+
+This post belongs to the series of the [Applied Category
+Theory Adjoint School 2019](http://www.appliedcategorytheory.org/adjoint-school-act-2019/)
+posts. It is a follow-up to Martin and Brandon's [post about
+partial evaluations](https://golem.ph.utexas.edu/category/2019/05/partial_evaluations.html).
+
+Here we would like to use some results by [Clementino,
+Hofmann, and Janelidze](https://link.springer.com/article/10.1007/s40062-013-0063-2)
+to answer the following questions: _When can we compose
+partial evaluations?_, and more generally, _When is the
+partial evaluation relation transitive?_
+
+## Introduction
+
+In this post, for simplicity, we study monads over the category of sets. A similar discussion can be had in more general categories by replacing elements of a set $X$ by generalized elements, that is, arrows into the object $X$. See [this previous blog post](https://golem.ph.utexas.edu/category/2019/05/partial_evaluations.html) for more details about this.
+
+An algebra $(A,e)$ of a monad $T$ comes equipped with a way of evaluating the expressions in $TA$ via the map 
+$$
+e \colon TA \rightarrow A	
+$$
+
+The algebra map has to interact nicely with the multiplication of the monad, being the coequalizer of the pair.
+$$
+ \mu, Te \colon TTA \rightarrow TA 
+$$
+
+This can be used to refine the notion of evaluation: a term
+$t_1$ is a *partial evaluation* of a term $t_0$, written
+$$
+t_0 \leadsto t_1
+$$ 
+if there is a `one dimension higher' term $\tau_{01}\in TTA$ which witnesses the partial evaluation in the sense that $\mu(\tau_{01})=t_0$ and $Te(\tau_{01})=t_1$ in the diagram
+
+\begin{tikzcd}
+  \tau_{01}\in TTA \ar[r, "Te"] \ar[d, "\mu"] &
+  TA \ni t_1\ar[d, "e"] \\
+  t_0\in TA \ar[ru, rightsquigarrow, blue] \ar[r, "e"] &
+  A	
+\end{tikzcd}
+
+The blue line expresses the partial evaluation relation, that is, the existence of such an element in $\tau_{01}$ given $t_0$ and $t_1$. Note that, since the black arrows of the diagram above commute, a necessary condition for the existence of such $\tau_{01}$ is that $e(t_0)=e(t_1)$. 
+
+We have seen in a [previous blog post](\href{https://golem.ph.utexas.edu/category/2019/05/partial_evaluations.html) that the partial evaluation relation is reflexive, and for some monads, e.g. the Free Monoid/List monad, it is also transitive: if $t_0 \leadsto t_1$ and $t_1\leadsto t_2$ are witnessed by $\tau_{01}$ and $\tau_{12}$ respectively, then there is some $\tau_{02}$ witnessing
+$$ t_0 \leadsto t_2 $$
+
+One strategy for constructing a witness to transitivity is to first consider the diagram
+
+\begin{tikzcd}
+TTTA \ar[rr, "TTe"] \ar[rd, "T\mu"] \ar[dd, "\mu_T"'] &  & TTA \ar[rd, "Te"] \ar[dd, "\mu" near start]	& \\
+& TTA \ar[rr, "Te" near start, crossing over] & & TA \ar[dd, "e"] \\
+TTA \ar[rr, "Te" near start] \ar[rd, "\mu"'] & & TA \ar[ru, rightsquigarrow, blue] \ar[rd, "e"] & \\
+& TA \ar[ru, rightsquigarrow, blue] \ar[from=uu, "\mu" near start, crossing over] \ar[rr, "e"] & & A 
+\end{tikzcd}
+
+One could ask whether there is a term $\Theta \in TTTA$ such that $\mu_T(\Theta)=\tau_{01}$ and $TTe(\Theta)=\tau_{12}$.  If such a term exists, then one can simply take $\tau_{02}:=T\mu(\Theta)$ to be the desired witness for transitivity. 
+
+The existence of such a term $\Theta$ corresponds to the existence of a strategy for finding a transitivity witness. A strategy $\Theta$ always exists if the back square of the cube above (which we shall refer to as 'the monad's cube') is a weak pullback. Of course, a transitivity witness might exist even if there is no strategy for finding it (the term might for example not be in the image of the map $T\mu$)
+
+This can be summarised in the following picture: 
+
+<img width = "xxx" src = "https://danielmichaelcicala.github.io/partial_evaluations/TheCube-trans.png" alt = " "/>
+
+where we have indicated the existence of partial evaluations by a pair of squiggly lines highlighted in dark blue (to avoid confusion with the diagram's actual arrows), while their composite is highlighted in light blue.
+
+Note that the partial evaluations and their composite form a triangle, i.e. a 2-simplex if view the bar construction as a simplicial set -- see [the previous blog post](https://golem.ph.utexas.edu/category/2019/05/partial_evaluations.html}). 
+
+Moreover, in simplicial language, the outer green arrows correspond to an inner 2-horn, while the one labeled `transitivity witness' is the missing edge of the horn. The existence of the strategy arrow corresponds to the existence of what is called a horn filler. As we have previously noted, a transitivity witness $\tau_{02}$ might exist even if there is no horn filler.
+
+A quick intuitive example to illustrate the transitivity property is given by the free monoid monad, where $TA$ consists of formal sums of elements in $A$. If $A=\mathbb{N}$, the algebra map simply evaluates a formal sum to return an element in $\mathbb{N}$. We can draw a picture of the terms $t_0=1+2+3+4$, $t_1=3+3+6$ and $t_2=6+4$ which illustrates the transitivity of the partial evaluation relation $t_0\leadsto t_1\leadsto t_2$.
+
+<img width = "xxx" src =
+"https://danielmichaelcicala.github.io/partial_evaluations/2simplex-trans.png"
+alt = " "/>
+
+Of course, if the partial evaluation relation is transitive,
+then we can think about forming even longer composites. For
+example, for three composable back-to-back partial
+evaluations (depicted in dark blue in the figure below) the
+existence of an associator (and hence a coherent way to
+compose them) would be given by a 3-simplex, i.e. a filled
+tetrahedron, which corresponds to an element of $T^4A$. This
+element should restrict under $\mu$, $T\mu$, $T^2\mu$ and
+$T^3e$ respectively to the corresponding elements in $T^3A$
+that give the strategies for the binary composites.
+
+
+This can be illustrated by a 4-dimensional cube diagram, where again dark blue lines represent the partial evaluations, light blue lines represent their binary composites and the labels of the monad's cube have been suppressed to avoid clutter.
+
+<img width = "xxx" src =
+"https://danielmichaelcicala.github.io/partial_evaluations/3simplex-trans.png"
+alt = " "/>
+
+Each 3-horn corresponds to a union of all but one of the faces of the $3$-simplex. If the omitted face is the one opposite to the first or last of the corners of the tetrahedron these are called outer horns, otherwise they are called inner horns. This terminology is important because aside from transitivity, which we shall talk about in the remainder of the blog post, we have also looked at the possibility of finding horn fillers for inner horns (for monads which allow binary composites), as their existence would make the structures arising from the bar construction into a quasicategory. However, it turned out that even when binary composites exist for all composable partial evaluations, it is not always possible to find such fillers.
+
+## Weakly cartesian monads
+
+When a monad is *weakly cartesian*, the partial evaluation relation is transitive. First of all, a [weak pullback square](https://ncatlab.org/nlab/show/weak+limit#weak_pullbacks) is a commutative square with the existence but not necessarily the uniqueness condition of the universal property of pullbacks, see the nLab page on weak limits. A monad $(T,\mu,\eta)$ is weakly cartesian if the functor $T$ preserves weak pullbacks, and all naturality squares of $\mu$ and $\eta$ are weak pullbacks. In particular the following square is a pullback,
+
+\begin{tikzcd}
+ TTTA \ar{r}{TTe} \ar{d}[swap]{\mu_{TA}} & TTA \ar{d}{\mu_A} \\
+ TTA \ar{r}[swap]{Te} & TA
+\end{tikzcd}
+
+which is the back face of the monad's cube from earlier, meaning that the aforementioned $\Theta \in TTTA$ exists.
+
+Here is a well-known fact:
+
+*Theorem*
+If a monad $T$ is associated to a [variety of universal algebras](https://en.wikipedia.org/wiki/Variety_(universal_algebra), and the variety is operadic, then the functor $T$ is cartesian (and so, in particular, weakly cartesian).
+
+To understand this statement note that a variety
+$\mathcal{C}$ comes equipped with a monadic free-forgetful
+adjunction between $\mathcal{C}$ and the category of sets,
+that is, the Eilenberg-Moore category of algebras for the
+monad $T$ is isomorphic to $\mathcal{C}$. Now consider a
+presentation $(\Omega, \phi)$ of the variety $\mathcal{C}$,
+where $\Omega$ is a *signature* (a set $\coprod_{n\ge 0} \Omega_n$ of function symbols of arbitrary but finite arity $n$, including the constants of arity zero), and $\phi$ is a set of equational laws or identities between terms in $\Omega$. A variety is operadic if it can be presented using a set of identities which have the same variables appearing in the same order, without repetition, on each side. For example, $a*b+c=a-b*c$ would be an admissable identity for an operadic theory, but $a*b=b*a$ and $a*b=a$ would not.
+
+Operadic (and hence cartesian) varieties include 
+
+* all varieties that can be presented with no identities, i.e.~by a pair $(\Omega, \phi)$ where $\phi=\emptyset$ and in particular also all varieties in which $\Omega=\Omega_0$, such as sets and pointed sets. 
+* the variety of monoids, where $\Omega_2=\{*\}$ only contains the monoid multiplication, $\Omega_0=\{e\}$ is the constant representing the unit of the monoid. The identities in $\phi$ corresponding to the law of associativity and the unit law are clearly operadic.
+* the variety of semigroups
+* all varieties of the form $\mathbf{Set}^M$ where $M$ is a monoid, that is, of monoid actions on sets (including group actions).
+
+The theory of groups on the other hand is not operadic: it contains the identity $gg^{-1}=e$, which is not allowed.
+
+Since the monads associated to these varieties are cartesian, and so weakly cartesian, for these monads the partial evaluation relation is transitive. How, then, do partial evaluations behave for monads which are not weakly cartesian? 
+
+## Monads which are not weakly cartesian
+
+The paper [The monads of classical algebra are seldom weakly cartesian](https://link.springer.com/article/10.1007/s40062-013-0063-2) lists several necessary and several sufficient conditions for weak cartesianness of the functor $T$, the unit $\eta$ and the multiplication $\mu$ respectively for monads defined over algebraic varieties in general and free [semimodule](https://en.wikipedia.org/wiki/Semimodule) monads in particular.
+
+Notably, even if a monad is not weakly cartesian, a strategy for composing partial evaluations can be found, by applying the map $T\mu:T^3A\rightarrow T^2A$ within the monad's cube, as long as the usual monad square 
+
+\begin{tikzcd}
+TTTA \ar[r, "TTe"] \ar[d, "\mu_T"] & TTA \ar[d, "\mu"] \\
+TTA \ar[r, "Te"] & TA	
+\end{tikzcd}
+
+is a weak pullback---a much weaker condition than requiring weak cartesiannes of $\mu$ as a natural transformation.
+
+In fact it turns out that some monads which are not weakly cartesian still have transitive partial evaluations, such as the monad corresponding to the variety of $\mathbb{N}$-sets which satisfy the identity $2x=2y$, for some which in the paper is discussed in Example 3.4.
+
+Intuitively speaking, this monad represents iterated actions of the booleans on the elements of $X$, since the action of any integer greater or equal to $2$ maps any element of $X$ to some unique constant element $z\in X$, a fact which is represented by including a distinguished element $\infty$ among the terms of $TX$. A general term of $T^nX$ is therefore either of the form $(b_1,\ldots,b_n,x)$ or of the form $(b_1,\ldots,b_k,\infty)$ for some $k\leq n$ or just $\infty$. We shall refer interested the reader to the paper for formal definitions, but intuitively speaking the multiplication of the monad simply adds the booleans, resulting either in another boolean or in the distinguished element $\infty$.
+
+The information required to construct an algebra for this monad is given by a choice of a fixed element $z\in X$ and a map $e':X\rightarrow X$ which represents the action of the boolean $1$ on the elements of $X$. We therefore require that $e'(e'(x))=z, \ \ \forall x\in X$. 
+
+The algebra map, which we denote also by $e:TX\rightarrow X$ is then defined in terms of $e'$ as follows: $e(0,x)=x$, $e(1,x)=e'(x)$ and $e(\infty)=z$. 
+
+This monad has a non-constant pseudo-constant term, so the functor $T$ is not weakly Cartesian, according to Theorem 3.3. Nevertheless, the back square of the monad cube 
+
+<img width = "xxx" src =
+"https://danielmichaelcicala.github.io/partial_evaluations/Cube-trans.png"
+alt = " "/>
+
+is a weak pullback: take any $(b_1,b_2,y)$, $(b_3,b_4,x)$ which agree in the bottom right corner, i.e.  $$\mu((b_1,b_2,y))=Te((b_3,b_4,x))$$
+Then the first two entries of the first term together with the last two entries of the second term give $(b_1,b_2,b_4,x)$ in $T^3X$, which is their (not necessarily unique) pullback and some quick diagram chasing confirms that
+$$T\mu(b_1,b_2,b_4,x)=(b1,b2+b4,x) \ or\  (b_1,\infty)$$
+witnesses the existence of a partial evaluation relation between 
+
+$$Te(b_1,b_2,y) \text{ \ \ \ and \ \ \ }\mu(b_3,b_4,x).$$
+
+### A counterexample
+
+The first interesting result for our project comes from the subsequent discussion in the paper, which can be used to show that counterexamples to transitivity also occur. 
+
+In particular, it is interesting to look at the free $S$-semimodule monad (let's denote this monad by $(T,\eta,\mu)$), where $S$ is a particular semiring. There are a number of conditions stated in the paper such that, if any of this is satisfied by the semiring $S$, then the functor $T$ is a weakly cartesian functor: 
+* no non-zero elements in $S$ can have an additive inverse
+* for every $a,b\in S$ there exists $x\in S$ such that either $a+x=b$ or $b+x=a$
+* the additive monoid of $S$ is a monoid with cancellation (equivalently, it can be embedded into an abelian group).
+
+Once $T$ is a weakly cartesian functor, the multiplication is weakly cartesian if and only if additionally 
+
+* No non-zero element in $S$ has an additive inverse 
+* $S$ has no (non-zero) zero divisors
+
+* for any generating subset $C$ of $S$ and any $a,b,c,d\in S$ with $c\in C$ such that $cd=a+b$, there exists a map
+
+$$t:\{(x,y)\in S\times S ~|~ x+y =d\}\longrightarrow S$$
+
+with  $\sum_{x+y=d} t(x,y)x=a$, $\sum_{x+y=d}t(x,y)y=b$ and $\sum_{x+y=d}t(x,y)=c$
+
+The counterexamples we are interested in arise from semirings which satsify the first 5 conditions but fail to satisfy condition \ref{extra}.
+
+Consider for example the free semimodule monad $T$ over the semiring $S=\mathbb{N}[x]/\langle x^2=2\rangle$. This monad is given by
+
+* $T(X):=\{t:X\rightarrow S~|~ t \text{ has finite support}\}$. To keep the presentation more intuitive, we can use a simpler notation for the elements of this monad as a formal sum: $$T(X):=\sum s_i\cdot x_i,$$ which consists of a finite number of terms in $X$ with coefficients in $S$. Note that two such formal sums represent the same element if and only if they have the same elements of $X$ with the same corresponding coefficients, but perhaps appearing in a different order in the expansion.
+
+* the intuitive equivalent description of the unit is then $$\eta_X(x)= 1\cdot x$$
+* the multiplication then represents the familiar distributivity property: if $\tau=\sum_i z_i\cdot \sum_{j_i} s_{j_i}\cdot x_{j_i}$ then $$\mu_X(\tau)=\sum_{i,j_i} (z_i s_{j_i})\cdot x_{j_i}$$ 
+
+An algebra map $\overline{e}$ then simply evaluates the formal weighted sum $\sum s_i\cdot x_i$ to some element $x\in X$. Thus an algebra for this monad corresponds to an actual semimodule over $S$, in the classical sense of the term.
+
+Note that the map $Te:TTX\rightarrow TX$ is then given by 
+
+$$Te\left(\sum_i z_i\cdot \sum_{j_i}s_{j_i}\cdot x_{j_i}\right)=\sum_i z_i\cdot \overline{x_i}$$ where $$\overline{x_i}=e\left(\sum_{j_i}s_{j_i}\cdot x_{j_i}\right)$$ is the evaluation of the corresponding sum.
+
+We can not only show that the back square of the monad's cube is not a weak pullback for this monad, and hence no _strategies_ for finding transitivity witnesses exist, but also that transitivity itself fails to hold for this monad.
+Let $A:=\{ \ast \}$ be the one element $T$-algebra, i.e. the zero semimodule. The elements of $TA$ are formal sums with just one term $s_i\cdot \ast$ and  the evaluation map is trivial in the sense that the value of $s_i\cdot \ast$ is just $\ast$, as one would expect from multiplication acting on $0$. There is a partial evaluation between the $TA$ terms $1\cdot \ast$ and $2\cdot \ast$ witnessed by the $TTA$ element $$\tau=1\cdot 1\cdot \ast + 1\cdot 0\cdot \ast$$ since 
+$$\mu(\tau)=(1\cdot 1)\cdot \ast +(1\cdot 0)\cdot \ast
+=1\cdot \ast +0\cdot \ast =1\cdot \ast $$ and 
+$$Te(\tau)=1\cdot e(1\cdot \ast)+ 1\cdot e(0\cdot
+\ast)=1\cdot \ast + 1\cdot \ast = 2\cdot \ast $$
+
+There is also a partial evaluation between $2\cdot \ast$ and $x\cdot \ast$ witnessed by the $TTA$ element $$\tau'=x\cdot x\cdot \ast$$
+namely,
+$$\mu(\tau')=(x\cdot x)\cdot \ast = 2\cdot \ast$$ and
+$$Te(\tau')=x\cdot(x\cdot \ast)=x\cdot \ast$$ 
+However, there can be no partial evaluation from $1\cdot
+\ast$ to $x\cdot \ast$ because $Te$ maps any $\tau''=\sum_i
+z_i\cdot s_i\cdot \ast \in TTA$ to $$\sum_i z_i\cdot \ast = \left(\sum_i z_i\right)\cdot \ast.$$
+So if $\tau''$ were a transitivity witness, we would need $$\sum_i z_i= x.$$ But $x$ is additively indecomposable in $S$. 
+Hence $\tau''=x\cdot s\cdot \ast$, for some $s\in S$. But then $$\mu(\tau'')=(x\cdot s)\cdot \ast$$ 
+which cannot equal $1\cdot \ast$, since $x$ is not a unit in $S$.
+
+## Some further thoughts
+
+
+It was quite satisfying to find a concrete answer to the transitivity question we started from. There are several directions that we could explore further. 
+
+* On the one hand, there are interesting connections with probability which Paolo Perrone has discussed in a [previous blog post](\href{https://golem.ph.utexas.edu/category/2019/03/the_kantorovich_monad.html), and Brandon and Martin have [written about](https://golem.ph.utexas.edu/category/2019/05/partial_evaluations.html). 
+
+* On the other hand, it has been pointed out to us that it is likely to find connections with multi-stage programming and partially static data structures which have been used by computer scientists to describe computations that give the programmer a fine-grained control over beta reduction. Being able to control evaluation provides a basis for optimisation of binding times.
+
+* We can also further investigate these structures by trying for example to find out when partial evaluations are invertible. Together with transitivity, this would turn the partial evaluation into an equivalence relation.
+
+If the multiplication square 
+$$
+\begin{tikzcd}
+TTA \ar[r, "Te"] \ar[d, "\mu"'] & TA \ar[d, "e"] \\
+TA \ar[r, "e"] & A	
+\end{tikzcd}
+$$
+is a weak pullback, then the partial evaluation relation is an equivalence relation. One can ask if the converse also holds.
+
+* A more sophisticated question %than the one of the relation being an equivalence 
+is the following: when is the 1-truncation of the bar construction a groupoid? That is, in case we can form a category with partial evaluations as morphisms, when are all morphisms there invertible?
+
+For example, let $G$ be a group. The theory of $G$-sets is operadic, so the associated monad $T(X)=G\times X$ is (strongly) cartesian, and the bar construction gives the nerve of a category. The 0-simplices are the elements $(g,x)$ of $G\times X$, the 1-simplices from $(g,x)$ to $(h,y)$ are the elements $(j,h,x)$ of $G\times G\times S$ such that $g= jh$ and $h\cdot x=y$, and so on.
+The partial evaluation relation there is an equivalence relation %(the multiplication square is even an actual pullback -- not just a weak one) 
+and for this theory the bar construction of an algebra $A$ is the nerve of a groupoid. 
+ 
+This is probably very related to group cohomology: in this
+case, the bar construction is indeed a resolution of $A$,
+i.e. weakly equivalent to $A$.
+(The bar construction was actually first invented to compute the cohomology of $G$-modules, which are basically this example, just in an abelian category.)
+
+* One can also ask higher-dimensional questions, such as when is the bar construction an infinity-groupoid (i.e.~a Kan complex)?
+
+It turns out that this last question has a partial answer which involves Mal'cev theories.
+
+ A \emph{Mal'cev operation} on a set $A$ is a ternary operation $m:A\times A\times A\to A$ such that for each $a,b\in A$,
+ $$
+ m(a,b,b) \;= \; a \qquad \mbox{and} \qquad m(a,a,b) \;=\; b .
+ $$
+ A \emph{Mal'cev theory} is an algebraic theory which contains a Mal'cev operation. 
+
+In the algebraic theory of groups, there is a Mal'cev operation defined by 
+$$
+m(a,b,c) \; := \; a\,b^{-1}\,c.
+$$
+Therefore any theory whose algebras are groups, with
+possibly extra structures or properties, is a Mal'cev
+theory. These include for example the theories of groups,
+rings or modules over a fixed ring but not, for example, the theory of monoids, commutative monoids, semirings, and semimodules. 
+
+An example of a Mal'cev theory which is not a theory of particular groups is the theory of [heaps](https://ncatlab.org/nlab/show/heap). 
+
+A theorem by Carboni, Kelly and Pedicchio states that for
+any Mal'cev theory $T$ every simplicial object in the
+category of algebras is a Kan complex.  This theorem can be found [here](https://link.springer.com/article/10.1007/BF00872942). See also the nLab page about [Kan complexes](https://ncatlab.org/nlab/show/Kan+complex).
+
+Therefore, for the theory of groups (and heaps, etc.), not only do we get an equivalence relation, but the whole bar construction is an $\infty$-groupoid, of which the equivalence relation is the shadow, i.e.~the (0,1)-truncation. 
+
+
+

@@ -1,0 +1,32 @@
+\documentclass{standalone}
+
+\usepackage{amssymb,amsfonts,latexsym,stmaryrd}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[bookmarks]{hyperref}
+\usepackage{proof}
+%\usepackage[PostScript=dvips]{diagrams}
+\usepackage{euscript}
+\usepackage{graphicx}
+\usepackage{color}
+%\usepackage{pstricks,pst-node,pst-tree}
+\usepackage{tikz-cd}
+\usepackage{todonotes}
+\usetikzlibrary{
+  cd,
+  arrows,
+  positioning,
+  matrix,
+  backgrounds,
+  calc,
+  fit,
+  decorations.pathmorphing} 
+
+\begin{document}
+\[
+\begin{tikzcd}
+\tau_{01}\in TTA \ar[r, "Te"] \ar[d, "\mu"] & TA \ni t_1\ar[d, "e"] \\
+t_0\in TA \ar[ru, rightsquigarrow, blue] \ar[r, "e"] & A	
+\end{tikzcd}
+\]
+\end{document}

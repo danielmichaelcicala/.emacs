@@ -1,0 +1,350 @@
+%%%%%%%%%%%%%% PREAMBLE
+
+\documentclass[12pt]{report}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage[left=1in,right=1in,bottom=0in,top=0.5in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usepackage[all,2cell]{xy}
+\usetikzlibrary{matrix,arrows,shapes}
+\usepackage{pdfpages}
+
+% macros ---------------------------
+\newcommand{\emptybox}[2][\textwidth]{%
+  \begingroup
+  \setlength{\fboxsep}{-\fboxrule}%
+  \noindent\framebox[#1]{\rule{0pt}{#2}}%
+  \endgroup
+}
+
+% environments ---------------------
+
+\theoremstyle{definition}
+\newtheorem{q}{} 
+
+%%%%%%%%%%%%%%%%%	BEGIN
+%%%%%%%%%%%%%%%%% DOCUMENT
+
+\begin{document}
+\pagestyle{empty}
+
+%%%%%%%%%%% COVER
+%%%%%%%%%%% PAGE
+
+\begin{minipage}{0.3\textwidth}
+  \begin{tabular}{|l|}
+    \hline \\
+    {\textbf{FINAL EXAM }} \\ % exam number
+    {MATH2228.04} 	\\ % class
+    {2019-12-13} \\ % date
+    \\
+    \hline
+  \end{tabular}  
+\end{minipage}
+\begin{minipage}{0.7\textwidth}
+  name: 
+  \rule{10cm}{0.4pt}
+  \vspace{1em}
+  
+  \textbf{Instructions:} Each response is worth four points. Show
+  your work in the space by the question and record your answer on the
+  front page.
+\end{minipage}
+\vspace{1em}
+
+% instructions ------------------
+
+%\begin{itemize}
+%\item \textit{each question is worth four points}
+%\end{itemize}
+
+% answer sheet ------------------
+
+\begin{multicols}{2}
+
+\begin{tikzpicture}
+  \draw (0,-1) rectangle (8,6);
+  \draw (0.1,5.7) node[anchor=west]{\textbf{Q1}};
+  \draw (0.1,5) node[anchor=west]{(a) line eq};
+  \draw (0.1,3) node[anchor=west]{(b) predicted college gpa};
+  \draw (0.1,1) node[anchor=west]{(c) confidence interval};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \draw (0,-2.5) rectangle (8,6);
+  \draw (0.1,5.7) node[anchor=west]{\textbf{Q2}};
+  \draw (0.1,5) node[anchor=west]{(a) mean};
+  \draw (3.1,5) node[anchor=west]{(b) median};
+  \draw (0.1,3) node[anchor=west]{(c) mean vs. median w/ justification};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (8,2.5);
+  \draw (0.1,2.2) node[anchor=west]{\textbf{Q3}};
+  \draw (0.1,1.5) node[anchor=west]{(a) $P(A \& B)$};
+  \draw (4.1,1.5) node[anchor=west]{(b) $P(A \& B^c)$};
+\end{tikzpicture}
+\vspace{1em}
+
+\begin{tikzpicture}
+  \draw [ultra thick, dashed] (0,0) rectangle (7.4,3.3);
+  \draw (0,2.7) node[anchor=west]{Q1};
+  \draw (0,1.7) node[anchor=west]{Q2};
+  \draw (0,0.7) node[anchor=west]{Q3};
+  \draw (2.7,2.7) node[anchor=west]{Q4};
+  \draw (2.7,1.7) node[anchor=west]{Q5};
+  \draw (2.7,0.7) node[anchor=west]{Q6};
+  \draw (5.4,2.7) node[anchor=west]{Q7};
+  \draw (5.4,1.7) node[anchor=west]{T (of 76)};
+  \draw (-0.3,0.5) node[anchor=west, rotate=90]{\textbf{GRADES}};
+\end{tikzpicture}
+
+
+\begin{tikzpicture}
+  \draw (0,-4.5) rectangle (8,6);
+  \draw (0.1,5.7) node[anchor=west]{\textbf{Q4}};
+  \draw (0.1,5) node[anchor=west]{(a) explanatory};
+  \draw (0.8,4) node[anchor=west]{response};
+  \draw (0.1,3) node[anchor=west]{(b) joint distro.};
+  \draw (0.1,-1) node[anchor=west]{(c) conditional distro.};
+  \draw (0.1,-3) node[anchor=west]{(d) claim supported? circle
+    one:};
+  \draw (4,-4) node[]{yes \qquad no};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \draw (0,1) rectangle (8,6);
+  \draw (0.1,5.7) node[anchor=west]{\textbf{Q5}};
+  \draw (0.1,5) node[anchor=west]{(a) $P(Z=0)$};
+  \draw (3.3,5) node[anchor=west]{(b) $P(Z<-1.92)$};
+  \draw (0.1,2.5) node[anchor=west]{(c) $P(Z>0.67)$};
+  \draw (3.3,2.5) node[anchor=west]{(d) $P(-0.12<Z<0.4)$};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (8,2.5);
+  \draw (0.1,2.2) node[anchor=west]{\textbf{Q6}};
+  \draw (0.1,1.5) node[anchor=west]{(a) sample size};
+  \draw (3.1,1.5) node[anchor=west]{(b) confidence interval};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \draw (0,0) rectangle (8,3);
+  \draw (0.1,2.7) node[anchor=west]{\textbf{Q7}};
+  \draw (0.1,2) node[anchor=west]{(a) claim supported? circle
+    one:};
+  \draw (4,1) node[]{yes \qquad no};
+\end{tikzpicture}
+\end{multicols}
+\pagebreak
+
+\centering
+---This page is intentionally left blank---
+\pagebreak
+
+%%%%%%%%%%%%%%%% START
+%%%%%%%%%%%%%%%% EXAM
+%%%%%%%%%%%%%%%% HERE		
+
+\begin{q}
+  One predictor of college success is high school gpa.  The
+  following data compares the high school gpa to college gpa
+  for randomly selected students, together with their means
+  and standard deviations. 
+  
+  \begin{minipage}{0.5\linewidth}  
+  \begin{enumerate}
+  \item Find the equation for a line fitting this data using
+    least squares regression.
+  \item Predict the college gpa of a student who received a
+    high school gpa of 3.5.  
+  \item Find a 95\% confidence interval for the slope of the
+    simple linear regression line that describes the
+    relationship between high school and college gpa for all
+    students.  Use standard error 1.17.
+  \end{enumerate}
+  \end{minipage}
+  \quad
+  \begin{minipage}{0.4\linewidth}
+    \begin{center}
+      \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{student} & \textbf{high school gpa} &
+                                                      \textbf{college gpa} \\
+        \hline
+        1&3.4&3.7\\
+        2&2.5&3.2\\
+        3&2.8&2.6\\
+        4&2.4&2.8\\
+        5&3.8&3.5\\
+        6&3.1&3.9\\
+        7&2.7&3.8\\
+        8&1.9&2.4\\
+        9&2.6&2.5\\
+        10&3.2&3.5\\
+        \hline\hline
+        mean&2.84&3.19\\
+        st.\ dev.&0.55&0.57\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{minipage}
+
+\end{q}
+\pagebreak
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{q}
+  The list below gives the duration of phone calls to
+  customer support.  \vspace{1em}
+  
+  \begin{minipage}{0.25\linewidth}
+    \begin{tabular}{|cccc|}
+      \hline
+      12&15&20&3\\
+      5&8&15&16\\
+      42&7&14&11\\
+      15&10&8&9\\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}{0.75\linewidth}
+    \begin{enumerate}
+    \item What is the mean duration?
+    \item What is the median duration?
+    \item Which of the mean or median gives a better
+      measurement of the center of this data?  Justify your
+      answer.
+    \end{enumerate}
+  \end{minipage}
+\end{q}
+\vfill
+
+\begin{q}
+  Suppose that $P(A)= 0.45$, $P(B)= 0.80$, and
+  $P(B|A)=0.6$. 
+  
+    \begin{enumerate}
+    \item Find the probability that both $A$ and $B$ occur.
+    \item What is the probability that $A$ occurs and $B$
+      does not.
+    \end{enumerate}
+\end{q}
+\vfill\pagebreak
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{q}
+  The following table lists contains the relationship status
+  of people in two age groups:
+    \begin{center}
+    \begin{tabular}{|c|cc|}
+      \hline
+      &\textbf{Age}&\\
+      \hline
+      \textbf{Single}& younger than 35 & older than 35\\
+      \hline
+      yes&513&348\\
+      no&415&486\\
+      \hline
+    \end{tabular}
+  \end{center}
+  \begin{enumerate}
+  \item Which variable is explanatory? Response?
+  \item Describe the joint distribution.
+  \item Describe the distribution of age conditioned by being single.
+  \item Use the chi-squared distribution to test the claim
+    that age affects relationship status using significance $\alpha=0.01$.    
+  \end{enumerate}
+\end{q}
+\pagebreak
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{q}
+  Given a random observation $Z$ from the standard normal
+  distribution, compute the following:
+  \begin{multicols}{2}
+  \begin{enumerate}
+  \item the probability that $Z = 0$;
+  \item the probability that $Z < -1.92$ \columnbreak
+  \item the probability that $Z > 0.67$
+  \item the probability that $-0.12 < Z < 0.40$    
+  \end{enumerate}
+  \end{multicols}
+\end{q}
+\vfill
+
+\begin{q}
+  Suppose we want to study the rental prices for a one
+  bedroom apartment in the East Rock neighborhood of New
+  Haven.
+  \begin{enumerate}
+  \item Assume that we know the standard deviation for all
+    rental prices in East Rock is \$120.  What sample size
+    should we use for a \$40 margin of error at 95\% confidence?
+  \item In practice, we would not know the standard
+    deviation of all rental prices. Instead, we would
+    compute the standard deviation of the rents we sampled.
+    Using the sample size from part (a), a sample mean of \$1400 and a sample
+    standard deviation of \$90, what is 90\% the confidence
+    interval? Justify your work.
+  \end{enumerate}
+\end{q}
+\vfill\pagebreak
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+\begin{q}
+  Suppose that a large study found that teens spent an
+  average of 50 minutes per day on social media. A
+  researcher claims that a typical person spends less time
+  on social media than the average teen.  This researcher
+  asked 30 randomly selected people how much time they spend
+  per day on social media.  The following list gives the
+  responses (in minutes)
+  \begin{center}
+    \begin{tabular}{|cccccccccc|}
+      \hline
+      92&16&35&62&15&61&24&10&63&46\\
+      84&16&74&43&62&42&62&34&38&51\\
+      17&5&83&125&42&39&19&52&14&28\\
+      \hline
+    \end{tabular}
+  \end{center}
+  The mean and standard deviation of this sample is $45.13$
+  and $28.06$, respectively.  Test the researcher's claim at
+  $\alpha = 0.05$ significance.    
+\end{q}
+\pagebreak
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+\centering
+---This page is intentionally left blank---
+\pagebreak
+\includepdf[pages=-]{normal-table.pdf}\pagebreak
+\includepdf[pages=-]{t-table.pdf}\pagebreak
+\includepdf[pages=-]{chi-squared-table.pdf}\pagebreak
+
+
+
+
+
+ 
+%%%%%%%%%%%%%%	END
+%%%%%%%%%%%%%% DOCUMENT
+
+\end{document}

@@ -1,0 +1,316 @@
+\documentclass[11pt]{amsart}
+
+% load packages
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+
+\usepackage{tikz}
+\usepackage[all,2cell]{xy}
+\usepackage{pgfplots}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% new commands
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\MM}{\mathbb{M}}
+\renewcommand{\epsilon}{\varepsilon}
+\newcommand{\op}[1]{\operatorname{#1}}
+\renewcommand{\t}[1]{\text{#1}}
+\newcommand{\from}{\colon}
+\newcommand{\xto}[1]{\xrightarrow{#1}}
+\newcommand{\sm}{\smallsetminus}
+
+% environments & counters
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\theoremstyle{remark}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{notation}[thm]{Notation}
+
+\theoremstyle{definition}
+\newtheorem{ex}[thm]{Example} 
+\newtheorem{df}[thm]{Definition}
+
+
+\usepackage[numbers]{natbib}
+
+
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+% begin document
+\begin{document}
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{Research Statement --- Daniel Cicala}
+
+\noindent
+\rule{\linewidth}{0.4pt} 
+\vspace{1ex}
+
+\section*{Research motivation}
+
+Networks are used across many disciplines.  Chemists use
+chemical reaction networks (Figure
+\ref{fig:ResearchStatement_ChemicalRxNetwork}).
+Neuroscientists use neural networks.  Computer scientists
+use Petri nets (Figure
+\ref{fig:ResearchStatement_PetriNet}), and biologists use
+Markov processes.  Circuit diagrams, flow charts, and social
+maps are networks.  Such tools are commonly used by
+scientists, engineers, data analysts, sociologists, and by
+decision makers in government and business.  They work quite
+well to help us understand the objects they are designed to
+study, but the tools themselves are less understood.  How do
+they relate to each other?  What can knowledge about one
+type of network tell us about another?
+
+\begin{figure}[h]
+\fbox{%
+  \centering
+  \begin{subfigure}[b]{0.455\textwidth}
+  \centering
+  \begin{tikzpicture}
+    \node (v1) at (-1.5,0) {$2\mathrm{H}_2 + \mathrm{O}_2$};
+    \node (v2) at (1,0) {$2\mathrm{H}_2\mathrm{O}$};
+    \draw [->] (v1) to node [above] {\scriptsize{$ r $}} (v2);
+    \node (v3) at (-1.5,-1) {$\mathrm{C} + \mathrm{O}_2$};
+    \node (v4) at (1,-1) {$\mathrm{CO}_2$};
+    \draw [->] (v3) to node [above] {\scriptsize{$ s $}} (v4);
+  \end{tikzpicture}
+  \caption{A chemical reaction network}
+  \label{fig:ResearchStatement_ChemicalRxNetwork}
+  \end{subfigure}
+
+  \centering
+  \begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \begin{tikzpicture}[scale=0.7]
+    \draw  (-3,2) ellipse (0.5 and 0.5);
+    \draw  (2.8,2) ellipse (0.5 and 0.5);
+    \draw  (-0.2,1.4) ellipse (0.5 and 0.5);
+    \draw  (-0.2,2.6) ellipse (0.5 and 0.5);
+    \draw  (-1.8,2.4) rectangle (-1.4,1.6);
+    \draw  (1.2,2.4) rectangle (1.6,1.6);
+    \node at (-3.4,2.8) {P1};
+    \node at (-1.4,2.8) {T1};
+    \node at (0.2,3.4) {P2};
+    \node at (0.2,0.6) {P3};
+    \node at (1.6,2.8) {T2};
+    \node at (3.2,2.8) {P4};
+    \node (v1) at (-2.4,2) {};
+    \node (v2) at (-1.9,2) {};
+    \draw [->]  (v1.center) to (v2.center);
+    \node (v4) at (-0.8,2.4) {};
+    \node (v3) at (-1.4,2) {};
+    \node (v5) at (-0.8,1.6) {};
+    \draw  [->] (v3.center) to (v4.center);
+    \draw [->] (v3.center) to (v5.center);
+    \node (v6) at (0.4,2.6) {};
+    \node (v7) at (1,2) {};
+    \node (v8) at (0.4,1.4) {};
+    \draw [->] (v6.center) to (v7);
+    \draw [->] (v8.center) to (v7);
+    \node (v9) at (1.6,2) {};
+    \node (v10) at (2.2,2) {};
+    \draw [->]  (v9.center) to (v10.center);
+    \node at (-3,2) {$\bullet$};
+    \node at (-0.4,1.4) {$\bullet$};
+    \node at (0,1.4) {$\bullet$};
+    \node at (2.8,2) {$\bullet$};
+  \end{tikzpicture}
+  \caption{A Petri Net}
+  \label{fig:ResearchStatement_PetriNet}
+  \end{subfigure}
+}
+\caption{Examples of networks}
+\end{figure}
+
+Networks are often modelled using a graph, sometimes equipped with
+additional information. For example, the node of a chemical reaction
+network corresponds to a chemical compound and each arrow is equipped
+with the rate at which reactions occur. In other instances, such as in
+the string-based languages developed for quantum mechanics
+\cite{PicQuan}, we really want a homotopical, rather than
+combinatorial, object.
+
+To capture these various needs, I am interested in developing a
+general theory of systems. My current work involves abstracting away
+idiosyncrasies particular to any specific system.  Once carefully
+abstracted away, one can unearth the characteristics essential to all
+systems.
+
+One impact of this work is that a general theory would be
+trans-disciplinary. Having worked in silos for so long, researchers of
+different stripes have developed their own languages, techniques, and
+values. Breaking open these silos is a hurdle that $ 21^{\text{st}} $
+century science must clear. A general theory of systems can play an
+invaluable role in lifting us over this hurdle by allowing for
+fruitful communication between fields. Certainly, there is much value
+in bridging the gap between great thinkers in different fields.
+
+\section*{Research interests}
+
+\subsection*{Current research}
+
+My research is motivated by developing a foundations for systems
+theory using techniques primarily from category theory and logic.
+While many domain specific theories already exist, the idea of
+formulating a general theory is quite new. To this end, I have created
+a formal syntax in which to reason about systems. Two central
+features are that
+\begin{itemize}
+\item a relation to capture the ``sameness'' of systems is built-in,
+  eliminating the need to import other theories such as first-order
+  logic; and
+\item the syntax is compositional.
+\end{itemize}
+The compositional viewpoint is that, to study a system, one should
+decompose it in a way careful enough so that reconnecting the
+components causes no emergent phenomenon.  Then one can study the
+sub-systems to understand the original system.
+
+Technical foundations for the syntax were laid out in my paper
+\emph{Spans of Cospans} \cite{SpansCospans} and, together with Kenny
+Courser, many desirable properties were shown in
+\cite{CicalaCourser}.  In my forthcoming effort \cite{StrCsp}, I am
+further refining the syntax and creating an ambient framework into
+which this syntax sits. This allows for comparisons between different
+systems. The main result of this latter paper is that, under suitable
+conditions, reasoning locally about a system is equivalent to
+reasoning globally.
+
+To build my syntax, I begin with an adjunction between categories,
+$ \mathsf{A} $ and $ \mathsf{X} $. A category is like an area of
+mathematical discourse and an adjunction is a formal way to specify an
+analogy between categories. The conceit is that the category
+$\mathsf{A}$ contains the input and output types.  The category
+$\mathsf{X}$ contains the system types. The adjunction allows us to
+equip systems with inputs and outputs and then to connect compatible
+systems together. This connectability is the medium through which we
+build a system from sub-systems.
+
+I have illustrated the use of this syntax with the ZX-calculus
+\cite{zxCalc}, a string-based language used to simplify certain
+computations typical in quantum computing. Because of this paper, I
+was invited to present at the Quantum Physics and Logic conference.
+This syntax has also been employed to study Petri Nets
+\cite{OpenPetri}, Markov processes \cite{MarkProc}, and chemical
+reaction networks \cite{ChemReac}.
+
+I am currently working on using my syntax to introduce a compositional approach to
+database theory. The development of such a theory
+would have practical ramifications for data migration. What is more
+interesting, however, is that this would put databases on the same
+footing as the ZX-calculus thus allowing for a comparison of
+phenomenon in databases and quantum computing.
+
+\subsection*{Future directions}
+
+In the future, I am mostly interested in social systems. Specifically,
+I will work on using my syntax to develop a compositional approach to
+social network analysis, agent-based modelling, and actor
+networks. One advantage of my syntax is that it was constructed to
+simplify the eventual study of semantics by way of \emph{functorial
+  semantics}, invented by the great category theorist William Lawvere
+\cite{FunctSeman}. Ultimately, I hope to work on formalizing social
+systems.
+
+Another direction I will pursue is to lift into my framework current
+graph theoretical measures such as those covered in the text
+\emph{Networks} by Mark Newman \cite{networks}.
+
+Yet another direction was opened by my result in \cite{StrCsp} where I
+proved that my syntax forms a topos. A topos is a sort of ``set-theory''.
+This can be exploited to two ends. The first is to provide a
+set-theoretical notation that can be easier to reason in than
+categorical diagrams. The second is that, each topos has an associated
+type theory describing the laws the ``sets'' follow. This allows us to
+develop computer programs that model networks fitting into my
+framework.
+
+\bibliographystyle{abbrvnat}
+%\bibliography{ResearchStatement_Bib.bib}
+
+\begin{thebibliography}{99}
+
+\bibitem{OpenPetri} J.~Baez and J.~Master. Open Petri Nets. In preparation.
+
+\bibitem{MarkProc} J.~Baez, B.~ Fong, B.~ Pollard. A compositional framework for Markov processes. \emph{J.~Math.~Phys}. 2016.
+
+\bibitem{ChemReac} J.~Baez, B.~Pollard. A compositional framework for reaction networks. \emph{Rev.~Math.~Phys}. 2017.
+  
+\bibitem{zxCalc} D.~Cicala. Categorifying the ZX-calculus. Proceedings
+  14th International Conference on Quantum Physics and
+  Logic. \emph{Electron.~Proc.~Theor.~Comput.~Sci}. (EPTCS). Vol.~266,
+  pp.~294--314. EPTCS. 2018.
+
+\bibitem{SpansCospans} D.~Cicala. Spans of cospans.  \emph{Theory
+    Appl.~Categ.} Vol.~33, no.~6, pp.~131-147. 2018.
+  
+\bibitem{CicalaCourser} D.~Cicala and K.~Courser. Spans and cospans in
+  a topos. \emph{Theory Appl.~Categ.} Vol.~33, no. 1, pp.~1-22. 2018
+
+\bibitem{StrCsp} D.~Cicala. Inductive rewriting for structured
+  cospans. In preparation.
+
+\bibitem{PicQuan} B.~Coecke and A.~Kissinger. Picturing quantum processes. \emph{Cambridge University Press}. 2017.
+  
+\bibitem{FunctSeman} F.W.~Lawvere. Functorial Semantics of Algebraic
+  Theories. \emph{Reprints in Theory Appl.~ Categ.}
+  No.~5, pp.~1–121. 2004.
+
+\bibitem{networks} M.~Newman. Networks. \emph{Oxford university press}. 2018.
+  
+% \bibitem{andries} M.~Andries, G.~Engels, A.~Habel, et.~al.Graph
+%   transformation for specification and programming. Science of
+%   Computer programming. Elsevier. Vol.~34, no.~1, pp.~1--54. 1999.
+
+% \bibitem{ehrig} H.~Ehrig, M.~Pfender, and
+%   H.~Schneider. Graph-grammars: An algebraic approach. IEEE Conference
+%   Record of 14th Annual Symposium on Switching and Automata Theory.
+%   Pp.~167--180. 1973.
+
+% \bibitem{lack} S.~Lack and P.~Sobocinki. Adhesive Categories. International Conference on Foundations of Software Science and Computation Structures. Springer, Berlin, Heidelberg. 2004.
+  
+% \bibitem{lobo} D.~Lobo, F.~Vico, and J.~Dassow. Graph grammars with
+%   string-regulated rewriting. Theoretical computer science.  Vo.~412,
+%   no.~43, pp.~6101--6111. Elsevier. 2011. 
+
+% \bibitem{lian} R.~Lian, B.~Goertzel, S.~Ke, et.~al. Syntax-Semantic
+%   Mapping for General Intelligence: Language Comprehension as
+%   Hypergraph Homomorphism, Language Generation as Constraint
+%   Satisfaction.  AGI. Pp.~158--167. Springer. 2012
+
+\end{thebibliography}
+
+
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+% end document
+\end{document}
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%
+
+
+
+

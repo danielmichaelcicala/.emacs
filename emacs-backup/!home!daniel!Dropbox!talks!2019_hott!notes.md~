@@ -1,0 +1,98 @@
+# HoTT 2019 Notes
+
+## E. Riehl // equivariant uniforn kan fibration model of
+cubical homotopy type theory
+
+* goal: contruct a cubical sets model of HoTT with a Quillen
+model structure
+
+* cubes // equiv to spaces?
+
+** symmeetric cubes = { faces, degeneracies } // no.
+** cartesian cubes={faces, dgn, sym, diagonals} // No
+** demorgan cubes={faces, diagonals, symetric, degeneracies,
+  connections, reversal} // no
+** dedekind cubes=demorgan - reversal} // ?? open question
+
+* Main Theorem: Equivariant uniform kan fibrations on
+cartesian cubical sets satisfy the above
+
+* talk plan
+** the EZ category of cartesian cubes
+** equivariant uniform kan fibrations
+** quillen equivalence to spaces
+
+## part 1
+
+* Presheaves(CC) of PS(CC) := category of cubical sets.
+where CC is the category
+(objects) I^0,I^1,I^2 ... (I=[0,1])
+(maps) face maps I^{n-1} >--> I^n
+degeneracies I^n -->> I^{n-1}
+symetries I^n --> I^n (isos)
+diagonals diagonal I^n >--> I^{n+1}
+
+*Prop* PS(CC) is an Eilenbery-Zilbar category, i.e. each
+object has a dimenstion and
+(1) forall (isos,non-invert monos,non-invert epis) the dimen
+of the domain is (=,<,>) the dimantion of the codomain
+(2) all maps I^n --> I^m factor to split epi and monic
+(3) split epis have absolute pushouts, that is they are
+preserved by any functor
+
+## part 2
+
+*defn* f : x --> y in PS(CC) is a uniform trivial fibration:
+for all monos
+c ----x-----> X                       
+V             |  so for all pullbacks D -a-> C -x-> X   
+|             f                       |      |      |
+c             |                       d      g      f 
+|             V                       V      V      V 
+V             V                       I^m ->I^n ->  Y
+I^n ----x-->  Y
+
+_general construction of trivial fibrations_
+
+C         pt      I^n wedge C x I  (open box)
+|         |             |
+c    xhat in  =        monic
+|         |             |
+I^n       I            I^nxI
+
+
+# Awody: quillen model str on cubical sets
+
+_How are models of HoTT related to Quillen model
+structures?_
+
+* first models of HoTT from quillen model cats,speical weak
+factorization systems on spaces and simplicial sets,
+kan-quillen model structure on simplicial sets
+
+* Or, start with HoTT model and construct quillen model str
+
+*def* a _premodel_ of HoTT consists of
+(1) groth topos E
+(2) representable class of monos \Phi \to \Omega that form
+a dominance and ...
+(3) I an interval 1 -> I and 1 -> I in E that is _tiny_, so
+(-)^I -| (-)_I
+(4) V-->V is a universe of small fmailies closed under
+Sigma,Prod and ...
+==> a model is taking an extentional topos E with this
+
+From a premodel, one can construct a QMS on E w nice
+properties
+
+* Given a premodel with cubical sets
+1) use Phi to determine an algebraic weak factorization
+system (C,TFib)
+2) use I to determine another on (TCof, F)
+3) let W=TFib o TCof and from 3 for 2 from FEP
+
+*DEF* The *fibration extension proety* says that fibrations
+extend along trivial cofibrations:
+A ---->A'
+|      |  vert maps are fibrations // hor maps triv cofibs
+X >--->X'

@@ -1,0 +1,35 @@
+\input{assets/preamble_worksheet.tex}
+
+\begin{document}
+
+\noindent\textbf{Worksheet 11---Trig Derivatives}
+
+\begin{ws}
+  Compute derivatives for the following functions \\
+  (i) $f(x)=4\sin(x)$ \\
+  (ii) $f(x)= 2x\sin(x)$ \\
+  (iii) $f(x)= \dfrac{x^3-2}{\sin(x)}$
+\end{ws}
+
+\begin{ws}
+  Compute derivatives for the following functions \\
+  (i) $f(x)=\sin(x)\cos(x)$ \\
+  (ii) $f(x)=\dfrac{\cos(x)-2x}{\sin(x)-3x^2}$
+\end{ws}
+
+\begin{ws}
+  What is the second derivative of \\
+  (i) $f(x)=\sin(x)$ \\
+  (ii) $f(x)=\cos(x)$.
+\end{ws}
+
+\begin{ws}
+  Compute $\ddx (\tan (x))$
+\end{ws}
+  
+\begin{ws}
+  Compute $\ddx (\sec (x))$
+\end{ws}
+
+
+\end{document}

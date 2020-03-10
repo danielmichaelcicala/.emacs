@@ -1,0 +1,13 @@
+MC	Let $$g(x)=x+h$$. What is $$(f \circ g)(x)$$ for $$f(x)=x^2-1$$?	$$(x+h)^2$$	incorrect	$$x^2+h-1$$	incorrect	$$x^2+2xh+h^2-1$$	correct
+MC	What is $$f(x+h)$$ for $$f(x)=1/\sqrt{x}$$?	$$\dfrac{1}{x+h}$$	incorrect	$$\sqrt{x+h}$$	incorrect	$$\dfrac{1}{sqrt{x}+h}	incorrect	$$\dfrac{1}{sqrt{x+h}}	correct
+MC	Let $$f(x)=\dfrac{2/x^2}$$. Which of the following is equivalent to the expression $$\dfrac{f(1+h)-f(1)}{h}$$?	$$\dfrac{2}{(1+h)^2}$$	incorrect	$$\dfrac{-1}{1+h}$$	incorrect	$$\dfrac{-4-h}{(1+h)^2}$$	correct
+MC	Let $$f(x)=\sqrt{x-2}$$. Which of the following is equivalent to the expression $$\dfrac{f(3+h)-f(3)}{h}$$? (Hint: multiply by the conjugate)	$$\sqrt{1+h}$$	incorrect	$$\frac{1}{\sqrt{1+h}+1}	correct	$$1$$	incorrect
+MC	Find the derivative of $$f(x)=2x+1$$ at $$x=3$$	0	incorrect	2	correct	$$2(x-h)$$	incorrect	$$7$$	incorrect
+MC	Find the derivative of $$f(x)=3x^2-4x$$ at $$x=1$$	$$2+3h$$	incorrect	$$5$$	incorrect	2	correct	$$6x+3h-4$$	incorrect	$$-1$$	incorrect
+MC	Find $$f'(1)$$ for $$f(x)=\dfrac{1}{3x-2}$$	$$\dfrac{-3}{1+3h}$$	incorrect	$$-3$$	correct	$$1$$	incorrect
+MC	Find $$f'(3)$$ for $$f(x)=\sqrt{x-2}$$.	$$1/2$$	correct	1	incorrect	$$\dfrac{1}{\sqrt{2}+1}$$	incorrect
+MC	Find the tangent line to $$f(x)=\dfrac{1}{x+5}$$ at $$x=5$$.	$$y-\dfrac{1}{10}=\dfrac{-1}{100}(x-5)$$	correct	$$y=\dfrac{-1}{10}x-5$$	incorrect	$$y-\dfrac{1}{10}=\dfrac{-1}{(x+5)^2}x-5	incorrect
+MC	Find the tangent line to $$f(x)=\sqrt{x-2}$$ at $$x=3$$	$$y=\dfrac{1}{2}x-2$$	incorrect	$$y-1=\dfrac{1}{2}(x-3)$$	correct	$$y=x-2$$	incorrect
+MC	Find the tangent line to $$f(x)=2x+1$$ at $$x=-2$$	$$y=2x+1$$	correct	$$y-3=2(x-2)$$	incorrect
+TF	Given any function $$f$$, it must have a derivative at all points?	false
+MC	Suppose that the graph represents the distance between the earth and the moon at different times (it doesn't, but let's pretend). At time x=1, is the distance increasing or descreasing? <iframe src="https://www.desmos.com/calculator/xvyp5p6owx?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>	increasing	incorrect	decreasing	correct

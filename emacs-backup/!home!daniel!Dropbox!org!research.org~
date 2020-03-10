@@ -1,0 +1,172 @@
+#+TITLE:  RESEARCH
+#+STARTUP: indent align inlineimages nologdone
+
+* COMPOSITIONALITY
+
+** Submitted
+*** reopn
+** Active Projects
+*** adfib
+
+**** tasks
+
+***** TODO finish street chapter
+
+**** outline
+
+***** Intro
+
+****** heavy exposition
+
+***** prelims
+
+****** heavy exposition, definition
+
+***** grothendieck fibrations
+
+****** results bang bang bang in a row
+
+***** street fibrations
+
+****** results bang bang bang in a rox
+
+***** functors between ralis and opfib
+
+***** examples (later arxiv submission)
+
+****** graphs over set
+
+***** internal to general bicategories (later arxiv submission)
+** Pre-active Project
+*** opendata
+**** look at schemas in 7sketches
+   To get eqn's in schema, we need categrys. Then we'd want open cats
+   as presheaves, but that's not a topos so maybe some nice sor tof
+   cats obtained from graphs. Look at 'quivers w relations'...do they
+   form a topos?
+**** [[http://www.cs.cornell.edu/courses/cs6118/2012fa/notes/Opfibrations.pdf][opfibrations and databases]]
+**** maybe related: quivers and their reps
+**** easy schemas vs myschema (p64)
+**** the following links might be handy
+***** [[https://ncatlab.org/nlab/show/morphism%2Bof%2Bsites][morphism of sites]]
+***** [[http://math.mit.edu/~dspivak/CT4S.pdf][spivaks CT for scientists]]
+***** [[https://arxiv.org/pdf/1803.05316.pdf][seven sketches]]
+***** [[https://ncatlab.org/nlab/show/flat%2Bfunctor][flat functor]] relevant for map of sites
+***** [[https://ncatlab.org/nlab/show/Kan%2Bextension#LeftKanExtensionPreservingCertainLimits][left kan extention preserving certain limits]]
+*** Pnets
+**** heirarchy of pn's as a "pn of pn"
+**** guarded pn's for protocols
+**** how to get pns to communicate w databases. e.g. fires if the database is in a certain state.
+**** unify baez & sobocinskis open petri nets
+**** compare open games and petri nets
+**** read [[https://arxiv.org/pdf/1303.1399.pdf][reachability via compositionality in perti nets]] where open petri nets are glued along transitions
+*** compositional dynamical systems. 
+**** What would these look like? 
+**** How many different sorts of dynamical systems are there? 
+**** Start with those with a graphical language, like Markov processes & the finite state [S^1,FinSet] as in Lawveres book.
+*** lenses
+**** c-lenses  might show up in papers reopn & adfib
+**** compare lenses (johnson), learners (fong), and games (jules)
+**** rewriting via lenses
+**** do lenses have a forbenius structure? look at string diagrams for lenses in mitchells paper. 
+*** compositional graph/network theory 
+**** read wiki for 'network theory'
+***** How can we categorify the measures and invariants mentioned within?
+**** Category OpenGraph: maybe there’s a way to have the middle be more types of things. Like a single node to compose open graphs by fusion nodes. Or a rightward or leftward or bothward facing arrows to create a relationship between boundaries nodes not just fuse them. What would a homotopy pushout of graphs be? Use graphs as topological spaces to define such a thing.
+**
+*** Tobias' open graphs as opfibrations 
+Great to know that it makes sense to you! What I personally like about
+it is that one can express pretty much everything in terms of a
+universal property: taking coproducts as the monoidal structure, the
+functor p is the only piece of relevant structure, and everything else
+is property.
+
+Here are a couple of further things to consider:
+
+1) Opcartesian arrows should automatically be closed under coproducts,
+while for cartesian arrows this probably needs to be postulated as an
+exactness property. Is this related to adhesiveness?
+
+2) Which other axioms can be expected to hold? How about the
+Beck-Chevalley condition? Perhaps it may be natural to postulate this
+for *pushouts* in the base cat rather than for pullbacks as is usually
+done. Or is *this* what adhesiveness is about?
+
+3) Similarly, how about the Frobenius reciprocity equation
+https://ncatlab.org/nlab/show/Frobenius+reciprocity#InCategoryTheory?
+Again it may be perhaps be more relevant to consider it in its dual form.
+
+
+Thanks for the pointer to the categorical probability paper! I almost
+missed it, but am now in touch with the authors and taking a more
+detailed look. They still do a lot of measure theory explicitly, and I
+can probably do a better than this by hiding the measure theory under
+the hood. 
+*** structure cospans
+**** are they hypergraph categories?
+* COHESIVITY AND HOMOTOPY TYPE THEORY
+** Active Projects
+*** appcoh
+
+**** tasks
+
+****** DONE send abstract to mike
+** Pre-Active Projects
+*** Compare syntaxes that are modeled in simplicial sets like inf-groupoids, inf-categories, intentional type theory a la HoTT
+*** Is syntax of cohesive hott somehow fibred over it's semantics?
+**** More precisely, if we are using cohesive hott as syntax and classical topological spaces as semantics, will we get two syntactical proofs of classical brouwer, one for flat modality and the other for the sharp modality.  Also, will we get two types fibred over a topological space, say S^n, like the higher inductive type and the subset of RR^n
+*** a group action on a set is sort of like a, possibly discontinuous, path in a space.  So really, a G-set is more space-like than set-like because the action provides a cohesivness. What interesting things that can be done with paths can we do with group actions? This is something that might be relevant for Mark
+
+
+
+* CATEGORICAL SOCIAL SCIENCES
+** read wiki articles on
+*** open and closed systems in social science
+*** social system
+*** economic system
+*** WORLD3 model
+** logistics as mathematics
+*** important for climate change since shipping is the future of commerce
+** Categorical Social Structure
+*** This paper argues for using ct as a framework to study 'computation social science' It's very loose and handwavy, but compelling.
+*** QUESTION Has the author axpanded these ideas?
+*** Mark may enjoy how the ct in here is discussed
+*** How to capture qualitative data w categories?
+*** Flesh out table 2. What are those social concepts?
+*** What is ABMS design?
+*** Look through the starred entrees in the bibliography
+*** can spivaks' ologs play a role?
+*** the motivation for this paper: validating social models through formalization
+** read [[https://arxiv.org/pdf/1802.03080.pdf][spivak]] paper abstraction, compostion, contracts
+** [[https://en.wikipedia.org/wiki/System_dynamics][system dynamics wiki]]
+** At the beginning of Luhmann 'Systems Theory', he talks about Parsons 'optimizing the relation between ends and means' in an 'action'.  He also uses optimization elsewhere too.  Maybe optimization can be formalized with adjoints.  Maybe systems can be modelled using categories that we build by hand, code in haskel or idriss or whatever, and we can ask questions of the model and get answers using idriss.
+** paper: [[https://arxiv.org/abs/1711.03499][contstrains on physical reality from a formalization of knowledge]]
+** where to complexity, network theory, process theory meet?
+** textbook: [[https://faculty.ucr.edu/~hanneman/nettext/][intro to social network methods]]
+** text: [[https://drive.google.com/file/d/176_eCN2S4_iT4YsABt276hSfpo0Jq1KP/view][computer assisted dynamic social systems]]
+** papers to read on
+*** [[file:assets/modelling_sociopolitical_competition.pdf][modelling socio-political competition]]
+*** [[~/Dropbox/org/assets/modelling_competing_theories.pdf][modelling competing theories]]
+*** [[https://www.amazon.com/Concepts-Categories-Foundations-Sociological-Cultural/dp/023119272X][concepts and categories: foundations for social/cultural analysis]]
+
+* LOGIC
+** objects of a category as states in time.
+*** consider a category with initial and terminal.  Then every single object x exists between 0 -> x -> 1 in a unique way.  Can we measure how far each object is along from 0 and 1 and interpret this as distance as time and the the object it self represents a state and arrows represent passing between states in time.
+** linguistic sentences as presheaves
+** Gelfand-Lifschitz operator in logic. Is it functorial
+** Spivaks temporal logic
+*** he's inventing a topos of behavior types
+*** databases give a topos, their schema a site
+*** start w a type theory (atomic types, terms, axioms) ==> this gives a topos.
+*** how?
+** can you model internal logic in Set with circuit diagrams? Logic in other topoi?
+
+* COMPUTING
+** AGDA
+*** [[http://www.cse.chalmers.se/~ulfn/papers/afp08/tutorial.pdf][dependently-typed-adga-tutorial]]
+*** [[https://williamdemeo.github.io/2014/02/27/learn-you-an-agda/][learn-you-an-agda]]
+** HASKEL
+*** [[http://learnyouahaskell.com/][learn-you-a-haskell-for-great-good]]
+** PYTHON
+*** [[https://sites.engineering.ucsb.edu/~shell/che210d/python.pdf][python-for-scientific-computing-tutorial]]
+*** [[https://scipy-lectures.org/index.html][SciPy-lecture-notes]]

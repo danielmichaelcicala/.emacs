@@ -1,0 +1,42 @@
+\input{assets/preamble_worksheet.tex}
+
+\begin{document}
+
+\noindent
+\textbf{Worksheet 08---Intro to Derivatives}
+
+  \begin{ws}
+    Find the derivative for $f(x)=3/x$ at $x=2$. \\
+    \emph{(hint: simplify totally before taking limit} \\
+    Use the derivative to find the equation of the tangent line.
+  \end{ws}
+
+  \begin{ws}
+    Given the graph of $f(x)=3/x$ draw the tangent line you just found.
+    \includegraphics[scale=0.4]{assets/l08_01.png}
+  \end{ws}
+
+    \begin{ws}
+    Using the second definition, find the derivative for $f(x)=3/x$ at
+    $x=2$.
+  \end{ws}
+
+  \begin{ws}
+    Use either definition to find the derivative for $f(x)=x^2$ at $x=1$
+  \end{ws}
+
+    \begin{ws}
+    Do all functions always have a derivative at any point? If not,
+    what can go wrong.
+  \end{ws}
+
+    \begin{ws}
+    Find the derivative to $f(x)=2/\sqrt{x}$ at $x=4$. 
+  \end{ws}
+
+  \begin{ws}
+    What is the tangent line to $f(x)=x^2$ at $x=-2$?
+  \end{ws}
+
+
+\end{document}

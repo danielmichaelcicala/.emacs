@@ -1,0 +1,38 @@
+\documentclass[11pt]{amsart}
+
+% load packages ----------------
+\usepackage{amsfonts, amsthm, amssymb, amsmath, stmaryrd, etoolbox}
+\usepackage{mathtools}
+\usepackage{graphicx,caption,subcaption}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[inline]{enumitem}
+\setlist{itemsep=0em, topsep=0em, parsep=0em}
+\setlist[enumerate]{label=(\alph*)}
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows,shapes}
+
+% begin document -------------------
+\begin{document}
+\thispagestyle{empty}
+
+% right header material -----------
+\begin{flushright}
+  \textbf{Lecture 01---Functions} \linebreak % quiz, or exercises
+  {Math1117} \linebreak % course number and section
+  {UNH} \linebreak %college
+\end{flushright}
+
+\begin{itemize}
+\item
+
+  \textbf{Example:} Students $\to$ Seats
+
+  
+\end{itemize}
+
+
+
+% end document------------------
+\end{document}

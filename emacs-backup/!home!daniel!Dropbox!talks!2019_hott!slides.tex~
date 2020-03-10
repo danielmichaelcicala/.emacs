@@ -1,0 +1,922 @@
+
+\documentclass{beamer}
+%\documentclass[handout]{beamer}
+\input{preamble_hott}
+
+\begin{document}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \centering
+  \textbf{Borsuk-Ulam in real-cohesive homotopy type theory} \\
+  \vfill
+  
+  Daniel Cicala,  University of New Haven \\
+  Amelia Tebbe, Indiana University Kokomo \\
+  Chandrika Sadanand, University of Illinois Urbana Champaign
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  Thanks to \\
+  \vfill
+
+  \begin{itemize}
+  \item 2017 MRC in HoTT program
+  \item Mike Shulman for his guidance and patience with
+    three \textbf{non}-experts
+  \item Univalence, which I'll be recklessly using without
+    mentioning I'm doing so
+  \end{itemize}
+
+  \vfill
+\end{frame}
+
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{What's this talk about?}
+
+  \begin{minipage}{0.45\linewidth}
+    \includegraphics[scale=0.1]{earth.jpeg}
+  \end{minipage}
+  \begin{minipage}{0.45\linewidth}
+    Borsuk-Ulam is a result in \textbf{classical algebraic
+      topology}.  We want to import it into HoTT.
+  \end{minipage}
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{Outline of this talk}
+
+  \begin{enumerate}
+  \item real-cohesive homotopy type theory
+  \item Borsuk-Ulam: algebraic topology vs. HoTT
+  \item proof sketch
+  \end{enumerate}
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \begin{flushright}
+    \textbf{real-cohesive homotopy type theory}
+  \end{flushright}
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+%\begin{frame}{}
+
+ % \includegraphics{strongman.jpeg}
+
+%\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  Algebraic topology has many proofs that involve
+  discontinuous constructions \vfill
+
+  For instance, Brouwer fixed-pt theorem \vfill
+  
+  \begin{minipage}{0.4\linewidth}
+    \includegraphics[scale=0.2]{brouwer.jpg}
+  \end{minipage}
+  \begin{minipage}{0.5\linewidth}
+    \[
+      \left|\left|
+      \prod_{f \from D^2 \to D^2 }
+      \sum_{x : D^2}
+      f(x) = x
+      \right|\right|_0
+    \]
+    No continuous way to pick $ x $
+  \end{minipage}
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \includegraphics[scale=0.2]{ali_hott-knockdown.jpg}
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  However, we don't merely have HoTT...
+
+  \begin{flushright}
+    we have real-cohesive HoTT
+  \end{flushright}
+
+\end{frame}
+
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \includegraphics[scale=0.2]{ali_discontinuous-knockout.jpg}
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  For spaces $ X $ and $ Y $, how can we make a
+  \textbf{discontinuous} map
+  \[
+    X \to Y
+  \]
+  into a \textbf{continuous} map?\pause
+
+  \emph{Retopologize!} \vfill
+
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    $ \textrm{discrete} (X) \to Y $
+  \end{minipage}
+  or
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    $ X \to \textrm{codiscrete} (Y) $
+  \end{minipage}
+  \vfill \pause
+
+  There's a ready-made theory for this...\emph{Lawvere's
+    cohesive topoi}  \vfill
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{Discontinuity via cohesive topoi}
+
+  \fbox{
+    \input{assets/space-points-adjunction.tex}
+  }
+  \hfill
+  \fbox{
+    \input{assets/modalities.tex}
+  }
+  \vfill \pause
+
+  \[
+    \flat X \to X \to \sharp X
+  \]
+  \vfill
+
+  Interpret $ \flat X \to Y $ or $ X \to \sharp Y $ as
+  \emph{not necessarily continuous} maps from $ X \to Y $.
+  \vfill
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+  
+  Two concerns importing this to HoTT: \\
+  \vspace{1em}
+  
+  1) Algebraic topology trades in \emph{spaces} not
+  \emph{higher inductive types}. \\
+
+  2) How can we retopologize when HoTT doesn't have
+  topologies (open sets)?
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \emph{higher inductive types vs.\ spaces in HoTT}
+
+\end{frame}
+
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \includegraphics[scale=0.25]{handshake.jpg}  
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+
+  Lawvere's theory of cohesive topoi has more to offer! \vfill
+  
+  \fbox{
+  \begin{minipage}{1\linewidth}
+    \centering
+    \input{assets/space-points-quad-adjunction.tex}
+  \end{minipage}
+  }
+
+  \vfill
+
+  \textbf{gives modality}
+  $ \int \from \text{SPACES} \to \text{SPACES}$
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \centering
+  \includegraphics[scale=0.3]{shape-modality-visual.jpeg}
+  \vfill
+  
+  \begin{minipage}{1\linewidth}
+    \begin{itemize}
+    \item Cohesive topos: $ \int $ is connected components
+    \item HoTT: $ \int $ is fundamental $ \infty $-groupoid
+    \end{itemize}
+  \end{minipage}
+
+  \vfill \pause
+
+  $ \int \dashv \flat \dashv \sharp $
+
+\end{frame}
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \fbox{
+  \begin{minipage}{1\linewidth}
+    \centering
+    \begin{tabular}{rl}
+      {} & HoTT \\
+      + & $ \int \dashv \flat \dashv \sharp $ (suitably
+          defined) \\
+      \hline
+         & cohesive homotopy type theory
+    \end{tabular}
+  \end{minipage} }
+
+  \vfill \pause
+
+  Notation
+  \begin{itemize}
+    \item $\SS^1 \coloneqq \{ (x,y) : x^2 + y^2 = 1 \}$
+    \item $ \type{S}^1 \coloneqq $ higher inductive type
+  \end{itemize}
+  \vfill \pause
+
+  We want $ \int \SS^1 = \type{S}^1 $, but we're not there
+  yet.
+   
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \emph{incorporating topology into HoTT}
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  The topology of a type $ \type{X} $ is encoded in the type
+  of ``continuous paths'' $ \RR \to \type{X} $.
+  \vfill \pause
+  
+  \textbf{Needed to define $ \int $:} \\
+  An axiom ensuring that $ \int $ is constructed from
+  continuous paths indexed by intervals in $ \RR $.
+  \vfill \pause
+  
+  \textbf{Axiom $ R\flat $:} \\
+  A type $ \type{X} $ is \emph{discrete} iff $ \type{const}
+  \from \type{X} \to (\RR \to \type{X})$ is an equivalence.
+  \vfill
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \fbox{
+    \begin{minipage}{0.4\linewidth}
+      \input{assets/types-quad-adjunction.tex}
+    \end{minipage}
+  }  
+  \hfill + \hfill
+  \fbox{
+    \begin{minipage}{0.35\linewidth}
+      
+      \begin{flushleft}
+        \textbf{Axiom $ R\flat $:}
+      \end{flushleft}
+
+      \centering
+      $ \type{X} $ is \emph{discrete}
+      \vspace{1em}
+      
+      iff 
+      \vspace{1em}
+
+      $\type{const} \from \type{X} \xto{=} (\RR \to \type{X})$
+      
+    \end{minipage}
+  }  
+  \vfill
+
+  \begin{center}
+    ---equals---
+  \end{center}
+  \vfill
+
+  \emph{real-cohesive homotopy type theory}, a place where $
+  \int \SS^1 = \type{S}^1 $.
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \begin{flushright}
+    \textbf{Borsuk-Ulam}
+  \end{flushright}
+
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \textbf{Three related statements in classical algebraic
+  topology:} \\
+  
+  \begin{tabular}{ | m{2cm} | m{8cm} |}
+    \hline
+    BU-classic & For any continuous map
+                 $ f \from S^n \to \RR^n $, there exists an
+                 $ x \in S^n $
+                 such that $ f(x)=f(-x) $. \\
+    \hline
+    BU-odd     & For any continuous map $ f \from S^n \to
+                 \RR^n $ with the property that $
+                 f(-x)=-f(x) $, there is
+                 an $ x \in S^n $ such that $ f(x)=0 $ \\
+    \hline
+    BU-retract & There is no continuous map
+                 $ f \from S^n \to S^{n-1}$ with the
+                 property that there exists an $ x \in S^n $
+                 such that $ f(-x)=-f(x) $. \\
+    \hline
+  \end{tabular}
+  \vfill \pause
+
+  Proof of BU-classic involves proving that
+  \begin{enumerate}
+  \item show (BU-classic) $ \simeq $ (BU-odd) \pause
+  \item show $ \neg $ (BU-odd) $ \Rightarrow $ $ \neg $
+    (BU-retract) \pause
+  \item hence (BU-retract) $ \Rightarrow $ (BU-classic). \pause
+  \item prove (BU-retract)
+  \item conclude (BU-classic)
+  \end{enumerate}
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \textbf{BU-* in real-cohesive homotopy type theory:}
+
+  \begin{tabular}{| l | l |}
+    \hline
+    & \\
+    BU-classic & $ \left| \left| \prod\limits_{f \from
+                 \SS^n \to \RR^n} \sum\limits_{x \tin \SS^n}
+                 f(-x)=f(x) \right| \right|  $ \\
+    & \\
+    \hline
+    & \\
+    BU-odd & $ \left| \left| \prod\limits_{f \from
+             \SS^n \to \RR^n} \prod\limits_{x \tin \SS^n}
+             f(-x)=-f(x) \to \sum\limits_{x \tin \SS^n} f(x)=0
+             \right| \right|  $ \\
+    & \\
+    \hline
+    & \\
+    BU-retract & $ \left| \left| \prod\limits_{f \from
+                 \SS^n \to \SS^{n-1}} \sum\limits_{x \tin
+                 \SS^n}f(-x)=-f(x) \to 0 \right| \right|  $
+    \\
+    & \\
+    \hline
+  \end{tabular}
+  \vfill
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  Proof of BU-classic, strategy:
+  \begin{enumerate}
+  \item show (BU-classic) $ \simeq $ (BU-odd) \pause
+  \item show $ \neg $ (BU-odd) $ \Rightarrow $ $ \neg $
+    (BU-retract) \pause
+  \item hence (BU-retract) $ \Rightarrow $ $ \neg\neg $
+    (BU-odd) \pause
+  \item prove (BU-retract)
+  \item conclude $ \neg\neg $ (BU-classic)
+  \end{enumerate}
+  \vfill \pause
+
+  \fbox{
+  \begin{minipage}{1.0\linewidth}
+    \centering
+    $ \neg\neg $ (BU-classic) $ \neq $ (BU-classic)
+    continuously \vspace{2em}
+
+    but \vspace{2em}
+
+    $ \neg\neg $ (BU-classic) $ = $ (BU-classic)
+    discontinuously
+  \end{minipage}
+  }
+  \vfill \pause
+  
+  \textbf{Lemma:} (Shulman)
+  For $ P $ a proposition, $ \sharp P = \neg\neg P $
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  It follows that
+  
+  \[
+    \neg \neg \left| \left|
+        \prod_{f \from \SS^n \to \RR^n}
+        \sum_{x \tin \SS^n}
+        f(-x)=f(x)
+      \right| \right|
+    =
+    \sharp \left| \left|
+        \prod_{f \from \SS^n \to \RR^n}
+        \sum_{x \tin \SS^n}
+        f(-x)=f(x)
+      \right| \right|
+  \]
+  \vfill \pause
+
+  Hence (BU-retract) $ \Rightarrow $ $ \sharp $
+  (BU-classic).
+  \vfill \pause
+
+  Real-cohesive HoTT supports the \textbf{sharp Borsuk-Ulam theorem}.
+  
+\end{frame}
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  \centering
+  \includegraphics[scale=0.225]{drake.jpeg}
+  
+\end{frame}
+
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  To prove BU-retract
+  \[
+    \left| \left| \prod\limits_{f \from
+          \SS^n \to \SS^{n-1}} \sum\limits_{x \tin \SS^n}
+        f(-x)=-f(x) \to 0 \right| \right|
+  \]
+  we will model the classical proof, which is 
+  \vfill \pause
+
+  \begin{itemize}
+  \item Assume $ f \from \SS^n \to \SS^{n-1} $ is odd and
+    continuous 
+  \item Pass to orbits under $ \ZZtwo $-action: $ \hat{f}
+    \from \RRP^n \to \RRP^{n-1} $
+  \item This induces isomorphism on fundamental groups, $
+    \ZZtwo $
+  \item Hurewicz theorem gives an isomorphism on $ H^1 $,
+    hence we get a ring map
+    $
+      \hat{f}^\ast \from
+      H^\ast (\RRP^{n-1}, \ZZtwo) \to
+      H^\ast (\RRP^{n}, \ZZtwo)
+    $
+    such that
+    \[ a \tin \ZZtwo [a]/(a^{n-1}) \mapsto b \tin \ZZtwo
+      [b]/(b^{n}) \]
+  \item But then $ 0 =a^{n-1} \mapsto b^{n-1} \neq 0
+    $. Contradiction.
+  \end{itemize}
+
+\end{frame}
+
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  Proof by contradiction are not
+  permitted in intuitionistic logic
+  \[
+    \cfrac{\neg p,\Gamma \vdash p}{\cfrac{\Gamma \vdash \neg
+        p \to 0}{\Gamma \vdash \neg \neg p}}
+  \]
+  \vfill \pause
+
+  This is actually a proof by negation, not contradiction
+  \[
+    \dfrac{p,\Gamma \vdash \neg p}{\Gamma \vdash 
+        p \to 0}
+    \]
+    which is allowed.
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  Four chunks of the real-cohesive HoTT proof:
+  \begin{itemize}
+  \item Define topological $ \SS^n $
+  \item Define topological $ \RRP^n $
+  \item Define cohomology of $ \SS^n $ and $ \RRP^n $ with $
+    \ZZtwo $-coefficients
+  \item odd $ f \from \SS^n \to \SS^{n-1} $ induces
+    contradiction (or, rather, negation).  
+  \end{itemize}
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{Define $ \SS^n $ topologically.}
+
+  Per Shulman, $ \SS^1 $ is the coequalizer of
+  \[
+    \id, +1 \from \RR \to \RR
+  \]
+  giving $ \SS^1 = \{ (x,y) : x^2+y^2=1 \} $
+  \vfill \pause
+
+  Define higher dimensional spheres as pushouts:
+  \[
+    \begin{tikzpicture}
+      \node (1) at (-1,1) {\( \SS^{n-1} \times \RR \)};
+      \node (2) at (-1,-1) {\( \DD^n \)};
+      \node (3) at (1,1) {\( \DD^n \)};
+      \node (4) at (1,-1) {\( \SS^n \)};
+      \draw [->] (1) to node[left]{\scriptsize{fat \( \partial \)}} (2);
+      \draw [->] (1) to node[above]{\scriptsize{fat \( \partial \)}} (3);
+      \draw [->] (2) to (4);
+      \draw [->] (3) to (4);
+      %
+      \draw (0.5,-0.8) -- (0.5,-0.5) -- (0.8,-0.5);
+    \end{tikzpicture}
+  \]
+
+  \textbf{Lemma:} $ \SS^n $ is a set. 
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{Define $ \RRP^n $ topologically using pushouts.}
+
+  \begin{minipage}{0.45\linewidth}
+    \[
+    \begin{tikzpicture}
+      \node (1) at (-1,1) {\( \SS^{1} \times \RR \)};
+      \node (2) at (-1,-1) {\( M \)};
+      \node (3) at (1,1) {\( \DD^2 \)};
+      \node (4) at (1,-1) {\( \RRP^2 \)};
+      \draw [->] (1) to
+        node[left]{\scriptsize{fat \( \partial \)}} (2);
+      \draw [->] (1) to
+        node[above]{\scriptsize{fat \( 2\partial \)}} (3);
+      \draw [->] (2) to (4);
+      \draw [->] (3) to (4);
+      %
+      \draw (0.5,-0.8) -- (0.5,-0.5) -- (0.8,-0.5);
+    \end{tikzpicture}
+  \]
+  \end{minipage}
+  \begin{minipage}{0.45\linewidth}
+    \[
+    \begin{tikzpicture}
+      \node (1) at (-1,1) {\( \SS^{n} \times \RR \)};
+      \node (2) at (-1,-1) {\( \RRP^n \)};
+      \node (3) at (1,1) {\( \DD^{n+1} \)};
+      \node (4) at (1,-1) {\( \RRP^{n+1} \)};
+      \draw [->] (1) to node[left]{\scriptsize{fat \( \partial \)}} (2);
+      \draw [->] (1) to node[above]{\scriptsize{\( \partial \)}} (3);
+      \draw [->] (2) to (4);
+      \draw [->] (3) to (4);
+      %
+      \draw (0.5,-0.8) -- (0.5,-0.5) -- (0.8,-0.5);
+    \end{tikzpicture}
+    \]
+  \end{minipage}
+  \vfill \pause
+
+  \textbf{Lemma:} The pushout of three sets over an
+  injection is a set.
+
+  \textbf{Corollary:} $ \RRP^n $ is a set.
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{  $ \ZZtwo $-Cohomology for $ \SS^n $ and $ \RRP^n $}
+
+  For a type $ X $ and ring $ R $:
+  \[
+    H^n (X,R) \coloneqq
+    \trunc{X \to K(R,n)}_0
+  \]
+  \vfill \pause
+
+  Goals:
+  \begin{itemize}
+  \item Define a ring structure on $ H^\ast $ for $ \SS^n $
+    and $ \RRP^n $
+  \item Compute $ H^\ast $ for $ \SS^n $ and $ \RRP^n $
+  \end{itemize}
+  \vfill \pause
+
+  Out strategy is inspired by Brunerie's
+  doctoral thesis. Namely, work with EM-spaces $ K(R,n) $
+  then lift to cohomology.
+  \vfill
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  Define a \emph{cup product} on EM-spaces:
+
+  \input{assets/cup-product.tex}
+  
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  Lift to $ H^\ast $:
+  \[
+    \smile \from
+    H^n (X,\ZZtwo) \times H^m (X,\ZZtwo) \to H^{n+m}(X,\ZZtwo)
+  \] \vfill
+
+  \fbox{
+    \begin{minipage}{1.0\linewidth}
+      \centering \vspace{1em}
+      $ \left( X \xto{\alpha} K(\ZZtwo,n) , X \xto{\beta}
+        K(\ZZtwo,m) \right)$ \vspace{2em}
+  
+      is mapped to \vspace{2em}
+  
+      $ X \xto{ \langle\alpha , \beta\rangle } K(\ZZtwo,n)
+      \times K(\ZZtwo,m) \xto{\smile} K(\ZZtwo,n+m) $
+      \vspace{1em}
+    \end{minipage} } \vfill \pause
+  
+  The remaining operations on $ H^\ast (X,\ZZtwo) $ give
+  a graded ring.  \vfill 
+
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  Use
+  \begin{itemize}
+  \item $ K (\ZZtwo,0) \coloneqq \ZZtwo $
+  \item
+    $ H^k (\RRP^n,\ZZtwo) \coloneqq \trunc{\RRP^n \to
+      \ZZtwo}_0 $
+  \end{itemize} \vfill
+  
+  to compute $ H^0 ( \RRP^n,\ZZtwo) $ \vfill \pause
+
+  \rule{\linewidth}{0.4pt}
+  
+  Use
+  \begin{itemize}
+  \item  that $ \RRP^n $ is a pushout
+  \item  induction with Mayer-Vietoris
+  \end{itemize} \vfill
+
+  to compute $ H^k ( \RRP^n,\ZZtwo) $, for $ k \geq 1 $
+  \vfill \pause
+
+  \emph{(req's cohomology of $ \SS^n $ and $ \DD^n $ which
+    are computed using MV and $ \DD^n = 1 $) }
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  The results are in:
+
+  \fbox{
+  \begin{minipage}{\linewidth}
+  \begin{align*}
+    H^k(\SS^n,\ZZtwo)
+      & =
+        \begin{cases}
+          \ZZtwo, & k=0,n; \\
+          0, & \text{else} \\
+        \end{cases} \\
+    H^k(\DD^n,\ZZtwo)
+      & =
+        \begin{cases}
+          \ZZtwo, & k=0; \\
+          0, & \text{else} \\
+        \end{cases} \\
+    H^k(\RRP^n,\ZZtwo)
+      & =
+        \begin{cases}
+          \ZZtwo, & k=2,3,\cdots,n; \\
+          0, & k \geq n+1 \\
+        \end{cases} \\
+  \end{align*}
+    \begin{flushright}
+      \emph{(note $ n \geq 2 $)}  
+    \end{flushright}
+  \end{minipage}
+  }
+  \vfill \pause
+
+  In particular:
+  \[
+    H^\ast (\RRP^n,\ZZtwo) = \ZZtwo [x]/(x^{n+1})
+  \]
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{Prove BU-retract}
+
+  Recall,
+  \begin{itemize}
+  \item $ f \from \SS^n \to \SS^{n-1} $ is continuous and
+    odd
+  \item $ \hat{f} \from \RRP^n \to \RRP^{n-1} $ is the
+    induced map
+  \end{itemize}
+  \vfill \pause
+
+  Apply $ H^1 (-,\ZZtwo )$ to $ \hat{f} $ to get
+  \[
+    \hat{f}^\ast \from H^1 (\RRP^n,\ZZtwo) \to H^1
+    (\RRP^{n-1},\ZZtwo)
+  \]
+
+  More concretely
+  \begin{align*}
+    \hat{f}^\ast \from
+      & \trunc{\RRP^n \to \RRP^2} \to \trunc{\RRP^{n-1} \to \RRP^2} \\
+    {} & \alpha \mapsto \hat{f} \alpha \\               
+  \end{align*}
+  \vfill \pause
+
+  \textbf{Note:} $ \alpha $ non-trivial implies
+  $ \hat{f}\alpha $ non-trivial.
+
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  The generator of
+  \[ H^\ast ( \RRP^n,\ZZtwo ) = \ZZtwo[x]/(x^{n+1})\]
+  live in $ H^1 $. \vfill \pause
+
+  If follows: $ f \from \SS^n \to \SS^{n-1} $ induces a map
+  on cohomology
+  \[ \ZZtwo [x]/(x^{n-1}) \to \ZZtwo [y]/(y^n) \]
+  preserving the generator: $ x \mapsto y $
+  \vfill \pause
+
+  But then $ 0=x^{n-1} \mapsto y^{n-1} \neq 0 $.
+  \vfill \pause
+
+  Contradiction (or rather, negation).
+  
+  
+\end{frame}
+
+% ~~~~~~~~~~~~~~~~~~~~~
+% ~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}{}
+
+  We have proved BU-retract, hence sharp Borsuk-Ulam as
+  desired.
+
+  \vfill \pause
+  
+  Thank you.
+  
+  
+\end{frame}
+
+
+
+\end{document}

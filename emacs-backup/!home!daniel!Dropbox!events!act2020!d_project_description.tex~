@@ -1,0 +1,463 @@
+\section{Project Description}
+\label{sec:project-description}
+
+\subsection{Overview}
+\label{sec:motiv-object}
+
+The grant proposal is to support the Applied Category Theory
+2020 Adjoint School (``School'').  This comprises a
+five-month long online reading course culminating in an
+in-person research week to take place at the Massechusets
+Institute of Technology from June 22--26, 2020.  
+
+\subsubsection{Personnel}
+\label{sec:personnel}
+
+The participants of the School include three organizers
+selected by the PI's, four senior researchers (``mentors'')
+invited by the organizers, four junior researchers
+(``TA's'') chosen by the mentors, and sixteen students
+selected by the organizers through an open application process.
+
+The primary roles of the PI's include the elucidation of
+goals, knowledge management, and program evaluation. The
+three organizers are Paolo Perrone of MIT, Carmen Constantin
+of Oxford University, and Eliana Lorch of Oxford
+University. Their roles include running the operations of
+the School. The mentors include Michael Shulman of the
+University of San Diego, Valeria de Paiva of Samsung
+Research America, Michael Johnson of Maquari University, and
+Robin Cockett of the Unversity of Calgary.  They are each
+asked to develop a research problem and to lead a TA and
+students through their chosen problem. Each mentors will
+select their own TA whose background complements the
+research problem.
+
+The organizers will advertise a call for participation to
+solicit applications from undergraduates, graduate students,
+post-docs, and industry professionals. This call is to be
+dispersed through several channels. First, through the
+established networks of previous partipants, including the
+blogs of John Baez, Tae-Denae Bradley, and Bartosz Mileski
+whose combined readership eclipses 3.5 million views to
+date. Second, the call will be targeted at attracting
+underserved and underreprented populations through
+advertising with groups such as the National Association of
+Mathematicians, the Association for Women in Mathematics,
+Spectra, the Society for the Advancement of Chicanos and
+Native Americans in the Sciences. A large pool of applicants
+is expected because the 2018 School had 80 applications and
+the 2019 School had 130 applications submitted.
+
+The organizers form the selection committee to choose 16
+students. The mentors and PI's provide feedback and support
+to the selection committee. Our mission is to select a pool
+of quality candidates that are diverse across socio-economic
+dimensions, fields of practice, and academia versus
+industry.
+
+Once the students are selected, participants are divided
+into four teams consisting of one mentor, one TA, and four students.
+
+\subsubsection{Online Reading Course}
+\label{sec:online-read-course}
+
+\emph{Please note that funding is not required for this portion of
+  the school.}
+
+From February to June 2020 the format of the School is an
+online reading seminar. This follows the model of Emily
+Riehl’s Kan Extension Seminar \cite{riehlkan}. The objective of
+this portion of the School is to provide the students with
+the background needed to participate in their research project.
+
+The content of online reading seminar derives from each
+mentor selecting two papers relating to their project. A two
+week block is devoted to each of these eight total papers.  During
+each block, two students serve as leaders and are supported by
+the TA. Each block will have three phases.
+\begin{itemize}
+\item A presentation by the two student leaders of the
+  assigned paper using Zoom, an online video conference
+  system. The student leaders then field questions from
+  other students.
+\item All students give a reading response on a private
+  forum. The associated TA serves as a domain expert and
+  facilitates discussion. 
+\item The student leaders publish an article summarizing the
+  assigned paper on the well-known mathematics blog The
+  n-Category Caf\'e.
+\end{itemize}
+
+One block will follow another until all papers are exhausted
+upon which time the reading course portion is complete.  The
+in-person research week follows.
+
+\subsubsection{In-person Research Week}
+\label{sec:person-research-week}
+
+\emph{Please note, this is the portion of the School to be
+  supported with grant funds.}
+
+From June 22--26, 2020, the Massachusets Institute of
+Technology will host a 7-day research school. This is
+attended by the PI's, organizers, mentors, TAs, and
+students.  This week commences with opening lectures by the
+mentors devoted to outlining their research goals. The
+remaining time is fully devoted to collaborative
+research. During the day, each team directs its research as
+they see fit. In the early evening, all participants convene
+to watch a student representative from each team give a ten
+minute progress report.
+
+While the School does not require that each team begin
+research prior to the in-person week, the School does
+encourage it. 
+
+\subsubsection{Research Objectives}
+\label{sec:research-objectives}
+
+The following research objectives are given by the mentors. \\
+
+\textbf{Michael Shulman} \\
+
+Title: \emph{Practical type theories for symmetric monoidal
+  bicategories}
+
+Type theories are formal systems allowing us to reason about
+categorical structures by "treating their objects as if they
+were sets" in a formal sense.  While type theories for
+cartesian categorical structures are better-known, there are
+also "linear" type theories for non-cartesian structures.
+In this project we aim to construct a convenient type theory
+for reasoning about symmetric monoidal bicategories, which
+can be used to model many different kinds of open and
+interconnected systems.  We will build on recent results
+establishing a similar type theory for symmetric monoidal
+categories as well as coherence theorems for symmetric
+monoidal bicategories. \\
+
+\textbf{Valeria de Paiva} \\
+
+I would like to investigate the connections between the
+various manifestations of lenses in Computer Science, in
+particular the connections to Dialectica Categories as
+described in \cite{paiva_dialect}. The notion of a lens
+finds use in computer science as a way to encode
+bidirectional transformations, where one has a “get” func-
+tion that connects an input to its corresponding output, and
+a “put” function which updates the input given an
+input/output pair. These two functions must interact in
+sensible ways. These functions are very reminiscent of the
+Dialectica morphisms in \cite{paiva_dialect}.
+
+The abstract structure of lenses has been recently noticed
+across surprisingly many applications of category theory,
+such as in (but not limited to) the work of Fong, Spivak,
+and Tuyeras as on a compositional model of backpropagation
+in supervised learning \cite{backprop} and in the work of
+Budiu, Galenson, and Plotkin on partial compilers
+\cite{partial_comp}. It is expected that there is a
+connection between the Dialectica construction and the work
+on partial compilers, but the details currently remain
+mysterious.
+
+\daniel{Write about Michael Johnson and Robin(?)'s research
+  projects here}
+
+\subsubsection{Mentoring and Education Objectives}
+\label{sec:education-objectives}
+
+An important consideration for the School is to bring young
+researchers together with experts in the field of Applied
+Category Theory.
+
+An objective around the TA's are to improve their skill in
+leading research and working with students.  The TA's, who
+shall be a graduate student, post-doc, or junior industry
+professional, will co-lead a research project. With the
+assistance of their menntor, TA's must bring their students
+to a required level of sophistication. This is excellent
+practice for TA's seeking to one day have graduate
+students. Moreover, during the in-person research week, the
+TA's collaborate with the mentor to decide on what questions
+to pursue. After the end of the school, the TA will lead the
+process of writing the results.
+
+One objective for students is that they remain in the field
+of applied category theory. We hope student continue to
+collaborate with TA's and mentors as well as form
+collaboration amoungst themselves. Beyond networking
+opportunities, the School provides the students with
+practice in reading and presenting research papers, writing
+expository articles, pursuing a research project,
+collaborating with others in research, discussing research
+level topics in a casual way, writing journal articles, and
+giving conference presentations (see Section \ref{sec:related-work}). 
+
+\subsubsection{Evaluation Plan}
+\label{sec:evaluation-plan}
+
+To evaluate the diversity of our applicant pool, we will
+collect diversity statistics (annonymously) from applicants
+and correlate diversity with where an applicant learned about
+the School. Future iterations of the school will use this
+data to more precisely target underrepresented applicants.
+
+To evaluate the success of our students, we will conduct
+process and outcome evalation activites through surveys
+offered just prior to the beginning of the School,
+immediately after the completion of the School, and one year
+after the completion of the school. These surveys will be
+designed to collect qualitative and quantiative data on a
+number of dimensions, such as those enumerated in Section
+\ref{sec:education-objectives}. This data will be used by
+future organizers to design the School with futher
+consideration to promote desired objectives.
+
+\subsubsection{Related Events}
+\label{sec:related-work}
+
+From June 29 to July 3, the week directly following the
+School, MIT is hosting the third annual conference/workshop
+in Applied Category Theory. An estimated 150 attendees will
+attend from across the world, including academics, industry
+professionals, and students. This event is formatted so that
+half of the time is devoted to research talks and the other
+half is devoted to structured discussion around recent
+developments in applied category theory. Students from the
+School will present on their work at the
+conference/workshop. \emph{Note that no grant funds for the
+  school are to be used for the conference/workshop.}
+
+Two iterations of the School ran in 2018 and 2019.  No NSF
+funding was obtained for those events. The 2020 School is
+run in a similar way to previous Schools.
+
+\subsection{Intellectual Merit}
+\label{sec:intellecutal-merit}
+
+% Provide an overview of the workshop, not the conference
+% portion. Outline explicit goals, motivations, and
+% evaluation plan. Describe wider benefits of success. Then,
+% give project descriptions from the mentors and connect
+% this with present knowledge of the field. Regarding plan
+% of work, cite online portion to Reihl's Kan Extension
+% workshop. Cite past years work. Provide survey results
+% from ACT2019 indicating successes
+
+Applied category theory is a new field where researchers use
+the tools of category theory in applied areas such as
+science and engineering.
+
+A category consists of a collection of objects together with
+a collection of maps between those objects, satisfying
+certain rules. Mathematicians use maps between categories to
+turn problems in one subject into easier problems in another
+subject \cite{riehl}. An example from pure math: topological
+invariants, like homology, are usually maps between
+categories. In computer science, maps between categories are
+used to connect syntax and semantics: thus, they clarify the
+relation between programs and what programs actually do
+\cite{crole, pierce}. In quantum physics, maps between
+categories connect abstract theories and their concrete
+implementations in terms of operators between Hilbert
+spaces. The applied category theory community is extending
+this paradigm to other fields of science and engineering
+\cite{spivak14}. This allows developments in one such field
+to be transferred to another field through category theory.
+
+Other recent work in this field include:
+\begin{itemize}
+    %\item operational semantics \cite{crole, gplot, ghica}
+\item modeling open and interconnected systems --- Baez,
+  Fong, Pollard, Spivak \emph{et.\ al.\ } \cite{baez15,
+    baezfongpollard, baezpollard, 7sketches}
+\item resource theories --- Coecke, Fritz, Spekkens
+  \textsl{et.\ al.} \cite{coecke1, fritz1, fritz2}.
+\item rewriting --- Gadducci, Lack, Sobonci\'nski \textsl{et.\ al.} \cite{gadd, adhesive}
+\item computability theory --- Cockett, Hofstra, Pavlovic,
+  \\textsl{et.\ al.} \cite{hofstra, hofstra2, pavlovic}
+\item database theory --- Breiner, Johnson, Spivak,
+  Subrahmanian \textsl{et.\ al.} \cite{spivak17, johnson}
+\item compositional approaches to cognition and linguistics
+  --- Coecke, Lewis, Sadrzadeh \textsl{et.\ al.}
+  \cite{sadrzadeh, lewis, lewis2}
+\item category theory in functional programming ---
+  Milewski, Wadler \textsl{et.\ al.} \cite{barr, bart, wadler}
+\item distributed systems --- Spivak, Vagner \textsl{et.\ al.}
+  \cite{spivak16, vagner}
+\item game theory --- Ghani, Hedges, Shprits, Winschel, Zahn
+  \textsl{et.\ al.} \cite{jules13, jules16}
+\end{itemize} 
+The School intends to continue increasing applied category
+theory knowledge.  
+
+A grand ambition of applied category theory is that it can
+offer a sort of Rosetta Stone across disciplines. However, it
+is unreasonable to expect, say, research biologists to learn
+category theory.  A more realistic approach is to develop
+category theory informed software that can our biologist can
+use to describe biological systems.  Through this software,
+knowledge about the structure of biological systems can be
+used to reason about systems with analgous structure from
+other fields. To create such a software product, one needs
+talented programmers working in applied category
+theory. Increasing the number of programmers is a goal of
+the School. Also needed is the correct language to translate
+catgory theory into computer code. One candidate for such a
+language is \emph{type theory}.
+
+There is already a well-developed correspondence between
+certain kinds of categories and type theories. However,
+these kinds of categories do not include those that appear
+most frequently in applied category theory.  Mike Shulman's
+research project on type theory aims to extend the
+correspondence to the sorts of categories that applied
+category theorists do care about, that is \emph{non-cartesian
+  monoidal categories}. Finding a type theory to correspond
+to non-cartesian monoidal categories would be a big step in
+translating the category theory to software.
+
+As described above, category theory is well-adapted at
+morphing a problem in one area into an easier problem in
+another.  This works by identifying some underlying,
+relevant structure to be preserved under morphing while
+irrelevant structure is cast away. Thus, an important aspect
+of category theory is about finding structures essential to
+the objects of study. Exciting discoveries come when one
+finds a single structure in disparate locations. One such
+structure that is currently undergoing scrutiny for its
+repeated appearances in, seemingly, unrelated places is
+called a \emph{lens}, which originated in database theory. A
+lens, a pair of functions subject to sensible interaction
+laws, encodes how relational databases are viewed and
+updated. Eventually category theorists captured their
+essence and wrote a definition in categorical terms. During
+the Applied Category Theory 2019 Conference, the abstract
+structure of a lens was found to pervade unexpected
+territories such as functional programming, game theory in
+economics, backpropigation in machine learning, and
+more. Each area is now a current line of research.  Valeria
+de Paiva's research project (see Section
+\ref{sec:research-objectives}) seeks to futher understand
+lenses.
+
+\daniel{Write about Michael's and Robin's(?) stuff here.}
+
+\subsection{Broader Impacts}
+\label{sec:broader-impacts}
+
+The broader impacts of the School are many.  Given that
+applied category theory is an emerging field, this School may
+have a large impact on its future make-up. 
+
+% full participation of women, persons with disabilities,
+% and underrepresented minorities in science, technology,
+% engineering, and mathematics (STEM);
+
+\subsubsection{Diversity and Inclusion}
+\label{sec:diversity-inclusion}
+
+The School can positively impact the representation of
+diverse groups and their inclusion across multiple
+dimensions. The call for participation to students will be
+advertised with as National Association of Mathematicians,
+the Association for Women in Mathematics, Spectra, the
+Society for the Advancement of Chicanos and Native Americans
+in the Sciences. Also, the School has within its networks
+Drs.\ Eugenia Cheng and Emily Riehl, both of who are active
+in the intersection of math and diversity.  Because the
+School is not only for mathematicians, but also programmers
+and scientists, there is a large pool of applicants.
+
+\daniel{find more organizations to apply to. Ask Emily
+  Pillmore about computing.}
+
+Beyond simply providing an opportunity for the students of
+the School to do research, we are broadening their
+networks. During the School, they will work with an expert
+in applied category theory. The week after the School,
+during the workshop/conference, students are given a
+platform to present their work to experts from both academia
+and industry.
+
+To measure diversity and inclusion, a survey will be
+administered. This survey will ask each applicant to supply
+information about their socio-economic background and also
+where they first learned about the School.  Those
+advertising streams that correlate well with diverse
+applicants can be used to better effect in future School's.
+
+% increased partnerships between academia, industry, and
+% others;
+
+\subsubsection{Academia and Industry}
+\label{sec:academia-industry}
+
+A fundemental aspect of applied category theory is the idea
+of an abstract system. Thus, applied category theory is
+relevant to any field interestedin systems. For example,
+biology studies ecological systems. Sociologists study
+social systems or political systems.  Engineer design
+systems. Systems appear in academia and industry. Therefore,
+participation between academia and industry is central to
+the success of applied category theory as a field.
+Fostering this participation is a key component of the
+School. After evaluating the 2019 School, the PI found that
+industry professionals were not clear as to whether they
+were allowed to apply to be students. For the 2020 School,
+all advertisements will make it completely unambiguous that
+industry professionals are encouraged to apply and that part
+of our mission is to mix industry and academic
+students. The proportion of industry representatives among
+the applicants can be evaluated by survey.  
+
+Currently, applied category theory informs work at a number
+of US companies and institutes.
+\begin{itemize}
+\item Metron Scientific Solutions uses operads in their
+  project with DARPA to build a Complex Adaptive System
+  Composition and Design Environment.
+\item Pyrofex uses enriched categories in their design of a
+  proprietary cryptocurrency .
+\item Categorical Informatics uses category theory to design
+  databases.
+\item Siemens, especially Arquimedes Canedo.
+\item NIST, especially Spencer Breiner and Eswaran
+  Subramanian.
+\item RChain, especially Greg Meredith.
+\end{itemize}
+Most of these organizations send representatives to the
+conference/workshop that follows the School, meaning that
+the students will be presenting their work to industry
+professionals.
+
+The potential of this subject in industry has just begun to
+be exploited. The School will work to accelerate the
+industrial adaption of applied category theory. Junior
+researchers will learn how to apply category theory. The
+School exposes participants from industry to the uses of
+this subject. Then the conference/workshop following the
+school fosters networking between the students and
+professionals, particularly by providing the students with
+an opportunity to present their work.
+
+The success of the School to strengthen networks will be
+evaluated using follow-up surveys.  
+
+\subsection{Results from Prior NSF Support}
+\label{sec:results-from-prior}
+
+The PI's have no prior NSF support.  
+
+\subsection{Unfunded Collaborations}
+
+The School will collaborate with Dr.~David Spivak of
+MIT. This is discussed further in the Facilities, Equipment,
+and Other Resources section. 
+
+\subsection{Proposals for Renewed Support}
+\label{sec:prop-renew-supp}
+
+This is not a proposal for renewed support.

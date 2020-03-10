@@ -1,0 +1,40 @@
+\input{assets/preamble_worksheet.tex}
+
+\begin{document}
+
+\noindent\textbf{Worksheet 10---Derivative Rules}
+
+  \begin{ws}
+    Find the derivatives of (i) $f(x)=4$ , (ii) $f(x)=4^3$, (iii) $f(x)=e$, (iv) $\ln (3)$
+  \end{ws}
+
+    \begin{ws}
+    Find the derivatives of (i) $f(x)=x^5$ (ii) $f(x)=x^{81}$ 
+  \end{ws}
+
+    \begin{ws}
+    Find the derivative of $f(x)= 3x^4$
+  \end{ws}
+
+    \begin{ws}
+    Write down any degree 3 polynomial. Find its derivative. \\ For your own notes, mark where you used the rules we've learned thus far
+  \end{ws}
+\pagebreak
+  
+    \begin{ws}
+    Find $\ddx (e^x/3+4x^3)$
+  \end{ws}
+
+    \begin{ws}
+    Find all $x$ values where the tangent line to $f(x)=3x-\dfrac{e^x}{2}$ is horizontal. 
+  \end{ws}
+
+  \begin{ws}
+    For what $x$ values does the tangent line \\ to the function $f(x)2x^3-15x^2+24x$ have a slope of 6?
+  \end{ws}
+
+    \begin{ws}
+    Find the first, second, and third derivative of $f(x)=3x^3-5x+12$
+  \end{ws}
+  
+\end{document}

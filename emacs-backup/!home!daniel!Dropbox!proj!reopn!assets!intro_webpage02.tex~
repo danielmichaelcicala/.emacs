@@ -1,0 +1,12 @@
+\[
+\begin{tikzpicture}
+  \node[rectangle,draw] (a) at (0,3) {home};
+  \node[rectangle,draw] (b) at (-2,0) {page $alpha$};
+  \node[rectangle,draw] (c) at (2,0) {page $\beta$};
+  %
+  \draw [cd]
+  (a) edge[] (b)
+  (a) edge[] (c)
+  (b) edge[] (c);  
+\end{tikzpicture}
+\]
